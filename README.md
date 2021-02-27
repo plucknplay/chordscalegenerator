@@ -1,0 +1,2 @@
+# chordscalegenerator
+Chord Scale Generator
