@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Find Scales</title>
+<link type="text/css" rel="stylesheet" href="../book.css" />
+</head>
+
+<body>
+
+<div id="all">
+
+    <div id="close">
+        <p id="close_img">
+            <a href="http://org.eclipse.ui.intro/close"><img src="../images/close.png" width="214" height="25" alt="Close"/></a>
+        </p>
+    </div>
+
+	<div id="top">
+        <p>
+            <a href="http://org.eclipse.ui.intro/showPage?id=root"><img src="../../logos/logo_64.png" width="64" height="64" alt="Welcome"/></a>
+        </p>
+	</div>
+
+	<div id="header">
+	
+		<ul id="steps">
+			<li><a id="overview" href="http://org.eclipse.ui.intro/showPage?id=overview"><img src="../images/overview.gif" width="15" height="15" alt="Overview"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=workbench"><img src="../images/step.gif" width="15" height="15" alt="The Workbench"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=instruments"><img src="../images/step.gif" width="15" height="15" alt="Manage your Instruments"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=chords_scales"><img src="../images/step.gif" width="15" height="15" alt="Manage your Chords and Scales"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=chord_generation"><img src="../images/step.gif" width="15" height="15" alt="Generate and Show Chords"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=find_chords"><img src="../images/step.gif" width="15" height="15" alt="Find Chords"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=show_scales"><img src="../images/step.gif" width="15" height="15" alt="Show Scales"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=find_scales"><img src="../images/step_active.gif" width="15" height="15" alt="Find Scales"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=sound"><img src="../images/step.gif" width="15" height="15" alt="Sound Support"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=export"><img src="../images/step.gif" width="15" height="15" alt="Export Actions"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=update"><img src="../images/step.gif" width="15" height="15" alt="Update Support"/></a></li>
+			<li><a id="back" href="http://org.eclipse.ui.intro/showPage?id=show_scales"><img src="../images/back.gif" width="8" height="15" alt="Previous Step"/></a></li>
+			<li><a id="forward" href="http://org.eclipse.ui.intro/showPage?id=sound"><img src="../images/forward.gif" width="8" height="15" alt="Next Step"/></a></li>
+		</ul>
+	
+		<h1>Find Scales</h1>
+	</div>
+
+	<div id="main">
+
+		<p>
+		The <em>Chord Scale Generator</em> not only displays scales, 
+		there is also the possibility of a reverse calculation for scales. 
+		So if you want to find out which scales match to an any riff you just played, 
+		the <em>Chord Scale Generator</em> can help you.
+		</p>
+		
+		<p>
+		For this calculation you better remain in the <em>Scales</em> perspective. 
+		The procedure is the same like we've already seen it for chords. 
+		With the help of the <em>Box</em>, <em>Tab</em> and <em>Notes View</em> 
+		you can arrange your riff - just switch into the edit/search mode and arrange your riff by double-clicking. 
+		Finally you can start the calculation by performing the action <em>Find Scale</em>. 
+		The results of the calculation will be displayed in the <em>Scale Results View</em>.
+		</p>
+		
+		<p>
+		    <enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+			<img src="../../images/tasks/find_scale.png" width="889" height="259" alt="Find Scales"/>
+		</p>
+		<p>
+		    <enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+			<img src="../../images/tasks/macosx/find_scale.png" width="1046" height="316" alt="Find Scales"/>
+		</p>
+		
+		<p>
+		This view shows all scales which contain all notes of your previously arranged riff. 
+		Therefore, it is also possible that even scales which contain additional notes are listed. 
+		In the table column <em>Coverage</em> you can see which percentage the notes of your riff cover of a listed scale. 
+		A low percentage does not have to be considered a "bad sign". 
+		The additionally defined notes of such a scale can be used to extend your riff.
+		</p>
+		
+		<p>
+		A selected scale in the <em>Scale Results View</em> will be shown 
+		in the graphical views as described before.
+		</p>
+		
+    	<div class="link">
+    		<p><a href="http://org.eclipse.ui.intro/showPage?id=sound">Sound Support</a></p>
+    	</div>
+		
+	</div>
+	
+</div>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Preferences: General</title>
+<link type="text/css" rel="stylesheet" href="../../../book.css" />
+</head>
+
+<body>
+
+<h1>Preferences: General</h1>
+
+<p>
+Regarding the startup and shutdown of the application you can set the following preferences:
+</p>
+
+<p>
+    <enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+	<img src="../../../../images/workbench/preferences/startup_and_shutdown.png" width="468" height="361" alt="General Preferences"/>
+</p>
+<p>
+    <enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+	<img src="../../../../images/workbench/preferences/macosx/startup_and_shutdown.png" width="556" height="409" alt="General Preferences"/>
+</p>
+
+<h3><a id="startup_and_shutdown_preferences_show_login_dialog">Show Activation Dialog on Startup</a></h3>
+<p>Here you can specify whether or not the activation dialog shall always be shown on startup (if necessary).</p>
+
+<p>
+    <enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+    <img src="../../../../images/workbench/preferences/activation.png" width="440" height="259" alt="Activation Dialog"/>
+</p>
+<p>
+    <enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+    <img src="../../../../images/workbench/preferences/macosx/activation.png" width="507" height="288" alt="Activation Dialog"/>
+</p>
+
+<h3><a id="general_preferences_confirm_exit">Confirm Exit</a></h3>
+<p>Here you can specify whether or not the exit of the application must be confirmed via dialog.</p>
+
+<p>
+    <enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+	<img src="../../../../images/workbench/preferences/confirm_exit.png" width="441" height="157" alt="Confirm Exit Dialog"/>
+</p>
+<p>
+    <enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+	<img src="../../../../images/workbench/preferences/macosx/confirm_exit.png" width="597" height="171" alt="Confirm Exit Dialog"/>
+</p>
+
+</body>
+</html>

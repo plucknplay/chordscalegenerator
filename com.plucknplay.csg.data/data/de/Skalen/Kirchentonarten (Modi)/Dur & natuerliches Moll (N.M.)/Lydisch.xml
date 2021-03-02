@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<interval_containers type="scales"><interval_container type="scales"><name>Lydisch</name><akaName>IV</akaName><akaName>N.M. VI</akaName><akaName>Lydian</akaName><description>Reihenfolge: 4. Stufe von Dur = IV / 6. Stufe von natürlich Moll = N.M. VI&#xd;
+Tonart: Dur&#xd;
+Charakteristik: #4</description><intervals><interval name="1" value="0"/><interval name="2" value="2"/><interval name="3" value="4"/><interval name="#4" value="6"/><interval name="5" value="7"/><interval name="6" value="9"/><interval name="7" value="11"/></intervals></interval_container></interval_containers>

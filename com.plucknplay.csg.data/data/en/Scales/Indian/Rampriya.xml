@@ -1,0 +1,2 @@
+<?xml version="1.0"?>
+<interval_containers type="scales"><interval_container type="scales"><name>Rampriya</name><description></description><intervals><interval name="1" value="0"/><interval name="#1" value="1"/><interval name="3" value="4"/><interval name="#4" value="6"/><interval name="5" value="7"/><interval name="6" value="9"/><interval name="#6" value="10"/></intervals></interval_container></interval_containers>

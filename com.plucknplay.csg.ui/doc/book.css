@@ -1,0 +1,75 @@
+body {
+	font-family: Verdana, Geneva, Arial, sans-serif;
+	font-size: 12;
+	font-weight: normal;
+	color: #505050;
+	background-color: white;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+p {
+	margin-top: 0px;
+	font-size: 100%;
+}
+
+h1, h2, h3 {
+	font-weight: bold;
+}
+
+h1, h2 {
+	color: #c0d069;
+}
+
+h1 {
+	font-size: 170%;
+}
+
+h2 {
+	font-size: 140%;
+}
+
+h3 {
+	font-size: 100%;
+	margin-bottom: 0px;
+}
+
+img {
+	margin-right: 5px;
+}
+
+table {
+	border: thin solid gray;
+	caption-side: bottom;
+	border-collapse: collapse;
+	font-size: 100%;
+}
+
+th, td {
+	padding: 5px;
+	text-align: center;
+	border: thin dotted silver;
+	font-size: 100%;
+}
+
+th {
+	border: thin solid gray;
+	background-color: #c0d069;
+}
+
+a {
+	color: #c0d069;
+}
+
+b {
+    color: black;
+    font-weight: bold;
+}
+
+.note {
+    font-weight:        bold;
+}
+
+.emphasize {
+    font-weight:        bold;
+}

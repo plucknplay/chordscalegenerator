@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<interval_containers type="scales"><interval_container type="scales"><name>Dorisch</name><akaName>II</akaName><akaName>N.M. IV</akaName><akaName>Dorian</akaName><description>Reihenfolge: 2. Stufe von Dur = II / 4. Stufe von natürlich Moll = N.M. IV&#xd;
+Tonart: moll&#xd;
+Charakteristik: 6&#xd;
+&#xd;
+Bemerkung: &#xd;
+- DIE Jazz-Skala</description><intervals><interval name="1" value="0"/><interval name="2" value="2"/><interval name="b3" value="3"/><interval name="4" value="5"/><interval name="5" value="7"/><interval name="6" value="9"/><interval name="b7" value="10"/></intervals></interval_container></interval_containers>

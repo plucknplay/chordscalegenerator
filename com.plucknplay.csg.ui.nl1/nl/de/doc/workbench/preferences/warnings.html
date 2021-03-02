@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Benutzervorgaben: Warnungen</title>
+<link type="text/css" rel="stylesheet" href="../../book.css" />
+</head>
+
+<body>
+
+<h1>Benutzervorgaben: Warnungen</h1>
+<p>
+Es kann im Programmverlauf vorkommen, dass du bei bzw. vor dem Ausf&#252;hren bestimmter Aktionen gewarnt wirst, 
+da diese evtl. unerwartete Seiteneffekte zur Folge haben. Die Warnungen werden dabei in einem Info-Dialog angezeigt. 
+In solch einem Info-Dialog ist es dabei m&#246;glich, die Warnung f&#252;r den weiterens Programmverlauf zu unterdr&#252;cken.
+Bei den Benutzervorgaben zu den Warnungen kannst du hier auch einstellen, welche Warnungen aktiviert bzw. deaktivert werden sollen. 
+Du kannst hier somit bereits zuvor unterdr&#252;ckte Warnungen wieder aktivieren.
+</p>
+
+<p>
+    <enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+	<img src="../../../images/workbench/preferences/warnings.png" width="676" height="311" alt="Benutzervorgaben: Warnungen"/>
+</p>
+<p>
+    <enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+	<img src="../../../images/workbench/preferences/macosx/warnings.png" width="715" height="315" alt="Benutzervorgaben: Warnungen"/>
+</p>
+
+<p>Die Warnungen welche im Programmverlauf vorkommen k&#246;nnen, sind im Folgenden aufgelistet:</p>
+
+
+<h3><a id="Warnings_preferences_HideWarningChangeActiveInstrument">Unterdr&#252;cke Warnung: Der Wechsel des aktiven Instruments...</a></h3>
+<p>
+Wenn du das aktive Instrument wechselst oder das aktive Instrument ver&#228;nderst, werden die in der
+<a href="../views/chord_results.html">Akkord-Ergebnisse-Sicht</a> dargestellten Ergebnisse gel&#246;scht. 
+Dies ist notwendig, da die zuvor berechneten Akkorde an das vorige aktive Instrument gebunden sind. 
+Auf einem anderen Instrument sieht die Ergebnismenge meist schon wieder ganz anders aus.
+</p>
+
+<p>
+    <enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+	<img src="../../../images/workbench/preferences/warnings_active_instrument_change.png" width="441" height="167" alt="Warnung"/>
+</p>
+<p>
+    <enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+	<img src="../../../images/workbench/preferences/macosx/warnings_active_instrument_change.png" width="518" height="157" alt="Warnung"/>
+</p>
+
+
+
+<h3><a id="Warnings_preferences_HideWarningChangePreferBarre">Unterdr&#252;cke Warnung: Die &#196;nderung der 'Bevorzuge Barre'-Einstellung...</a></h3>
+<p>
+Wenn du in den <a href="../preferences/calculations.html">Benutzervorgaben zu den Berechnungen</a> 
+die Einstellung "Bevorzuge Barre" ver&#228;nderst, werden die Schwierigkeitsgrade der in der 
+<a href="../views/chord_results.html">Akkord-Ergebnisse-Sicht</a> angezeigten Akkorde neu berechnet. 
+Es kann dabei vorkommen, dass die neu berechneten Schwierigkeitsgrade nicht den erlaubten Schwierigkeitsgraden entsprechen, 
+welche du in der  <a href="../views/chord_generation.html">Akkordgernierung-Sicht</a> definiert hattest, 
+um die dargestellten Akkorde zu berechnen.
+</p>
+
+<p>
+    <enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+	<img src="../../../images/workbench/preferences/warnings_prefer_barre_option_change.png" width="441" height="200" alt="Information"/>
+</p>
+<p>
+    <enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+	<img src="../../../images/workbench/preferences/macosx/warnings_prefer_barre_option_change.png" width="518" height="181" alt="Information"/>
+</p>
+
+
+
+<h3><a id="Warnings_preferences_HideWarningGeneratedResults">Unterdr&#252;cke Warnung: Die generierten Ergebnisse...</a></h3>
+<p>
+Wenn die Ergebnismenge beim Generieren von Griffm&#246;glichkeiten von Akkorden die in den 
+<a href="../preferences/calculations.html">Benutzervorgaben zu den Berechnungen</a> definierte Obergrenze &#252;berschreitet, 
+wird die Ergebnismenge auf die erlaubte Gr&#246;&#223;e reduziert.
+</p>
+
+<p>
+    <enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+	<img src="../../../images/workbench/preferences/warnings_results_truncated.png" width="441" height="187" alt="Information"/>
+</p>
+<p>
+    <enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+	<img src="../../../images/workbench/preferences/macosx/warnings_results_truncated.png" width="518" height="181" alt="Information"/>
+</p>
+
+
+
+<h3><a id="Warnings_preferences_HideWarningNoResults">Unterdr&#252;cke Warnung: Keine Ergebnisse...</a></h3>
+<p>
+Wenn du die Test-Version des <em>Chord Scale Generators</em> verwendest, kann es (des&#246;fteren) vorkommen, dass bei den Berechnungen "Finde Akkord" 
+bzw. "Finde Skala" keine Ergebnisse gefunden werden konnten. Dies ist meist auf die in der Test-Version reduzierte Datenbasis zur&#252;ckzuf&#252;hren.
+</p>
+
+<p>
+    <enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+	<img src="../../../images/workbench/preferences/warnings_no_results.png" width="441" height="157" alt="Information"/>
+</p>
+<p>
+    <enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+	<img src="../../../images/workbench/preferences/macosx/warnings_no_results.png" width="518" height="157" alt="Information"/>
+</p>
+
+
+
+<h2><a id="Warnings_preferences_related_topics">Verwandte Themen</a></h2>
+<p>
+<a href="../views/instruments.html">Arbeitsfl&#228;che &#8594; Sichten &#8594; Instrumente</a><br/>
+<a href="../views/chord_generation.html">Arbeitsfl&#228;che  &#8594; Sichten &#8594; Akkordgenerierung</a><br/>
+<a href="../views/chord_results.html">Arbeitsfl&#228;che  &#8594; Sichten &#8594; Akkord-Ergebnisse</a><br/>
+<a href="../preferences/calculations.html">Arbeitsfl&#228;che &#8594; Benutzervorgaben &#8594; Berechnungen</a><br/>
+</p>
+
+<h2><a id="Warnings_preferences_related_tasks">Verwandte Aufgaben</a></h2>	
+<p>
+<a href="../../tasks/chord_generation.html">Aufgaben &#8594; Grifftabellen generieren und anzeigen</a><br/>
+</p>
+
+</body>
+</html>

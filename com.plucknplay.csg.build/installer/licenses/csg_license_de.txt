@@ -1,0 +1,61 @@
+ENDNUTZER-LIZENZVEREINBARUNG 
+
+
+WICHTIG - BITTE SORGFÄLTIG LESEN. BENUTZERINFORMATION:
+
+DIESER ENDNUTZER-LIZENZVERTRAG (ELV) IST EIN RECHTSGÜLTIGER VERTRAG ZWISCHEN IHNEN UND DER GBR ANDREAS MEIßNER UND MATHIAS MEIßNER (MEIßNER & MEIßNER GBR). BEVOR SIE DIE DEN CHORD SCALE GENERATOR ("SOFTWARE") SOWIE DIE DAZUGEHÖRIGE DOKUMENTATION VERWENDEN, LESEN SIE BITTE DIESES DOKUMENT SORGFÄLTIG DURCH. DAS HERUNTERLADEN, DIE INSTALLATION UND DIE NUTZUNG DER SOFTWARE UNTERLIEGEN DEN BESTIMMUNGEN DIESER ELV UND SIND DARAUF BESCHRÄNKT:
+
+
+1. Berechtigte Nutzung
+
+Die Software darf nur heruntergeladen, installiert oder genutzt werden (i) von dem Eigentümer des Computers auf dem die Software heruntergeladen und installiert wurde (der "autorisierte Computer"), und von (ii) jeder Person die vom Eigentümer des autorisierten Computers bevollmächtigt wurde diesen zu nutzen und die Software zu den Bedingungen der ELV herunterzuladen und zu installieren, vorausgesetzt, dass die Personen unter (i) und (ii) sich mit der Anwendung dieser ELV einverstanden erklärt haben.
+
+Allein die Meißner & Meißner GbR besitzt die Berechtigung Lizenzen zur Benutzung der Vollversion der Software zu erteilen. Bei diesen Lizenzen handelt es sich um Einzelplatz-Lizenzen, die Nutzung der Vollversion der Software auf nur einem Einzelplatzrechner berechtigen. Diese Lizenzen sind hierbei nicht übertragbar wie z.B. an andere natürliche oder juristische Personen oder Unternehmen. Desweiteren dürfen diese Lizenzen weder vermietet noch verleast oder verliehen werden. Bei Interesse an Lizenzen für die Nutzung, und/oder den Vertrieb der Software durch Körperschaften und/oder Unternehmen ("Handelslizenzen"), wenden Sie sich bitte direkt an die Meißner & Meißner GbR. Soll die Software auf mehreren Rechnern benutzt werden, so muss für jeden Rechner eine separate Lizenz erworben werden. Bei Interesse an mehreren Lizenzen ("Mehrplatz-Lizenz") wie z. B. für Schulungszwecke, wenden Sie sich bitte direkt an die Meißner & Meißner GbR.
+
+Wir räumen Ihnen ein nicht-exklusives, beschränktes Nutzungsrecht zum Download, zur Installation und zur Nutzung der neuesten Version der Software gemäß den Bedingungen dieser ELV ein. Wir sind berechtigt jederzeit Änderungen, insbesondere Updates zur Software anzubieten, ohne dass eine Verpflichtung dazu besteht. Wenn und sobald wir Updates der Software anbieten, werden wir Ihnen diese verfügbar machen, ohne dass eine Verpflichtung dazu besteht. Die insoweit aktualisierte Software fällt ebenfalls unter die Bestimmungen dieser ELV.
+
+
+2. Einschränkungen
+
+Die Nutzung der Software und unterliegt folgenden, zusätzlichen Beschränkungen: (i) Das Dekompilieren, Reverse-Engineering (Rückwärtsentwicklung), die Disassemblierung, oder der sonstige Versuch den Quellcode der Software zu erlangen ist verboten; Zudem ist es verboten (ii) die Funktionalität oder die Operation der Software während der Nutzung oder Installation zu behindern oder zu stören , (iii) die Software an Dritten zu verkaufen, zu vermieten, zu übertragen, weiterzuveräußern oder zu vertreiben; (iv) sie zu duplizieren, zu vervielfältigen oder sonst zu kopieren, sie zu verändern oder sonst in urheberrechtlich relevantere Art und Weise zu bearbeiten, oder (v) die Software in andere Länder direkt oder indirekt, zu exportieren.
+
+
+3. Urheberrechte
+
+Ihnen werden ausschließlich beschränkte Nutzungsrechte im Umfang diese Bestimmungen eingeräumt. Im Übrigen verbleiben sämtliche Rechte an der Software bei uns bzw. bei Dritten im Sinne dieser Bestimmungen. Ideen, Kommentare oder Vorschläge die Software betreffend, die Sie uns zusenden oder uns auf anderem Wege mitteilen, können von uns in vollem Umfang zur Weiterentwicklung der Software genutzt werden, ohne dass es Ihrer Zustimmung bedarf und ohne dass dadurch Zahlungsansprüche entstehen.
+
+
+4. Haftung und Gewährleistung
+
+Die Haftung für solche Schäden, die durch das Herunterladen, die Installation, die Nutzung oder die Deinstallation der Software hervorgerufen werden, oder sonst aus der Nutzung der Software resultieren, ist begrenzt auf Vorsatz und grobe Fahrlässigkeit.
+
+Sonstige Gewährleistungsansprüche sind beschränkt auf Mängel, die arglistig verschwiegen wurden. Im Übrigen ist die Gewährleistung ausgeschlossen. Es wird insbesondere keine Gewähr dafür übernommen, dass die Software betriebsbereit ist, der Betrieb ununterbrochen und frei von Fehlern möglich ist, im Zusammenhang mit anderen Produkten, andere Software oder Hardware funktionieren wird oder keine Schäden an anderen Produkten (Software oder Hardware) verursachen wird oder Daten verfälscht oder die Lebensdauer von Daten beeinflusst, es sei denn, ein deartiger Mangel wurde arglistig verschwiegen.
+
+
+5. Haftungsbeschränkung
+
+Die Haftung des Lizenzgebers für Schäden an Gesundheit, Körper oder dem Leben von Personen besteht uneingeschränkt.
+
+Der Ersatz für mittelbare und Folgeschäden, die aus dem Herunterladen, der Installation, dem Nutzen oder Fehlgebrauch, der Deinstallation resultieren, ist ausgeschlossen, es sein denn, sie beruhen auf Vorsatz oder grober Fahrlässigkeit.
+
+
+6. Sonstige Bedingungen
+
+Es gilt ausschließlich das Recht der Bundesrepublik Deutschland unter Ausschluss des Übereinkommens der Vereinten Nationen über Verträge über den internationalen Warenkauf (CISG). Der ausschließliche Gerichtsstand ist Jena in der Bundesrepublik Deutschland, soweit der Kunde Kaufmann ist. Der Anbieter ist daneben berechtigt, auch am allgemeinen Gerichtsstand des Kunden zu klagen.
+
+Der deutsche Vertragstext dieser ELV besitzt im Zweifelsfall Vorrang gegenüber Übersetzungen in anderen Sprachen.
+
+Änderungen und Ergänzungen bedürfen der Schriftform. Dies gilt auch für die Schriftformklausel selbst.
+
+Die Unwirksamkeit einer oder mehrerer Bestimmungen dieses Vertrages berührt nicht die Wirksamkeit dieses Vertrages im Übrigen. Eine unwirksame Bestimmung wird durch eine wirksame ersetzt, die dem wirtschaftlichen Zweck der unwirksamen Klausel möglichst nahe kommt.
+
+Diese ELV stellt gemeinsam mit den allgemeinen Nutzungsbestimmungen die gesamte Vereinbarung mit Ihnen hinsichtlich des Herunterladens, der Installation und der Nutzung und Deinstallation der Software dar; sie ist insoweit abschließend und ersetzt alle vorherigen diesbezüglichen Vereinbarungen.
+
+Änderungen dieser ELV werden unter http://www.pluck-n-play.com/de/license.html veröffentlicht. Die Nutzung der Software unterliegt der jeweils gültigen Fassung der ELV.
+
+
+Meißner & Meißner GbR
+Andreas Meißner, Mathias Meißner
+Franz-Gresitza-Str. 64, 07749 Jena, Deutschland
+
+Stand: Januar 2009

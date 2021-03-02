@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Manage your Instruments</title>
+<link type="text/css" rel="stylesheet" href="../book.css" />
+</head>
+
+<body>
+
+<h1>Manage your Instruments</h1>
+<p>
+After you have learned about the main concepts of the <em>Chord Scale Generator</em>, 
+we now want to introduce you to some concrete functions of this program. 
+Let us start with the management of your instruments since, first of all, 
+the <em>Chord Scale Generator</em> has to know on which instrument the calculations shall be performed.
+</p>
+
+<p>
+In order to manage your instruments, first switch to the <em>Setup</em> perspective. On the left side, 
+you see the <a href="../workbench/views/instruments.html">Instruments View</a> where you can manage your 
+instruments. The <a href="../workbench/views/instruments.html">Instruments View</a> 
+operates similar to a file explorer - you can organize existing instruments in categories, as well as copy, 
+delete or rename selected elements. Besides, it is possible to create new instruments or edit existing ones. 
+By double-clicking on them, the corresponding <a href="../workbench/editors/instrument.html">editor</a> opens 
+where you can define your instrument in detail.
+</p>
+
+<p>
+    <enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+	<img src="../../images/tasks/manage_your_instruments.png" width="742" height="740" alt="Manage your Instruments"/>
+</p>
+<p>
+    <enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+	<img src="../../images/tasks/macosx/manage_your_instruments.png" width="850" height="789" alt="Manage your Instruments"/>
+</p>
+
+<p>
+The <em>Chord Scale Generator</em> enables you to define all stringed instruments (we know of) - 
+from guitars, basses or ukuleles up to more exotic instruments like balalaikas, bouzoukis, domras or charangos. 
+As long as your instrument has between two and twelve strings the <em>Chord Scale Generator</em> will support it. 
+You can specify the name, the dimensions (string and fret number) and the tuning of the instrument, 
+as well as more advanced settings like the sound, the scale length or even the positions of the capo (tasto). 
+The significance of each available setting is explained in the corresponding help contents of this editor.
+</p>
+
+<p>
+But don't worry! You probably won't have to define all your instruments manually. 
+Many instruments are already pre-defined in the <em>Chord Scale Generator</em>. 
+Besides, there are several files enclosed where all instruments we know and their most common tunings are defined. 
+You can easily import these files and extend your instruments list.
+</p>
+
+<p>
+Since the <em>Chord Scale Generator</em> needs to know on which instrument the calculations shall be performed 
+you have to set one of the defined instruments active. In order to activate an instrument you simply have 
+to select the desired instrument in the <a href="../workbench/views/instruments.html">Instruments View</a> and 
+perform the popup menu entry <a href="../workbench/views/instruments.html#instruments_view_popup_menu_set_active">Set Active</a>. 
+The active instrument will get a special icon in the <a href="../workbench/views/instruments.html">Instruments View</a> 
+and will also be displayed in the bottom-right corner in the <a href="../workbench/status_bar.html">status bar</a>.
+</p>
+
+<h2>Next Step</h2>
+<p><a href="chords_scales.html">Manage your Chords and Scales</a></p>
+
+<h2><a id="ManageYourInstruments_related_topics">Related topics</a></h2>
+<p>
+<a href="../workbench/views/instruments.html">Workbench &#8594; Views &#8594; Instruments</a><br/>
+<a href="../workbench/editors/instrument.html">Workbench &#8594; Editors &#8594; Instrument Editor</a><br/>
+<a href="../workbench/status_bar.html">Workbench &#8594; Status bar</a><br/>
+</p>		
+
+</body>
+</html>

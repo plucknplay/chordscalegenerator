@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="Chord Scale Generator" topic="doc/overview.html">
+
+	<topic label="Einführung" href="doc/getting_started/overview.html">
+		<topic label="Funktionen" href="doc/getting_started/features.html"/>
+		<topic label="Versionen" href="doc/getting_started/versions.html"/>
+	</topic>
+
+	<topic label="Arbeitsfläche" href="doc/workbench/overview.html">
+		<topic label="Sichten" href="doc/workbench/views/overview.html">
+			<topic label="Instrumente Sicht" href="doc/workbench/views/instruments.html"/>
+			<topic label="Akkorde Sicht" href="doc/workbench/views/chords.html"/>
+			<topic label="Skalen Sicht" href="doc/workbench/views/scales.html"/>
+			<topic label="Akkordgenerierung Sicht" href="doc/workbench/views/chord_generation.html"/>
+			<topic label="Akkord-Ergebnisse Sicht" href="doc/workbench/views/chord_results.html"/>
+			<topic label="Skalen-Ergebnisse Sicht" href="doc/workbench/views/scale_results.html"/>
+			<topic label="Skalensuche Sicht" href="doc/workbench/views/scale_finder.html"/>
+			<topic label="Griffbrett Sicht" href="doc/workbench/views/fretboard.html"/>
+			<topic label="Klaviatur Sicht" href="doc/workbench/views/keyboard.html"/>
+			<topic label="Box Sicht" href="doc/workbench/views/box.html"/>
+			<topic label="Tab Sicht" href="doc/workbench/views/tab.html"/>
+			<topic label="Noten Sicht" href="doc/workbench/views/notes.html"/>
+			<topic label="Hilfe Sicht" href="doc/workbench/views/help.html"/>
+		</topic>
+		<topic label="Editoren" href="doc/workbench/editors/overview.html">
+			<topic label="Instrumenten-Editor" href="doc/workbench/editors/instrument.html"/>
+			<topic label="Akkord-Editor" href="doc/workbench/editors/chord.html"/>
+			<topic label="Skalen-Editor" href="doc/workbench/editors/scale.html"/>
+		</topic>
+		<topic label="Benutzervorgaben" href="doc/workbench/preferences/overview.html">
+            <topic label="Allgemein" href="doc/workbench/preferences/general/overview.html">
+                <topic label="Arbeitsfläche" href="doc/workbench/preferences/general/workbench.html"/>
+                <topic label="Grafik" href="doc/workbench/preferences/general/graphics.html"/>
+            </topic>
+			<topic label="Berechnungen" href="doc/workbench/preferences/calculations.html"/>
+			<topic label="Blöcke" href="doc/workbench/preferences/blocks.html"/>
+			<topic label="Export" href="doc/workbench/preferences/export.html">
+                <topic label="Dateinamen" href="doc/workbench/preferences/export_filename.html"/>
+            </topic>
+			<topic label="Hilfe" href="doc/workbench/preferences/help.html"/>
+            <topic label="Namen" href="doc/workbench/preferences/names/overview.html">
+                <topic label="Akkordnamen" href="doc/workbench/preferences/names/chord_names.html"/>
+                <topic label="Fingersatznotation" href="doc/workbench/preferences/names/fingering_notation.html"/>
+                <topic label="Intervallnamen" href="doc/workbench/preferences/names/interval_names.html"/>
+                <topic label="Notennamen" href="doc/workbench/preferences/names/note_names.html"/>
+                <topic label="Skalennamen" href="doc/workbench/preferences/names/scale_names.html"/>
+            </topic>
+			<topic label="Perspektiven" href="doc/workbench/preferences/perspectives.html"/>
+            <topic label="Sichten" href="doc/workbench/preferences/views/overview.html">
+                <topic label="Akkordgenerierung Sicht" href="doc/workbench/preferences/views/chord_generation.html"/>
+                <topic label="Akkord-Ergebnisse Sicht" href="doc/workbench/preferences/views/chord_results.html"/>
+                <topic label="Skalen-Ergebnisse Sicht" href="doc/workbench/preferences/views/scale_results.html"/>
+                <topic label="Skalensuche Sicht" href="doc/workbench/preferences/views/scale_finder.html"/>
+                <topic label="Griffbrett Sicht" href="doc/workbench/preferences/views/fretboard.html"/>
+                <topic label="Klaviatur Sicht" href="doc/workbench/preferences/views/keyboard.html"/>
+                <topic label="Box Sicht" href="doc/workbench/preferences/views/box.html"/>
+                <topic label="Tab Sicht" href="doc/workbench/preferences/views/tab.html"/>
+                <topic label="Noten Sicht" href="doc/workbench/preferences/views/notes.html"/>
+            </topic>
+			<topic label="Sound" href="doc/workbench/preferences/sound.html"/>
+			<topic label="Tasten" href="doc/workbench/preferences/keys.html"/>
+			<topic label="Update" href="doc/workbench/preferences/update.html"/>
+			<topic label="Warnungen" href="doc/workbench/preferences/warnings.html"/>
+		</topic>
+		<topic label="Menü" href="doc/workbench/menu/overview.html">
+			<topic label="Datei Menü" href="doc/workbench/menu/file.html"/>
+			<topic label="Anzeige Menü" href="doc/workbench/menu/view.html"/>
+			<topic label="Extras Menü" href="doc/workbench/menu/extras.html"/>
+			<topic label="Fenster Menü" href="doc/workbench/menu/window.html"/>
+			<topic label="Hilfe Menü" href="doc/workbench/menu/help.html"/>
+		</topic>
+		<topic label="Statusleiste" href="doc/workbench/status_bar.html"/>
+	</topic>
+
+	<topic label="Aufgaben" href="doc/tasks/overview.html">
+		<topic label="Arbeitsfläche" href="doc/tasks/workbench.html"/>
+		<topic label="Instrumente verwalten" href="doc/tasks/instruments.html"/>
+		<topic label="Akkorde und Skalen verwalten" href="doc/tasks/chords_scales.html"/>
+		<topic label="Grifftabellen generieren und anzeigen" href="doc/tasks/chord_generation.html"/>
+		<topic label="Akkorde finden" href="doc/tasks/find_chords.html"/>
+		<topic label="Skalen ansehen" href="doc/tasks/show_scales.html"/>
+		<topic label="Skalen finden" href="doc/tasks/find_scales.html"/>
+		<topic label="Sound-Unterstützung" href="doc/tasks/sound.html"/>
+		<topic label="Export-Funktionen" href="doc/tasks/export.html"/>
+		<topic label="Update-Funktionalität" href="doc/tasks/update.html"/>
+	</topic>
+
+<!--
+	<topic label="Glossar">
+		<topic label="Intervall" href="doc/glossary/interval.html"/>
+		<topic label="Akkord" href="doc/glossary/chord.html"/>
+		<topic label="Skala" href="doc/glossary/scale.html"/>
+		<topic label="Barre" href="doc/glossary/barre.html"/>
+		<topic label="Tabulatur" href="doc/glossary/tablature.html"/>
+		<topic label="Kapodaster" href="doc/glossary/capo.html"/>
+		<topic label="Mensu" href="doc/glossary/scale_length.html"/>
+		<topic label="Notenschlüssel" href="doc/glossary/clef.html"/>
+	</topic>
+-->
+
+	<topic label="Rechtliches" href="doc/legal.html"/>
+
+</toc>

@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Chord Scale Generator Data
+Bundle-SymbolicName: com.plucknplay.csg.data;singleton:=true
+Bundle-Version: 1.4.0
+Bundle-Activator: com.plucknplay.csg.data.Activator
+Bundle-Vendor: pluck-n-play
+Require-Bundle: org.eclipse.core.runtime
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-ActivationPolicy: lazy
+Export-Package: com.plucknplay.csg.data

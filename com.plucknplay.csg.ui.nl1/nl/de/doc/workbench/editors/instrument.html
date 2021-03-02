@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Instrumenten-Editor</title>
+<link type="text/css" rel="stylesheet" href="../../book.css" />
+</head>
+
+<body>
+
+<h1><img src="../../../icons/instrument.gif" width="16" height="16" alt="Instrumenten-Editor Icon"/>Instrumenten-Editor</h1>
+<p>Im <em>Instrumenten-Editor</em> kannst du neue Instrumente definieren sowie bereits bestehende Instrumente editieren.</p>
+
+<p>
+    <enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+	<img src="../../../images/workbench/editors/instrument_editor.png" width="487" height="704" alt="Instrumenten-Editor"/>
+</p>
+<p>
+    <enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+	<img src="../../../images/workbench/editors/macosx/instrument_editor.png" width="540" height="696" alt="Instrumenten-Editor"/>
+</p>
+
+<h2><a id="instrument_editor_options">Optionen</a></h2>
+<p>Bei der Definition eines Instruments kannst du dabei folgende Einstellungen treffen:</p>
+
+<h3><a id="instrument_editor_name">Name</a></h3>
+<p>Hier kannst du den Namen des Instruments definieren.</p>
+
+<h3><a id="instrument_editor_NumberOfStrings">Saitenanzahl</a></h3>
+<p>Hier kannst du angeben, wie viele Saitench&#246;re (also einfache bzw. doppelte Saiten) das Instrument besitzt.</p>
+
+<h3><a id="instrument_editor_ScaleLength">Mensur</a></h3>
+<p>
+Hier kannst du die Mensur des Instruments angeben.
+Mit Hilfe der Mensur lassen sich die realen Abst&#228;nde zwischen den einzelnen B&#252;nden berechnen.
+Somit ist die Berechnungen der Griffbreite eines Akkords in Millimeter oder Inch m&#246;glich.
+</p>
+
+<h3><a id="instrument_editor_DoubledStrings">Doppelte Saiten</a></h3>
+<p>
+Hier kannst du angeben, ob das Instrument &#252;ber Saitench&#246;re mit doppelten Saiten verf&#252;gt, also ob die Saiten in Saitenpaaren gruppiert sind.
+Bei Instrumenten mit doppelten Saiten kann es zudem vorkommen, dass die Saiten eines Saitenpaares/-chores einen Oktavsprung aufweisen -
+also unterschiedlich gestimmt sind. Ob und wenn ja welche Saitench&#246;re &#252;ber eine um eine Oktave h&#246;her gestimmte Saite verf&#252;gen,
+kannst du in den Einstellungen zur Stimmung noch genau definieren.
+</p>
+
+<h3><a id="instrument_editor_LeftyRight">Lefty/Righty</a></h3>
+<p>
+Hier kannst du angeben, ob es sich bei dem Instrument um ein Lefty- bzw. ein Righty-Instrument handelt.
+Es handelt sich um ein Lefty-Instrument, wenn du als Linksh&#228;nder auf einem normal-gestimmten Rechtsh&#228;nder-Instrument spielst.
+Bei einem Righty-Instrument ist dies dann genau umgekehrt -
+also wenn du als Rechtsh&#228;nder auf einem normal-gestimmten Linksh&#228;nder-Instrument spielst.
+Wenn es sich bei dem Instrument um ein Lefty- oder Righty-Instrument handelt, musst du dann bzgl.
+der in diesem Editor getroffenen Einstellungen wie folgt vorgehen.
+</p>
+
+<p>
+Du definierst das Instrument, wie es urspr&#252;nglich gedacht war - also ohne darauf R&#252;cksicht zu nehmen,
+ob du nun Links- oder Rechtsh&#228;nder bist. Die unterste (oder erste) Saite entspricht hier immer noch der h&#246;chsten Saite -
+und die oberste (bzw. letzte) Saite entspricht der tiefsten Saite.
+Wenn du das Instrument nun aber als Lefty oder Righty nutzen m&#246;chtest, setzt du hier nur noch das entsprechende H&#228;kchen.
+Abh&#228;ngig davon werden dann s&#228;mtliche Berechnungen und Darstellungen im weiteren Programm angepasst.
+Ob es sich nun konkret um ein Lefty- oder Righty-Instrument handelt, h&#228;ngt dann nat&#252;rlich noch davon ab,
+ob du in der Statusleiste den Linksh&#228;nder- oder Rechtsh&#228;nder-Modus eingestellt hast.
+</p>
+
+<h3><a id="instrument_editor_Fretless">Bundlos</a></h3>
+<p>
+Hier kannst du einstellen, ob es sich bei dem Instrument um ein bundloses Instrument handelt,
+also ob das Instrument &#252;ber Bundst&#228;be verf&#252;gt oder nicht. Abh&#228;ngig von der hier getroffenen Einstellung werden die B&#252;nde in der
+<a href="../views/fretboard.html">Griffbrett-Sicht</a> (und wahlweise in der <a href="../views/box.html">Box-Sicht</a>)
+gepunktet oder durchgezogen dargestellt.
+</p>
+
+<h3><a id="instrument_editor_Tuning">Stimmung</a></h3>
+<p>
+Hier kannst du die Stimmung des Instruments einstellen, also auf welchen Ton jede Saite gestimmt ist.
+In der ersten Spalte musst du dabei den relativen Notenwert (C, D, E, ...) definieren,
+in der zweiten dann den davon abh&#228;ngigen absoluten Notenwert (C, c, c', c'', ...).
+Handelt es sich bei dem Instrument um ein Instrument mit doppelten Saiten, so kannst du in einer letzten Spalte noch definieren,
+ob die einzelnen Saitenpaare einen Oktavsprung aufweisen, also eine Saite des Saitenpaares/-chores abweichend eine Oktave h&#246;her gestimmt ist. <br/>
+Mit dem <em>Test</em>-Button in dem Abschnitt <em>Verschiedenes</em> kannst du die definierte Stimmung noch anspielen und somit h&#246;ren,
+ob die Stimmung der deines Instruments entspricht.
+</p>
+
+<h3><a id="instrument_editor_DefaultClef">Standard-Notenschl&#252;ssel</a></h3>
+<p>
+Hier kannst du einstellen, welcher Notenschl&#252;ssel in der <a href="../views/notes.html">Noten-Sicht</a>
+standardm&#228;&#223;ig verwendet werden soll. Wenn du das hier definierte Instrument zum aktiven Instrument setzt,
+wird dann der angegebene Notenschl&#252;ssel in der  <a href="../views/notes.html">Noten-Sicht</a> automatisch ausgew&#228;hlt.
+Du kannst  nat&#252;rlich aber auch auf die Definition eines Notenschl&#252;ssels verzichten.
+In diesem Fall &#228;ndert sich der Notenschl&#252;ssel in der <a href="../views/notes.html">Noten-Sicht</a>
+nicht beim Aktivieren dieses Instruments.
+</p>
+
+<h3><a id="instrument_editor_SoundsLike">Klingt wie</a></h3>
+<p>
+Hier kannst du angeben, wie das Instrument klingt.
+Abh&#228;ngig von der hier getroffenen Einstellung werden die Akkorde und Skalenbl&#246;cke in der Anwendung angespielt.
+Du hast hier eine Vielzahl unterschiedlicher Kl&#228;nge zur Verf&#252;gung.
+Es kann dabei nat&#252;rlich vorkommen, dass dein Instrumentenklang nicht mit aufgef&#252;hrt ist.
+In solch einem Fall kannst du aber versuchen, einen Klang zu finden, welcher deinem Instrument wenigstens sehr nahe kommt.
+Um herauszufinden, wie ein hier eingestellter Klang klingt, kannst du den <em>Test</em>-Button dr&#252;cken.
+Es wird so die definierte Stimmung in dem eingestellten Klang angespielt.
+</p>
+
+<h3><a id="instrument_editor_Comment">Kommentar</a></h3>
+<p>
+In dem Kommentar-Feld kannst du noch beliebige Informationen zu dem Instrument mit angeben.
+Dieses Feld hat keinerlei Bedeutung f&#252;r die Darstellung des Instruments.
+Es dient lediglich zum Hinterlegen n&#252;tzlicher Informationen.
+</p>
+
+<h2><a id="instrument_editor_related_topics">Verwandte Themen</a></h2>
+<p>
+<a href="../views/instruments.html">Arbeitsfl&#228;che &#8594; Sichten &#8594; Instrumente</a><br/>
+<a href="../views/fretboard.html">Arbeitsfl&#228;che &#8594; Sichten &#8594; Griffbrett</a><br/>
+<a href="../views/box.html">Arbeitsfl&#228;che &#8594; Sichten &#8594; Box</a><br/>
+<a href="../views/notes.html">Arbeitsfl&#228;che &#8594; Sichten &#8594; Noten</a><br/>
+<a href="../preferences/sound.html">Arbeitsfl&#228;che &#8594; Benutzervorgaben &#8594; Sound</a><br/>
+</p>
+
+<h2><a id="instrument_editor_related_tasks">Verwandte Aufgaben</a></h2>
+<p>
+<a href="../../tasks/instruments.html">Aufgaben &#8594; Instrumente verwalten</a><br/>
+<a href="../../tasks/sound.html">Aufgaben &#8594; Sound-Unterst&#252;tzung</a><br/>
+</p>
+
+</body>
+</html>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.contexts"?>
+
+<contexts>
+
+	<!-- view contexts -->
+
+	<context id="instruments_view_context">
+		<description>In the Instruments View you can manage all your instruments.</description>
+		<topic href="doc/workbench/views/instruments.html" label="Instruments View" />
+	</context>
+
+	<context id="chords_view_context">
+		<description>In the Chords View you can manage all the chords.</description>
+		<topic href="doc/workbench/views/chords.html" label="Chords View" />
+	</context>
+
+	<context id="scales_view_context">
+		<description>In the Scales View you can manage all the scales.</description>
+		<topic href="doc/workbench/views/scales.html" label="Scales View" />
+	</context>
+
+	<context id="chord_generation_view_context">
+		<description>In the Chord Generation View you can specify and start the calculation to determine possible fingerings for a certain chord.</description>
+		<topic href="doc/workbench/views/chord_generation.html" label="Chord Generation View" />
+		<topic href="doc/workbench/preferences/views/chord_generation.html" label="Chord Generation View Preferences" />
+	</context>
+
+	<context id="scale_finder_view_context">
+		<description>In the Scale Finder View you can specify and start calculations to find scales that match a chord or note sequence.</description>
+		<topic href="doc/workbench/views/scale_finder.html" label="Scale Finder View" />
+		<topic href="doc/workbench/preferences/views/scale_finder.html" label="Scale Finder View Preferences" />
+	</context>
+
+	<context id="chord_results_view_context">
+		<description>The Chord Results View shows the results of the calculation to determine possible fingerings for a certain chord. Besides, this view shows the results of the reverse calculation – (which can be used to find) the suitable chords to a corresponding fingering or musical notation.</description>
+		<topic href="doc/workbench/views/chord_results.html" label="Chord Results View" />
+		<topic href="doc/workbench/preferences/views/chord_results.html" label="Chord Results View Preferences" />
+	</context>
+
+	<context id="scale_results_view_context">
+		<description>The Scale Results View shows the results of the calculation to find scales for a corresponding fingering or musical notation.</description>
+		<topic href="doc/workbench/views/scale_results.html" label="Scale Results View" />
+		<topic href="doc/workbench/preferences/views/scale_results.html" label="Scale Results View Preferences" />
+	</context>
+
+	<context id="fretboard_view_context">
+		<description>The Fretboard View shows a stylised representation of the fretboard of the currently active instrument.</description>
+		<topic href="doc/workbench/views/fretboard.html" label="Fretboard View" />
+		<topic href="doc/workbench/preferences/views/fretboard.html" label="Fretboard View Preferences" />
+	</context>
+
+	<context id="keyboard_view_context">
+		<description>The Keyboard View shows chords and scales on the keyboard of a grand piano.</description>
+		<topic href="doc/workbench/views/keyboard.html" label="Keyboard View" />
+		<topic href="doc/workbench/preferences/views/keyboard.html" label="Keyboard View Preferences" />
+	</context>
+
+	<context id="box_view_context">
+		<description>The Box View shows chords and scale blocks in a small section of the fretboard.</description>
+		<topic href="doc/workbench/views/box.html" label="Box View" />
+		<topic href="doc/workbench/preferences/views/box.html" label="Box Preferences" />
+	</context>
+
+	<context id="tab_view_context">
+		<description>The Tab View shows chords and scales in the form of a tablature.</description>
+		<topic href="doc/workbench/views/tab.html" label="Tab View" />
+		<topic href="doc/workbench/preferences/views/tab.html" label="Tab View Preferences" />
+	</context>
+
+	<context id="notes_view_context">
+		<description>The Notes View shows chords and scales in musical notation.</description>
+		<topic href="doc/workbench/views/notes.html" label="Notes View" />
+		<topic href="doc/workbench/preferences/views/notes.html" label="Notes View Preferences" />
+	</context>
+
+	<context id="instrument_editor_context">
+		<description>In the Instrument Editor you can define new instruments and edit existing ones.</description>
+		<topic href="doc/workbench/editors/instrument.html" label="Instrument Editor" />
+	</context>
+
+	<context id="chord_editor_context">
+		<description>In the Chord Editor you can define new chords and edit existing ones.</description>
+		<topic href="doc/workbench/editors/chord.html" label="Chord Editor" />
+	</context>
+
+	<context id="scale_editor_context">
+		<description>In the Scale Editor you can define new scales and edit existing ones.</description>
+		<topic href="doc/workbench/editors/scale.html" label="Scale Editor" />
+	</context>
+
+	<context id="calculations_preference_page_context">
+		<description>In this dialog you can set preferences for several calculations.</description>
+		<topic href="doc/workbench/preferences/calculations.html" label="Calculation Preferences" />
+	</context>
+
+	<context id="export_preference_page_context">
+		<description>In this dialog you can set preferences for the export.</description>
+		<topic href="doc/workbench/preferences/export.html" label="Export Preferences" />
+	</context>
+
+	<context id="export_filename_preference_page_context">
+		<description>In this dialog you can set preferences for suggested filenames of exports.</description>
+		<topic href="doc/workbench/preferences/export_filename.html" label="Export Filenames Preferences" />
+	</context>
+
+	<context id="help_preference_page_context">
+		<description>In this dialog you can set preferences for the help system.</description>
+		<topic href="doc/workbench/preferences/help.html" label="Help Preferences" />
+	</context>
+
+	<context id="perspectives_preference_page_context">
+		<description>In this dialog you can set preferences relating to perspectives.</description>
+		<topic href="doc/workbench/preferences/perspectives.html" label="Perspectives Preferences" />
+	</context>
+
+	<context id="blocks_preference_page_context">
+		<description>In this dialog you can set preferences for blocks.</description>
+		<topic href="doc/workbench/preferences/blocks.html" label="Blocks Preferences" />
+	</context>
+
+	<context id="sound_preference_page_context">
+		<description>In this dialog you can set preferences for the sound support.</description>
+		<topic href="doc/workbench/preferences/sound.html" label="Sound Preferences" />
+	</context>
+
+	<context id="update_preference_page_context">
+		<description>In this dialog you can set preferences for the update.</description>
+		<topic href="doc/workbench/preferences/update.html" label="Update Preferences" />
+	</context>
+
+	<context id="warnings_preference_page_context">
+		<description>In this dialog you can suppress several warnings.</description>
+		<topic href="doc/workbench/preferences/warnings.html" label="Warnings Preferences" />
+	</context>
+
+	<context id="views_preference_page_context">
+		<description>In this dialog you can set general preferences that address several views.</description>
+		<topic href="doc/workbench/preferences/views/overview.html" label="Views Preferences" />
+	</context>
+
+	<context id="box_view_preference_page_context">
+		<description>In this dialog you can set preferences for the Box View.</description>
+		<topic href="doc/workbench/preferences/views/box.html" label="Box View Preferences" />
+	</context>
+
+	<context id="chord_generation_view_preference_page_context">
+		<description>In this dialog you can set preferences for the Chord Generation View.</description>
+		<topic href="doc/workbench/preferences/views/chord_generation.html" label="Chord Generation View Preferences" />
+	</context>
+
+	<context id="chord_results_view_preference_page_context">
+		<description>In this dialog you can set preferences for the Chord Results View.</description>
+		<topic href="doc/workbench/preferences/views/chord_results.html" label="Chord Results View Preferences" />
+	</context>
+
+	<context id="fretboard_view_preference_page_context">
+		<description>In this dialog you can set preferences for the Fretboard View.</description>
+		<topic href="doc/workbench/preferences/views/fretboard.html" label="Fretboard View Preferences" />
+	</context>
+
+	<context id="keyboard_view_preference_page_context">
+		<description>In this dialog you can set preferences for the Keyboard View.</description>
+		<topic href="doc/workbench/preferences/views/keyboard.html" label="Keyboard View Preferences" />
+	</context>
+
+	<context id="notes_view_preference_page_context">
+		<description>In this dialog you can set preferences for the Notes View.</description>
+		<topic href="doc/workbench/preferences/views/notes.html" label="Notes View Preferences" />
+	</context>
+
+	<context id="scale_finder_view_preference_page_context">
+		<description>In this dialog you can set preferences for the Scale Finder View.</description>
+		<topic href="doc/workbench/preferences/views/scale_results.html" label="Scale Results View Preferences" />
+	</context>
+
+	<context id="scale_results_view_preference_page_context">
+		<description>In this dialog you can set preferences for the Scale Results View.</description>
+		<topic href="doc/workbench/preferences/views/scale_results.html" label="Scale Results View Preferences" />
+	</context>
+
+	<context id="tab_view_preference_page_context">
+		<description>In this dialog you can set preferences for the Tab View.</description>
+		<topic href="doc/workbench/preferences/views/tab.html" label="Tab View Preferences" />
+	</context>
+
+    <context id="interval_names_preference_page_context">
+        <description>In this dialog you can set general preferences for interval names.</description>
+        <topic href="doc/workbench/preferences/names/interval_names.html" label="Interval Names Preferences" />
+    </context>
+
+    <context id="note_names_preference_page_context">
+        <description>In this dialog you can set general preferences for note names.</description>
+        <topic href="doc/workbench/preferences/names/note_names.html" label="Note Names Preferences" />
+    </context>
+
+    <context id="general_preference_page_context">
+        <description>In this dialog you can set general startup and shutdown preferences.</description>
+        <topic href="doc/workbench/preferences/general/overview.html" label="General Preferences" />
+    </context>
+
+    <context id="graphics_preference_page_context">
+        <description>In this dialog you can set general preferences regarding graphics.</description>
+        <topic href="doc/workbench/preferences/general/graphics.html" label="Graphics Preferences" />
+    </context>
+
+    <context id="workbench_preference_page_context">
+        <description>In this dialog you can set preferences regarding the general appearance of the workbench.</description>
+        <topic href="doc/workbench/preferences/general/workbench.html" label="Workbench Preferences" />
+    </context>
+
+    <context id="keys_preference_page_context">
+        <description>In this dialog you can define key bindings for commands.</description>
+        <topic href="doc/workbench/preferences/keys.html" label="Keys Preferences" />
+    </context>
+
+    <context id="fingering_notation_preference_page_context">
+        <description>In this dialog you can set general preferences regarding the fingering notation.</description>
+        <topic href="doc/workbench/preferences/names/fingering_notation.html" label="Fingering Notation Preferences" />
+    </context>
+
+    <context id="chord_names_preference_page_context">
+        <description>In this dialog you can set general preferences for chord names.</description>
+        <topic href="doc/workbench/preferences/names/chord_names.html" label="Chord Names Preferences" />
+    </context>
+
+    <context id="scale_names_preference_page_context">
+        <description>In this dialog you can set general preferences for scale names.</description>
+        <topic href="doc/workbench/preferences/names/scale_names.html" label="Scale Names Preferences" />
+    </context>
+
+    <context id="cleanup_chords_context">
+        <description>In this dialog you can merge chords which are defined by the same intervals.</description>
+        <topic href="doc/workbench/menu/extras.html#ExtrasMenu_CleanUpChords" label="Extras Menu: Clean Up Chords..." />
+    </context>
+
+    <context id="cleanup_scales_context">
+        <description>In this dialog you can merge scales which are defined by the same intervals.</description>
+        <topic href="doc/workbench/menu/extras.html#ExtrasMenu_CleanUpScales" label="Extras Menu: Clean Up Scales..." />
+    </context>
+
+</contexts>

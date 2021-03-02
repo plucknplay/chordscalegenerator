@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Scale Editor</title>
+<link type="text/css" rel="stylesheet" href="../../book.css" />
+</head>
+
+<body>
+
+<h1><img src="../../../icons/scale.gif" width="16" height="16" alt="Chord Editor Icon"/>Scale Editor</h1>
+<p>In the <em>Scale Editor</em> you can define new scales and edit existing ones.</p>
+
+<p>
+    <enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+	<img src="../../../images/workbench/editors/scale_editor.png" width="363" height="511" alt="Scale Editor"/>
+</p>
+<p>
+    <enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+	<img src="../../../images/workbench/editors/macosx/scale_editor.png" width="366" height="535" alt="Scale Editor"/>
+</p>
+
+<h2><a id="scale_editor_options">Options</a></h2>	
+<p>When you define a scale, you have the following options:</p>
+
+<h3><a id="scale_editor_name">Name</a></h3>
+<p>Here you can define the name of your scale.</p>
+
+<h3><a id="scale_editor_ak">aka</a></h3>
+<p>
+Here you can define additional aka names of the scale. (Aka stands for "also known as".) 
+This option takes into account that most of the scales have several different synonyms. 
+With the help of the "aka names" you do not have to define a separate scale for each of the synonyms. 
+These additionally defined names can also help if you want to find a scale. 
+The global action <a href="../menu/extras.html#ExtrasMenu_OpenScale">Extras &#8594; Open Scale...</a> 
+considers all defined names (including the aka names) of your scales.
+</p>
+
+<h3><a id="scale_editor_Intervals">Intervals</a></h3>
+<p>
+Here you can specify the intervals which define the scale. 
+Each row represents an interval. 
+In the rows itself all possible names of an individual interval are listed. 
+The most common names are highlighted with a grey background color. 
+In order to add an interval to the scale you just have to check the name of the interval you want.
+</p>
+
+<h3><a id="scale_editor_Comment">Comment</a></h3>
+<p>
+In the comment section you can add any kind of information to your scale. 
+The comments have no influence on any calculations.
+</p>
+
+<h2><a id="chord_editor_related_topics">Related topics</a></h2>	
+<p>
+<a href="../views/scales.html">Workbench &#8594; Views &#8594; Scales</a><br/>
+<a href="../menu/extras.html#ExtrasMenu_OpenScale">Workbench &#8594; Menu &#8594; Extras &#8594; Open Scale...</a><br/>
+</p>
+
+<h2><a id="chord_editor_related_tasks">Related tasks</a></h2>	
+<p>
+<a href="../../tasks/chords_scales.html">Tasks &#8594; Manage your Chords and Scales</a><br/>
+</p>
+
+</body>
+</html>

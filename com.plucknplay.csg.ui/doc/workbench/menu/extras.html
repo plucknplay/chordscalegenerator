@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Extras Menu</title>
+<link type="text/css" rel="stylesheet" href="../../book.css" />
+</head>
+
+<body>
+
+<h1>Extras Menu</h1>
+<p>The <em>Extras Menu</em> of the main menu contains the following actions:</p>
+
+<p>
+    <enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+	<img src="../../../images/workbench/menu/extras.png" width="374" height="239" alt="Extras Menu"/>
+</p>
+<p>
+    <enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+	<img src="../../../images/workbench/menu/macosx/extras.png" width="413" height="266" alt="Extras Menu"/>
+</p>
+
+
+<h3><a id="ExtrasMenu_ActivateInstrument"><img src="../../../icons/current_instrument.gif" width="16" height="16" alt="Activate Instrument Icon"/>Activate Instrument...</a></h3>
+<p>
+Opens a selection dialog which lists all defined instruments.
+A selected instrument will be activated and be used for all calculations in the future.
+</p>
+
+<p>
+    <enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+	<img src="../../../images/workbench/menu/activate_instrument.png" width="347" height="281" alt="Activate Instrument"/>
+</p>
+<p>
+    <enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+	<img src="../../../images/workbench/menu/macosx/activate_instrument.png" width="351" height="265" alt="Activate Instrument"/>
+</p>
+
+<h3><a id="ExtrasMenu_OpenInstrument"><img src="../../../icons/open_instrument.gif" width="16" height="16" alt="Open Instrument Icon"/>Open Instrument...</a></h3>
+<p>
+Opens a selection dialog which lists all defined instruments.
+If you select a chord from the list it will be opened in the <a href="../editors/instrument.html">Instrument Editor</a>.
+</p>
+
+<p>
+    <enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+	<img src="../../../images/workbench/menu/open_instrument.png" width="347" height="306" alt="Open Instrument"/>
+</p>
+<p>
+    <enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+	<img src="../../../images/workbench/menu/macosx/open_instrument.png" width="350" height="385" alt="Open Instrument"/>
+</p>
+
+<h3><a id="ExtrasMenu_OpenChord"><img src="../../../icons/open_chord.gif" width="16" height="16" alt="Open Chord Icon"/>Open Chord...</a></h3>
+<p>
+Opens a selection dialog which lists all defined chord names including the aka names (also known as).
+If you select a chord from the list it will be opened in the <a href="../editors/chord.html">Chord Editor</a>.
+Besides, it is possible to turn a selected aka name into the new main name of the corresponding chord.
+To do so, you just have to check the box below the names list. <br/>
+Note: The previous main name will now become another aka name of the chord.
+</p>
+
+<p>
+    <enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+	<img src="../../../images/workbench/menu/open_chord.png" width="276" height="430" alt="Open Chord"/>
+</p>
+<p>
+    <enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+	<img src="../../../images/workbench/menu/macosx/open_chord.png" width="341" height="502" alt="Open Chord"/>
+</p>
+
+<h3><a id="ExtrasMenu_OpenScale"><img src="../../../icons/open_scale.gif" width="16" height="16" alt="Open Scale Icon"/>Open Scale...</a></h3>
+<p>
+Opens a selection dialog which lists all defined scale names including the aka names (also known as).
+If you select a scale from the list it will be opened in the <a href="../editors/scale.html">Scale Editor</a>.
+Besides, it is possible to turn a selected aka name into the new main name of the corresponding scale.
+To do so, you just have to check the box below the names list. <br/>
+Note: The previous main name will now become another aka name of the scale.
+</p>
+
+<p>
+    <enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+	<img src="../../../images/workbench/menu/open_scale.png" width="276" height="430" alt="Open Scale"/>
+</p>
+<p>
+    <enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+	<img src="../../../images/workbench/menu/macosx/open_scale.png" width="566" height="412" alt="Open Scale"/>
+</p>
+
+<h3><a id="ExtrasMenu_CleanUpChords"><img src="../../../icons/cleanUpChords.gif" width="16" height="16" alt="Clean Up Chords Icon"/>Clean Up Chords...</a></h3>
+<p>
+Opens the wizard for the chord clean-up. Here you can merge chords which are defined by the same intervals.
+You just have to select a main name for the new (merged) chord. All remaining names will become aka names of the new chord.
+The names of the intervals will be adopted from the corresponding chord of the selected main name. <br/>
+Note: The first name of each wizard page is pre-selected.
+Therefore, you can close the wizard and start the clean-up at any time by clicking Finish.
+However, it is recommended to visit all wizard pages and define the particular main names yourself.
+</p>
+
+<p>
+    <enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+	<img src="../../../images/workbench/menu/clean_up_chords.png" width="405" height="365" alt="Clean Up Chords"/>
+</p>
+<p>
+    <enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+	<img src="../../../images/workbench/menu/macosx/clean_up_chords.png" width="489" height="388" alt="Clean Up Chords"/>
+</p>
+
+<h3><a id="ExtrasMenu_CleanUpScales"><img src="../../../icons/cleanUpScales.gif" width="16" height="16" alt="Clean Up Scales Icon"/>Clean Up Scales...</a></h3>
+<p>
+Opens the wizard for the scale clean-up. Here you can merge scales which are defined by the same intervals.
+To do so, you just have to select a main name for the new (merged) scale. All remaining names will become aka names of the new scale.
+The names of the intervals will be adopted from the corresponding scale of the selected main name. <br/>
+Note: The first name of each wizard page is pre-selected.
+herefore, you can close the wizard and start the clean-up at any time by clicking Finish.
+However, it is recommended to visit all wizard pages and define the particular main name yourself.
+</p>
+
+<p>
+    <enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+	<img src="../../../images/workbench/menu/clean_up_scales.png" width="410" height="427" alt="Clean Up Scales"/>
+</p>
+<p>
+    <enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+	<img src="../../../images/workbench/menu/macosx/clean_up_scales.png" width="490" height="441" alt="Clean Up Scales"/>
+</p>
+
+<h3><a id="ExtrasMenu_PlaySound"><img src="../../../icons/play_sound.gif" width="16" height="16" alt="Play Sound Icon"/>Play Sound</a></h3>
+<p>
+Plays the selected chord or scale block. You can define in the <a href="../preferences/sound.html">sound preferences</a>
+how a played chord or scale block should sound.
+</p>
+
+
+<h2><a id="ExtrasMenu_related_topics">Related topics</a></h2>
+<p>
+<a href="../views/chords.html">Workbench &#8594; Views &#8594; Chords</a><br/>
+<a href="../views/scales.html">Workbench &#8594; Views &#8594; Scales</a><br/>
+<a href="../editors/instrument.html">Workbench &#8594; Editors &#8594; Instrument Editor</a><br/>
+<a href="../editors/chord.html">Workbench &#8594; Editors &#8594; Chord Editor</a><br/>
+<a href="../editors/scale.html">Workbench &#8594; Editors &#8594; Scale Editor</a><br/>
+<a href="../preferences/sound.html">Workbench &#8594; Preferences &#8594; Sound</a><br/>
+</p>
+
+<h2><a id="ExtrasMenu_related_tasks">Related tasks</a></h2>
+<p>
+<a href="../../tasks/instruments.html">Tasks &#8594; Manage your Instruments</a><br/>
+<a href="../../tasks/chords_scales.html">Tasks &#8594; Manage your Chords and Scales</a><br/>
+<a href="../../tasks/sound.html">Tasks &#8594; Sound Support</a><br/>
+</p>
+
+</body>
+</html>

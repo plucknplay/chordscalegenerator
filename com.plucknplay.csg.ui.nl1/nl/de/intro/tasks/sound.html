@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Sound-Unterst&#252;tzung</title>
+<link type="text/css" rel="stylesheet" href="../book.css" />
+</head>
+
+<body>
+
+<div id="all">
+
+    <div id="close">
+        <p id="close_img_de">
+            <a href="http://org.eclipse.ui.intro/close"><img src="../images/close_de.png" width="262" height="25" alt="Schlie&#223;en"/></a>
+        </p>
+    </div>
+
+	<div id="top">
+        <p>
+            <a href="http://org.eclipse.ui.intro/showPage?id=root"><img src="../../logos/logo_64.png" width="64" height="64" alt="Willkommen"/></a>
+        </p>
+	</div>
+
+	<div id="header">
+	
+		<ul id="steps">
+			<li><a id="overview" href="http://org.eclipse.ui.intro/showPage?id=overview"><img src="../images/overview.gif" width="15" height="15" alt="&#220;berblick"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=workbench"><img src="../images/step.gif" width="15" height="15" alt="Die Arbeitsfl&#228;che"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=instruments"><img src="../images/step.gif" width="15" height="15" alt="Instrumente verwalten"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=chords_scales"><img src="../images/step.gif" width="15" height="15" alt="Akkorde und Skalen verwalten"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=chord_generation"><img src="../images/step.gif" width="15" height="15" alt="Akkorde generieren und anzeigen"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=find_chords"><img src="../images/step.gif" width="15" height="15" alt="Akkorde finden"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=show_scales"><img src="../images/step.gif" width="15" height="15" alt="Skalen ansehen"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=find_scales"><img src="../images/step.gif" width="15" height="15" alt="Skalen finden"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=sound"><img src="../images/step_active.gif" width="15" height="15" alt="Sound-Unterst&#252;tzung"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=export"><img src="../images/step.gif" width="15" height="15" alt="Export-Funktionen"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=update"><img src="../images/step.gif" width="15" height="15" alt="Update-Funktionalit&#228;t"/></a></li>
+			<li><a id="back" href="http://org.eclipse.ui.intro/showPage?id=find_scales"><img src="../images/back.gif" width="8" height="15" alt="Voriger Schritt"/></a></li>
+			<li><a id="forward" href="http://org.eclipse.ui.intro/showPage?id=export"><img src="../images/forward.gif" width="8" height="15" alt="N&#228;chster Schritt"/></a></li>
+		</ul>
+	
+		<h1>Sound-Unterst&#252;tzung</h1>
+	</div>
+
+	<div id="main">
+
+		<p>
+		Du kannst dir beim <em>Chord Scale Generator</em> aber nicht nur Akkorde und Skalen in verschiedenen 
+		Darstellungsweisen anzeigen lassen. Es ist auch m&#246;glich, selektierte Akkorde oder Skalenbl&#246;cke anzuspielen - 
+		also zu h&#246;ren, wie diese denn eigentlich klingen.
+		</p>
+		
+		<p>
+		Zum Anspielen selektierter Akkorde oder Skalenbl&#246;cke stehen dir dabei verschiedene M&#246;glichkeiten zur Verf&#252;gung. 
+		Eine M&#246;glichkeit ist es, mit Doppelklick oder dem Aufruf des entsprechenden Kontextmen&#252;-Eintrages selektierte 
+		Akkorde oder Skalen in den jeweiligen Ergebnis-Sichten erklingen zu lassen. Die globale Funktion 
+		<em>Extras &#8594; Spiele Sound</em> wiederum spielt den zuletzt selektierten Akkord oder Skalenblock an.
+		</p>
+		
+		<p>
+		    <enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+			<img src="../../images/tasks/sound.png" width="632" height="196" alt="Sound"/>
+		</p>
+		<p>
+		    <enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+			<img src="../../images/tasks/macosx/sound.png" width="612" height="222" alt="Sound"/>
+		</p>
+		
+		<p>
+		Die angespielten T&#246;ne werden zudem noch in den Sichten <em>Griffbrett</em> und <em>Klaviatur</em> grafisch 
+		hervorgehoben. Du kannst somit also auch sehen, welche T&#246;ne gerade angespielt werden bzw. gleichzeitig erklingen.
+		</p>
+		
+		<p>
+		Wie der entsprechende Akkord oder Skalenblock erklingt, h&#228;ngt dabei von dem ausgew&#228;hlten Instrument ab. Bei der 
+		Definition deiner Instrumente kannst du festlegen, wie diese klingen sollen (Feld <em>Klingt wie</em> des 
+		<em>Instrumenten-Editors</em>). Au&#223;erdem gibt es noch diverse Einstellungsm&#246;glichkeiten 
+		(<em>Datei &#8594; Benutzervorgaben... &#8594; Sound</em>), um die Art und Dauer des Anspielens jeweils f&#252;r Akkorde 
+		und Skalen zu definieren.
+		</p>
+		
+		<p>
+		    <enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+			<img src="../../images/workbench/preferences/sound.png" width="583" height="565" alt="Benutzervorgaben: Sound"/>
+		</p>
+		<p>
+		    <enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+			<img src="../../images/workbench/preferences/macosx/sound.png" width="648" height="561" alt="Benutzervorgaben: Sound"/>
+		</p>
+		
+		<p>
+		Abschlie&#223;end soll auf ein kleines Feature hingewiesen werden, welches bzgl. der Soundunterst&#252;tzung noch angeboten 
+		wird. Es ist neben dem Anspielen ganzer Akkorde oder Skalenbl&#246;cke auch m&#246;glich, durch das Klicken von T&#246;nen in 
+		der <em>Griffbrett</em>- oder <em>Klaviatur</em>-Sicht diese erklingen zu lassen. Du kannst also frei auf dem 
+		dargestellten Instrument oder Klavier ein wenig herumklimpern. Die Dauer der angespielten T&#246;ne ist dabei 
+		wiederum unter <em>Datei &#8594; Benutzervorgaben... &#8594; Sound</em> definierbar.
+		</p>
+		
+    	<div class="link">
+    		<p><a href="http://org.eclipse.ui.intro/showPage?id=export">Export-Funktionen</a></p>
+    	</div>
+
+	</div>
+	
+</div>
+
+
+</body>
+</html>

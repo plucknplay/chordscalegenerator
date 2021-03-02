@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<interval_containers type="scales"><interval_container type="scales"><name>Lokrisch</name><akaName>VII</akaName><akaName>N.M. II</akaName><akaName>Locrian</akaName><description>Reihenfolge: 7. Stufe von Dur = VII / 2. Stufe von natürlich Moll = N.M. II&#xd;
+Tonart: moll&#xd;
+Charakteristik: b2, b5&#xd;
+&#xd;
+Bemerkung: &#xd;
+- Jazz-Improvisation [über dem halbverminderten Akkord m7(b5)]</description><intervals><interval name="1" value="0"/><interval name="b2" value="1"/><interval name="b3" value="3"/><interval name="4" value="5"/><interval name="b5" value="6"/><interval name="b6" value="8"/><interval name="b7" value="10"/></intervals></interval_container></interval_containers>

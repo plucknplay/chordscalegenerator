@@ -1,0 +1,2 @@
+<?xml version="1.0"?>
+<interval_containers type="chords"><interval_container type="chords"><name>1-x-b5</name><description>usage: °7, m7(b5)</description><intervals><interval name="1" value="0"/><interval name="b5" value="6"/></intervals></interval_container></interval_containers>

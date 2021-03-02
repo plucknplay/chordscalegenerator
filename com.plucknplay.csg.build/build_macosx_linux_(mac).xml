@@ -1,0 +1,8 @@
+<project name="build" default="main" basedir=".">
+
+    <target name="main">
+    	<property name="param" value="macosx64, linux32, linux64" />
+		<ant />
+    </target>
+
+</project>

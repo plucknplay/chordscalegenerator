@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Akkorde finden </title>
+<link type="text/css" rel="stylesheet" href="../book.css" />
+</head>
+
+<body>
+
+<h1>Akkorde finden</h1>
+<p>
+Beim <em>Chord Scale Generator</em> kannst du dir aber nicht nur zu definierten Akkorden Grifftabellen generieren lassen. 
+Es ist auch m&#246;glich, die umgekehrte Berechnung durchf&#252;hren zu lassen. Wenn du dich also beispielsweise fragst, 
+was das eigentlich f&#252;r ein Akkord ist, den du beim Klimpern entdeckt hast, kannst du dies auf einfache Weise mit dem  
+<em>Chord Scale Generator</em> berechnen lassen.
+</p>
+
+<p>
+Wie schon beim zuvor beschriebenen <a href="chord_generation.html">Generieren von Grifftabellen</a> 
+benutzt du f&#252;r diese Berechnung am besten die Perspektive <em>Akkorde</em>. 
+Den gesuchten Griff kannst du dort z.B. in der <a href="../workbench/views/box.html">Box-Sicht</a> eingeben. 
+Diese Sicht ist, anders als die <a href="../workbench/views/fretboard.html">Griffbrett-Sicht</a> oder
+<a href="../workbench/views/keyboard.html">Klaviatur-Sicht</a>, keine rein statische Sicht, 
+welche Ergebnisse nur anzeigen kann. Es ist hier durch klicken des entsprechenden Schalters m&#246;glich, 
+in einen Editier-/Suchmodus zu wechseln. Im Editier-/Suchmodus kannst du nun eigene Griffe mittels Doppelklick nach Belieben arrangieren. 
+Hast du den Griff zusammengestellt, kannst du &#252;ber die Funktion Finde Akkord die Berechnung starten. 
+Das Ergebnis dieser Berechnung wird in der <a href="../workbench/views/chord_results.html">Akkord-Ergebnisse-Sicht</a> 
+angezeigt. Welchem Akkord bzw. welchen Akkorden (ja auch das ist m&#246;glich) dein gesuchter Griff entspricht, 
+kannst du dann einfach den ersten Spalten der Tabelle entnehmen.
+</p>
+
+<p>
+    <enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+	<img src="../../images/tasks/find_chord_01.png" width="992" height="259" alt="Akkorde finden"/>
+</p>
+<p>
+    <enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+	<img src="../../images/tasks/macosx/find_chord_01.png" width="1147" height="323" alt="Akkorde finden"/>
+</p>
+
+<p>
+Diese Berechnung ist auch von der <a href="../workbench/views/tab.html">Tab-Sicht</a> aus m&#246;glich. 
+Hier kannst du (ebenfalls im Editier-/Suchmodus) deinen Griff in einer weniger grafischen Darstellung zusammenstellen. 
+</p>
+
+<p>
+F&#252;r alle unter euch, die sich auch mit Noten auskennen, gibt es noch ein besonderes Feature beim 
+<em> Chord Scale Generator </em>. Es ist n&#228;mlich auch von der <a href="../workbench/views/notes.html">Noten-Sicht</a> aus m&#246;glich, 
+sich Akkorde berechnen zu lassen. 
+Ausgehend von einem bestimmten Akkord-Notenbild kannst du dir somit alle m&#246;glichen Griffpositionen ermitteln lassen. 
+Um welchen Akkord es sich dabei im Einzelnen handelt, siehst du hier wieder in den ersten Spalten der Tabelle.
+</p>
+
+<p>
+    <enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+	<img src="../../images/tasks/find_chord_02.png" width="1016" height="259" alt="Akkorde finden"/>
+</p>
+<p>
+    <enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+	<img src="../../images/tasks/macosx/find_chord_02.png" width="1161" height="317" alt="Akkorde finden"/>
+</p>
+
+<p>
+Hinweis: Wenn zu einem Griff kein Akkord ermittelt werden konnte, hei&#223;t dies noch lange nicht, 
+dass es diesen Akkord nicht gibt oder dass dieser ung&#252;ltig ist. Der Akkord, welchem dieser Griff entspricht, 
+ist dann jedoch nicht in den von dir definierten Akkorden enthalten. 
+Beachte, der  <em>Chord Scale Generator</em> f&#252;hrt all seine Berechnungen nur anhand der ihm zugrunde liegenden Daten 
+(Akkord- und Skalendefinitionen) aus.
+</p>
+
+<p>
+Hinweis: Wenn sich eine Sicht im Editier-/Suchmodus befindet, ist diese f&#252;r das Anzeigen eines ausgew&#228;hlten Akkords in der 
+<a href="../workbench/views/chord_results.html">Akkord-Ergebnisse-Sicht</a> geblockt. 
+Wenn also eine Sicht den neu ausgew&#228;hlten Akkord nicht anzeigt, k&#246;nnte dies daran liegen, 
+dass sich die Sicht noch immer im Editier-/Suchmodus befindet - du also eine gestartete Berechnung wohl auf halbem Wege abgebrochen hast.
+</p>
+
+<h2>Next Step</h2>
+<p><a href="show_scales.html">Skalen anzeigen</a></p>
+
+<h2><a id="FindChords_related_topics">Verwandte Themen</a></h2>
+<p>
+<a href="../workbench/views/chord_results.html">Arbeitsfl&#228;che &#8594; Sichten &#8594; Akkord-Ergebnisse</a><br/>
+<a href="../workbench/views/box.html">Arbeitsfl&#228;che &#8594; Sichten &#8594; Box</a><br/>
+<a href="../workbench/views/tab.html">Arbeitsfl&#228;che &#8594; Sichten &#8594; Tab</a><br/>
+<a href="../workbench/views/notes.html">Arbeitsfl&#228;che &#8594; Sichten &#8594; Noten</a><br/>
+</p>		
+
+</body>
+</html>

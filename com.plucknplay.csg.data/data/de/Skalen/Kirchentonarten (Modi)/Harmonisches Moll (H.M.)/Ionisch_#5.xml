@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<interval_containers type="scales"><interval_container type="scales"><name>Ionisch #5</name><akaName>H.M. III</akaName><akaName>Ionian #5</akaName><description>Reihenfolge: 3. Stufe von harmonisch Moll = H.M. III&#xd;
+&#xd;
+Bemerkung: &#xd;
+- ionisch mit #5 statt 5</description><intervals><interval name="1" value="0"/><interval name="2" value="2"/><interval name="3" value="4"/><interval name="4" value="5"/><interval name="#5" value="8"/><interval name="6" value="9"/><interval name="7" value="11"/></intervals></interval_container></interval_containers>

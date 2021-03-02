@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Warnings Preferences</title>
+<link type="text/css" rel="stylesheet" href="../../book.css" />
+</head>
+
+<body>
+
+<h1>Preferences: Warnings</h1>
+<p>
+It may happen that warning dialogs appear before or after perfoming certain actions which could cause unexpected side effects. 
+You have the possibitiy to suppress the particular warning in the future. <br/>
+Note: In the warning preferences you can also activate or deactivate warnings. 
+Therefore, it is possible to reactivate suppressed warnings.
+</p>
+
+<p>
+    <enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+	<img src="../../../images/workbench/preferences/warnings.png" width="547" height="311" alt="Warnings Preferences"/>
+</p>
+<p>
+    <enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+	<img src="../../../images/workbench/preferences/macosx/warnings.png" width="622" height="349" alt="Warnings Preferences"/>
+</p>
+
+<p>The warnings which may appear are the following:</p>
+
+
+<h3><a id="Warnings_preferences_HideWarningChangeActiveInstrument">Hide warning: Changing the active instrument ...</a></h3>
+<p>
+If you change the active instrument or modify the currently active instrument the 
+<a href="../views/chord_results.html">Chord Results View</a> will be cleared. 
+This is necessary since the calculated chords belong to the active instrument. 
+Another instrument usually has a completely different result set.
+</p>
+
+<p>
+    <enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+	<img src="../../../images/workbench/preferences/warnings_active_instrument_change.png" width="441" height="167" alt="Warning"/>
+</p>
+<p>
+    <enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+	<img src="../../../images/workbench/preferences/macosx/warnings_active_instrument_change.png" width="597" height="171" alt="Warning"/>
+</p>
+
+<h3><a id="Warnings_preferences_HideWarningChangePreferBarre">Hide warning: Changing the 'prefer barre' option ...</a></h3>
+<p>
+Changing the 'Prefer Barre (Chords)' settings in the <a href="../preferences/calculations.html">calculations preferences</a> will lead 
+to a recalculation of the levels of the chords in the <a href="../views/chord_results.html">Chord Results View</a>. 
+Thus, it may happen that the recalculated levels do not match with the maximum levels 
+you have determined in the <a href="../views/chord_generation.html">Chord Generation View</a> before starting the initial calculation.
+</p>
+
+<p>
+    <enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+	<img src="../../../images/workbench/preferences/warnings_prefer_barre_option_change.png" width="441" height="174" alt="Information"/>
+</p>
+<p>
+    <enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+	<img src="../../../images/workbench/preferences/macosx/warnings_prefer_barre_option_change.png" width="597" height="187" alt="Information"/>
+</p>
+
+
+<h3><a id="Warnings_preferences_HideWarningGeneratedResults">Hide warning: The result set exceeds ...</a></h3>
+<p>
+If the size of the result set for a chord generation was bigger 
+than the defined limit in the <a href="../preferences/calculations.html">calculations preferences</a> the result set will be reduced to its maximum allowed size.
+</p>
+
+<p>
+    <enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+	<img src="../../../images/workbench/preferences/warnings_results_truncated.png" width="441" height="167" alt="Information"/>
+</p>
+<p>
+    <enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+	<img src="../../../images/workbench/preferences/macosx/warnings_results_truncated.png" width="597" height="171" alt="Information"/>
+</p>
+
+
+<h3><a id="Warnings_preferences_HideWarningNoResults">Hide warning: No results...</a></h3>
+<p>
+If you are still using the test-version of the <em>Chord Scale Generator</em> it might (frequently) happen that the calculations "Find Chord" and "Find Scale"
+don't find any results. This behaviour can usually be explained with the reduced database of the test-version.
+</p>
+
+<p>
+    <enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+	<img src="../../../images/workbench/preferences/warnings_no_results.png" width="441" height="157" alt="Information"/>
+</p>
+<p>
+    <enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+	<img src="../../../images/workbench/preferences/macosx/warnings_no_results.png" width="597" height="171" alt="Information"/>
+</p>
+
+<h2><a id="Warnings_preferences_related_topics">Related topics</a></h2>
+<p>
+<a href="../views/instruments.html">Workbench &#8594; Views &#8594; Instruments</a><br/>
+<a href="../views/chord_generation.html">Workbench &#8594; Views &#8594; Chord Generation</a><br/>
+<a href="../views/chord_results.html">Workbench &#8594; Views &#8594; Chord Results</a><br/>
+<a href="../preferences/calculations.html">Workbench &#8594; Preferences &#8594; Calculations</a><br/>
+</p>
+
+<h2><a id="Warnings_preferences_related_tasks">Related tasks</a></h2>	
+<p>
+<a href="../../tasks/chord_generation.html">Tasks &#8594; Generate and Show Chords</a><br/>
+</p>
+
+</body>
+</html>

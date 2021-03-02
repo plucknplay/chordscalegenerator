@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Instruments View</title>
+<link type="text/css" rel="stylesheet" href="../../book.css" />
+</head>
+
+<body>
+
+<h1><img src="../../../icons/instrument.gif" width="16" height="16" alt="Instrument Icon"/>Instruments View</h1>
+
+<p>
+In the <em>Instruments View</em> you can manage all your instruments. 
+From here, you can create new instruments, edit existing instruments 
+or even delete existing instruments. 
+Besides, it is possible to organize your instruments in categories and subcategories.
+</p>
+
+<p>
+Double-click on an instrument opens the instrument in the <a href="../editors/instrument.html">Instrument Editor</a>. 
+Double-clicking on a category expands or collapses the category.
+</p>
+
+<p>
+    <enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+	<img src="../../../images/workbench/views/instruments_view.png" width="304" height="274" alt="Instruments View"/>
+</p>
+<p>
+    <enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+	<img src="../../../images/workbench/views/macosx/instruments_view.png" width="320" height="270" alt="Instruments View"/>
+</p>
+
+<h2><a id="instruments_view_toolbar">Toolbar</a></h2>	
+
+<p>
+The toolbar of the <em>Instruments View</em> contains the following actions:
+</p>
+
+<h3><a id="instruments_view_toolbar_add_instrument"><img src="../../../icons/new_instrument.gif" width="16" height="16" alt="Add Instrument Icon"/>Add Instrument</a></h3>
+
+<p>
+Opens a blank <a href="../editors/instrument.html">Instrument Editor</a> where you can define a new instrument. 
+After you have saved the new instrument (see <a href="../menu/file.html#FileMenu_Save">File &#8594; Save</a>), it will be inserted 
+into the category which was selected during the creation of the new instrument. 
+If there was no category selected the new instrument will be added into the main category.
+</p>
+
+<h3><a id="instruments_view_toolbar_add_category"><img src="../../../icons/new_category.gif" width="16" height="16" alt="Add Category Icon"/>Add Category</a></h3>
+
+<p>
+Adds a new sub-category into the currently selected category. 
+The name of the category can be edited directly.
+</p>
+
+<h3><a id="instruments_view_toolbar_expand_all"><img src="../../../icons/expandall.gif" width="16" height="16" alt="Expand All Icon"/>Expand All</a></h3>
+
+<p>
+Expands the whole tree structure of this view. All defined instruments become visible.
+</p>
+
+<h3><a id="instruments_view_toolbar_collapse_all"><img src="../../../icons/collapseall.gif" width="16" height="16" alt="Collapse All Icon"/>Collapse All</a></h3>
+
+<p>
+Collapses the whole tree structure of this view.
+</p>
+
+<h3><a id="instruments_view_toolbar_link_with_editor"><img src="../../../icons/synced.gif" width="16" height="16" alt="Link with Editor Icon"/>Link with Editor</a></h3>
+
+<p>
+Toggles whether or not the <em>Instruments View</em> selection is linked to the active editor. 
+When this option is selected, changing to an active <a href="../editors/instrument.html">Instrument Editor</a> 
+will automatically update the <em>Instruments View</em> selection to the instrument being edited.
+<br/>
+Note: Especially with a multitude of defined instruments it may be useful to link the 
+<em>Instruments View</em> with the editor for the sake of clarity.
+</p>
+
+<h2><a id="instruments_view_menu">Menu</a></h2>	
+
+<p>
+The menu of the <em>Instruments View</em> contains the following actions:
+</p>
+
+<p>
+<img src="../../../icons/new_instrument.gif" width="16" height="16" alt="Add Instrument Icon"/><a href="instruments.html#instruments_view_toolbar_add_instrument">Add Instrument</a><br/>
+<img src="../../../icons/new_category.gif" width="16" height="16" alt="Add Category Icon"/><a href="instruments.html#instruments_view_toolbar_add_category">Add Category</a><br/>
+<img src="../../../icons/expandall.gif" width="16" height="16" alt="Expand All Icon"/><a href="instruments.html#instruments_view_toolbar_expand_all">Expand All</a><br/>
+<img src="../../../icons/collapseall.gif" width="16" height="16" alt="Collapse All Icon"/><a href="instruments.html#instruments_view_toolbar_collapse_all">Collapse All</a><br/>
+<img src="../../../icons/synced.gif" width="16" height="16" alt="Link with Editor Icon"/><a href="instruments.html#instruments_view_toolbar_link_with_editor">Link with Editor</a><br/>
+</p>
+
+<h2><a id="instruments_view_popup_menu">Pop-up Menu</a></h2>	
+
+<p>
+The pop-up menu of this view contains the following actions:
+</p>
+
+<p>
+<img src="../../../icons/new_instrument.gif" width="16" height="16" alt="Add Instrument Icon"/><a href="instruments.html#instruments_view_toolbar_add_instrument">New &#8594; Instrument</a><br/>
+<img src="../../../icons/new_category.gif" width="16" height="16" alt="Add Category Icon"/><a href="instruments.html#instruments_view_toolbar_add_category">New &#8594; Category</a><br/>
+</p>
+
+<h3><a id="instruments_view_popup_menu_cut"><img src="../../../icons/cut_edit.gif" width="16" height="16" alt="Cut Icon"/>Cut</a></h3>
+
+<p>
+Cuts out the selected elements (instruments and/or categories) and copies them into the clipboard.
+</p>
+
+<h3><a id="instruments_view_popup_menu_copy"><img src="../../../icons/copy_edit.gif" width="16" height="16" alt="Copy Icon"/>Copy</a></h3>
+
+<p>
+Copies the selected elements into the clipboard.
+</p>
+
+<h3><a id="instruments_view_popup_menu_paste"><img src="../../../icons/paste_edit.gif" width="16" height="16" alt="Paste Icon"/>Paste</a></h3>
+
+<p>
+Pastes the elements of the clipboard into the currently selected category. 
+If the selected category contains elements with the same name a consecutive 
+number will be added to the element name. 
+</p>
+
+<h3><a id="instruments_view_popup_menu_remove"><img src="../../../icons/remove.gif" width="16" height="16" alt="Remove Icon"/>Remove</a></h3>
+
+<p>
+Removes the selected elements. If you remove a category all contained elements 
+of the category will be removed as well. Each removal has to be confirmed through a dialog box.
+</p>
+
+<h3><a id="instruments_view_popup_menu_rename">Rename</a></h3>
+
+<p>
+Enables the direct renaming of a selected element (instrument or category).
+</p>
+
+<h3><a id="instruments_view_popup_menu_import"><img src="../../../icons/import.gif" width="16" height="16" alt="Import Icon"/>Import...</a></h3>
+
+<p>
+Imports the elements of a chosen XML-file. The elements will be added into the currently 
+selected category.
+</p>
+
+<h3><a id="instruments_view_popup_menu_export"><img src="../../../icons/export.gif" width="16" height="16" alt="Export Icon"/>Export...</a></h3>
+
+<p>
+Exports the selected elements into a specified XML-file.
+</p>
+
+<h3><a id="instruments_view_popup_menu_set_active"><img src="../../../icons/current_instrument.gif" width="16" height="16" alt="Set Active Icon"/>Set Active</a></h3>
+
+<p>
+Sets the selected instrument active. All calculations 
+(<a href="../../tasks/chord_generation.html">Generate Chords</a>, <a href="../../tasks/find_chords.html">Find Chords</a>, ...) 
+will be performed on the active instrument.
+</p>
+
+<h2><a id="instruments_view_icons">Icons</a></h2>	
+
+<p>
+The following icons can appear in the <em>Instruments View</em>:
+</p>
+
+<table>
+   <tr>
+      <th>Icon</th>
+      <th>Description</th>
+   </tr>
+   <tr>
+      <td><img src="../../../icons/category.gif" alt="Category Icon"/></td>
+      <td>Category</td>
+   </tr>
+   <tr>
+      <td><img src="../../../icons/instrument.gif" alt="Instrument Icon"/></td>
+      <td>Instrument</td>
+   </tr>
+   <tr>
+      <td><img src="../../../icons/current_instrument.gif" alt="Active Instrument Icon"/></td>
+      <td>Active instrument</td>
+   </tr>
+</table>
+
+<h2><a id="instruments_view_related_topics">Related topics</a></h2>	
+<p>
+<a href="../editors/instrument.html">Workbench &#8594; Editors &#8594; Instrument Editor</a><br/>
+</p>
+
+<h2><a id="instruments_view_related_tasks">Related Tasks</a></h2>
+<p>
+<a href="../../tasks/instruments.html">Tasks &#8594; Manage your Instruments</a><br/>
+</p>
+
+</body>
+</html>

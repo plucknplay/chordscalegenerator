@@ -1,0 +1,3 @@
+<?xml version="1.0"?>
+<instruments><instrument><name>Tres (3x2 Saiten) - D</name><description>aka: Tres Cubano, Cuban Tres&#xd;
+Herkunft: Kuba</description><stringCount>3</stringCount><scaleLength unit="mm" value="550.0"/><lefty_righty>false</lefty_righty><fretless>false</fretless><doubled_strings>true</doubled_strings><pitch><note level="3" octaveJump="true" stringNumber="1" value="6"/><note level="4" octaveJump="true" stringNumber="2" value="2"/><note level="3" octaveJump="true" stringNumber="3" value="9"/></pitch><midiInstrumentNumber>24</midiInstrumentNumber><clef>4</clef></instrument></instruments>

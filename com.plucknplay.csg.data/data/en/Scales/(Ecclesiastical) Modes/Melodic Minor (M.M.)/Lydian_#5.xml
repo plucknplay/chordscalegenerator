@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<interval_containers type="scales"><interval_container type="scales"><name>Lydian #5</name><akaName>M.M. III</akaName><akaName>Lydian Augmented</akaName><description>order: 3rd degree of melodic minor (M.M.) = M.M. III&#xd;
+&#xd;
+comment: &#xd;
+- lydian with #5 instead of 5</description><intervals><interval name="1" value="0"/><interval name="2" value="2"/><interval name="3" value="4"/><interval name="#4" value="6"/><interval name="#5" value="8"/><interval name="6" value="9"/><interval name="7" value="11"/></intervals></interval_container></interval_containers>

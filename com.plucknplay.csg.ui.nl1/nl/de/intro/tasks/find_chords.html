@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Akkorde finden</title>
+<link type="text/css" rel="stylesheet" href="../book.css" />
+</head>
+
+<body>
+
+<div id="all">
+
+    <div id="close">
+        <p id="close_img_de">
+            <a href="http://org.eclipse.ui.intro/close"><img src="../images/close_de.png" width="262" height="25" alt="Schlie&#223;en"/></a>
+        </p>
+    </div>
+
+	<div id="top">
+        <p>
+            <a href="http://org.eclipse.ui.intro/showPage?id=root"><img src="../../logos/logo_64.png" width="64" height="64" alt="Willkommen"/></a>
+        </p>
+	</div>
+
+	<div id="header">
+	
+		<ul id="steps">
+			<li><a id="overview" href="http://org.eclipse.ui.intro/showPage?id=overview"><img src="../images/overview.gif" width="15" height="15" alt="&#220;berblick"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=workbench"><img src="../images/step.gif" width="15" height="15" alt="Die Arbeitsfl&#228;che"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=instruments"><img src="../images/step.gif" width="15" height="15" alt="Instrumente verwalten"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=chords_scales"><img src="../images/step.gif" width="15" height="15" alt="Akkorde und Skalen verwalten"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=chord_generation"><img src="../images/step.gif" width="15" height="15" alt="Akkorde generieren und anzeigen"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=find_chords"><img src="../images/step_active.gif" width="15" height="15" alt="Akkorde finden"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=show_scales"><img src="../images/step.gif" width="15" height="15" alt="Skalen ansehen"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=find_scales"><img src="../images/step.gif" width="15" height="15" alt="Skalen finden"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=sound"><img src="../images/step.gif" width="15" height="15" alt="Sound-Unterst&#252;tzung"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=export"><img src="../images/step.gif" width="15" height="15" alt="Export-Funktionen"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=update"><img src="../images/step.gif" width="15" height="15" alt="Update-Funktionalit&#228;t"/></a></li>
+			<li><a id="back" href="http://org.eclipse.ui.intro/showPage?id=chord_generation"><img src="../images/back.gif" width="8" height="15" alt="Voriger Schritt"/></a></li>
+			<li><a id="forward" href="http://org.eclipse.ui.intro/showPage?id=show_scales"><img src="../images/forward.gif" width="8" height="15" alt="N&#228;chster Schritt"/></a></li>
+		</ul>
+	
+		<h1>Akkorde finden</h1>
+	</div>
+
+	<div id="main">
+
+		<p>
+		Beim <em>Chord Scale Generator</em> kannst du dir aber nicht nur zu definierten Akkorden Grifftabellen generieren 
+		lassen. Es ist auch m&#246;glich, die umgekehrte Berechnung durchf&#252;hren zu lassen. Wenn du dich also beispielsweise 
+		fragst, was das eigentlich f&#252;r ein Akkord ist, den du beim Klimpern entdeckt hast, kannst du dies auf einfache 
+		Weise mit dem <em>Chord Scale Generator</em> berechnen lassen.
+		</p>
+		
+		<p>
+		Wie schon beim zuvor beschriebenen Generieren von Grifftabellen benutzt du f&#252;r diese Berechnung am besten die 
+		Perspektive <em>Akkorde</em>. Den gesuchten Griff kannst du dort z.B. in der <em>Box</em>-Sicht eingeben. 
+		Diese Sicht ist, anders als die <em>Griffbrett</em>- oder <em>Klaviatur</em>-Sicht, keine rein statische Sicht, 
+		welche Ergebnisse nur anzeigen kann. Es ist hier durch klicken des entsprechenden Schalters m&#246;glich, in einen 
+		Editier-/Suchmodus zu wechseln. Im Editier-/Suchmodus kannst du nun eigene Griffe mittels Doppelklick nach Belieben 
+		arrangieren. Hast du den Griff zusammengestellt, kannst du &#252;ber die Funktion <em>Finde Akkord</em> die Berechnung 
+		starten. Das Ergebnis dieser Berechnung wird in der <em>Akkord-Ergebnisse</em>-Sicht angezeigt. 
+		Welchem Akkord bzw. welchen Akkorden (ja auch das ist m&#246;glich) dein gesuchter Griff entspricht, kannst du dann 
+		einfach den ersten Spalten der Tabelle entnehmen.
+		</p>
+		
+		<p>
+		    <enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+			<img src="../../images/tasks/find_chord_01.png" width="992" height="259" alt="Akkorde finden"/>
+		</p>
+		<p>
+		    <enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+			<img src="../../images/tasks/macosx/find_chord_01.png" width="1147" height="323" alt="Akkorde finden"/>
+		</p>
+		
+		<p>
+		Diese Berechnung ist auch von der <em>Tab</em>-Sicht aus m&#246;glich. Hier kannst du (ebenfalls im Editier-/Suchmodus) 
+		deinen Griff in einer weniger grafischen Darstellung zusammenstellen.
+		</p>
+		
+		<p>
+		F&#252;r alle unter euch, die sich auch mit Noten auskennen, gibt es noch ein besonderes Feature beim <em>Chord Scale 
+		Generator</em>. Es ist n&#228;mlich auch von der <em>Noten</em>-Sicht aus m&#246;glich, sich Akkorde berechnen zu lassen. 
+		Ausgehend von einem bestimmten Akkord-Notenbild kannst du dir somit alle m&#246;glichen Griffpositionen ermitteln lassen. 
+		Um welchen Akkord es sich dabei im Einzelnen handelt, siehst du hier wieder in den ersten Spalten der Tabelle.
+		</p>
+		
+		<p>
+		    <enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+			<img src="../../images/tasks/find_chord_02.png" width="1016" height="259" alt="Akkorde finden"/>
+		</p>
+		<p>
+		    <enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+			<img src="../../images/tasks/macosx/find_chord_02.png" width="1161" height="317" alt="Akkorde finden"/>
+		</p>
+		
+		<p>
+		<span class="note">Hinweis:</span> Wenn zu einem Griff kein Akkord ermittelt werden konnte, hei&#223;t dies noch lange nicht, dass es diesen 
+		Akkord nicht gibt oder dass dieser ung&#252;ltig ist. Der Akkord, welchem dieser Griff entspricht, ist dann jedoch 
+		nicht in den von dir definierten Akkorden enthalten. Beachte, der <em>Chord Scale Generator</em> f&#252;hrt all seine 
+		Berechnungen nur anhand der ihm zugrunde liegenden Daten (Akkord- und Skalendefinitionen) aus.
+		</p>
+		
+		<p>
+		<span class="note">Hinweis:</span> Wenn sich eine Sicht im Editier-/Suchmodus befindet, ist diese f&#252;r das Anzeigen eines ausgew&#228;hlten Akkords 
+		in der <em>Akkord-Ergebnisse</em>-Sicht geblockt. Wenn also eine Sicht den neu ausgew&#228;hlten Akkord nicht anzeigt, 
+		k&#246;nnte dies daran liegen, dass sich die Sicht noch immer im Editier-/Suchmodus befindet - du also eine gestartete 
+		Berechnung wohl auf halbem Wege abgebrochen hast.
+		</p>
+		
+    	<div class="link">
+    		<p><a href="http://org.eclipse.ui.intro/showPage?id=show_scales">Skalen anzeigen</a></p>
+    	</div>
+
+	</div>
+
+</div>
+
+</body>
+</html>

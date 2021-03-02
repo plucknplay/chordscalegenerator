@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Instrument Editor</title>
+<link type="text/css" rel="stylesheet" href="../../book.css" />
+</head>
+
+<body>
+
+<h1><img src="../../../icons/instrument.gif" width="16" height="16" alt="Instrument Editor Icon"/>Instrument Editor</h1>
+<p>In the <em>Instrument Editor</em> you can define new instruments and edit existing ones.</p>
+
+<p>
+    <enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+	<img src="../../../images/workbench/editors/instrument_editor.png" width="440" height="705" alt="Instrument Editor"/>
+</p>
+<p>
+    <enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+	<img src="../../../images/workbench/editors/macosx/instrument_editor.png" width="521" height="755" alt="Instrument Editor"/>
+</p>
+
+<h2><a id="instrument_editor_options">Options</a></h2>
+<p>When you define an instrument, you have the following options:</p>
+
+<h3><a id="instrument_editor_name">Name</a></h3>
+<p>Here you can define the name of the instrument.</p>
+
+<h3><a id="instrument_editor_NumberOfStrings">Number of Strings</a></h3>
+<p>Here you can specify how many courses of single or doubled strings your instrument has.</p>
+
+<h3><a id="instrument_editor_ScaleLength">Scale Length</a></h3>
+<p>
+Here you can define the scale length of the instrument.
+With the help of the scale length the real distances between individual frets can be determined.
+The calculation of the width of fingerings can be measured in millimeters or inches.
+</p>
+
+<h3><a id="instrument_editor_DoubledStrings">Doubled Strings</a></h3>
+<p>
+Here you can specify whether or not your instrument has (courses of) doubled strings.
+It may occur that one string of a string pair is differently tuned one octave higher.
+This you can additionally define in the tuning section.
+</p>
+
+<h3><a id="instrument_editor_LeftyRight">Lefty/Righty</a></h3>
+<p>
+Here you can specify whether you use the instrument as a lefty or righty.
+Lefty means that you play a a right-handed instrument left handed.
+Righty is defined vice versa - here you play a left-handed instrument right handed.
+So if you play, according to these definitons, your instrument as a lefty or righty, use this editor as follows:<br/>
+First you define your instrument as it was originally intended -
+regardless whether you will play it later on left- or right-handed.
+That means the highest string still is also the string tuned to the highest note -
+and the lowest string is tuned to the lowest note.
+Later you simply check if you want to use this instrument as a lefty or righty .
+All calculations and representations will be adjusted automatically.
+If you really use the instrument as a lefty or righty also depends on the fact,
+whether or not you have set the left or right hander mode in the status bar.
+</p>
+
+
+<h3><a id="instrument_editor_Fretless">Fretless</a></h3>
+<p>
+Here you can specify whether or not the instrument is a fretless instrument.
+If you have a fretless instrument the frets in the <a href="../views/fretboard.html">Fretboard View</a> (and optionally in the <a href="../views/box.html">Box View</a>) will be drawn dottet.
+</p>
+
+<h3><a id="instrument_editor_Tuning">Tuning</a></h3>
+<p>
+Here you can define the tuning of your instrument, or rather, how each single open string of your instrument is tuned.
+In the first column of this section you can define the relative note value (C, D, E, ...)
+whereas in the second column the absolute note value (C, c, c', c'', ...) has to be defined.
+If your instrument has doubled strings you can additionally specify whether or not a string pair contains a string that is tuned an octave higher.
+In the <em>Miscellaneous Section</em> you can click <em>Test</em> to play the current tuning settings
+so that you can test if your tuning settings match the tuning of your instrument.
+</p>
+
+
+<h3><a id="instrument_editor_DefaultClef">Default Clef</a></h3>
+<p>
+Here you can specify the clef which should be used by default in the <a href="../views/notes.html">Notes View</a>.
+If you activate the instrument this clef will be automatically selected in the <a href="../views/notes.html">Notes View</a>.
+Of course, you do not have to specify a default clef.
+In such case, the clef of the <a href="../views/notes.html">Notes View</a> will not change when you change the active instrument.
+</p>
+
+<h3><a id="instrument_editor_SoundsLike">Sounds like</a></h3>
+<p>
+Here you can specify how the sound of your instrument.
+Depending on your settings, the chords or scale blocks will be played.
+A wide range of sounds is available. Nevertheless, it may happen that the sound of your instrument does not exist.
+In such case you should try to find a sound which is at least close to the original sound.
+You can test the selected sound by pressing the <em>Test</em> button.
+</p>
+
+<h3><a id="instrument_editor_Comment">Comment</a></h3>
+<p>
+In the comment section you can add any kind of information to the instrument.
+The comments have no influence on the represenation of the instrument,
+it is just for adding useful information.
+</p>
+
+<h2><a id="instrument_editor_related_topics">Related topics</a></h2>
+<p>
+<a href="../views/instruments.html">Workbench &#8594; Views &#8594; Instruments</a><br/>
+<a href="../views/fretboard.html">Workbench &#8594; Views &#8594; Fretboard</a><br/>
+<a href="../views/box.html">Workbench &#8594; Views &#8594; Box</a><br/>
+<a href="../views/notes.html">Workbench &#8594; Views &#8594; Notes</a><br/>
+<a href="../preferences/sound.html">Workbench &#8594; Preferences &#8594; Sound</a><br/>
+</p>
+
+<h2><a id="instrument_editor_related_tasks">Related tasks</a></h2>
+<p>
+<a href="../../tasks/instruments.html">Tasks &#8594; Manage your Instruments</a><br/>
+<a href="../../tasks/sound.html">Tasks &#8594; Sound Support</a><br/>
+</p>
+
+</body>
+</html>

@@ -1,0 +1,151 @@
+/*****************************************************************************
+ * Copyright (c) 2006 Market Contours LLC. All rights reserved. 
+ *
+ * This program and the accompanying materials are made available under the
+ * terms of the Eclipse Public License v1.0 which accompanies this
+ * distribution, and is available at http://www.eclipse.org/legal/epl-v10.html
+ *****************************************************************************/
+
+/*****************************************************************************
+ * Zelix script that controls the obfuscation process. 
+ *
+ * This script is executed by an ant script which assembles the properties that
+ * configure it.  The ant script compiles the obfuscated and non-obfuscated
+ * classpath properties, which are inserted into this script when the Zelix
+ * ant task is called.
+ *****************************************************************************/
+
+/*
+ * The classpath contains all non-obfuscated plugins, including the all RCP
+ * plugins and any 3rd-party libraries. It may also include any proprietary
+ * plugins that should not be obfuscated for one reason or another. 
+ */
+classpath %non.obfuscated.class.path%;
+
+/*
+ * Global excludes. If you have any type of public API that can be described by 
+ * a wildcard package filter that crosses plugins, this is the place to
+ * identify it. This is generally not necessary. 
+ * 
+ * To exclude specific classes (e.g. those that are referenced in plugin 
+ * manifests), put entries into the obfuscation.properties file at the plugin
+ * level.
+ */
+
+exclude *.* + extends org.eclipse.osgi.util.NLS;
+
+/*
+ * Package obfuscation should occur only for those packages that are internal to
+ * the plugin. Obfuscating package names that are visible outside of a plugin 
+ * confuses the OSGI classloader. 
+ * 
+ * Adopting a naming standard that places the keyword "internal" before your
+ * plugin name in the package structure will allow you to obfuscate these
+ * package names with one entry.
+ */
+
+// packages
+exclude com.plucknplay.csg.core.;
+exclude (com.plucknplay.csg.core.*. && !(com.plucknplay.csg.core.internal. || com.plucknplay.csg.core.internal.*.));
+
+exclude com.plucknplay.csg.data.;
+
+exclude com.plucknplay.csg.ui.;
+exclude com.plucknplay.csg.ui.editors.;
+exclude com.plucknplay.csg.ui.perspectives.;
+exclude com.plucknplay.csg.ui.preferencePages.;
+exclude com.plucknplay.csg.ui.views.;
+
+exclude com.plucknplay.csg.sound.;
+
+// classes
+
+exclude com.plucknplay.csg.core*.*;
+unexclude com.plucknplay.csg.core.internal*.*;
+
+exclude com.plucknplay.csg.data*.*;
+
+exclude com.plucknplay.csg.ui.Activator;
+exclude com.plucknplay.csg.ui.Application;
+exclude com.plucknplay.csg.ui.PreferenceInitializer;
+exclude com.plucknplay.csg.ui.editors.*;
+unexclude com.plucknplay.csg.ui.editors.CategorizableEditor;
+exclude com.plucknplay.csg.ui.perspectives.*;
+exclude com.plucknplay.csg.ui.preferencePages.*;
+exclude com.plucknplay.csg.ui.views.*;
+unexclude com.plucknplay.csg.ui.views.Abstract*;
+unexclude com.plucknplay.csg.ui.views.*Sorter;
+unexclude com.plucknplay.csg.ui.views.ICollapsableView;
+unexclude com.plucknplay.csg.ui.views.IExpandableView;
+unexclude com.plucknplay.csg.ui.views.IGraphicalView;
+unexclude com.plucknplay.csg.ui.views.IRenameableView;
+
+exclude com.plucknplay.csg.sound.Activator;
+exclude com.plucknplay.csg.sound.SoundMachine;
+exclude com.plucknplay.csg.sound.ISoundListener;
+exclude com.plucknplay.csg.sound.SoundConstants;
+
+// methods
+exclude com.plucknplay.csg.core*.* public *(*);
+exclude com.plucknplay.csg.core*.* protected *(*);
+unexclude com.plucknplay.csg.core.internal*.* public *(*);
+unexclude com.plucknplay.csg.core.internal*.* protected *(*);
+
+exclude com.plucknplay.csg.data*.* public *(*);
+exclude com.plucknplay.csg.data*.* protected *(*);
+
+// public static fields means constants
+exclude com.plucknplay.csg.core*.* public static *;
+
+/*
+ * Must obfuscate NLS classes from flow obfuscation. If this is not done, the 
+ * obfuscator inserts an additional binary primitive into the class, and the 
+ * NLS static initializer attempts to populate it from the text file. This does
+ * not cause any problem that the user can see, but it does fill up the logs
+ * with useless stack traces.
+ */
+obfuscateFlowExclude *.* extends org.eclipse.osgi.util.NLS *;
+
+/*
+stringEncryptionExclude com.plucknplay.csg.co*.*;
+stringEncryptionExclude com.plucknplay.csg.ui.*;
+stringEncryptionExclude com.plucknplay.csg.ui.a*.*;
+stringEncryptionExclude com.plucknplay.csg.ui.e*.*;
+stringEncryptionExclude com.plucknplay.csg.ui.f*.*;
+stringEncryptionExclude com.plucknplay.csg.ui.l*.*;
+stringEncryptionExclude com.plucknplay.csg.ui.m*.*;
+stringEncryptionExclude com.plucknplay.csg.ui.p*.*;
+stringEncryptionExclude com.plucknplay.csg.ui.s*.*;
+stringEncryptionExclude com.plucknplay.csg.ui.u*.*;
+stringEncryptionExclude com.plucknplay.csg.ui.v*.*;
+stringEncryptionExclude com.plucknplay.csg.ui.w*.*;
+stringEncryptionExclude com.plucknplay.csg.ui.dialogs.*Dialog;
+stringEncryptionExclude com.plucknplay.csg.ui.dialogs.*Messages;
+*/
+
+// stringEncryptionExclude (*.* && !(com.plucknplay.csg.ui.dialogs.NlsUtil));
+
+trimExclude *.*;
+
+/*
+ * Include plugin obfuscation settings. These properties files identify the 
+ * specific classes and methods that should be excluded from the obfuscation
+ * process. Any class that is referenced in a plugin manifest should be
+ * excluded by adding it to the relevant properties file.
+ *
+ * NOTE: This process could be improved by creating the list of obfuscation
+ * properties files in the ant script and substituting them here with 
+ * a variable reference.
+ */
+
+open     	%obfuscated.class.path%;
+
+obfuscate   changeLogFileOut="%change.log.out%" 
+	        obfuscateFlow=aggressive
+			aggressiveMethodRenaming=true
+            keepInnerClassInfo=false
+            keepGenericsInfo=false
+            encryptStringLiterals=flowObfuscate
+			lineNumbers=scramble;
+ 
+saveAll     archiveCompression=asIs "%out.dir%";   

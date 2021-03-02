@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<interval_containers type="scales"><folder name="Dur &amp; natürliches Moll (N.M.)"><interval_container type="scales"><name>Äolisch</name><akaName>VI</akaName><akaName>N.M. I</akaName><akaName>Moll</akaName><akaName>Natürliches Moll</akaName><akaName>Aeolian</akaName><akaName>Minor</akaName><akaName>Natural Minor</akaName><description>Reihenfolge: 6. Stufe von Dur = VI / 1. Stufe von Natürlich Moll (N.M.) = N.M. (I)&#xd;
+Tonart: moll&#xd;
+Charakteristik: b6, b7&#xd;
+&#xd;
+Bemerkungen: &#xd;
+- es fehlt die große Septime (7) als Leitton (bzw. Schlusswendung)&#xd;
+- Entwicklung: natürliches Moll (N.M.) ...b6-b7 --&gt; harmonisches Moll (H.M.) ...b6-7 --&gt; melodisches Moll (M.M.) ...6-7</description><intervals><interval name="1" value="0"/><interval name="2" value="2"/><interval name="b3" value="3"/><interval name="4" value="5"/><interval name="5" value="7"/><interval name="b6" value="8"/><interval name="b7" value="10"/></intervals></interval_container><interval_container type="scales"><name>Dorisch</name><akaName>II</akaName><akaName>N.M. IV</akaName><akaName>Dorian</akaName><description>Reihenfolge: 2. Stufe von Dur = II / 4. Stufe von natürlich Moll = N.M. IV&#xd;
+Tonart: moll&#xd;
+Charakteristik: 6&#xd;
+&#xd;
+Bemerkung: &#xd;
+- DIE Jazz-Skala</description><intervals><interval name="1" value="0"/><interval name="2" value="2"/><interval name="b3" value="3"/><interval name="4" value="5"/><interval name="5" value="7"/><interval name="6" value="9"/><interval name="b7" value="10"/></intervals></interval_container><interval_container type="scales"><name>Ionisch</name><akaName>I</akaName><akaName>N.M. III</akaName><akaName>Dur</akaName><akaName>Major</akaName><akaName>Ionian</akaName><description>Reihenfolge: 1. Stufe von Dur / 3.Stufe von natürlich Moll = N.M. III&#xd;
+Tonart: Dur</description><intervals><interval name="1" value="0"/><interval name="2" value="2"/><interval name="3" value="4"/><interval name="4" value="5"/><interval name="5" value="7"/><interval name="6" value="9"/><interval name="7" value="11"/></intervals></interval_container><interval_container type="scales"><name>Lokrisch</name><akaName>VII</akaName><akaName>N.M. II</akaName><akaName>Locrian</akaName><description>Reihenfolge: 7. Stufe von Dur = VII / 2. Stufe von natürlich Moll = N.M. II&#xd;
+Tonart: moll&#xd;
+Charakteristik: b2, b5&#xd;
+&#xd;
+Bemerkung: &#xd;
+- Jazz-Improvisation [über dem halbverminderten Akkord m7(b5)]</description><intervals><interval name="1" value="0"/><interval name="b2" value="1"/><interval name="b3" value="3"/><interval name="4" value="5"/><interval name="b5" value="6"/><interval name="b6" value="8"/><interval name="b7" value="10"/></intervals></interval_container><interval_container type="scales"><name>Lydisch</name><akaName>IV</akaName><akaName>N.M. VI</akaName><akaName>Lydian</akaName><description>Reihenfolge: 4. Stufe von Dur = IV / 6. Stufe von natürlich Moll = N.M. VI&#xd;
+Tonart: Dur&#xd;
+Charakteristik: #4</description><intervals><interval name="1" value="0"/><interval name="2" value="2"/><interval name="3" value="4"/><interval name="#4" value="6"/><interval name="5" value="7"/><interval name="6" value="9"/><interval name="7" value="11"/></intervals></interval_container><interval_container type="scales"><name>Mixolydisch</name><akaName>V</akaName><akaName>N.M. VII</akaName><akaName>Mixolydian</akaName><description>Reihenfolge: 5. Stufe von Dur = V / 7. Stufe von natürlich Moll = N.M. VII&#xd;
+Tonart: Dur&#xd;
+Charakteristik: b7</description><intervals><interval name="1" value="0"/><interval name="2" value="2"/><interval name="3" value="4"/><interval name="4" value="5"/><interval name="5" value="7"/><interval name="6" value="9"/><interval name="b7" value="10"/></intervals></interval_container><interval_container type="scales"><name>Phrygisch</name><akaName>III</akaName><akaName>N.M. V</akaName><akaName>Phrygian</akaName><description>Reihenfolge: 3. Stufe von Dur = III / 5. Stufe von natürlich Moll = N.M. V&#xd;
+Tonart: moll&#xd;
+Charakteristik: b2</description><intervals><interval name="1" value="0"/><interval name="b2" value="1"/><interval name="b3" value="3"/><interval name="4" value="5"/><interval name="5" value="7"/><interval name="b6" value="8"/><interval name="b7" value="10"/></intervals></interval_container></folder></interval_containers>

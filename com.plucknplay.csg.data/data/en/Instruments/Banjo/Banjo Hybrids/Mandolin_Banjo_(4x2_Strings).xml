@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<instruments><instrument><name>Mandolin Banjo (4x2 Strings)</name><description>Origin: USA&#xd;
+&#xd;
+Note: neck of a mandolin and the body of a banjo; tuned identically to the mandolin</description><stringCount>4</stringCount><scaleLength unit="mm" value="340.0"/><lefty_righty>false</lefty_righty><fretless>false</fretless><doubled_strings>true</doubled_strings><pitch><note level="5" octaveJump="false" stringNumber="1" value="4"/><note level="4" octaveJump="false" stringNumber="2" value="9"/><note level="4" octaveJump="false" stringNumber="3" value="2"/><note level="3" octaveJump="false" stringNumber="4" value="7"/></pitch><midiInstrumentNumber>105</midiInstrumentNumber><clef>4</clef></instrument></instruments>

@@ -1,0 +1,2 @@
+<?xml version="1.0"?>
+<interval_containers type="chords"><interval_container type="chords"><name>1-3-x</name><description>usage: maj, 7</description><intervals><interval name="1" value="0"/><interval name="3" value="4"/></intervals></interval_container></interval_containers>

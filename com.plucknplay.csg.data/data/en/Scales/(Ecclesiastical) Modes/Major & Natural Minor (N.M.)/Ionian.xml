@@ -1,0 +1,3 @@
+<?xml version="1.0"?>
+<interval_containers type="scales"><interval_container type="scales"><name>Ionian</name><akaName>I</akaName><akaName>N.M. III</akaName><akaName>Major</akaName><description>order: 1st degree of major = I / 3rd degree of natural minor (N.M.) = N.M. III&#xd;
+key: major</description><intervals><interval name="1" value="0"/><interval name="2" value="2"/><interval name="3" value="4"/><interval name="4" value="5"/><interval name="5" value="7"/><interval name="6" value="9"/><interval name="7" value="11"/></intervals></interval_container></interval_containers>

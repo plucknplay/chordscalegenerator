@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<introContent>
+    <page id="root" content="intro/welcome.html"/>
+    <page id="features" content="intro/features.html"/>
+    <page id="versions" content="intro/versions.html"/>
+    <page id="overview" content="intro/tasks/overview.html"/>
+    <page id="workbench" content="intro/tasks/workbench.html"/>
+    <page id="instruments" content="intro/tasks/instruments.html"/>
+    <page id="chords_scales" content="intro/tasks/chords_scales.html"/>
+    <page id="chord_generation" content="intro/tasks/chord_generation.html"/>
+    <page id="find_chords" content="intro/tasks/find_chords.html"/>
+    <page id="show_scales" content="intro/tasks/show_scales.html"/>
+    <page id="find_scales" content="intro/tasks/find_scales.html"/>
+    <page id="sound" content="intro/tasks/sound.html"/>
+    <page id="export" content="intro/tasks/export.html"/>
+    <page id="update" content="intro/tasks/update.html"/>
+</introContent>

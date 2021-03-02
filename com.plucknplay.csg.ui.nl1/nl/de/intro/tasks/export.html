@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Export-Funktionen</title>
+<link type="text/css" rel="stylesheet" href="../book.css" />
+</head>
+
+<body>
+
+<div id="all">
+
+    <div id="close">
+        <p id="close_img_de">
+            <a href="http://org.eclipse.ui.intro/close"><img src="../images/close_de.png" width="262" height="25" alt="Schlie&#223;en"/></a>
+        </p>
+    </div>
+
+	<div id="top">
+        <p>
+            <a href="http://org.eclipse.ui.intro/showPage?id=root"><img src="../../logos/logo_64.png" width="64" height="64" alt="Willkommen"/></a>
+        </p>
+	</div>
+
+	<div id="header">
+	
+		<ul id="steps">
+			<li><a id="overview" href="http://org.eclipse.ui.intro/showPage?id=overview"><img src="../images/overview.gif" width="15" height="15" alt="&#220;berblick"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=workbench"><img src="../images/step.gif" width="15" height="15" alt="Die Arbeitsfl&#228;che"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=instruments"><img src="../images/step.gif" width="15" height="15" alt="Instrumente verwalten"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=chords_scales"><img src="../images/step.gif" width="15" height="15" alt="Akkorde und Skalen verwalten"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=chord_generation"><img src="../images/step.gif" width="15" height="15" alt="Akkorde generieren und anzeigen"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=find_chords"><img src="../images/step.gif" width="15" height="15" alt="Akkorde finden"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=show_scales"><img src="../images/step.gif" width="15" height="15" alt="Skalen ansehen"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=find_scales"><img src="../images/step.gif" width="15" height="15" alt="Skalen finden"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=sound"><img src="../images/step.gif" width="15" height="15" alt="Sound-Unterst&#252;tzung"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=export"><img src="../images/step_active.gif" width="15" height="15" alt="Export-Funktionen"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=update"><img src="../images/step.gif" width="15" height="15" alt="Update-Funktionalit&#228;t"/></a></li>
+			<li><a id="back" href="http://org.eclipse.ui.intro/showPage?id=sound"><img src="../images/back.gif" width="8" height="15" alt="Voriger Schritt"/></a></li>
+			<li><a id="forward" href="http://org.eclipse.ui.intro/showPage?id=update"><img src="../images/forward.gif" width="8" height="15" alt="N&#228;chster Schritt"/></a></li>
+		</ul>
+	
+		<h1>Export-Funktionen</h1>
+	</div>
+
+	<div id="main">
+
+		<p>
+		In diesem Kapitel soll nun noch auf die Export-M&#246;glichkeiten vom 
+		<em>Chord Scale Generator</em> eingegangen werden. Beim <em>Chord Scale Generator</em> kannst du den Inhalt 
+		s&#228;mtlicher grafischen Sichten (also der Sichten <em>Box</em>, <em>Tab</em>, <em>Noten</em>, <em>Griffbrett</em> und 
+		<em>Klaviatur</em>) als Bilddatei exportieren oder in die Zwischenablage kopieren. Um den aktuellen Inhalt zu 
+		exportieren oder in die Zwischenablage zu kopieren, musst du dabei lediglich den entsprechenden Kontextmen&#252;eintrag 
+		der jeweiligen Sicht ausw&#228;hlen.
+		</p>
+		
+		<p>
+		    <enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+			<img src="../../images/tasks/export_01.png" width="361" height="288" alt="Export"/>
+		</p>
+		<p>
+		    <enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+			<img src="../../images/tasks/macosx/export_01.png" width="361" height="288" alt="Export"/>
+		</p>
+		
+		<p>
+		Mit dem Einf&#252;gen von Inhalten aus der Zwischenablage oder dem Einbinden von exportierten Bilddateien, kannst du dir 
+		dann in anderen Programmen (z.B. Office-Programmen) auf einfache Weise deine eigenen Akkord- oder Liederb&#252;cher 
+		zusammenstellen. Da das Zusammenstellen von Akkordb&#252;chern mit dem einzelnen Kopieren interessanter Akkorde sich 
+		wohl doch als etwas m&#252;hsam gestalten w&#252;rde, gibt es noch ein besonderes Feature beim <em>Chord Scale Generator</em>. 
+		Ausgehend von der <em>Akkord-Ergebnisse</em>-Sicht ist es m&#246;glich, gleich mehrere Akkorde gleichzeitig in die 
+		Zwischenablage zu kopieren. Bei Akkorden, welche du so kopieren m&#246;chtest, musst du zun&#228;chst den Haken in der 
+		vordersten Spalte setzen. Du kennzeichnest auf diesem Wege also die f&#252;r dich interessanten Akkorde. Mit dem 
+		Kontextmen&#252;eintrag <em>Kopiere in die Zwischenablage</em> werden dann anschlie&#223;end die Bilddaten dieser 
+		ausgew&#228;hlten Akkorde in die Zwischenablage kopiert. In einem anderen Programm kannst du dann diese in der 
+		Zwischenablage befindlichen Bilddaten einfach einf&#252;gen.
+		</p>
+		
+		<p>
+		    <enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+			<img src="../../images/tasks/export_02.png" width="504" height="457" alt="Export"/>
+		</p>
+		<p>
+		    <enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+			<img src="../../images/tasks/macosx/export_02.png" width="504" height="457" alt="Export"/>
+		</p>
+		
+		<p>
+		Es ist jedoch auch auf einfache Weise m&#246;glich, sich Skalenb&#252;cher zu erzeugen. In den Sichten <em>Skalen</em> und 
+		<em>Skalen-Ergebnisse</em> kannst du mit dem Kontextmen&#252;eintrag <em>Kopiere Skalenbl&#246;cke in die Zwischenablage</em> 
+		Bilddaten s&#228;mtlicher Skalenbl&#246;cke einer selektierten Skale in die Zwischenablage kopieren. Welche Skalenbl&#246;cke 
+		einer Skalen dabei exportiert werden, h&#228;ngt von dem in den Benutzervorgaben gesetzten Skalenblockmodus ab 
+		(<em>Datei &#8594; Benutzervorgaben... &#8594; Skalenbl&#246;cke</em>).
+		</p>
+		
+		<p>
+		Welche Bilddaten zu jedem einzelnen Akkord oder Skalenblock kopiert werden sollen und in welcher Gr&#246;&#223;e die 
+		Bilddaten dabei exportiert bzw. kopiert werden sollen, kannst du unter <em>Datei &#8594; Benutzervorgaben... &#8594; Export</em> 
+		noch genauer definieren.
+		</p>
+
+    	<div class="link">
+    		<p><a href="http://org.eclipse.ui.intro/showPage?id=update">Update-Funktionalit&#228;t</a></p>
+    	</div>
+
+	</div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Generate and Show Chords</title>
+<link type="text/css" rel="stylesheet" href="../book.css" />
+</head>
+
+<body>
+
+<div id="all">
+
+    <div id="close">
+        <p id="close_img">
+            <a href="http://org.eclipse.ui.intro/close"><img src="../images/close.png" width="214" height="25" alt="Close"/></a>
+        </p>
+    </div>
+
+	<div id="top">
+        <p>
+            <a href="http://org.eclipse.ui.intro/showPage?id=root"><img src="../../logos/logo_64.png" width="64" height="64" alt="Welcome"/></a>
+        </p>
+	</div>
+
+	<div id="header">
+	
+		<ul id="steps">
+			<li><a id="overview" href="http://org.eclipse.ui.intro/showPage?id=overview"><img src="../images/overview.gif" width="15" height="15" alt="Overview"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=workbench"><img src="../images/step.gif" width="15" height="15" alt="The Workbench"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=instruments"><img src="../images/step.gif" width="15" height="15" alt="Manage your Instruments"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=chords_scales"><img src="../images/step.gif" width="15" height="15" alt="Manage your Chords and Scales"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=chord_generation"><img src="../images/step_active.gif" width="15" height="15" alt="Generate and Show Chords"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=find_chords"><img src="../images/step.gif" width="15" height="15" alt="Find Chords"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=show_scales"><img src="../images/step.gif" width="15" height="15" alt="Show Scales"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=find_scales"><img src="../images/step.gif" width="15" height="15" alt="Find Scales"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=sound"><img src="../images/step.gif" width="15" height="15" alt="Sound Support"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=export"><img src="../images/step.gif" width="15" height="15" alt="Export Actions"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=update"><img src="../images/step.gif" width="15" height="15" alt="Update Support"/></a></li>
+			<li><a id="back" href="http://org.eclipse.ui.intro/showPage?id=chords_scales"><img src="../images/back.gif" width="8" height="15" alt="Previous Step"/></a></li>
+			<li><a id="forward" href="http://org.eclipse.ui.intro/showPage?id=find_chords"><img src="../images/forward.gif" width="8" height="15" alt="Next Step"/></a></li>
+		</ul>
+	
+		<h1>Generate and Show Chords</h1>
+	</div>
+
+	<div id="main">
+
+		<p>
+		After all these introductory chapters let us finally come to some interesting calculations - 
+		which is what the <em>Chord Scale Generator</em> is intended for. 
+		The most frequent and useful calculation will probably  be the generation of fingerings for a certain chord. 
+		This function gives the answer to questions like. "Where can I fret a Gsus4?"
+		</p>
+		
+		<p>
+		First you need to switch to the <em>Chords</em> perspective. On the left side, you see the 
+		<em>Chord Generation View</em>. 
+		In this view you can specify the settings for your desired calculation. Beside the chord of interest, 
+		you can specify a wide range of restrictions to reduce the size of the result set. 
+		Possible restrictions are for example the level, the grip range or other advanced restrictions like the bass or lead tone. 
+		Click <em>Calculate</em> in order to start the calculation.
+		</p>
+		
+		<p>
+		    <enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+			<img src="../../images/tasks/chord_generation_01.png" width="646" height="534" alt="Generate Chords"/>
+		</p>
+		<p>
+		    <enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+			<img src="../../images/tasks/macosx/chord_generation_01.png" width="796" height="619" alt="Generate Chords"/>
+		</p>
+		
+		<p>
+		The results of the calculation will be displayed in the <em>Chord Results View</em>. 
+		The generated chords can be arranged in columns. A simple click on the column header starts the rearrangement.
+		</p>
+		
+		<p>
+		<span class="note">Note:</span> Since the result set may be very large, this view is divided into pages for the sake of clarity. 
+		If many pages exist the current page will be shown in the toolbar on the left side of the actions to turn the pages. 
+		The arrangement in columns is not restricted to the current page - but takes into consideration the whole result set.
+		</p>
+		
+		<p>
+		The <em>Chord Results View</em> with its textual presentation is a 
+		somewhat inconvenient representation of generated chords. However, this view simply operates like a "distributing centre" 
+		where chords can be arranged and selected for further representations in other views.
+		</p>
+		
+		<p>
+		A chord you have selected in the <em>Chord Results View</em> (by selecting 
+		the corresponding row of the table) will be graphically displayed in other views. 
+		The <em>Chord Scale Generator</em> provides the following five graphical views to display the selected chord:
+		</p>
+		
+		<p>
+		The <b>Fretboard View</b> shows the selected chord in the context of a whole fretboard. 
+		Besides, you can choose whether or not the fingering, the notes or the intervals of the selected chord shall be shown.
+		</p>
+		
+		<p>
+		The <b>Keyboard View</b> shows the selected chord on the keyboard of a grand piano. 
+		Here it is furthermore possible to switch between a notes and an interval mode.
+		</p>
+		
+		<p>
+		The <b>Box View</b> shows the selected chord as a fingering chart or a chord box. 
+		his is a very common representation, which displays only a small section of the fretboard. 
+		You can usually find this kind of representation in chord and song books.
+		</p>
+		
+		<p>
+		The <b>Tab View</b> shows the selected chord in the form of a tablature where each string is assigned to a fret position (if available).
+		</p>
+		
+		<p>
+		The <b>Notes View</b> shows the selected chord in musical notation (dependent on the chosen clef).
+		</p>
+		
+		<p>
+		    <enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+			<img src="../../images/tasks/chord_generation_02.png" width="781" height="881" alt="Show Chords"/>
+		</p>
+		<p>
+		    <enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+			<img src="../../images/tasks/macosx/chord_generation_02.png" width="806" height="884" alt="Show Chords"/>
+		</p>
+		
+		<p>
+		Of course it is up to you which views you consider most helpful and want to use in your arrangement for a corresponding perspective. 
+		</p>
+		
+    	<div class="link">
+    		<p><a href="http://org.eclipse.ui.intro/showPage?id=find_chords">Find Chords</a></p>
+    	</div>
+
+	</div>
+
+</div>
+
+</body>
+</html>

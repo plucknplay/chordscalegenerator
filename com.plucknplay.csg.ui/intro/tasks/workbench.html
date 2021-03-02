@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>The Workbench</title>
+<link type="text/css" rel="stylesheet" href="../book.css" />
+</head>
+
+<body>
+
+<div id="all">
+
+    <div id="close">
+        <p id="close_img">
+            <a href="http://org.eclipse.ui.intro/close"><img src="../images/close.png" width="214" height="25" alt="Close"/></a>
+        </p>
+    </div>
+
+	<div id="top">
+        <p>
+            <a href="http://org.eclipse.ui.intro/showPage?id=root"><img src="../../logos/logo_64.png" width="64" height="64" alt="Welcome"/></a>
+        </p>
+	</div>
+
+	<div id="header">
+	
+		<ul id="steps">
+			<li><a id="overview" href="http://org.eclipse.ui.intro/showPage?id=overview"><img src="../images/overview.gif" width="15" height="15" alt="Overview"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=workbench"><img src="../images/step_active.gif" width="15" height="15" alt="The Workbench"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=instruments"><img src="../images/step.gif" width="15" height="15" alt="Manage your Instruments"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=chords_scales"><img src="../images/step.gif" width="15" height="15" alt="Manage your Chords and Scales"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=chord_generation"><img src="../images/step.gif" width="15" height="15" alt="Generate and Show Chords"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=find_chords"><img src="../images/step.gif" width="15" height="15" alt="Find Chords"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=show_scales"><img src="../images/step.gif" width="15" height="15" alt="Show Scales"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=find_scales"><img src="../images/step.gif" width="15" height="15" alt="Find Scales"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=sound"><img src="../images/step.gif" width="15" height="15" alt="Sound Support"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=export"><img src="../images/step.gif" width="15" height="15" alt="Export Actions"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=update"><img src="../images/step.gif" width="15" height="15" alt="Update Support"/></a></li>
+			<li><a id="back" href="http://org.eclipse.ui.intro/showPage?id=overview"><img src="../images/back.gif" width="8" height="15" alt="Previous Step"/></a></li>
+			<li><a id="forward" href="http://org.eclipse.ui.intro/showPage?id=instruments"><img src="../images/forward.gif" width="8" height="15" alt="Next Step"/></a></li>
+		</ul>
+	
+		<h1>The Workbench</h1>
+	</div>
+
+	<div id="main">
+
+		<p>
+		Before we explain to you the different functions of the <em>Chord Scale Generator</em>, let us first take a look at the workbench. 
+		Now you probably think "I know all that already - All my  programs have menus and several windows. I don't have to read that." - 
+		You're almost right about that, but unfortunately only almost. 
+		The <em>Chord Scale Generator</em> is built on a modern framework which provides some program elements you have probably not seen before, 
+		and thus it may be worth it to go on reading.
+		</p>
+		
+		<p>
+			<enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+			<img src="../../images/tasks/workbench.png" width="792" height="605" alt="The Workbench"/>
+		</p>
+		<p>
+			<enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+			<img src="../../images/tasks/macosx/workbench.png" width="912" height="763" alt="The Workbench"/>
+		</p>
+		
+		<p>
+		What you certainly know from other applications are menu bars, toolbars and the status bar. 
+		Of course, our program also has these elements.
+		</p>
+		
+		<p>
+		The <b>menu bar</b> contains all global actions. 
+		Global actions are actions which are accessible from everywhere in the program.
+		</p>
+		
+		<p>
+		The <b>toolbar</b>, on the other hand, only contains the most important global actions 
+		and provides easier access since you do not have to click through the whole menu structure - 
+		a simple click on the corresponding icon is enough to start these actions.
+		</p>
+		
+		<p>
+		The <b>status bar</b> at the bottom of the application shows important status information of the program. 
+		Here you can see which instrument is currently active as well as useful warnings. 
+		What kind of warnings can appear will be mentioned in the special cases later on. However, 
+		you can keep in mind that whenever something just doesn't want to work (e.g. you can not save or a calculation does not start) 
+		just have a look at the status bar and maybe there already is a warning for your specific problem.<br/>
+		Besides, it is possible to choose whether you are right- or left-hander in the status bar. 
+		A simple double-click toggles the type of hand. Depending on your setting, several graphical representations will be adjusted.
+		</p>
+		
+		<p>
+		Now we want to get down to the really interesting program elements. Those, you possibly have not seen yet. 
+		The <em>Chord Scale Generator</em> consists mainly of views, editors and perspectives.
+		</p>
+		
+		<p>
+		<b>Views</b> are windows, which display any kind of information. There are many different views in the <em>Chord Scale Generator</em>, 
+		from simple tabular views to more complex graphical views. 
+		Which views exist and how they work in detail you will learn in the course of this tour.<br/>
+		In this chapter we first want to focus on the general structure of views. So, what is interesting concerning views? - 
+		All views have their own menu and toolbar. Of course, menu and toolbar of a view contain only actions related to the view itself 
+		or its display data. Besides, several views provide a popup menu which contains additional actions. 
+		Like you already know from windows, views can be minimized, maximized and even closed. 
+		A closed view can be reopened by clicking <em>Window &#8594; Show View</em>
+		In addition, the submenu <em>Window &#8594; Navigation</em>
+		provides several actions to navigate between views.
+		</p>
+		
+		<p>
+		A special kind of views are <b>fast views</b>. If you want to hide a view for some time but still be able to access it easily 
+		you can attach this view at the bottom-left corner of the application as a fast view. Therefore, only the icon of the view is visible - 
+		a click on this icon opens the view above all other views. If the fast view is not in focus anymore (by clicking into another view) 
+		it will disappear and you will only see the icon in the bottom-left corner again.
+		</p>
+		
+		<p>
+		<b>Editors</b> are program elements for editing data. For each object to edit (be it an instrument, chord or scale) 
+		a new editor will be created in the editor area. It is possible that several editors are opened at the same time. 
+		In order to select a certain editor you have to click on its tab. It is even possible that several editors are visible 
+		at the same time if you manually arrange the editors by moving them side by side or on  top of each other.<br/>
+		If you have modified the data of an object you will see a little asterisk in the editor tab. 
+		After saving the object the changes apply and the application adjusts itself if necessary.<br/>
+		Besides, the submenu <em>Window &#8594; Navigation</em> provides useful actions to navigate between editors.
+		</p>
+		
+		<p>
+		The probably most innovative program concept are <b>perspectives</b>. A perspective describes the arrangement of 
+		the windows (views and editors) in the workbench. Okay, the possibility to arrange windows freely is probably not 
+		really new. However, the new aspect here is, that it is possible to save such an arrangement 
+		(<em>Window &#8594; Save Perspective As...</em>) and switch between the perspectives as you like. 
+		That means you can create a seperate perspective for each purpose, in which all necessary views are properly placed 
+		and dimensioned.<br/>
+		The application provides three perspectives by default: <em>Setup, Chords</em> and <em>Scales</em>. 
+		Of course, you can modify these perspectives later on (<em>Window &#8594; Save Perspective</em>) - 
+		the given perspectives just represent a first suggestion.<br/>
+		In order to arrange views inside your perspective, you have to click on the head of the view and drag it while 
+		keeping the left mouse button pressed - finally you can drop the view at the desired location by revealing the 
+		mouse button. In order to alter the size of your views you can work analogously by stretching the borders of 
+		the view to the desired size. You can choose the currently active perspective in the tab at the top-right corner 
+		of the application. If a desired perspective is not opened, and thus not visible in the tab, you can open it with
+		<em>Window &#8594; Open Perspective</em><br/>
+		The menu <em>Window</em> as well as the submenu <em>Window &#8594; Navigation</em> contain several useful actions 
+		around the management and navigation of perspectives. For further details about other useful actions please have 
+		a look at the corresponding help contents.<br/>
+		You can also set preferences concerning the perspectives (see <em>File &#8594; Preferences... &#8594; Perspectives</em>).
+		</p>
+		
+    	<div class="link">
+    		<p><a href="http://org.eclipse.ui.intro/showPage?id=instruments">Manage your Instruments</a></p>
+    	</div>
+
+	</div>
+
+</div>
+
+</body>
+</html>

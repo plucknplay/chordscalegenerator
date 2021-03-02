@@ -1,0 +1,21 @@
+<project name="keygen" default="build-key-store" basedir=".">
+
+    <echo message="Build Key Store"/>
+    <target name="build-key-store">
+        <input message="Alias" addproperty="keystore.alias"/>
+        <input message="Passwort" addproperty="keystore.password"/>
+
+        <genkey keystore="${keystore.alias}.ks" alias="${keystore.alias}" storepass="${keystore.password}" >
+            <dname>
+                <param name="CN" value="Mei&#223;ner &amp; Mei&#223;ner GbR"/>
+                <param name="OU" value="pluck-n-play"/>
+                <param name="O"  value="Mei&#223;ner &amp; Mei&#223;ner GbR"/>
+                <param name="L"  value="Jena"/>
+                <param name="ST"  value="TH"/>
+                <param name="C"  value="DE"/>
+            </dname>
+        </genkey>
+    </target>
+
+</project>
+

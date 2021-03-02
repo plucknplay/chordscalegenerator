@@ -1,0 +1,238 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Akkordgenerierung Sicht</title>
+<link type="text/css" rel="stylesheet" href="../../book.css" />
+</head>
+
+<body>
+
+<h1><img src="../../../icons/akkord_generieren.gif" width="16" height="16" alt="Chord Generation Icon"/>Akkordgenerierung Sicht</h1>
+
+<p>
+Die Sicht <em>Akkordgenerierung</em> dient zum Spezifizieren und Starten der Berechnung zur Ermittlung von Griffm&#246;glichkeiten eines Akkords. 
+Neben dem Akkord, zu welchem du die Griffm&#246;glichkeiten generiert haben m&#246;chtest, 
+kannst du hier noch eine Vielzahl von Einschr&#228;nkungen treffen, um die Ergebnismenge zu beschr&#228;nken. 
+Die Ergebnisse der Berechnung werden in der <a href="../views/chord_results.html">Akkord-Ergebnisse-Sicht</a> angezeigt.
+</p>
+
+<p>
+Es ist m&#246;glich, weniger wichtige oder komplizierte Einschr&#228;nkungen, welche du wohl eher weniger benutzen wirst, 
+in einem einklappbaren Erweitert-Abschnitt zu platzieren. Welche Punkte du in diesem Abschnitt platzieren m&#246;chtest, 
+kannst du in den entsprechenden <a href="../preferences/views/chord_generation.html">Benutzervorgaben</a>
+zu dieser Sicht definieren. 
+</p>
+
+<p>
+Achtung: Die Werte einzelner Felder dieser Sicht k&#246;nnen sich ggf. selbst&#228;ndig ver&#228;ndern, 
+da sie sich in manchen F&#228;llen auf ver&#228;nderte Umgebungsbedingungen anpassen m&#252;ssen 
+(neues aktives Instrument, ver&#228;nderte Akkordliste, etc.).
+</p>
+
+<p>
+    <enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+	<img src="../../../images/workbench/views/chord_generation_view.png" width="349" height="552" alt="Akkordgenerierung Sicht"/>
+</p>
+<p>
+    <enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+	<img src="../../../images/workbench/views/macosx/chord_generation_view.png" width="367" height="630" alt="Akkordgenerierung Sicht"/>
+</p>
+
+<h2><a id="ChordGeneration_view_toolbar">Einstellm&#246;glichkeiten</a></h2>	
+
+<h3><a id="ChordGeneration_view_toolbar_add_scale">Akkord</a></h3>
+
+<p>
+Hier kannst du den Akkord angeben, f&#252;r welchen die Griffpositionen generiert werden sollen. 
+Ein konkreter Akkord setzt sich dabei aus dem Grundton (C, D, ...) 
+und dem Akkordnamen (Dur, moll, 7, ...) zusammen.
+</p>
+
+<h3><a id="ChordGeneration_view_toolbar_Browse-Button">Suchen-Button</a></h3>
+
+<p>
+Findest du einen Akkordnamen nicht in der entsprechenden Liste, kannst du auch nach diesem Suchen. 
+Nach dem Klicken des Suchen-Buttons erscheint ein Dialog, in welchem alle definierten Akkorde aufgelistet sind. 
+In dieser Suchliste werden auch die aka-Namen (also known as - auch bekannt als) mitber&#252;cksichtigt.
+</p>
+
+<p>
+    <enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+	<img src="../../../images/workbench/views/chord_generation_view_browse.png" width="345" height="430" alt="Akkordgenerierung Sicht - Suche Akkord"/>
+</p>
+<p>
+    <enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+	<img src="../../../images/workbench/views/macosx/chord_generation_view_browse.png" width="453" height="502" alt="Akkordgenerierung Sicht - Suche Akkord"/>
+</p>
+
+<h3><a id="ChordGeneration_view_toolbar_BassTone">Basston</a></h3>
+
+<p>
+Hier kannst du angeben, welchen Basston bzw. welches Bassintervall deine Akkorde haben sollen. 
+Der Basston beschreibt den tiefsten Ton eines Akkords. 
+Wenn du bzgl. des Basstons keine Einschr&#228;nkung machen m&#246;chtest, selektiere hier einfach "keine Angabe".
+</p>
+
+
+<h3><a id="ChordGeneration_view_toolbar_LeadTone">Melodieton</a></h3>
+
+<p>
+Neben dem Basston kannst du auch den Melodieton angeben, welchen deine Akkorde haben sollen. 
+Der Melodieton beschreibt den h&#246;chsten Ton eines Akkords. Mit "keine Angabe" kannst du auch hier diese Einschr&#228;nkung ignorieren.
+</p>
+
+
+<h3><a id="ChordGeneration_view_toolbar_Level">Level</a></h3>
+
+<p>
+Hier kannst du den minimalen und maximalen Schwierigkeitsgrad deiner berechneten Akkorde festlegen. 
+M&#246;gliche Schwierigkeitsgrade sind dabei leicht, mittel, schwer, sehr schwer und ungreifbar. 
+Die Einteilung von Akkorden in Schwierigkeitsgrade ist nat&#252;rlich sehr subjektiv und h&#228;ngt von deinen F&#228;higkeiten ab. 
+Prinzipiell lassen sich die Einteilungen aber folgenderma&#223;en charakterisieren:
+</p>
+
+<ul>
+<li><b>leicht:</b> Einfache Griffpositionen mit meist wenigen Fingern. Keine Barre-Griffe - also meist nette Griffe auch f&#252;r Anf&#228;nger.</li>
+<li><b>mittel:</b> Normal schwere Griffe und einfache Barre-Griffe, welche f&#252;r den Gro&#223;teil von euch keine Probleme darstellen sollten.</li>
+<li><b>schwer:</b> Schwierige Griffe, welche aber prinzipiell von fortgeschritteneren Instrumentalisten spielbar sein sollten. Problematisch sind diese Akkorde wohl eher bei z&#252;gigen Akkordwechseln.</li>
+<li><b>sehr schwer: </b> Diese Akkorde sind greifbar - machen aber sicherlich keinen Spa&#223;. Nur etwas f&#252;r Fingerakrobaten und diejenigen unter euch mit riesigen H&#228;nden.</li>
+<li><b>ungreifbar:</b> Theoretisch m&#246;gliche Griffe, f&#252;r welche aber kein Fingersatz berechnet werden konnte. Wenn ein Freund oder eine Freundin gerade Langeweile hat, kann er/sie dir ja dabei behilflich sein, einen solchen Akkord zu greifen.</li>
+</ul>
+
+
+<h3><a id="ChordGeneration_view_toolbar_FretRange">Bundbereich</a></h3>
+<p>
+Hier kannst du den Bundbereich festlegen, in welchem die Akkorde berechnet werden sollen.
+</p>
+
+<h3><a id="ChordGeneration_view_toolbar_StringRange">Saitenbereich</a></h3>
+<p>
+Hier kannst du den Saitenbereich festlegen, in welchem die Akkorde berechnet werden sollen.
+</p>
+
+<h3><a id="ChordGeneration_view_toolbar_Width">Griffbreite</a></h3>
+<p>
+Hier kannst du angeben, wie breit die berechneten Griffe maximal sein d&#252;rfen. 
+Die Griffbreite kannst du dabei entweder in B&#252;nden oder aber auch in Millimetern (oder Inch) angeben. 
+Mit den beiden letzteren M&#246;glichkeiten kannst du also angeben, wie breit deine Hand maximal greifen kann. 
+Da die Bundbreite ja bei Saiteninstrumenten mit zunehmender Bundzahl kleiner wird, kann es somit also passieren, 
+dass du in den unteren Bereichen gr&#246;&#223;ere Bundspannen greifen kannst als dies in den oberen m&#246;glich ist.
+</p>
+
+<h3><a id="ChordGeneration_view_toolbar_MaxSingleToneNumber">Max. einzelne Tonanzahl</a></h3>
+<p>
+Hier kannst du angeben, wie oft jeder einzelne Ton maximal in deinen Akkorden vorkommen darf. 
+Es ist somit m&#246;glich, ausgewogene Tonverteilungen in deinen Akkorden zu erzwingen. 
+Okay, das klingt jetzt alles etwas kompliziert, deswegen am besten ein Beispiel. 
+Stell dir vor, du hast ein 6-saitiges Instrument und m&#246;chtest dir C-Dur Akkorde berechnen lassen. 
+Ein C-Dur Akkord setzt sich aus den T&#246;nen C-E-G zusammen. Somit w&#228;re es beispielsweise m&#246;glich, 
+dass ein berechneter Akkord 3xC, 1xE und 2xG enth&#228;lt. Das ist nat&#252;rlich keine besonders ausgewogene Tonverteilung. 
+Besser w&#228;re es doch, wenn jeder Ton nur zweimal vorkommen w&#252;rde - und genau dies kannst du mit diesem Feld einstellen. 
+Hier musst du einfach die maximale einzelne Tonanzahl auf zwei stellen. 
+Wenn dich das jetzt aber auch alles nur verwirrt, kannst du diese Einschr&#228;nkung nat&#252;rlich auch wieder ignorieren - 
+selektiere daf&#252;r einfach "keine Angabe".
+</p>
+
+<h3><a id="ChordGeneration_view_toolbar_OpenStrings">Leere Saiten</a></h3>
+<p>
+Hier kannst du angeben, ob deine Akkorde leere Saiten enthalten d&#252;rfen. 
+Eine leere Saite bedeutet, dass bei einer angeschlagenen Saite kein Bund gegriffen wird - 
+diese Saite klingt also frei. Speziell bei elektrisch verst&#228;rkten Instrumenten, die verzerrt gespielt werden 
+(z.B. Gain, Distortion ...), kann es sinnvoll sein, Akkorde mit leeren Saiten zu vermeiden.
+</p>
+
+<h3><a id="ChordGeneration_view_toolbar_MutedStrings">Abged&#228;mpfte Saiten </a></h3>
+<p>
+Neben den leeren Saiten kannst du auch definieren, ob die berechneten Akkorde abged&#228;mpfte Saiten enthalten d&#252;rfen. 
+Eine abged&#228;mpfte Saite ist eine Saite, welche beim Spielen des Akkords nicht erklingen darf. 
+Entweder spielst du solch eine Saite gar nicht erst an oder du versuchst mit einem Finger der greifenden Hand diese Saite abzud&#228;mpfen. 
+Akkorde mit abged&#228;mpften Saiten nutzen nicht alle Saiten des Instruments.
+</p>
+
+<h3><a id="ChordGeneration_view_toolbar_OnlyAdjoined">Nur Bl&#246;cke</a></h3>
+<p>
+Bei Akkorden mit abged&#228;mpften Saiten kannst du zus&#228;tzlich noch angeben, 
+dass die klingenden Saiten nur zusammenh&#228;ngend zueinander liegen d&#252;rfen. 
+Die klingenden Saiten eines solchen Akkords werden also nicht durch abged&#228;mpfte Saiten unterbrochen. 
+Damit musst du bei solchen Akkorden nicht mit der greifenden Hand versuchen, Saiten abzud&#228;mpfen. 
+Es ist also m&#246;glich, den Block der klingenden Saiten durchstreichend anzuspielen.
+</p>
+
+<h3><a id="ChordGeneration_view_toolbar_OnlySingleMutedStrings">Nur einzelne abged&#228;mpfte Saiten</a></h3>
+<p>
+Hier kannst du Akkorde mit abged&#228;mpften Saiten noch auf solche beschr&#228;nken, 
+bei denen nur einzelne abged&#228;mpfte Saiten vorkommen d&#252;rfen - 
+es gibt hier also nie zwei oder mehr abged&#228;mpfte Saiten nacheinander. 
+Diese Einschr&#228;nkung ber&#252;cksichtigt den Fakt, dass es meist noch einfach m&#246;glich ist, 
+einzelne Saiten mit einem Finger der greifenden Hand abzud&#228;mpfen. 
+Bei Akkorden mit mehreren aufeinanderfolgenden abged&#228;mpften Saiten ist dies jedoch oft weitaus schwieriger. 
+Solche Akkorde k&#246;nnen mit dieser Einschr&#228;nkung somit einfach gefiltert werden.
+</p>
+
+<h3><a id="ChordGeneration_view_toolbar_DoubleTones">Doppelte T&#246;ne</a></h3>
+<p>
+Hier kannst du angeben, ob deine generierten Akkorde doppelte T&#246;ne enthalten d&#252;rfen - 
+also ob ein identischer Ton (gleiche Tonh&#246;he) mehrmals in dem Akkord vorkommen darf. 
+Speziell bei elektrisch verst&#228;rkten Instrumenten, die verzerrt gespielt werden (z.B. Gain,  Distortion ...), 
+kann es sinnvoll sein, Akkorde mit doppelten T&#246;nen zu vermeiden.
+</p>
+
+<h3><a id="ChordGeneration_view_toolbar_OnlyAscendingDescendingTones">Nur auf- und absteigende T&#246;ne</a></h3>
+<p>
+Hier kannst du deine berechneten Akkorde auf solche beschr&#228;nken, 
+wo die T&#246;ne von der obersten bis zur untersten Saite angespielt eine aufsteigende oder absteigende Tonfolge ergeben. 
+Diese Einschr&#228;nkung ist sinnvoll, wenn du Akkorde arpeggieren m&#246;chtest (also Ton f&#252;r Ton anspielen m&#246;chtest) 
+und die Tonfolge dabei nicht springen soll. Wenn du deine Akkorde aber sowieso nur zusammen anspielst, 
+ist diese Einschr&#228;nkung sicherlich weniger interessant f&#252;r dich.
+</p>
+
+<h3><a id="ChordGeneration_view_toolbar_ExcludedIntervals">Ausgeschlossene Intervalle</a></h3>
+<p>
+Hier kannst du angeben, ob bei der Berechnung deiner Akkorde bestimmte Intervalle (Grundton, Terz, Quinte) 
+weggelassen werden sollen. Durch das Weglassen von Intervallen k&#246;nnen Akkorde einfacher zu greifen sein. 
+Auf Instrumenten mit geringer Saitenanzahl werden manche Akkorde, welche aus vielen Intervallen zusammengesetzt
+sind, so erst m&#246;glich. 
+Man sollte jedoch beachten, dass mit dem Herausnehmen von T&#246;nen sich der Charakter eines Akkords 
+mehr (Grundton, Terz) oder weniger (Quinte) ver&#228;ndert. Gegebenenfalls k&#246;nnen ausgeschlossene Intervalle 
+aber auch von einem Begleitinstrument (z.B. Bass) gespielt werden.
+</p>
+
+<h2><a id="ChordGeneration_view_DropSupport">Drop Support</a></h2>	
+
+<p>
+Die Sicht <em>Akkordgenerierung</em> unterst&#252;tzt auch Drag&amp;Drop - also das Ziehen von Elementen aus einer Sicht in eine andere. 
+In diesem Fall ist es m&#246;glich, dass Akkorde aus der <a href="../views/chords.html">Akkorde-Sicht</a> oder
+the <a href="../views/chord_results.html">Akkord-Ergebnisse-Sicht</a> in diese Sicht gezogen werden k&#246;nnen. 
+L&#228;&#223;t man einen Akkord in dieser Sicht fallen (droppen), so wird der entsprechende Akkord automatisch ausgew&#228;hlt - 
+du musst ihn also nicht erst m&#252;hsam in der Liste suchen.
+</p>
+
+<h2><a id="ChordGeneration_view_Menu">Men&#252;</a></h2>
+<p>
+Das Men&#252; dieser Sicht enth&#228;lt lediglich die folgende Funktion:
+</p>
+
+<h3><a id="ChordGeneration_view_toolbar_Preferences">Benutzervorgaben...</a></h3>
+<p>
+&#214;ffnet den Dialog zum Definieren der <a href="../preferences/views/chord_generation.html">Benutzervorgaben</a>. 
+Die Seite zum Definieren der Einstellm&#246;glichkeiten f&#252;r diese Sicht ist dabei schon vorselektiert.
+</p>
+
+<h2><a id="ChordGeneration_view_related_topics">Verwandte Themen</a></h2>	
+<p>
+<a href="../preferences/views/chord_generation.html">Arbeitsfl&#228;che &#8594; Benutzervorgaben &#8594; Sichten &#8594; Akkordgenerierung</a><br/>
+<a href="../preferences/calculations.html">Arbeitsfl&#228;che &#8594; Benutzervorgaben &#8594; Berechnungen</a><br/>
+<a href="../views/chords.html">Arbeitsfl&#228;che &#8594; Sichten &#8594; Akkorde</a><br/>
+<a href="../views/chord_results.html">Arbeitsfl&#228;che &#8594; Sichten &#8594; Akkord-Ergebnisse</a><br/>
+</p>
+
+<h2><a id="ChordGeneration_view_related_tasks">Verwandte Aufgaben</a></h2>	
+<p>
+<a href="../../tasks/chord_generation.html">Aufgaben &#8594; Grifftabellen generieren und anzeigen</a><br/>
+</p>
+
+</body>
+</html>

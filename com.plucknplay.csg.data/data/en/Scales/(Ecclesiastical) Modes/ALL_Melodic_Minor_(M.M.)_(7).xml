@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<interval_containers type="scales"><folder name="Melodic Minor (M.M.)"><interval_container type="scales"><name>Aeolian 3</name><akaName>M.M. V</akaName><akaName>Aeolian Dominant</akaName><akaName>Mixolydian b13</akaName><akaName>Mixolydian b6</akaName><description>order: 5th degree of melodic minor (M.M.) = M.M. V&#xd;
+&#xd;
+comments: &#xd;
+- aelolian with 3 instead of b3&#xd;
+- sometimes used as mixolydian with b6 instead of 6 = mixolydian b6&#xd;
+- rarely used as mixolydian b13</description><intervals><interval name="1" value="0"/><interval name="2" value="2"/><interval name="3" value="4"/><interval name="4" value="5"/><interval name="5" value="7"/><interval name="b6" value="8"/><interval name="b7" value="10"/></intervals></interval_container><interval_container type="scales"><name>Aeolian 6 7</name><akaName>M.M. I</akaName><akaName>Melodic Minor</akaName><akaName>Jazz Minor</akaName><description>order: 1st degree of melodic minor (M.M.) = M.M. I&#xd;
+&#xd;
+comments: &#xd;
+- developed out of Harmonic Minor (H.M.)&#xd;
+- 1st half is a minor tetrachord&#xd;
+- 2nd half is a major tetrachord&#xd;
+- development: N.M. (...b6-b7) -&gt; H.M.(...b6-7) -&gt; M.M. (...6-7)</description><intervals><interval name="1" value="0"/><interval name="2" value="2"/><interval name="b3" value="3"/><interval name="4" value="5"/><interval name="5" value="7"/><interval name="6" value="9"/><interval name="7" value="11"/></intervals></interval_container><interval_container type="scales"><name>Locrian 2</name><akaName>M.M. VI</akaName><akaName>Locrian #2</akaName><description>order: 6th degree of melodic minor (M.M.) = M.M. VI&#xd;
+&#xd;
+comments: &#xd;
+- locrian with 2 instead of b2&#xd;
+- sometimes used as locrian #2</description><intervals><interval name="1" value="0"/><interval name="2" value="2"/><interval name="b3" value="3"/><interval name="4" value="5"/><interval name="b5" value="6"/><interval name="b6" value="8"/><interval name="b7" value="10"/></intervals></interval_container><interval_container type="scales"><name>Locrian b4</name><akaName>M.M. VII</akaName><akaName>Altered</akaName><akaName>Altered Dominant</akaName><akaName>Diminished Whole-Tone</akaName><akaName>Dominant Whole-Tone</akaName><description>order: 7th degree of melodic minor (M.M.) = M.M. VII&#xd;
+&#xd;
+comment: &#xd;
+- locrian with b4 instead of 4</description><intervals><interval name="1" value="0"/><interval name="b2" value="1"/><interval name="b3" value="3"/><interval name="b4" value="4"/><interval name="b5" value="6"/><interval name="b6" value="8"/><interval name="b7" value="10"/></intervals></interval_container><interval_container type="scales"><name>Lydian #5</name><akaName>M.M. III</akaName><akaName>Lydian Augmented</akaName><description>order: 3rd degree of melodic minor (M.M.) = M.M. III&#xd;
+&#xd;
+comment: &#xd;
+- lydian with #5 instead of 5</description><intervals><interval name="1" value="0"/><interval name="2" value="2"/><interval name="3" value="4"/><interval name="#4" value="6"/><interval name="#5" value="8"/><interval name="6" value="9"/><interval name="7" value="11"/></intervals></interval_container><interval_container type="scales"><name>Lydian b7</name><akaName>M.M. IV</akaName><akaName>Lydian Dominant</akaName><akaName>Mixolydian #11</akaName><akaName>Mixolydian #4</akaName><akaName>Overtone</akaName><akaName>Acoustic</akaName><description>order: 4th degree of melodic minor (M.M.) = M.M. IV&#xd;
+&#xd;
+comments: &#xd;
+- lydian with b7 instead of 7&#xd;
+- sometimes used as mixolydian #4 (mixolydian with #4 instead of 4)&#xd;
+- rarely used as mixolydian #11</description><intervals><interval name="1" value="0"/><interval name="2" value="2"/><interval name="3" value="4"/><interval name="#4" value="6"/><interval name="5" value="7"/><interval name="6" value="9"/><interval name="b7" value="10"/></intervals></interval_container><interval_container type="scales"><name>Phrygian 6</name><akaName>M.M. II</akaName><akaName>Dorian b2</akaName><akaName>Phrygian #6</akaName><description>order: 2nd degree of melodic minor (M.M.) = M.M. II&#xd;
+&#xd;
+comments: &#xd;
+- phrygian with 6 instead of b6&#xd;
+- sometimes used as phrygian #6&#xd;
+- sometimes used as dorian b2 (dorian with b2 instead of 2)</description><intervals><interval name="1" value="0"/><interval name="b2" value="1"/><interval name="b3" value="3"/><interval name="4" value="5"/><interval name="5" value="7"/><interval name="6" value="9"/><interval name="b7" value="10"/></intervals></interval_container></folder></interval_containers>

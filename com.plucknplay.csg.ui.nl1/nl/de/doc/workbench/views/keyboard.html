@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Klaviatur Sicht</title>
+<link type="text/css" rel="stylesheet" href="../../book.css" />
+</head>
+
+<body>
+
+<h1><img src="../../../icons/keyboard.gif" width="16" height="16" alt="Keyboard Icon"/>Klaviatur Sicht</h1>
+
+<p>
+In der <em>Klaviatur-Sicht</em> kannst du dir anschauen, wo ausgew&#228;hlte Akkorde und Skalen(bl&#246;cke)
+auf der Tastatur eines Klaviers bzw. Fl&#252;gels liegen w&#252;rden. Genau genommen entspricht die dargestellte Klaviatur im Umfang einem Fl&#252;gel.
+Bei der Darstellung von Akkorden oder Skalen kannst du hier zwischen einem Noten- und Intervallmodus wechseln.
+</p>
+
+<p>
+    <enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+	<img src="../../../images/workbench/views/keyboard_view_chord.png" width="594" height="187" alt="Klaviatur Sicht - Akkord"/>
+</p>
+<p>
+    <enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+	<img src="../../../images/workbench/views/macosx/keyboard_view_chord.png" width="714" height="219" alt="Klaviatur Sicht - Akkord"/>
+</p>
+
+<p>Ein ausgew&#228;hlte Skalenblock (sofern vorhanden) kann zudem durch blau hinterlegte Tasten besonders gekennzeichnet werden.</p>
+
+<p>
+    <enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+	<img src="../../../images/workbench/views/keyboard_view_scale.png" width="594" height="187" alt="Klaviatur Sicht - Skala"/>
+</p>
+<p>
+    <enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+	<img src="../../../images/workbench/views/macosx/keyboard_view_scale.png" width="714" height="219" alt="Klaviatur Sicht - Skala"/>
+</p>
+
+<p>
+In der <em>Klaviatur-Sicht</em> werden zudem die T&#246;ne eines angespielten Akkords oder Skalenblocks grafisch hervorgehoben.
+Es wird dabei genau deutlich, welche T&#246;ne gerade angespielt werden und wie lange diese erklingen.
+</p>
+
+<p>
+Es ist auch m&#246;glich, frei auf der Klaviatur zu spielen. Ein einfacher Mausklick auf eine Taste spielt diese an.
+Du kannst also auf der dargestellten Klaviatur ein wenig herumklimpern. Wie lang eine Note bei einem Mausklick ert&#246;nen soll,
+kannst du in den  <a href="../preferences/sound.html">Benutzervorgaben zum Sound</a> definieren.
+</p>
+
+
+
+<h2><a id="keyboard_view_toolbar">Symbolleiste</a></h2>
+<p>Die Symbolleiste der <em>Klaviatur-Sicht</em> enth&#228;lt die folgenden Funktionen:</p>
+
+<h3><a id="keyboard_view_toolbar_ShowNotes"><img src="../../../icons/notes.gif" width="16" height="16" alt="Zeige Noten Icon"/>Zeige Noten</a></h3>
+<p>Wechselt in den Noten-Modus dieser Sicht. Es werden somit die Noten der dargestellten Akkorde oder Skalen(bl&#246;cke) angezeigt.</p>
+<p><img src="../../../images/workbench/views/keyboard_chord_notes_mode.png" width="158" height="151" alt="Noten Modus"/></p>
+
+<h3><a id="keyboard_view_toolbar_ShowIntervals"><img src="../../../icons/intervals.gif" width="16" height="16" alt="Zeige Intervalle Icon"/>Zeige Intervalle</a></h3>
+<p>Wechselt in den Intervall-Modus dieser Sicht. Es werden somit die Intervalle der dargestellten Akkorde oder Skalen(bl&#246;cke) angezeigt.</p>
+<p><img src="../../../images/workbench/views/keyboard_chord_interval_mode.png" width="158" height="151" alt="Intervall Modus"/></p>
+
+<h3><a id="keyboard_view_toolbar_ClearInput"><img src="../../../icons/clear.gif" width="16" height="16" alt="L&#246;sche Eingabe Icon"/>L&#246;sche Eingabe</a></h3>
+<p>L&#246;scht die aktuell angezeigte Eingabe (Akkord oder Skala) aus dieser Sicht.</p>
+
+
+
+<h2><a id="keyboard_view_menu">Men&#252;</a></h2>
+<p>Das Men&#252; der <em>Klaviatur-Sicht</em> enth&#228;lt die folgenden Funktionen:</p>
+
+<p>
+<img src="../../../icons/notes.gif" width="16" height="16" alt="Zeige Noten Icon"/><a href="keyboard.html#keyboard_view_toolbar_ShowNotes">Zeige Noten</a><br/>
+<img src="../../../icons/intervals.gif" width="16" height="16" alt="Zeige Intervalle Icon"/><a href="keyboard.html#keyboard_view_toolbar_ShowIntervals">Zeige Intervalle</a><br/>
+<img src="../../../icons/clear.gif" width="16" height="16" alt="L&#246;sche Eingabe Icon"/><a href="keyboard.html#keyboard_view_toolbar_ClearInput">L&#246;sche Eingabe</a><br/>
+</p>
+
+<h3><a id="keyboard_view_menu_Preferences">Benutzervorgaben...</a></h3>
+<p>
+&#214;ffnet den Dialog zum Definieren der <a href="../preferences/views/keyboard.html">Benutzervorgaben</a>.
+Die Seite zum Definieren der Einstellm&#246;glichkeiten f&#252;r diese Sicht ist dabei schon vorselektiert.
+</p>
+
+
+<h2><a id="Keyboard_view_popup_menu">Kontextmen&#252;</a></h2>
+<p>Das Kontextmen&#252; dieser Sicht enth&#228;lt die folgenden Funktionen:</p>
+
+
+<h3><a id="Keyboard_view_popup_menu_ExportAsImageFile"><img src="../../../icons/export.gif" width="16" height="16" alt="Export as Image File Icon"/>Exportiere als Bilddatei...</a></h3>
+<p>
+Exportiert die aktuelle Klaviaturdarstellung als Bilddatei. In einem entsprechenden Dialog kannst du dabei den Dateinamen und Dateityp
+(.bmp, .jpg oder .png) festlegen. In welcher Gr&#246;&#223;e die Klaviatur exportiert werden soll, kannst du in den
+<a href="../preferences/export.html">Benutzervorgaben zum Export</a> spezifizieren.
+</p>
+
+<h3><a id="Keyboard_view_popup_menu_CopyToClipboard"><img src="../../../icons/copy_edit.gif" width="16" height="16" alt="Copy to Clipboard Icon"/>Kopiere in die Zwischenablage</a></h3>
+<p>
+Kopiert die aktuelle Klaviaturdarstellung in die Zwischenablage.
+Die in der Zwischenablage abgelegten Bilddaten k&#246;nnen dann beispielsweise in Office-Anwendungen eingef&#252;gt werden.
+Die Gr&#246;&#223;e der kopierten Klaviatur wird auch hier in den
+<a href="../preferences/export.html">Benutzervorgaben zum Export</a> spezifiziert.
+</p>
+
+
+
+<h2><a id="Keyboard_view_related_topics">Verwandte Themen</a></h2>
+
+<p>
+<a href="../preferences/views/keyboard.html">Arbeitsfl&#228;che &#8594; Benutzervorgaben &#8594; Sichten &#8594; Klaviatur</a><br/>
+<a href="../preferences/export.html">Arbeitsfl&#228;che &#8594; Benutzervorgaben &#8594; Export</a><br/>
+<a href="../preferences/sound.html">Arbeitsfl&#228;che &#8594; Benutzervorgaben &#8594; Sound</a><br/>
+</p>
+
+<h2><a id="Keyboard_view_related_tasks">Verwandte Aufgaben</a></h2>
+<p>
+<a href="../../tasks/chord_generation.html">Aufgaben &#8594; Grifftabellen generieren und anzeigen</a><br/>
+<a href="../../tasks/show_scales.html">Aufgaben &#8594; Skalen ansehen</a><br/>
+</p>
+
+</body>
+</html>

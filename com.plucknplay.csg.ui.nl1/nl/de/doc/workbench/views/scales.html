@@ -1,0 +1,230 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Skalen Sicht</title>
+<link type="text/css" rel="stylesheet" href="../../book.css" />
+</head>
+
+<body>
+
+<h1><img src="../../../icons/scale.gif" width="16" height="16" alt="Scales Icon"/>Skalen Sicht</h1>
+
+<p>
+Die <em>Skalen Sicht</em> dient zum Verwalten all deiner Skalen.
+Ausgehend von dieser Sicht kannst du neue Skalen anlegen, bestehende Skalen editieren oder auch l&#246;schen.
+Au&#223;erdem ist es hier m&#246;glich, deine Skalen in Kategorien und Unterkategorien zu organisieren.
+</p>
+
+<p>
+Doppelklick auf einer Skala &#246;ffnet diese in einem <a href="../editors/scale.html">Skalen-Editor</a>.
+Doppelklick auf einer Kategorie klappt die Kategorie wiederum auf oder zusammen.
+</p>
+
+<p>
+    <enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+	<img src="../../../images/workbench/views/scales_view.png" width="375" height="435" alt="Skalen Sicht"/>
+</p>
+<p>
+    <enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+	<img src="../../../images/workbench/views/macosx/scales_view.png" width="438" height="498" alt="Skalen Sicht"/>
+</p>
+
+<h2><a id="Scales_view_toolbar">Symbolleiste</a></h2>
+
+<p>
+Die Symbolleiste der <em>Skalen-Sicht</em> enth&#228;lt die folgenden Funktionen:
+</p>
+
+<h3><a id="scales_view_toolbar_add_scale"><img src="../../../icons/new_scale.gif" width="16" height="16" alt="Add Scale Icon"/>F&#252;ge Skala hinzu</a></h3>
+
+<p>
+&#214;ffnet einen leeren <a href="../editors/scale.html">Skalen-Editor</a>, in welchem du eine neue Skala definieren kannst.
+Nachdem du die neu definierte Skala abgespeichert hast (siehe <a href="../menu/file.html#FileMenu_Save">Datei &#8594; Speichern</a>),
+wird die Skala in die Kategorie der Skalenliste eingef&#252;gt, welche beim Erstellen der neuen Skala aktuell ausgew&#228;hlt war.
+War zu diesem Zeitpunkt keine Kategorie ausgew&#228;hlt, wird die neue Skala in die Hauptkategorie eingef&#252;gt.
+</p>
+
+<h3><a id="scales_view_toolbar_add_category"><img src="../../../icons/new_category.gif" width="16" height="16" alt="Add Category Icon"/>F&#252;ge Kategorie hinzu</a></h3>
+
+<p>
+F&#252;gt eine neue Unterkategorie zu der aktuell ausgew&#228;hlten Kategorie hinzu.
+Du kannst den Namen der neuen Kategorie dabei direkt editieren.
+</p>
+
+<h3><a id="scales_view_toolbar_expand_all"><img src="../../../icons/expandall.gif" width="16" height="16" alt="Expand All Icon"/>Alles aufklappen</a></h3>
+
+<p>
+Klappt die gesamte Baumstruktur dieser Sicht auf, sodass s&#228;mtliche definierten Skalen sichtbar werden.
+</p>
+
+<h3><a id="scales_view_toolbar_collapse_all"><img src="../../../icons/collapseall.gif" width="16" height="16" alt="Collapse All Icon"/>Alles zusammenklappen</a></h3>
+
+<p>
+Klappt die gesamte Baumstruktur dieser Sicht zusammen.
+</p>
+
+<h3><a id="scales_view_toolbar_link_with_editor"><img src="../../../icons/synced.gif" width="16" height="16" alt="Link with Editor Icon"/>Verkn&#252;pfe mit Editor</a></h3>
+
+<p>
+Hier kannst du einstellen, ob die <em>Skalen-Sicht</em> mit dem aktuellen Editor verkn&#252;pft sein soll.
+Ist diese Option eingestellt, wird mit dem Wechsel zu einem aktuellen <a href="../editors/scale.html">Skalen-Editor</a>
+automatisch die dazugeh&#246;rige Skala in der <em>Skalen-Sicht</em> selektiert. <br/>
+Hinweis: Vor allem bei einer Vielzahl definierter Skalen ist eine Verkn&#252;pfung der <em>Skalen-Sicht</em> mit dem Editor sinnvoll,
+um den &#220;berblick zu behalten.
+</p>
+
+<h3><a id="scales_view_toolbar_show_intervals"><img src="../../../icons/interval.gif" width="16" height="16" alt="Show Intervals Icon"/>Zeige Intervalle</a></h3>
+
+<p>
+Blendet die innere <em>Intervallsicht</em> ein oder aus.
+Die <em>Intervallsicht</em> zeigt zu einer aktuell ausgew&#228;hlten Skala dessen definierte Intervalle an.
+</p>
+
+<h2><a id="scales_view_menu">Men&#252;</a></h2>
+
+<p>
+Das Men&#252; der <em>Skalen-Sicht</em> enth&#228;lt die folgenden Funktionen:
+</p>
+
+<h3><a id="chords_view_toolbar_CleanUpScales"><img src="../../../icons/cleanUpScales.gif" width="16" height="16" alt="Clean Up Scales Icon"/>Bereinigen...</a></h3>
+
+<p>
+&#214;ffnet den Wizard zum Bereinigen der Skalenliste. (siehe auch: <a href="../menu/extras.html#ExtrasMenu_CleanUpScales">Men&#252; &#8594; Extras &#8594; Bereinige Skalen...</a>).
+</p>
+
+<p>
+<img src="../../../icons/new_scale.gif" width="16" height="16" alt="Add Scale Icon"/><a href="scales.html#scales_view_toolbar_add_scale">F&#252;ge Skala hinzu</a><br/>
+<img src="../../../icons/new_category.gif" width="16" height="16" alt="Add Category All Icon"/><a href="scales.html#scales_view_toolbar_add_category">F&#252;ge Kategorie hinzu</a><br/>
+<img src="../../../icons/expandall.gif" width="16" height="16" alt="Expand All Icon"/><a href="scales.html#scales_view_toolbar_expand_all">Alles aufklappen</a><br/>
+<img src="../../../icons/collapseall.gif" width="16" height="16" alt="Collapse All Icon"/><a href="scales.html#scales_view_toolbar_collapse_all">Alles zusammenklappen</a><br/>
+<img src="../../../icons/synced.gif" width="16" height="16" alt="Link with Editor Icon"/><a href="scales.html#scales_view_toolbar_link_with_editor">Verkn&#252;pfe mit Editor</a><br/>
+<img src="../../../icons/interval.gif" width="16" height="16" alt="Show Intervals Icon"/><a href="scales.html#scales_view_toolbar_show_intervals">Zeige Intervalle</a><br/>
+</p>
+
+<h3><a id="scales_view_toolbar_VerticalViewOrientation"><img src="../../../icons/th_vertical.gif" width="16" height="16" alt="Vertical View Orientation Icon"/>Vertikale Ausrichtung</a></h3>
+
+<p>
+Positioniert die innere <em>Intervallsicht</em> unterhalb der eigentlichen <em>Skalen-Sicht</em>.
+</p>
+
+<h3><a id="scales_view_toolbar_HorizontalViewOrientation"><img src="../../../icons/th_horizontal.gif" width="16" height="16" alt="Horizontal View Orientation Icon"/>Horizontale Ausrichtung</a></h3>
+
+<p>
+Positioniert die innere <em>Intervallsicht</em> rechts neben der eigentlichen <em>Skalen-Sicht</em>.
+</p>
+
+<h3><a id="scales_view_toolbar_AutomaticViewOrientation"><img src="../../../icons/th_automatic.gif" width="16" height="16" alt="Automatic View Orientation Icon"/>Automatische Ausrichtung</a></h3>
+
+<p>
+Positioniert die innere <em>Intervallsicht</em> abh&#228;ngig von der Dimension der <em>Skalen-Sicht</em>.
+Ist die Sicht h&#246;her als breit, so wird die Sicht vertikal ausgerichtet.
+Ist die Sicht wiederum breiter als hoch, so wird die horizontale Ausrichtung verwandt.
+</p>
+
+<h2><a id="chords_view_popup_menu">Kontextmen&#252;</a></h2>
+
+<p>
+Das Kontextmen&#252; dieser Sicht enth&#228;lt die folgenden Funktionen:
+</p>
+
+<p>
+<img src="../../../icons/new_scale.gif" width="16" height="16" alt="Add Scale Icon"/><a href="scales.html#scales_view_toolbar_add_scale">Neu  &#8594; Skala</a><br/>
+<img src="../../../icons/new_category.gif" width="16" height="16" alt="Add Category Icon"/><a href="scales.html#scales_view_toolbar_add_category">Neu  &#8594; Kategorie</a><br/>
+</p>
+
+<h3><a id="scales_view_popup_menu_cut"><img src="../../../icons/cut_edit.gif" width="16" height="16" alt="Cut Icon"/>Ausschneiden</a></h3>
+
+<p>
+Schneidet die ausgew&#228;hlten Elemente (Skalen und/oder Kategorien) aus und kopiert diese in die Zwischenablage.
+</p>
+
+<h3><a id="scales_view_popup_menu_copy"><img src="../../../icons/copy_edit.gif" width="16" height="16" alt="Copy Icon"/>Duplizieren</a></h3>
+
+<p>
+Dupliziert die ausgew&#228;hlten Elemente, wobei die Namen der neuen Elemente um eine fortlaufende Nummer erg&#228;nzt werden.
+</p>
+
+<h3><a id="scales_view_popup_menu_paste"><img src="../../../icons/paste_edit.gif" width="16" height="16" alt="Paste Icon"/>Einf&#252;gen</a></h3>
+
+<p>
+F&#252;gt die in der Zwischenablage befindlichen Elemente in die aktuelle ausgew&#228;hlte Kategorie ein.
+Existieren in dieser Kategorie bereits gleichnamige Elemente,
+so werden die Namen der eingef&#252;gten Elemente um fortlaufende Nummern erg&#228;nzt.
+</p>
+
+<h3><a id="scales_view_popup_menu_remove"><img src="../../../icons/remove.gif" width="16" height="16" alt="Remove Icon"/>L&#246;schen</a></h3>
+
+<p>
+L&#246;scht die ausgew&#228;hlten Elemente. L&#246;scht man eine Kategorie, so werden auch deren enthaltene Elemente gel&#246;scht.
+Aber keine Angst, so schnell kann man nichts l&#246;schen - man muss vor jedem L&#246;schvorgang,
+diesen &#252;ber einen entsprechenden Dialog best&#228;tigen.
+</p>
+
+<h3><a id="scales_view_popup_menu_rename">Umbenennen</a></h3>
+
+<p>
+Erm&#246;glicht das direkte Umbenennen eines ausgew&#228;hlten Elements (Skala oder Kategorie).
+</p>
+
+<h3><a id="scales_view_popup_menu_import"><img src="../../../icons/import.gif" width="16" height="16" alt="Import Icon"/>Importieren...</a></h3>
+
+<p>
+Importiert die Elemente einer ausgew&#228;hlten XML-Datei und f&#252;gt diese in die aktuelle ausgew&#228;hlte Kategorie ein.
+</p>
+
+<h3><a id="scales_view_popup_menu_export"><img src="../../../icons/export.gif" width="16" height="16" alt="Export Icon"/>Exportieren...</a></h3>
+
+<p>
+Exportiert die ausgew&#228;hlten Elemente in eine angegebene XML-Datei.
+</p>
+
+<h3><a id="ScaleResults_view_Menu_CopyToClipboard"><img src="../../../icons/copy_edit.gif" width="16" height="16" alt="Copy to Clipboard Icon"/>Kopiere Skalenbl&#246;cke in die Zwischenablage</a></h3>
+<p>
+Kopiert die Bilddaten aller Skalenbl&#246;cke einer selektierten Skala in die Zwischenablage.
+Welche Skalenbl&#246;cke einer selektierten Skala exportiert werden, h&#228;ngt dabei von dem festgelegten Skalenblockmodus ab
+(siehe <a href="../preferences/blocks.html">Benutzervorgaben: Bl&#246;cke</a>).
+Die Bilddaten k&#246;nnen dann beispielsweise in Office-Anwendungen eingef&#252;gt werden.
+Welche Bilddaten hierbei in die Zwischenablage kopiert werden,
+kannst du in den <a href="../preferences/export.html">Benutzervorgaben zum Export</a> spezifizieren.<br/>
+Beachte: Bei der Gr&#246;&#223;e der exportierten Bilddaten werden die in den <a href="../preferences/export.html">Benutzervorgaben</a>.
+definierten festen Gr&#246;&#223;en verwendet. Die aktuelle Gr&#246;&#223;e von Sichten kann hier nicht verwendet werden,
+da eine Sicht in mehreren Perspektiven mit unterschiedlicher Gr&#246;&#223;e ge&#246;ffnet sein kann.
+</p>
+
+<h2><a id="scales_view_icons">Icons</a></h2>
+
+<p>
+The following icons can appear in the <em>Scales View</em>:
+</p>
+
+<table>
+   <tr>
+      <th>Icon</th>
+      <th>Beschreibung</th>
+   </tr>
+   <tr>
+      <td><img src="../../../icons/category.gif" alt="Category Icon"/></td>
+      <td>Kategorie</td>
+   </tr>
+   <tr>
+      <td><img src="../../../icons/scale.gif" alt="Scale Icon"/></td>
+      <td>Skala</td>
+   </tr>
+</table>
+
+<h2><a id="scales_view_related_topics">Verwandte Themen</a></h2>
+<p>
+<a href="../editors/scale.html">Arbeitsfl&#228;che &#8594; Editoren &#8594; Skalen-Editor</a><br/>
+<a href="../menu/extras.html#ExtrasMenu_CleanUpScales">Arbeitsfl&#228;che &#8594; Men&#252; &#8594; Extras &#8594; Bereinige Skalen...</a><br/>
+</p>
+
+<h2><a id="scales_view_related_tasks">Verwandte Aufgaben</a></h2>
+<p>
+<a href="../../tasks/chords_scales.html">Aufgaben &#8594; Akkorde und Skalen verwalten</a><br/>
+</p>
+
+</body>
+</html>

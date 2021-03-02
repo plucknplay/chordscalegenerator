@@ -1,0 +1,2 @@
+<?xml version="1.0"?>
+<interval_containers type="scales"><interval_container type="scales"><name>Kafi</name><akaName>Dorisch</akaName><akaName>II</akaName><akaName>N.M. IV</akaName><akaName>Dorian</akaName><description></description><intervals><interval name="1" value="0"/><interval name="2" value="2"/><interval name="b3" value="3"/><interval name="4" value="5"/><interval name="5" value="7"/><interval name="6" value="9"/><interval name="b7" value="10"/></intervals></interval_container></interval_containers>

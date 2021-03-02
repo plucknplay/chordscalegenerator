@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<interval_containers type="scales"><interval_container type="scales"><name>Äolisch</name><akaName>VI</akaName><akaName>N.M. I</akaName><akaName>Moll</akaName><akaName>Natürliches Moll</akaName><akaName>Aeolian</akaName><akaName>Minor</akaName><akaName>Natural Minor</akaName><description>Reihenfolge: 6. Stufe von Dur = VI / 1. Stufe von Natürlich Moll (N.M.) = N.M. (I)&#xd;
+Tonart: moll&#xd;
+Charakteristik: b6, b7&#xd;
+&#xd;
+Bemerkungen: &#xd;
+- es fehlt die große Septime (7) als Leitton (bzw. Schlusswendung)&#xd;
+- Entwicklung: natürliches Moll (N.M.) ...b6-b7 --&gt; harmonisches Moll (H.M.) ...b6-7 --&gt; melodisches Moll (M.M.) ...6-7</description><intervals><interval name="1" value="0"/><interval name="2" value="2"/><interval name="b3" value="3"/><interval name="4" value="5"/><interval name="5" value="7"/><interval name="b6" value="8"/><interval name="b7" value="10"/></intervals></interval_container></interval_containers>

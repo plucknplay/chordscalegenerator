@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Scale Results View</title>
+<link type="text/css" rel="stylesheet" href="../../book.css" />
+</head>
+
+<body>
+
+
+
+<h1><img src="../../../icons/scale_results.gif" width="16" height="16" alt="Scale Results Icon"/>Scale Results View</h1>
+
+<p>
+The <em>Scale Results View</em> shows the results of the calculation
+to find scales for a corresponding fingering or musical notation.
+</p>
+
+<p>
+    <enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+	<img src="../../../images/workbench/views/scale_results_view.png" width="809" height="235" alt="Scale Results View"/>
+</p>
+<p>
+    <enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+	<img src="../../../images/workbench/views/macosx/scale_results_view.png" width="930" height="244" alt="Scale Results View"/>
+</p>
+
+<p>
+The scale result set will be presented in a tabular form.
+The (found) scales can be arranged in columns. The columns itself can be resized.
+Besides, unnecessary columns can be set invisible (see <a href="../preferences/views/scale_results.html">preferences</a> of this view).
+</p>
+
+<p>
+Since the result set may be very large, this view is divided into pages for the sake of clarity.
+If many pages exist, the current page will be shown in the toolbar on the left side of the actions to turn the pages.<br/>
+Note: The arrangement in columns is not restricted to the current page - but takes into consideration the whole result set.
+</p>
+
+
+
+<h2><a id="ScaleResults_view_TableColumns">Table columns</a></h2>
+
+<h3><a id="ScaleResults_view_TableColumns_Scale">Scale</a></h3>
+<p>This columns shows the complete name of the scale.</p>
+
+<h3><a id="ScaleResults_view_TableColumns_Intervals">Intervals</a></h3>
+<p>This column lists the individual intervals of the scale.</p>
+
+<h3><a id="ScaleResults_view_TableColumns_Notes">Notes</a></h3>
+<p>This column lists the individual notes of the scale.</p>
+
+<h3><a id="ScaleResults_view_TableColumns_ReferenceIntervals">Reference Intervals</a></h3>
+<p>
+This column lists the intervals which correspond
+to the notes that were used for the calculation of the present scale result set.
+These listed intervals represent in most cases just a subset of the original intervals of the scale.
+</p>
+
+<h3><a id="ScaleResults_view_TableColumns_ReferenceNotes">Reference Notes</a></h3>
+<p>
+This column lists the notes that were used for the calculation of the present scale result set.
+These listed notes represent in most cases just a subset of the original notes of the scale.
+</p>
+
+<h3><a id="ScaleResults_view_TableColumns_FT">FT (Root Note)</a></h3>
+<p>This column indicates whether or not the reference notes include the root note of the scale.</p>
+
+<h3><a id="ScaleResults_view_TableColumns_Coverage">Coverage</a></h3>
+<p>
+This column indicates which percentage of the notes of the scale is covered by the reference notes
+(all the notes that were used for the calculation)
+</p>
+
+<h2><a id="ScaleResults_view_Toolbar">Toolbar</a></h2>
+<p>The toolbar of the <em>Scale Results View</em> contains the following actions:</p>
+
+<h3><a id="ScaleResults_view_Toolbar_FirstPage"><img src="../../../icons/shift_l_edit.gif" width="16" height="16" alt="First Page Icon"/>First Page</a></h3>
+<p>Jumps to the first result page of this view.</p>
+
+<h3><a id="ScaleResults_view_Toolbar_PreviousPage"><img src="../../../icons/backward_nav.gif" width="16" height="16" alt="Previous Page Icon"/>Previous Page</a></h3>
+<p>Jumps to the previous result page.</p>
+
+<h3><a id="ScaleResults_view_Toolbar_NextPage"><img src="../../../icons/forward_nav.gif" width="16" height="16" alt="Next Page Icon"/>Next Page</a></h3>
+<p>Jumps to the next result page.</p>
+
+<h3><a id="ScaleResults_view_Toolbar_LastPage"><img src="../../../icons/shift_r_edit.gif" width="16" height="16" alt="Last Page Icon"/>Last Page</a></h3>
+<p>Jumps to the last result page of this view.</p>
+
+
+
+<h2><a id="ScaleResults_view_Menu">Menu</a></h2>
+<p>The menu of the <em>Scale Results View</em> contains the following actions:</p>
+
+<h3><a id="ScaleResults_view_Menu_Preferences">Preferences...</a></h3>
+<p>
+Opens the preferences dialog.
+The page with the <a href="../preferences/views/scale_results.html">preferences</a> for this view is already pre-selected.
+</p>
+
+
+
+<h2><a id="ScaleResults_view_Pop-up-Menu">Pop-up menu</a></h2>
+<p>The pop-up menu of this view contains the following actions:</p>
+
+<h3><a id="ScaleResults_view_Pop-up-Menu_OpenInEditor">Open in Editor</a></h3>
+<p>Opens the selected scale in a corresponding <a href="../editors/scale.html">Scale Editor</a>.</p>
+
+<h3><a id="ScaleResults_view_Menu_CopyToClipboard"><img src="../../../icons/copy_edit.gif" width="16" height="16" alt="Copy to Clipboard Icon"/>Copy Scale Blocks to Clipboard</a></h3>
+<p>
+Copies the image data of all scale blocks of a selected scale (of this view) into the clipboard.
+Which scale blocks of a selected scale will be exported depends on which scale block mode you have selected (see <a href="../preferences/blocks.html">Blocks Preferences</a>).
+The stored image data may be pasted, for instance, into Office applications later on.
+You can define in the <a href="../preferences/export.html">export preferences</a> which image data shall be copied.<br/>
+Note: The image data will be copied with the fixed sizes as defined in the <a href="../preferences/export.html">export preferences</a>.
+The current sizes of the views can not be used since a view can be opened in several perspectives with different sizes.
+</p>
+
+<h3><a id="ScaleResults_view_Pop-up-Menu_PlayScale"><img src="../../../icons/play_sound.gif" width="16" height="16" alt="Play Scale Icon"/>Play Scale</a></h3>
+<p>Plays the selected scale. You can define in the <a href="../preferences/sound.html">sound preferences</a>, how a played scale should sound.</p>
+
+<h2><a id="ScaleResults_view_related_topics">Related topics</a></h2>
+<p>
+<a href="../preferences/views/scale_results.html">Workbench &#8594; Preferences &#8594; Views &#8594; Scale Results</a><br/>
+<a href="../preferences/export.html">Workbench &#8594; Preferences &#8594; Export</a><br/>
+<a href="../preferences/blocks.html">Workbench &#8594; Preferences &#8594; Blocks</a><br/>
+<a href="../preferences/sound.html">Workbench &#8594; Preferences &#8594; Sound</a><br/>
+<a href="../views/box.html">Workbench &#8594; Views &#8594; Box</a><br/>
+<a href="../views/tab.html">Workbench &#8594; Views &#8594; Tab</a><br/>
+<a href="../views/notes.html">Workbench &#8594; Views &#8594; Notes</a><br/>
+<a href="../editors/scale.html">Workbench &#8594; Editors &#8594; Scale Editor</a><br/>
+</p>
+
+<h2><a id="ScaleResults_view_related_tasks">Related Tasks</a></h2>
+<p>
+<a href="../../tasks/find_scales.html">Tasks &#8594; Find Scales</a><br/>
+<a href="../../tasks/sound.html">Tasks &#8594; Sound Support</a><br/>
+</p>
+
+</body>
+</html>

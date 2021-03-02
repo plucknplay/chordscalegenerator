@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<interval_containers type="scales"><interval_container type="scales"><name>Äolisch 6 7</name><akaName>M.M. I</akaName><akaName>Melodisches Moll</akaName><akaName>Aeolian 6 7</akaName><akaName>Melodic Minor</akaName><akaName>Jazz Minor</akaName><description>Reihenfolge: 1. Stufe von melodisch Moll = M.M. I&#xd;
+&#xd;
+Bemerkungen: &#xd;
+- aus dem harmonischen Moll (H.M.) entwickelt: kleine Sexte (b6) wird zur großen Sexte (6)&#xd;
+- erste Hälfte der Tonleiter bildet einen moll-Tetrachord&#xd;
+- zweite Hälfte der Tonleiter bildet einen Dur-Tetrachord&#xd;
+- Entwicklung: natürliches Moll (N.M.) ...b6-b7 --&gt; harmonisches Moll (H.M.) ...b6-7 --&gt; melodisches Moll (M.M.) ...6-7</description><intervals><interval name="1" value="0"/><interval name="2" value="2"/><interval name="b3" value="3"/><interval name="4" value="5"/><interval name="5" value="7"/><interval name="6" value="9"/><interval name="7" value="11"/></intervals></interval_container></interval_containers>

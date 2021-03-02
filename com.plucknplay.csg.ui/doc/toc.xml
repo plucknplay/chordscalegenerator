@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="Chord Scale Generator" topic="doc/overview.html">
+
+	<topic label="Getting Started" href="doc/getting_started/overview.html">
+		<topic label="Features" href="doc/getting_started/features.html"/>
+		<topic label="Versions" href="doc/getting_started/versions.html"/>
+	</topic>
+
+	<topic label="Workbench" href="doc/workbench/overview.html">
+		<topic label="Views" href="doc/workbench/views/overview.html">
+			<topic label="Instruments View" href="doc/workbench/views/instruments.html"/>
+			<topic label="Chords View" href="doc/workbench/views/chords.html"/>
+			<topic label="Scales View" href="doc/workbench/views/scales.html"/>
+			<topic label="Chord Generation View" href="doc/workbench/views/chord_generation.html"/>
+			<topic label="Chord Results View" href="doc/workbench/views/chord_results.html"/>
+			<topic label="Scale Results View" href="doc/workbench/views/scale_results.html"/>
+			<topic label="Scale Finder View" href="doc/workbench/views/scale_finder.html"/>
+			<topic label="Fretboard View" href="doc/workbench/views/fretboard.html"/>
+			<topic label="Keyboard View" href="doc/workbench/views/keyboard.html"/>
+			<topic label="Box View" href="doc/workbench/views/box.html"/>
+			<topic label="Tab View" href="doc/workbench/views/tab.html"/>
+			<topic label="Notes View" href="doc/workbench/views/notes.html"/>
+			<topic label="Help View" href="doc/workbench/views/help.html"/>
+		</topic>
+		<topic label="Editors" href="doc/workbench/editors/overview.html">
+			<topic label="Instrument Editor" href="doc/workbench/editors/instrument.html"/>
+			<topic label="Chord Editor" href="doc/workbench/editors/chord.html"/>
+			<topic label="Scale Editor" href="doc/workbench/editors/scale.html"/>
+		</topic>
+		<topic label="Preferences" href="doc/workbench/preferences/overview.html">
+			<topic label="Calculations" href="doc/workbench/preferences/calculations.html"/>
+			<topic label="Export" href="doc/workbench/preferences/export.html">
+                <topic label="Filenames" href="doc/workbench/preferences/export_filename.html"/>
+            </topic>
+			<topic label="General" href="doc/workbench/preferences/general/overview.html">
+                <topic label="Graphics" href="doc/workbench/preferences/general/graphics.html"/>
+                <topic label="Workbench" href="doc/workbench/preferences/general/workbench.html"/>
+            </topic>
+			<topic label="Help" href="doc/workbench/preferences/help.html"/>
+			<topic label="Keys" href="doc/workbench/preferences/keys.html"/>
+			<topic label="Names" href="doc/workbench/preferences/names/overview.html">
+                <topic label="Chord Names" href="doc/workbench/preferences/names/chord_names.html"/>
+                <topic label="Fingering Notation" href="doc/workbench/preferences/names/fingering_notation.html"/>
+                <topic label="Interval Names" href="doc/workbench/preferences/names/interval_names.html"/>
+                <topic label="Note Names" href="doc/workbench/preferences/names/note_names.html"/>
+                <topic label="Scale Names" href="doc/workbench/preferences/names/scale_names.html"/>
+            </topic>
+			<topic label="Perspectives" href="doc/workbench/preferences/perspectives.html"/>
+			<topic label="Blocks" href="doc/workbench/preferences/blocks.html"/>
+			<topic label="Sound" href="doc/workbench/preferences/sound.html"/>
+			<topic label="Update" href="doc/workbench/preferences/update.html"/>
+			<topic label="Views" href="doc/workbench/preferences/views/overview.html">
+				<topic label="Chord Generation View" href="doc/workbench/preferences/views/chord_generation.html"/>
+				<topic label="Chord Results View" href="doc/workbench/preferences/views/chord_results.html"/>
+				<topic label="Scale Results View" href="doc/workbench/preferences/views/scale_results.html"/>
+				<topic label="Scale Finder View" href="doc/workbench/preferences/views/scale_finder.html"/>
+				<topic label="Fretboard View" href="doc/workbench/preferences/views/fretboard.html"/>
+				<topic label="Keyboard View" href="doc/workbench/preferences/views/keyboard.html"/>
+				<topic label="Box View" href="doc/workbench/preferences/views/box.html"/>
+				<topic label="Tab View" href="doc/workbench/preferences/views/tab.html"/>
+				<topic label="Notes View" href="doc/workbench/preferences/views/notes.html"/>
+			</topic>
+            <topic label="Warnings" href="doc/workbench/preferences/warnings.html"/>
+		</topic>
+		<topic label="Menu" href="doc/workbench/menu/overview.html">
+			<topic label="File Menu" href="doc/workbench/menu/file.html"/>
+			<topic label="View Menu" href="doc/workbench/menu/view.html"/>
+			<topic label="Extras Menu" href="doc/workbench/menu/extras.html"/>
+			<topic label="Window Menu" href="doc/workbench/menu/window.html"/>
+			<topic label="Help Menu" href="doc/workbench/menu/help.html"/>
+		</topic>
+		<topic label="Status bar" href="doc/workbench/status_bar.html"/>
+	</topic>
+
+	<topic label="Tasks" href="doc/tasks/overview.html">
+		<topic label="Workbench" href="doc/tasks/workbench.html"/>
+		<topic label="Manage your Instruments" href="doc/tasks/instruments.html"/>
+		<topic label="Manage your Chords and Scales" href="doc/tasks/chords_scales.html"/>
+		<topic label="Generate and Show Chord" href="doc/tasks/chord_generation.html"/>
+		<topic label="Find Chords" href="doc/tasks/find_chords.html"/>
+		<topic label="Show Scales" href="doc/tasks/show_scales.html"/>
+		<topic label="Find Scales" href="doc/tasks/find_scales.html"/>
+		<topic label="Sound Support" href="doc/tasks/sound.html"/>
+		<topic label="Export Actions" href="doc/tasks/export.html"/>
+		<topic label="Update Support" href="doc/tasks/update.html"/>
+	</topic>
+
+<!--
+	<topic label="Glossary">
+		<topic label="Interval" href="doc/glossary/interval.html"/>
+		<topic label="Chord" href="doc/glossary/chord.html"/>
+		<topic label="Scale" href="doc/glossary/scale.html"/>
+		<topic label="Barre (chord)" href="doc/glossary/barre.html"/>
+		<topic label="Tablature" href="doc/glossary/tablature.html"/>
+		<topic label="Capo (tasto)" href="doc/glossary/capo.html"/>
+		<topic label="Scale length" href="doc/glossary/scale_length.html"/>
+		<topic label="Clef" href="doc/glossary/clef.html"/>
+	</topic>
+-->
+
+	<topic label="Legal Policies" href="doc/legal.html"/>
+
+</toc>

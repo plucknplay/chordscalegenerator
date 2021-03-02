@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<interval_containers type="scales"><interval_container type="scales"><name>Lokrisch 6</name><akaName>H.M. II</akaName><akaName>Lokrisch #6</akaName><akaName>Locrian 6</akaName><akaName>Locrian #6</akaName><description>Reihenfolge: 2. Stufe von harmonisch Moll = H.M. II&#xd;
+&#xd;
+Bemerkungen: &#xd;
+- lokrisch mit 6 statt b6&#xd;
+- manchmal auch lokrisch #6</description><intervals><interval name="1" value="0"/><interval name="b2" value="1"/><interval name="b3" value="3"/><interval name="4" value="5"/><interval name="b5" value="6"/><interval name="6" value="9"/><interval name="b7" value="10"/></intervals></interval_container></interval_containers>

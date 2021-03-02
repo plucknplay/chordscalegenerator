@@ -1,0 +1,250 @@
+body {
+	font:				small/1.6em Verdana, Helvetica, Arial, sans-serif;
+	padding:			0px;
+	margin:				0px;
+	font-weight:		normal;
+	background:			white;
+	color:				#505050;
+}
+
+#all {
+	margin:				0px;
+}
+
+#close {
+    background:         #dcdcdc;
+    margin:             0px;
+    padding:            0px;
+    text-align:         right;
+}
+
+#close p {
+    margin:             0px 10px;
+    padding:            5px;
+}
+
+#top {
+    background:         url('images/header-bg.gif') repeat-x top center;
+	margin:				0px 10px 0px 10px;
+	padding: 			0px;
+	border-top-style:	solid;
+	border-top-width:	10px;
+	border-top-color:	white;
+	vertical-align:		bottom;
+	height:				90px;
+}
+
+#top p {
+	margin: 			0px;
+	padding: 			14px 13px;
+	color:				white;
+}
+
+#header {
+	background-color: 	#c0d069;
+	font-weight:		bold;
+	margin:				0px 10px;
+	padding: 			0px;
+}
+
+#header h1 {
+	margin: 			0px;
+	padding: 			8px 10px 8px 10px;
+	color:				white;
+}
+
+ul#steps {
+	width:				250px;
+	float:				right;
+	padding: 			11px 5px 0px 10px;
+	margin: 			0px;
+	border:             0;
+	text-align:			right;
+}
+
+ul#steps li {
+	list-style: 		none;
+	display: 			inline;
+	padding: 			0px; 
+	margin: 			0px; 
+}
+
+ul#steps li a img {
+    padding:            0px; 
+    margin:             0px;
+}
+
+a img {
+	border:				0;
+}
+
+#main {
+	margin:				0px 10px;
+	padding:			20px 10px;
+}
+
+p {
+	margin-top: 		0px 5px 5px 5px;
+}
+
+div {
+	margin:				0px;
+	padding:			0px;
+}
+
+h1, h2, h3 {
+	font-weight: bold;
+}
+
+h1, h2 {
+	color: #c4df50;
+}
+
+h1 {
+	font-size: 170%;
+}
+
+h2 {
+	font-size: 140%;
+}
+
+h3 {
+	font-size: 100%;
+	margin-bottom: 0px;
+}
+
+img {
+	margin-right: 5px;
+}
+
+table {
+	border: thin solid gray;
+	caption-side: bottom;
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 5px;
+	text-align: center;
+	border: thin dotted silver;
+}
+
+th {
+	border: thin solid gray;
+	background-color: #c4df50;
+}
+
+a {
+	color: #ff952a;
+}
+
+.welcome {
+    background-image:       url("images/background.png");
+    background-repeat:      no-repeat;
+    background-position:    490px 310px;
+}
+
+.note {
+    font-weight:        bold;
+}
+
+.link {
+	background:			#ff952a url('images/link-bullet.jpg') no-repeat 10px 7px; 
+	padding:			5px 10px 5px 30px;
+	margin:				0px;
+	margin-bottom:		5px;
+	margin-top:			20px;
+	width:				300px;
+}
+
+.link p {
+	margin:				0px;
+	padding:			0px;
+}
+
+.link a {
+	color:				white;
+	text-decoration:	none;
+}
+
+.link a:hover {
+	text-decoration:	underline;
+}
+
+/* changing image stuff */
+
+#overview:hover img, .step:hover img, #back:hover img, #forward:hover img {
+	visibility: 		hidden;
+}
+
+#overview:hover, .step:hover, #back:hover, #forward:hover { /* Workaround fuer IE 5.5 und 6 */
+    border:				0;
+}
+
+a#forward {
+	background: 		url(images/forward_active.gif) no-repeat;
+	width:				8px;
+    height:             15px;
+    float:				left;
+    padding:            0px 5px 0px 0px;
+    margin:             0px;        
+}
+
+a#back {
+	background: 		url(images/back_active.gif) no-repeat;
+	width:				8px;
+    height:             15px;
+    float:				left;
+    padding:    		0px 5px 0px 0px;			
+    margin:             0px;        
+}
+
+a#overview {
+	background: 		url(images/overview_active.gif) no-repeat;
+	width:				15px;
+    height:             15px;
+    float:				left;
+    padding:            0px 5px 0px 0px;            
+    margin:             0px;        
+}
+
+a.step {
+	background: 		url(images/step_active.gif) no-repeat;
+	width:				15px;
+    height:             15px;
+    float:				left;
+    padding:            0px 5px 0px 0px;            
+    margin:             0px;        
+}
+
+#welcome_main {
+	padding-top: 40px;
+}
+
+.welcome_image {
+	float: left;
+	padding: 0px;
+	margin: 0px;
+}
+
+.welcome_text {
+	height: 120px;
+	margin: 0px 0px 0px 110px;
+	padding: 0px;
+}
+
+#welcome_features {
+	width: 400px;
+}
+
+#welcome_versions {
+	width: 340px;
+}
+
+#welcome_tour {
+	width: 300px;
+}
+
+#welcome_videos {
+	width: 350px;
+}

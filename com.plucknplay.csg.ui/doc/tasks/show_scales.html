@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Show Scales</title>
+<link type="text/css" rel="stylesheet" href="../book.css" />
+</head>
+
+<body>
+
+<h1>Show Scales</h1>
+<p>
+As the name of this program implies, the <em>Chord Scale Generator</em> not only
+<a href="chord_generation.html">generates</a> and <a href="find_chords.html">finds chords</a>.
+There are also many useful functions and calculations especially for scales.
+</p>
+
+<p>
+First we want to explain how the <em>Chord Scale Generator</em> displays scales.
+Therefore, you need to switch to the <em>Scales</em> perspective.
+On the left side, you can find the <a href="../workbench/views/scales.html">Scales View</a> which contains all
+defined scales of your application. To display a scale you have to select a scale from the <a href="../workbench/views/scales.html">Scales View</a>.
+All graphical views of a selected scale depend on which root note you have set.
+So, if you want to display a blues scale in D you simply have to set the root note in the toolbar of the
+<a href="../workbench/views/scales.html">Scales View</a> to D and select the blues scale.
+</p>
+
+<p>
+A selected scale can be displayed in all graphical views (which you already know from the display of chords).
+There is only one difference. Unlike chords, scales take up the whole fretboard so that the
+<a href="../workbench/views/tab.html">Tab</a> and <a href="../workbench/views/box.html">Box Views</a> can
+only display a section of the selected scale.
+You can specify in the <a href="../workbench/views/fretboard.html">Fretboard View</a> which section of a scale
+shall be shown. The section you have selected will be highlighted in blue (In the following we call these selections
+"scale blocks"). As long as the <a href="../workbench/views/fretboard.html">Fretboard View</a> is in focus you
+can navigate between the individual scale blocks using the cursor keys.
+</p>
+
+
+<p>
+    <enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+	<img src="../../images/tasks/show_scale.png" width="870" height="259" alt="Show Scales"/>
+</p>
+<p>
+    <enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+	<img src="../../images/tasks/macosx/show_scale.png" width="1046" height="302" alt="Show Scales"/>
+</p>
+
+<p>
+There are also preferences to define the type of scale blocks you prefer
+(<a href="../workbench/preferences/blocks.html">File &#8594; Preferences... &#8594; Blocks</a>).
+Here you can choose between fret blocks, which cover all strings of the instrument in a defined fret span, and octave blocks,
+the most compact block covering a whole octave starting from a selected note. If this all just confuses you,
+you can also disable scale blocks in the <a href="../workbench/views/fretboard.html">Fretboard View</a>.
+Thus, only a default scale block will be shown in the <a href="../workbench/views/box.html">Box</a> and
+<a href="../workbench/views/tab.html">Tab View</a>.
+</p>
+
+<h2>Next Step</h2>
+<p><a href="find_scales.html">Find Scales</a></p>
+
+<h2><a id="ShowScales_related_topics">Related topics</a></h2>
+<p>
+<a href="../workbench/views/fretboard.html">Workbench &#8594; Views &#8594; Fretboard</a><br/>
+<a href="../workbench/views/keyboard.html">Workbench &#8594; Views &#8594; Keyboard</a><br/>
+<a href="../workbench/views/box.html">Workbench &#8594; Views &#8594; Box</a><br/>
+<a href="../workbench/views/tab.html">Workbench &#8594; Views &#8594; Tab</a><br/>
+<a href="../workbench/views/notes.html">Workbench &#8594; Views &#8594; Notes</a><br/>
+<a href="../workbench/preferences/blocks.html">Workbench &#8594; Preferences &#8594; Blocks</a><br/>
+</p>
+
+</body>
+</html>

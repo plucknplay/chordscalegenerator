@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<instruments><instrument><name>Gitarre-Banjo (6 Saiten)</name><description>aka: Banjitar, Guitjo, Guitar Banjo&#xd;
+Herkunft: USA&#xd;
+&#xd;
+Hinweis: Hals einer Gitarre und der Körper eines Banjos</description><stringCount>6</stringCount><scaleLength unit="mm" value="650.0"/><lefty_righty>false</lefty_righty><fretless>false</fretless><doubled_strings>false</doubled_strings><pitch><note level="4" octaveJump="false" stringNumber="1" value="4"/><note level="3" octaveJump="false" stringNumber="2" value="11"/><note level="3" octaveJump="false" stringNumber="3" value="7"/><note level="3" octaveJump="false" stringNumber="4" value="2"/><note level="2" octaveJump="false" stringNumber="5" value="9"/><note level="2" octaveJump="false" stringNumber="6" value="4"/></pitch><midiInstrumentNumber>105</midiInstrumentNumber><clef>5</clef></instrument></instruments>

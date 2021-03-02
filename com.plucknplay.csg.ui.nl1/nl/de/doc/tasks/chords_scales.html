@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Akkorde und Skalen verwalten</title>
+<link type="text/css" rel="stylesheet" href="../book.css" />
+</head>
+
+<body>
+
+<h1>Akkorde und Skalen verwalten</h1>
+<p>
+Bevor wir nun aber endlich mit den Berechnungen starten k&#246;nnen, lass uns noch kurz einen Blick auf die Daten werfen, 
+welche s&#228;mtlichen Berechnungen zugrunde liegen. Beim <em>Chord Scale Generator</em> dreht sich letztendlich alles um Akkorde und Skalen - 
+also m&#252;ssen diese auch irgendwo definiert sein. Welche Akkorde bzw. welche Skalen in deiner Anwendung definiert sind, 
+kannst du in den entsprechenden Sichten <a href="../workbench/views/chords.html">Akkorde</a> und 
+<a href="../workbench/views/scales.html">Skalen</a> sehen. Diese beiden Sichten sind analog zur Sicht 
+<a href="../workbench/views/instruments.html">Instrumente</a> aufgebaut und dienen zum Verwalten deiner Akkorde und Skalen.
+</p>
+
+<p>
+Wie schon bei den Instrumenten sind auch hier die gebr&#228;uchlichsten Akkorde und Skalen schon vordefiniert. 
+Dir steht es nat&#252;rlich aber auch frei, neue Akkorde und Skalen zu definieren sowie bestehende zu ver&#228;ndern oder sogar zu l&#246;schen.
+</p>
+
+<p>
+Hinweis: Du solltest aber f&#252;r die umgekehrten Berechnungen 
+(<a href="find_chords.html">Finde Akkorde</a> / <a href="find_scales.html">Finde Skalen</a>) 
+eine gewisse Datenmenge an definierten Akkorden und Skalen bereithalten. 
+Wenn du nur die Akkorde und Skalen definierst, die du oft spielst 
+(also z.B. die drei Standard-Liedbegleitungs-Akkorde und zwei Pentatonik-Skalen), 
+wird die Berechnung in der umgekehrten Richtung oft ins Leere laufen. 
+</p>
+
+<p>
+    <enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+	<img src="../../images/tasks/manage_your_chords.png" width="688" height="542" alt="Akkorde verwalten"/>
+</p>
+<p>
+    <enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+	<img src="../../images/tasks/macosx/manage_your_chords.png" width="811" height="676" alt="Akkorde verwalten"/>
+</p>
+
+<p>
+Die dazugeh&#246;rigen Editoren (siehe <a href="../workbench/editors/chord.html">Akkord-Editor</a> 
+und <a href="../workbench/editors/scale.html">Skalen-Editor</a>) sind in ihrem Aufbau dabei sehr &#228;hnlich. 
+Hier kannst du neben dem Namen und den definierenden Intervallen noch Kommentare sowie weitere "aka"-Namen angeben. 
+Aka steht dabei f&#252;r "also known as" (auch bekannt als). Dieses Feld tr&#228;gt dem Umstand Rechnung, dass bei vielen Akkorden 
+(aber auch bei einigen Skalen) in der Literatur unterschiedliche Namen bzw. Schreibweisen auftauchen. 
+Mit Hilfe des "aka"-Feldes musst du somit also nicht f&#252;r jeden Namen einen separaten Akkord (oder Skale) anlegen.
+</p>
+
+<p>
+Auch k&#246;nnen diese zus&#228;tzlichen Namen zum Auffinden von Akkorden und Skalen genutzt werden. 
+Die globalen Funktionen  <a href="../workbench/menu/extras.html#ExtrasMenu_OpenChord">Extras &#8594; &#214;ffne Akkord...</a>/
+<a href="../workbench/menu/extras.html#ExtrasMenu_OpenScale">&#214;ffne Skala...</a> 
+ber&#252;cksichtigen bei der Auswahl alle definierten Namen eines Akkords oder einer Skale. 
+Bevor du also einen vermeintlich fehlenden Akkord hinzuf&#252;gen m&#246;chtest, vergewissere dich am besten erst, 
+ob dieser Akkord nicht schon mit einem dir unbekannten Namen existiert 
+und dein bevorzugter Name dort lediglich als "aka"-Name definiert ist.
+</p>
+
+<p>
+    <enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+	<img src="../../images/workbench/menu/open_chord.png" width="345" height="430" alt="&#214;ffne Akkord..."/>
+</p>
+<p>
+    <enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+	<img src="../../images/workbench/menu/macosx/open_chord.png" width="384" height="426" alt="&#214;ffne Akkord..."/>
+</p>
+
+<h2>N&#228;chster Schritt</h2>
+<p><a href="chord_generation.html">Akkorde generieren und anzeigen</a></p>
+
+<h2><a id="ManageYourChordsAndScales_related_topics">Verwandte Themen</a></h2>
+<p>
+<a href="../workbench/views/chords.html">Arbeitsfl&#228;che &#8594; Sichten &#8594; Akkorde</a><br/>
+<a href="../workbench/views/scales.html">Arbeitsfl&#228;che &#8594; Sichten &#8594; Skalen</a><br/>
+<a href="../workbench/editors/chord.html">Arbeitsfl&#228;che &#8594; Editoren &#8594; Akkord-Editor</a><br/>
+<a href="../workbench/editors/scale.html">Arbeitsfl&#228;che &#8594; Editoren &#8594; Skalen-Editor</a><br/>
+<a href="../workbench/menu/extras.html#ExtrasMenu_OpenChord">Arbeitsfl&#228;che &#8594; Men&#252; &#8594; Extras &#8594; &#214;ffne Akkord...</a><br/>
+<a href="../workbench/menu/extras.html#ExtrasMenu_OpenScale">Arbeitsfl&#228;che &#8594; Men&#252; &#8594; Extras &#8594; &#214;ffne Skala...</a><br/>
+</p>		
+
+</body>
+</html>

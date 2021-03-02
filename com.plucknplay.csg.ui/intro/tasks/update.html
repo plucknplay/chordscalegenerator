@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Update Support</title>
+<link type="text/css" rel="stylesheet" href="../book.css" />
+</head>
+
+<body>
+
+<div id="all">
+
+    <div id="close">
+        <p id="close_img">
+            <a href="http://org.eclipse.ui.intro/close"><img src="../images/close.png" width="214" height="25" alt="Close"/></a>
+        </p>
+    </div>
+
+	<div id="top">
+        <p>
+            <a href="http://org.eclipse.ui.intro/showPage?id=root"><img src="../../logos/logo_64.png" width="64" height="64" alt="Welcome"/></a>
+        </p>
+	</div>
+
+	<div id="header">
+	
+		<ul id="steps">
+			<li><a id="overview" href="http://org.eclipse.ui.intro/showPage?id=overview"><img src="../images/overview.gif" width="15" height="15" alt="Overview"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=workbench"><img src="../images/step.gif" width="15" height="15" alt="The Workbench"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=instruments"><img src="../images/step.gif" width="15" height="15" alt="Manage your Instruments"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=chords_scales"><img src="../images/step.gif" width="15" height="15" alt="Manage your Chords and Scales"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=chord_generation"><img src="../images/step.gif" width="15" height="15" alt="Generate and Show Chords"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=find_chords"><img src="../images/step.gif" width="15" height="15" alt="Find Chords"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=show_scales"><img src="../images/step.gif" width="15" height="15" alt="Show Scales"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=find_scales"><img src="../images/step.gif" width="15" height="15" alt="Find Scales"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=sound"><img src="../images/step.gif" width="15" height="15" alt="Sound Support"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=export"><img src="../images/step.gif" width="15" height="15" alt="Export Actions"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=update"><img src="../images/step_active.gif" width="15" height="15" alt="Update Support"/></a></li>
+			<li><a id="back" href="http://org.eclipse.ui.intro/showPage?id=export"><img src="../images/back.gif" width="8" height="15" alt="Previous Step"/></a></li>
+			<li><a id="forward" href="http://org.eclipse.ui.intro/showPage?id=overview"><img src="../images/forward.gif" width="8" height="15" alt="Next Step"/></a></li>
+		</ul>
+	
+		<h1>Update Support</h1>
+	</div>
+
+	<div id="main">
+
+		<p>		
+		In the last chapter of this tour we finally want to explain the update support of the 
+		<em>Chord Scale Generator</em>. The <em>Chord Scale Generator</em> provides an update action which enables you 
+		to keep your program up-to-date. Therefore, it is not necessary to install the program again 
+		whenever a new version is available.
+		</p>
+		
+		<p>		
+		Updates are important to improve the program. They can either provide new features or fix little 
+		bugs (errors). Thus, it is advisable to check for new updates frequently. But don't worry, an update 
+		never changes your current program settings or data (instruments, chords or scales).
+		</p>
+		
+		<p>		
+		You can start the search for an update with the menu entry <em>Help &#8594; Search for Updates</em>. 
+		In order to search for new updates an active internet connection is necessary. If a new version is 
+		found a corresponding dialog box opens which informs you about the latest available version. 
+		After accepting the lincence agreement the new version will be downloaded and installed. It is 
+		necessary to restart the <em>Chord Scale Generator</em> so that the changes can take effect.
+		</p>
+		
+		<p>
+		<span class="note">Note:</span> The download of the new version can take some time depending on the speed of your internet 
+		connection. However, the update process can be performed in the background so that it is possible 
+		to work with the <em>Chord Scale Generator</em> in the meantime.
+		</p>
+		
+		<p>
+		There is also the possibility of an automatical search for updates. In the update preferences 
+		(<em>File &#8594; Preferences... &#8594; Update</em>) you can define in detail when and 
+		how such an automatic update shall be performed.
+		</p>
+		
+		<p>
+			<enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+			<img src="../../images/workbench/preferences/update.png" width="633" height="389" alt="Update Preferences"/>
+		</p>
+		<p>
+			<enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+			<img src="../../images/workbench/preferences/macosx/update.png" width="748" height="424" alt="Update Preferences"/>
+		</p>
+
+    	<div class="link">
+    		<p><a href="http://org.eclipse.ui.intro/showPage?id=root">Back to Main Page</a></p>
+    	</div>
+
+	</div>
+	
+</div>
+
+</body>
+</html>

@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<instruments><instrument><name>Lute Renaissance (6x2 Strings)</name><description>Origin: Europe&#xd;
+&#xd;
+Note: highest course is usually just a single string</description><stringCount>6</stringCount><scaleLength unit="mm" value="600.0"/><lefty_righty>false</lefty_righty><fretless>false</fretless><doubled_strings>true</doubled_strings><pitch><note level="4" octaveJump="false" stringNumber="1" value="7"/><note level="4" octaveJump="false" stringNumber="2" value="2"/><note level="3" octaveJump="false" stringNumber="3" value="9"/><note level="3" octaveJump="false" stringNumber="4" value="5"/><note level="3" octaveJump="true" stringNumber="5" value="0"/><note level="2" octaveJump="true" stringNumber="6" value="7"/></pitch><midiInstrumentNumber>24</midiInstrumentNumber><clef>5</clef></instrument></instruments>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<interval_containers type="scales"><folder name="Harmonisches Moll (H.M.)"><interval_container type="scales"><name>Äolisch 7</name><akaName>H.M. I</akaName><akaName>Harmonisches Moll</akaName><akaName>Aeolian 7</akaName><akaName>Harmonic Minor</akaName><description>Reihenfolge: 1. Stufe von harmonisch Moll = H.M. I&#xd;
+Tonart: moll&#xd;
+&#xd;
+Bemerkungen: &#xd;
+- aus dem natürlichen Moll (N.M.) entwickelt: kleine Septime (b7) wird zur großen Septime (7), dadurch Leitton bzw. Schlusswendung&#xd;
+- dadurch entsteht aber zwischen der kleinen Sexte (b6) und der großen Septime (7) eine übermäßige Sekunde (#2), diese wird als "melodisches Loch" bezeichnet und ist verantwortlich für den orientalischer Charakter dieser Tonleiter&#xd;
+- Entwicklung: natürliches Moll (N.M.) ...b6-b7 --&gt; harmonisches Moll (H.M.) ...b6-7 --&gt; melodisches Moll (M.M.) ...6-7</description><intervals><interval name="1" value="0"/><interval name="2" value="2"/><interval name="b3" value="3"/><interval name="4" value="5"/><interval name="5" value="7"/><interval name="b6" value="8"/><interval name="7" value="11"/></intervals></interval_container><interval_container type="scales"><name>Dorisch #4</name><akaName>H.M. IV</akaName><akaName>Dorian #4</akaName><description>Reihenfolge: 4. Stufe von harmonisch Moll = H.M. IV&#xd;
+&#xd;
+Bemerkung: &#xd;
+- dorisch mit #4 statt 4</description><intervals><interval name="1" value="0"/><interval name="2" value="2"/><interval name="b3" value="3"/><interval name="#4" value="6"/><interval name="5" value="7"/><interval name="6" value="9"/><interval name="b7" value="10"/></intervals></interval_container><interval_container type="scales"><name>Ionisch #5</name><akaName>H.M. III</akaName><akaName>Ionian #5</akaName><description>Reihenfolge: 3. Stufe von harmonisch Moll = H.M. III&#xd;
+&#xd;
+Bemerkung: &#xd;
+- ionisch mit #5 statt 5</description><intervals><interval name="1" value="0"/><interval name="2" value="2"/><interval name="3" value="4"/><interval name="4" value="5"/><interval name="#5" value="8"/><interval name="6" value="9"/><interval name="7" value="11"/></intervals></interval_container><interval_container type="scales"><name>Lokrisch 6</name><akaName>H.M. II</akaName><akaName>Lokrisch #6</akaName><akaName>Locrian 6</akaName><akaName>Locrian #6</akaName><description>Reihenfolge: 2. Stufe von harmonisch Moll = H.M. II&#xd;
+&#xd;
+Bemerkungen: &#xd;
+- lokrisch mit 6 statt b6&#xd;
+- manchmal auch lokrisch #6</description><intervals><interval name="1" value="0"/><interval name="b2" value="1"/><interval name="b3" value="3"/><interval name="4" value="5"/><interval name="b5" value="6"/><interval name="6" value="9"/><interval name="b7" value="10"/></intervals></interval_container><interval_container type="scales"><name>Lokrisch b4 bb7</name><akaName>H.M. VII</akaName><akaName>Locrian b4 bb7</akaName><description>Reihenfolge: 7. Stufe von harmonisch Moll = H.M. VII&#xd;
+&#xd;
+Bemerkung: &#xd;
+- lokrisch mit b4 statt 4 und bb7 statt b7</description><intervals><interval name="1" value="0"/><interval name="b2" value="1"/><interval name="b3" value="3"/><interval name="b4" value="4"/><interval name="b5" value="6"/><interval name="b6" value="8"/><interval name="bb7" value="9"/></intervals></interval_container><interval_container type="scales"><name>Lydisch #2</name><akaName>H.M. VI</akaName><akaName>Lydian #2</akaName><description>Reihenfolge: 6. Stufe von harmonisch Moll = H.M. VI&#xd;
+&#xd;
+Bemerkung: &#xd;
+- lydisch mit #2 statt 2</description><intervals><interval name="1" value="0"/><interval name="#2" value="3"/><interval name="3" value="4"/><interval name="#4" value="6"/><interval name="5" value="7"/><interval name="6" value="9"/><interval name="7" value="11"/></intervals></interval_container><interval_container type="scales"><name>Phrygisch 3</name><akaName>H.M. V</akaName><akaName>Phrygisch Dominant</akaName><akaName>Spanisch</akaName><akaName>Phrygian 3</akaName><akaName>Phrygian Dominant</akaName><akaName>Phrygian Major</akaName><akaName>Spanish</akaName><akaName>Spanish Gypsy</akaName><description>Reihenfolge: 5. Stufe von harmonisch Moll = H.M. V&#xd;
+&#xd;
+Bemerkung: &#xd;
+- phrygisch mit 3 statt b3</description><intervals><interval name="1" value="0"/><interval name="b2" value="1"/><interval name="3" value="4"/><interval name="4" value="5"/><interval name="5" value="7"/><interval name="b6" value="8"/><interval name="b7" value="10"/></intervals></interval_container></folder></interval_containers>

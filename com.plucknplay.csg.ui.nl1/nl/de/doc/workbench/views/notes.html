@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Noten Sicht</title>
+<link type="text/css" rel="stylesheet" href="../../book.css" />
+</head>
+
+<body>
+
+<h1><img src="../../../icons/notes_view.gif" width="16" height="16" alt="Noten Sicht Icon"/>Noten Sicht</h1>
+<p>
+In der <em>Noten-Sicht</em> kannst du dir Akkorde und Skalen(bl&#246;cke) in Notenschreibweise anzeigen lassen.
+Dabei ist es m&#246;glich, zwischen verschiedenen Notenschl&#252;sseln zu wechseln.
+</p>
+
+<p>
+    <enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+	<img src="../../../images/workbench/views/notes_view.png" width="265" height="259" alt="Noten Sicht"/>
+</p>
+<p>
+    <enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+	<img src="../../../images/workbench/views/macosx/notes_view.png" width="243" height="253" alt="Noten Sicht"/>
+</p>
+
+<p>
+Diese Sicht dient aber nicht nur zur Anzeige von Akkorden und Skalen(bl&#246;cken). Es ist hier auch m&#246;glich, in einen Editier-/Suchmodus zu wechseln.
+Im Editier-/Suchmodus lassen sich dann eigene Notenbilder arrangieren und umgekehrte Berechnungen zum Finden von Akkorden und Skalen starten.
+Das Zusammenstellen der Notenbilder erfolgt dabei &#252;ber einen Doppelklick der Maus -
+so kannst du neue Note hinzuf&#252;gen oder bestehende Noten entfernen.
+</p>
+
+
+
+<h2><a id="notes_view_toolbar">Symbolleiste</a></h2>
+<p>Die Symbolleiste der <em>Noten-Sicht</em> enth&#228;lt die folgenden Funktionen:</p>
+
+<h3><a id="notes_view_toolbar_SearchMode"><img src="../../../icons/search.gif" width="16" height="16" alt="Search Mode Icon"/>Editier-/Suchmodus</a></h3>
+<p>
+Hier kannst du in den Editier-/Suchmodus wechseln. Im Editier-/Suchmodus lassen sich eigene Notenbilder arrangieren und Berechnungen,
+wie das Finden von Akkorden oder Skalen starten. <br/>
+Hinweis: Wenn sich die Sicht im Editier-/Suchmodus befindet, ist diese geblockt f&#252;r das Anzeigen neu ausgew&#228;hlter Akkorde oder Skalen(bl&#246;cke).
+</p>
+
+<h3><a id="notes_view_toolbar_FindChord"><img src="../../../icons/find_chord.gif" width="16" height="16" alt="Find Chord Icon"/>Finde Akkord</a></h3>
+<p>
+Hast du ein Notenbild im Editier-/Suchmodus zusammengestellt, kannst du mit dieser Funktion die zum Notenbild passenden Akkorde finden lassen.
+Das Ausf&#252;hren dieser Funktion ist nur m&#246;glich, wenn das Notenbild auch einem Akkord entsprechen kann.
+Das Notenbild muss dabei mindestens zwei Noten enthalten.
+</p>
+
+<h3><a id="notes_view_toolbar_FindScale"><img src="../../../icons/find_scale.gif" width="16" height="16" alt="Find Scale Icon"/>Finde Skala</a></h3>
+<p>
+Hast du ein Notenbild im Editier-/Suchmodus zusammengestellt, kannst du mit dieser Funktion die zum Notenbild passenden Skalen finden lassen.
+Das Ausf&#252;hren dieser Funktion ist nur m&#246;glich, wenn das Notenbild mindestens zwei Noten enth&#228;lt.
+</p>
+
+<h3><a id="notes_view_toolbar_AccidentalLockMode"><img src="../../../icons/lock_sign.gif" width="16" height="16" alt="Accidental Lock Mode Icon"/>Vorzeichen Feststellmodus</a></h3>
+<p>
+Hier kannst du den Vorzeichen-Feststellmodus aktivieren bzw. deaktivieren.
+Bei aktiviertem Feststellmodus wird beim Editieren des Notenbildes jede neu eingef&#252;gte Note mit einem Vorzeichen versehen.
+Welches Vorzeichen dabei angef&#252;gt wird, h&#228;ngt von dem global gesetzten Vorzeichenmodus ab.
+</p>
+
+<h3><a id="notes_view_toolbar_ClearInput"><img src="../../../icons/clear.gif" width="16" height="16" alt="L&#246;sche Eingabe Icon"/>L&#246;sche Eingabe</a></h3>
+<p>L&#246;scht die aktuell angezeigte Eingabe (Akkord oder Skala) aus dieser Sicht.</p>
+
+
+
+<h2><a id="notes_view_menu">Men&#252;</a></h2>
+<p>Das Men&#252; der <em>Noten-Sicht</em> enth&#228;lt die folgenden Funktionen:</p>
+
+<h3>
+<a id="notes_view_menu_ClefMenu">
+<img src="../../../icons/clef_g.gif" width="16" height="16" alt="Clef Menu Icon Clef-G"/>
+<img src="../../../icons/clef_c.gif" width="16" height="16" alt="Clef Menu Icon Clef-C"/>
+<img src="../../../icons/clef_f.gif" width="16" height="16" alt="Clef Menu Icon Clef-F"/>
+Notenschl&#252;ssel Men&#252;
+</a>
+</h3>
+<p>
+Hier kannst du den Notenschl&#252;ssel ausw&#228;hlen, welcher in dieser Sicht verwendet werden soll.
+Abh&#228;ngig von dem ausgew&#228;hlten Notenschl&#252;ssel ver&#228;ndert sich die Position der einzelnen Noten. <br/>
+Hinweis: Es ist m&#246;glich, dass beim Umschalten des Notenschl&#252;ssels existierende Noten au&#223;erhalb des sichtbaren Bereichs geschoben werden.
+Wenn dies passieren sollte, ist der Notenschl&#252;ssel f&#252;r dein aktives Instrument wahrscheinlich schlecht gew&#228;hlt.
+</p>
+
+<p>
+<img src="../../../icons/search.gif" width="16" height="16" alt="Editier-/Suchmodus Icon"/><a href="notes.html#notes_view_toolbar_SearchMode">Editier-/Suchmodus</a><br/>
+<img src="../../../icons/find_chord.gif" width="16" height="16" alt="Finde Akkord Icon"/><a href="notes.html#notes_view_toolbar_FindChord">Finde Akkord</a><br/>
+<img src="../../../icons/find_scale.gif" width="16" height="16" alt="Finde Skala Icon"/><a href="notes.html#notes_view_toolbar_FindScale">Finde Skala</a><br/>
+<img src="../../../icons/lock_sign.gif" width="16" height="16" alt="Vorzeichen Feststellmodus Icon"/><a href="notes.html#notes_view_toolbar_AccidentalLockMode">Vorzeichen Feststellmodus</a><br/>
+<img src="../../../icons/clear.gif" width="16" height="16" alt="L&#246;sche Eingabe Icon"/><a href="notes.html#notes_view_toolbar_ClearInput">L&#246;sche Eingabe</a><br/>
+</p>
+
+
+<h3><a id="notes_view_menu_preferences">Benutzervorgaben...</a></h3>
+<p>
+&#214;ffnet den Dialog zum Definieren der <a href="../preferences/views/notes.html">Benutzervorgaben</a>.
+Die Seite zum Definieren der Einstellm&#246;glichkeiten f&#252;r diese Sicht ist dabei schon vorselektiert.
+</p>
+
+
+
+<h2><a id="notes_view_popup_menu">Kontextmen&#252;</a></h2>
+<p>Das Kontextmen&#252; dieser Sicht enth&#228;lt die folgenden Funktionen:</p>
+
+<h3><a id="tab_view_popup_menu_ExportAsImageFile"><img src="../../../icons/export.gif" width="16" height="16" alt="Export as Image File Icon"/>Exportiere als Bilddatei...</a></h3>
+<p>
+Exportiert die aktuelle Notendarstellung als Bilddatei. In einem entsprechenden Dialog kannst du dabei den Dateinamen und Dateityp
+(.bmp, .jpg oder .png) festlegen. In welcher Gr&#246;&#223;e die Notendarstellung exportiert werden soll,
+kannst du in den  <a href="../preferences/export.html">Benutzervorgaben zum Export</a> spezifizieren.
+</p>
+
+<h3><a id="tab_view_popup_menu_CopyToClipboard"><img src="../../../icons/copy_edit.gif" width="16" height="16" alt="Copy to Clipboard Icon"/>Kopiere in die Zwischenablage</a></h3>
+<p>
+Kopiert die aktuelle Notendarstellung in die Zwischenablage.
+Die in der Zwischenablage abgelegten Bilddaten k&#246;nnen dann beispielsweise in Office-Anwendungen eingef&#252;gt werden.
+Die Gr&#246;&#223;e der kopierten Notendarstellung wird auch hier in den
+<a href="../preferences/export.html">Benutzervorgaben zum Export</a> spezifiziert.
+</p>
+
+
+
+<h2><a id="tab_view_related_topics">Verwandte Themen</a></h2>
+
+<p>
+<a href="../preferences/views/notes.html">Arbeitsfl&#228;che &#8594; Benutzervorgaben &#8594; Sichten &#8594; Noten</a><br/>
+<a href="../preferences/export.html">Arbeitsfl&#228;che &#8594; Benutzervorgaben &#8594; Export</a><br/>
+</p>
+
+<h2><a id="tab_view_related_tasks">Verwandte Aufgaben</a></h2>
+<p>
+<a href="../../tasks/chord_generation.html">Aufgaben &#8594; Grifftabellen generieren und anzeigen</a><br/>
+<a href="../../tasks/find_chords.html">Aufgaben &#8594; Akkorde finden</a><br/>
+<a href="../../tasks/show_scales.html">Aufgaben &#8594; Skalen ansehen</a><br/>
+<a href="../../tasks/find_scales.html">Aufgaben &#8594; Skalen finden</a><br/>
+</p>
+
+</body>
+</html>

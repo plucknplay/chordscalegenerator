@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<interval_containers type="scales"><interval_container type="scales"><name>Locrian b4</name><akaName>M.M. VII</akaName><akaName>Altered</akaName><akaName>Altered Dominant</akaName><akaName>Diminished Whole-Tone</akaName><akaName>Dominant Whole-Tone</akaName><description>order: 7th degree of melodic minor (M.M.) = M.M. VII&#xd;
+&#xd;
+comment: &#xd;
+- locrian with b4 instead of 4</description><intervals><interval name="1" value="0"/><interval name="b2" value="1"/><interval name="b3" value="3"/><interval name="b4" value="4"/><interval name="b5" value="6"/><interval name="b6" value="8"/><interval name="b7" value="10"/></intervals></interval_container></interval_containers>

@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Export Actions</title>
+<link type="text/css" rel="stylesheet" href="../book.css" />
+</head>
+
+<body>
+
+<h1>Export Actions</h1>
+<p>
+In this chapter we want to throw light on the export functions of the <em>Chord Scale Generator</em>.
+The content of all graphical views (which are the views <a href="../workbench/views/box.html">Box</a>,
+<a href="../workbench/views/tab.html">Tab</a>, <a href="../workbench/views/notes.html">Notes</a>,
+<a href="../workbench/views/fretboard.html">Fretboard</a> and <a href="../workbench/views/keyboard.html">Keyboard</a>)
+can be exported as image file or copied into the clipboard.
+In order to export or copy the current content you just have to perform the corresponding popup menu entry of the respective view.
+</p>
+
+<p>
+    <enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+	<img src="../../images/tasks/export_01.png" width="361" height="288" alt="Export"/>
+</p>
+<p>
+    <enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+	<img src="../../images/tasks/macosx/export_01.png" width="361" height="288" alt="Export"/>
+</p>
+
+<p>
+By pasting the contents of the clipboard or including exported image files into other programs
+(e.g. Office applications, ...) you can easily arrange your own chord or song books.
+Since the arrangement of chord books by copying every single interesting chord would probably turn out to be very tiring,
+a multiple clipboard export is provided. Starting from the <a href="../workbench/views/chord_results.html">Chord Results View</a>
+it is possible to copy several chords simultaneously into the clipboard. To do so you have to mark the chords of
+interest in the first table column.
+The popup menu entry <em>Copy to Clipboard</em> performs the clipboard export for the marked chords.
+The contents of the clipboard can be pasted into other programs afterwards.
+</p>
+
+<p>
+    <enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+	<img src="../../images/tasks/export_02.png" width="504" height="459" alt="Export"/>
+</p>
+<p>
+    <enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+	<img src="../../images/tasks/macosx/export_02.png" width="502" height="459" alt="Export"/>
+</p>
+
+
+<p>
+It is also easily possible to create your own scale books.
+The popup menu entry <em>Copy Scale Blocks to Clipboard</em> of the views <a href="../workbench/views/scales.html">Scales</a>
+and <a href="../workbench/views/scale_results.html">Scale Results</a> copies image data
+of all scale blocks of a selected scale into the clipboard.
+It depends on which scale block mode you have chosen in the scale block preferences
+which scale blocks of a selected scale will be exported
+(<a href="../workbench/preferences/blocks.html">File &#8594; Preferences... &#8594; Blocks</a>).
+</p>
+
+<p>
+You can define in the export preferences which image data shall be copied for an individual chord
+or scale block as well as the size of the exported image data (<a href="../workbench/preferences/export.html">File &#8594; Preferences... &#8594; Export</a>)
+</p>
+
+<h2><a id="ExportActions_related_topics">Related topics</a></h2>
+<p>
+<a href="../workbench/views/chord_results.html">Workbench &#8594; Views &#8594; Chord Results</a><br/>
+<a href="../workbench/views/scale_results.html">Workbench &#8594; Views &#8594; Scale Results</a><br/>
+<a href="../workbench/views/fretboard.html">Workbench &#8594; Views &#8594; Fretboard</a><br/>
+<a href="../workbench/views/keyboard.html">Workbench &#8594; Views &#8594; Keyboard</a><br/>
+<a href="../workbench/views/box.html">Workbench &#8594; Views &#8594; Box</a><br/>
+<a href="../workbench/views/tab.html">Workbench &#8594; Views &#8594; Tab</a><br/>
+<a href="../workbench/views/notes.html">Workbench &#8594; Views &#8594; Notes</a><br/>
+<a href="../workbench/preferences/export.html">Workbench &#8594; Preferences &#8594; Export</a><br/>
+<a href="../workbench/preferences/blocks.html">Workbench &#8594; Preferences &#8594; Blocks</a><br/>
+</p>
+
+</body>
+</html>

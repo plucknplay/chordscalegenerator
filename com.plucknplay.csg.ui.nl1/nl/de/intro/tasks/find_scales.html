@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Skalen finden</title>
+<link type="text/css" rel="stylesheet" href="../book.css" />
+</head>
+
+<body>
+
+<div id="all">
+
+    <div id="close">
+        <p id="close_img_de">
+            <a href="http://org.eclipse.ui.intro/close"><img src="../images/close_de.png" width="262" height="25" alt="Schlie&#223;en"/></a>
+        </p>
+    </div>
+
+	<div id="top">
+        <p>
+            <a href="http://org.eclipse.ui.intro/showPage?id=root"><img src="../../logos/logo_64.png" width="64" height="64" alt="Willkommen"/></a>
+        </p>
+	</div>
+
+	<div id="header">
+	
+		<ul id="steps">
+			<li><a id="overview" href="http://org.eclipse.ui.intro/showPage?id=overview"><img src="../images/overview.gif" width="15" height="15" alt="&#220;berblick"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=workbench"><img src="../images/step.gif" width="15" height="15" alt="Die Arbeitsfl&#228;che"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=instruments"><img src="../images/step.gif" width="15" height="15" alt="Instrumente verwalten"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=chords_scales"><img src="../images/step.gif" width="15" height="15" alt="Akkorde und Skalen verwalten"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=chord_generation"><img src="../images/step.gif" width="15" height="15" alt="Akkorde generieren und anzeigen"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=find_chords"><img src="../images/step.gif" width="15" height="15" alt="Akkorde finden"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=show_scales"><img src="../images/step.gif" width="15" height="15" alt="Skalen ansehen"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=find_scales"><img src="../images/step_active.gif" width="15" height="15" alt="Skalen finden"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=sound"><img src="../images/step.gif" width="15" height="15" alt="Sound-Unterst&#252;tzung"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=export"><img src="../images/step.gif" width="15" height="15" alt="Export-Funktionen"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=update"><img src="../images/step.gif" width="15" height="15" alt="Update-Funktionalit&#228;t"/></a></li>
+			<li><a id="back" href="http://org.eclipse.ui.intro/showPage?id=show_scales"><img src="../images/back.gif" width="8" height="15" alt="Voriger Schritt"/></a></li>
+			<li><a id="forward" href="http://org.eclipse.ui.intro/showPage?id=sound"><img src="../images/forward.gif" width="8" height="15" alt="N&#228;chster Schritt"/></a></li>
+		</ul>
+	
+		<h1>Skalen finden</h1>
+	</div>
+
+	<div id="main">
+
+		<p>
+		Mit dem <em>Chord Scale Generator</em> kannst du dir aber nicht nur Skalen anzeigen lassen. Es ist auch bei 
+		Skalen eine umgekehrte Berechnung m&#246;glich. Wenn du also z.B. herausfinden m&#246;chtest, welche Skale zu einem 
+		gerade improvisierten Lauf passt oder um welche T&#246;ne du diesen Lauf evtl. noch erg&#228;nzen k&#246;nntest, kann dir 
+		der <em>Chord Scale Generator</em> behilflich sein.
+		</p>
+		
+		<p>
+		F&#252;r diese Berechnung bleibst du am besten in der Perspektive <em>Skalen</em>. Mit Hilfe der Sichten <em>Box</em>, 
+		<em>Tab</em> und <em>Noten</em> kannst du hier, wie schon zuvor beim Auffinden von Akkorden, deinen Lauf definieren. 
+		Wechsle hierf&#252;r einfach in den Editier-/Suchmodus und stelle mittels Doppelklick deinen Lauf zusammen. Anschlie&#223;end kannst 
+		du dann &#252;ber die Funktion <em>Finde Skale</em> die Berechnung starten. Das Ergebnis dieser Berechnung wird in der 
+		<em>Skalen-Ergebnisse</em>-Sicht angezeigt.
+		</p>
+		
+		<p>
+		    <enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+			<img src="../../images/tasks/find_scale.png" width="889" height="259" alt="Skalen finden"/>
+		</p>
+		<p>
+		    <enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+			<img src="../../images/tasks/macosx/find_scale.png" width="1060" height="282" alt="Skalen finden"/>
+		</p>
+		
+		<p>
+		In dieser Sicht werden s&#228;mtliche Skalen angezeigt, welche alle Noten deines Laufes enthalten. Das bedeutet aber 
+		auch, dass hier Skalen angezeigt werden, welche neben den Noten deines Laufes noch weitere Noten enthalten. 
+		Wieviel Prozent der Noten einer aufgef&#252;hrten Skale die Noten deines Laufes dabei abdecken, kannst du in der 
+		Spalte <em>Abdeckung</em> sehen. Eine geringe prozentuale Abdeckung ist dabei aber nicht als "schlechtes Zeichen" 
+		anzusehen. Die zus&#228;tzlich definierten Noten einer solchen Skala kannst du nutzen, um deinen Lauf evtl. noch zu 
+		erg&#228;nzen.
+		</p>
+		
+		<p>
+		Selektiert man eine Skale in der <em>Skalen-Ergebnisse</em>-Sicht, wird diese, wie schon zuvor beschrieben, 
+		in den grafischen Sichten dargestellt.
+		</p>
+		
+    	<div class="link">
+    		<p><a href="http://org.eclipse.ui.intro/showPage?id=sound">Sound-Unterst&#252;tzung</a></p>
+    	</div>
+
+	</div>
+
+</div>
+
+</body>
+</html>

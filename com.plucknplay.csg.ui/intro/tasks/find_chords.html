@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Find Chords</title>
+<link type="text/css" rel="stylesheet" href="../book.css" />
+</head>
+
+<body>
+
+<div id="all">
+
+    <div id="close">
+        <p id="close_img">
+            <a href="http://org.eclipse.ui.intro/close"><img src="../images/close.png" width="214" height="25" alt="Close"/></a>
+        </p>
+    </div>
+
+	<div id="top">
+        <p>
+            <a href="http://org.eclipse.ui.intro/showPage?id=root"><img src="../../logos/logo_64.png" width="64" height="64" alt="Welcome"/></a>
+        </p>
+	</div>
+
+	<div id="header">
+	
+		<ul id="steps">
+			<li><a id="overview" href="http://org.eclipse.ui.intro/showPage?id=overview"><img src="../images/overview.gif" width="15" height="15" alt="Overview"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=workbench"><img src="../images/step.gif" width="15" height="15" alt="The Workbench"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=instruments"><img src="../images/step.gif" width="15" height="15" alt="Manage your Instruments"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=chords_scales"><img src="../images/step.gif" width="15" height="15" alt="Manage your Chords and Scales"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=chord_generation"><img src="../images/step.gif" width="15" height="15" alt="Generate and Show Chords"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=find_chords"><img src="../images/step_active.gif" width="15" height="15" alt="Find Chords"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=show_scales"><img src="../images/step.gif" width="15" height="15" alt="Show Scales"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=find_scales"><img src="../images/step.gif" width="15" height="15" alt="Find Scales"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=sound"><img src="../images/step.gif" width="15" height="15" alt="Sound Support"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=export"><img src="../images/step.gif" width="15" height="15" alt="Export Actions"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=update"><img src="../images/step.gif" width="15" height="15" alt="Update Support"/></a></li>
+			<li><a id="back" href="http://org.eclipse.ui.intro/showPage?id=chord_generation"><img src="../images/back.gif" width="8" height="15" alt="Previous Step"/></a></li>
+			<li><a id="forward" href="http://org.eclipse.ui.intro/showPage?id=show_scales"><img src="../images/forward.gif" width="8" height="15" alt="Next Step"/></a></li>
+		</ul>
+	
+		<h1>Find Chords</h1>
+	</div>
+
+	<div id="main">
+
+		<p>
+		The <em>Chord Scale Generator</em> can do more than generating fingerings for defined chords. 
+		It is also possible to perform reverse calculations. If you, for example, wonder what chord you have just stumbled on, 
+		with the <em>Chord Scale Generator</em> you can easily find out.
+		</p>
+		
+		<p>
+		Like you have done for the chord generation, you should use the <em>Chords</em> 
+		perspective for this calculation. You can arrange the fingering pattern of interest, for instance, in 
+		the <em>Box View</em>. Unlike the <em>Fretboard</em> 
+		or <em>Keyboard View</em>, this view is not statical and only displays the results, 
+		but here you can also switch into a edit/search mode. In the edit/search mode you can arrange own fingering patterns 
+		and start a reverse calculation to find chords and scales. 
+		In order to arrange your fingering just double click on the finger position you want to add or remove. 
+		The results of the reverse calculation will be displayed in the <em>Chord Results View</em> 
+		as well. You can see in the first table column, which chord or which chords (yes even that is possible) corresponds to 
+		a fingering pattern.
+		</p>
+		
+		<p>
+		    <enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+			<img src="../../images/tasks/find_chord_01.png" width="1009" height="259" alt="Find Chords"/>
+		</p>
+		<p>
+		    <enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+			<img src="../../images/tasks/macosx/find_chord_01.png" width="1015" height="314" alt="Find Chords"/>
+		</p>
+		
+		<p>
+		It is also possible to start this reverse calculation in the <em>Tab View</em>. 
+		Here you can arrange (also in the edit/search mode) your fingering pattern in a more simple graphical representation.
+		</p>
+		
+		<p>
+		For all of you who are well familiar with musical notations there is one more special feature. 
+		In the <em>Notes View</em> it is possible to find chords based on musical notation. 
+		Thus, you can find all possible fingerings for a musical notation of a chord.
+		You can also see in the first table column of the <em>Chord Results View</em> 
+		to which chord a single fingering corresponds.
+		</p>
+		
+		<p>
+		    <enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+			<img src="../../images/tasks/find_chord_02.png" width="1017" height="259" alt="Find Chords"/>
+		</p>
+		<p>
+		    <enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+			<img src="../../images/tasks/macosx/find_chord_02.png" width="1046" height="315" alt="Find Chords"/>
+		</p>
+		
+		<p>
+		<span class="note">Note:</span> If it was not possible to determine a chord for a fingering or musical notation it does not necessarily mean 
+		that there is no chord available or that the fingering is invalid. The chord, which corresponds to your fingering, 
+		is just not contained in your defined chord list.<br/>
+		Note: The <em>Chord Scale Generator</em> performs all calculations only on the basis of the defined data (chord and scale definitions).
+		</p>
+		
+		<p>
+		<span class="note">Note:</span> As long as the view is in the edit/search mode, it is blocked and newly selected chord will not be displayed.
+		</p>
+		
+    	<div class="link">
+    		<p><a href="http://org.eclipse.ui.intro/showPage?id=show_scales">Show Scales</a></p>
+    	</div>
+
+	</div>
+
+</div>
+
+</body>
+</html>

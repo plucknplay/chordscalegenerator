@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Instrumente verwalten</title>
+<link type="text/css" rel="stylesheet" href="../book.css" />
+</head>
+
+<body>
+
+<div id="all">
+
+    <div id="close">
+        <p id="close_img_de">
+            <a href="http://org.eclipse.ui.intro/close"><img src="../images/close_de.png" width="262" height="25" alt="Schlie&#223;en"/></a>
+        </p>
+    </div>
+
+	<div id="top">
+        <p>
+            <a href="http://org.eclipse.ui.intro/showPage?id=root"><img src="../../logos/logo_64.png" width="64" height="64" alt="Willkommen"/></a>
+        </p>
+	</div>
+
+	<div id="header">
+	
+		<ul id="steps">
+			<li><a id="overview" href="http://org.eclipse.ui.intro/showPage?id=overview"><img src="../images/overview.gif" width="15" height="15" alt="&#220;berblick"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=workbench"><img src="../images/step.gif" width="15" height="15" alt="Die Arbeitsfl&#228;che"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=instruments"><img src="../images/step_active.gif" width="15" height="15" alt="Instrumente verwalten"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=chords_scales"><img src="../images/step.gif" width="15" height="15" alt="Akkorde und Skalen verwalten"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=chord_generation"><img src="../images/step.gif" width="15" height="15" alt="Akkorde generieren und anzeigen"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=find_chords"><img src="../images/step.gif" width="15" height="15" alt="Akkorde finden"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=show_scales"><img src="../images/step.gif" width="15" height="15" alt="Skalen ansehen"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=find_scales"><img src="../images/step.gif" width="15" height="15" alt="Skalen finden"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=sound"><img src="../images/step.gif" width="15" height="15" alt="Sound-Unterst&#252;tzung"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=export"><img src="../images/step.gif" width="15" height="15" alt="Export-Funktionen"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=update"><img src="../images/step.gif" width="15" height="15" alt="Update-Funktionalit&#228;t"/></a></li>
+			<li><a id="back" href="http://org.eclipse.ui.intro/showPage?id=workbench"><img src="../images/back.gif" width="8" height="15" alt="Voriger Schritt"/></a></li>
+			<li><a id="forward" href="http://org.eclipse.ui.intro/showPage?id=chords_scales"><img src="../images/forward.gif" width="8" height="15" alt="N&#228;chster Schritt"/></a></li>
+		</ul>
+	
+		<h1>Instrumente verwalten</h1>
+	</div>
+
+	<div id="main">
+
+		<p>
+		Nachdem du nun erfahren hast, wie der <em>Chord Scale Generator</em> grunds&#228;tzlich aufgebaut ist, wollen wir nun 
+		aber endlich mit den konkreten Funktionen des Programms beginnen. Starten wir doch gleich mal mit dem Verwalten 
+		deiner Instrumente. Schlie&#223;lich muss der <em>Chord Scale Generator</em> zun&#228;chst erst einmal wissen, auf welchem 
+		Instrument er Berechnungen ausf&#252;hren soll.
+		</p>
+		
+		<p>
+		Um die Instrumente zu verwalten, wechseln wir in die <em>Setup</em> Perspektive (genau daf&#252;r war sie ja auch gedacht). 
+		Hier siehst du auf der linken Seite die Sicht <em>Instrumente</em>, in welcher du deine Instrumente verwalten kannst. 
+		Die Sicht <em>Instrumente</em> ist in der Funktionsweise &#228;hnlich einem Datei-Explorer - du kannst vorhandene 
+		Instrumente in Kategorien organisieren oder ausgew&#228;hlte Elemente kopieren, l&#246;schen oder umbenennen. Auch kann man 
+		von hier aus neue Instrumente erzeugen bzw. vorhandene Instrumente editieren (Doppelklick auf diesem). 
+		In beiden F&#228;llen &#246;ffnet sich somit ein entsprechender Editor, in welchem du dein Instrument genau definieren kannst.
+		</p>
+		
+		<p>
+		    <enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+			<img src="../../images/tasks/manage_your_instruments.png" width="796" height="740" alt="Instrumente verwalten"/>
+		</p>
+		<p>
+		    <enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+			<img src="../../images/tasks/macosx/manage_your_instruments.png" width="931" height="787" alt="Instrumente verwalten"/>
+		</p>
+		
+		<p>
+		Beim <em>Chord Scale Generator</em> kannst du s&#228;mtliche (uns bekannten) Saiteninstrumente definieren - von Gitarren, 
+		B&#228;ssen, Banjos oder Ukulelen bis hinzu exotischeren Instrumenten wie Balalaikas, Bouzoukis, Domras oder Charangos. 
+		Solange dein Instrument zwischen zwei und zw&#246;lf Saiten besitzt, wird es vom <em>Chord Scale Generator</em> unterst&#252;tzt. 
+		In dem entsprechenden Editor kannst du dann neben dem Namen, den Dimensionen (also Saiten- und Bundanzahl) und der 
+		Stimmung deines Instruments auch fortgeschrittenere Einstellungen definieren, wie z.B. den Klang, die Mensur oder 
+		beliebige Kapodaster-Positionen. Welche Bedeutung all die angebotenen Einstellm&#246;glichkeiten haben, wird in der 
+		entsprechenden Hilfe-Seite dieses Editors noch genauer erkl&#228;rt.
+		</p>
+		
+		<p>
+		Aber keine Angst, du musst wahrscheinlich gar nicht all deine Instrumente per Hand einpflegen. Beim 
+		<em>Chord Scale Generator</em> sind die bekanntesten Instrumente vordefiniert. Au&#223;erdem werden noch diverse Dateien 
+		mitgeliefert, in welchen s&#228;mtliche uns bekannten Instrumente und deren gebr&#228;uchlichsten Stimmungen definiert sind. 
+		Diese Dateien kannst du einfach importieren und somit die Instrumentenliste um die darin definierten Instrumente 
+		erg&#228;nzen.
+		</p>
+		
+		<p>
+		Damit der <em>Chord Scale Generator</em> wei&#223;, auf welchem der definierten Instrumente die Berechnungen gerade 
+		ausgef&#252;hrt werden sollen, musst du nun noch ein Instrument aktivieren. W&#228;hle hierf&#252;r das gew&#252;nschte Instrument 
+		in der <em>Instrumente</em>-Sicht aus und f&#252;hre die entsprechende Kontextmen&#252;-Funktion <em>Setze aktiv</em> aus. 
+		Das aktive Instument wird in der Instrumente-Sicht mit einem besonderen Icon gekennzeichnet. Au&#223;erdem wird in der 
+		Statusleiste in der rechten unteren Ecke des Programms das aktive Instrument angezeigt.
+		</p>
+		
+    	<div class="link">
+    		<p><a href="http://org.eclipse.ui.intro/showPage?id=chords_scales">Akkorde und Skalen verwalten</a></p>
+    	</div>
+
+	</div>
+
+</div>
+
+</body>
+</html>

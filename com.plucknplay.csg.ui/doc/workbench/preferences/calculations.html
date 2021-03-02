@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Calculation Preferences</title>
+<link type="text/css" rel="stylesheet" href="../../book.css" />
+</head>
+
+<body>
+
+<h1>Preferences: Calculations</h1>
+<p>You can set the following preferences for the calculations:</p>
+
+<p>
+    <enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+	<img src="../../../images/workbench/preferences/calculations.png" width="524" height="348" alt="Calculation Preferences"/>
+</p>
+<p>
+    <enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+	<img src="../../../images/workbench/preferences/macosx/calculations.png" width="630" height="368" alt="Calculation Preferences"/>
+</p>
+
+<h3><a id="calculation_preferences_MaxNumberOfChordResults">Max. Number of Chord Results</a></h3>
+<p>
+Here you can define the maximum number of chord results for the <a href="../../tasks/chord_generation.html">chord generation</a>. 
+This limitation of the result set is necessary since unfavourable conditions (instruments with many strings, big fret ranges, etc.)
+may cause huge result sets with up to several million results. 
+In such cases the calculation would take relatively long and the huge result sets would be almost unmanageable. 
+So it is better to predefine the maximum number of results you are willing to revise.
+</p>
+
+<h3><a id="calculation_preferences_PreferBarre">Prefer Barre (chords)</a></h3>
+<p>
+Here you can specify whether you prefer barre chords or not. 
+Some chords can be played with or without barre. 
+It depends on you which fingering you prefer. 
+If you have no problems with fretting barre chords you should probably select this setting, 
+since barre chords need less fingers.
+</p>
+
+<h3><a id="calculation_preferences_FindChord">Find Chord</a></h3>
+<p>Here you can specifiy whether chords with a left out root, third and/or fifth should be included 
+in the <a href="../../tasks/find_chords.html">Find Chord</a> calculation. Besides, you can specify how
+many intervals may be excluded at the most.</p>
+
+<h2><a id="calculation_preferences_related_topics">Related topics</a></h2>	
+<p>
+<a href="../views/chord_generation.html">Workbench &#8594; Views &#8594; Chord Generation</a><br/>
+<a href="../views/chord_results.html">Workbench &#8594; Views &#8594; Chord Results</a><br/>
+</p>
+
+<h2><a id="calculation_preferences_related_tasks">Related tasks</a></h2>	
+<p>
+<a href="../../tasks/chord_generation.html">Tasks &#8594; Generate and Show Chords</a><br/>
+<a href="../../tasks/find_chords.html">Tasks &#8594; Find Chords</a><br/>
+</p>
+
+</body>
+</html>

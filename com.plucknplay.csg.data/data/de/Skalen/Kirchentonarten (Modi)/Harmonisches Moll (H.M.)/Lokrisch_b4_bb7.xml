@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<interval_containers type="scales"><interval_container type="scales"><name>Lokrisch b4 bb7</name><akaName>H.M. VII</akaName><akaName>Locrian b4 bb7</akaName><description>Reihenfolge: 7. Stufe von harmonisch Moll = H.M. VII&#xd;
+&#xd;
+Bemerkung: &#xd;
+- lokrisch mit b4 statt 4 und bb7 statt b7</description><intervals><interval name="1" value="0"/><interval name="b2" value="1"/><interval name="b3" value="3"/><interval name="b4" value="4"/><interval name="b5" value="6"/><interval name="b6" value="8"/><interval name="bb7" value="9"/></intervals></interval_container></interval_containers>

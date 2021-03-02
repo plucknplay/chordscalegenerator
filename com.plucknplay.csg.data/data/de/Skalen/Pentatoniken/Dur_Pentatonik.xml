@@ -1,0 +1,2 @@
+<?xml version="1.0"?>
+<interval_containers type="scales"><interval_container type="scales"><name>Dur Pentatonik</name><akaName>Diatonisch</akaName><akaName>Major Pentatonic</akaName><akaName>Diatonic</akaName><description>Reihenfolge: 1. Stufe der Pentatoniken</description><intervals><interval name="1" value="0"/><interval name="2" value="2"/><interval name="3" value="4"/><interval name="5" value="7"/><interval name="6" value="9"/></intervals></interval_container></interval_containers>

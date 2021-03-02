@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<instruments><instrument><name>Tiple (4x2 Saiten) - Amerikanisch</name><description>aka: Tiple Ukulele, Martin Tiple&#xd;
+Herkunft: USA&#xd;
+&#xd;
+Hinweis: zweiter und dritter Saitenchor ist eigentlich dreifach; Stimmung: aa' - d'dd' - f#'f#f#' - h'h'</description><stringCount>4</stringCount><scaleLength unit="mm" value="430.0"/><lefty_righty>false</lefty_righty><fretless>false</fretless><doubled_strings>true</doubled_strings><pitch><note level="3" octaveJump="false" stringNumber="1" value="11"/><note level="3" octaveJump="true" stringNumber="2" value="6"/><note level="3" octaveJump="true" stringNumber="3" value="2"/><note level="3" octaveJump="true" stringNumber="4" value="9"/></pitch><midiInstrumentNumber>24</midiInstrumentNumber><clef>5</clef></instrument></instruments>

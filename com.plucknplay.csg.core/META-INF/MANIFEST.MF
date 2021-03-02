@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Chord Scale Generator Core
+Bundle-SymbolicName: com.plucknplay.csg.core
+Bundle-Version: 1.4.0
+Bundle-Vendor: pluck-n-play
+Require-Bundle: org.eclipse.core.runtime
+Export-Package: com.plucknplay.csg.core,
+ com.plucknplay.csg.core.calculation,
+ com.plucknplay.csg.core.model,
+ com.plucknplay.csg.core.model.enums,
+ com.plucknplay.csg.core.model.listeners,
+ com.plucknplay.csg.core.model.sets,
+ com.plucknplay.csg.core.model.workingCopies,
+ com.plucknplay.csg.core.util
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6

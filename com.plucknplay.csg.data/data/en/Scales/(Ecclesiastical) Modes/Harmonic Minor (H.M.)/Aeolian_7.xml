@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<interval_containers type="scales"><interval_container type="scales"><name>Aeolian 7</name><akaName>H.M. I</akaName><akaName>Harmonic Minor</akaName><description>order: 1st degree of harmonic minor (H.M.) = H.M. I&#xd;
+key: minor&#xd;
+&#xd;
+comments: &#xd;
+- developed out of natural minor (N.M.) but in contrast to natural minor (N.M.) harmonic minor (H.M.) has an ending because of the seventh (7) at the end&#xd;
+- b6 to 7 = #2 --&gt; "melodic hole" = orientalic sound&#xd;
+- development: N.M. (...b6-b7) -&gt; H.M.(...b6-7) -&gt; M.M. (...6-7)</description><intervals><interval name="1" value="0"/><interval name="2" value="2"/><interval name="b3" value="3"/><interval name="4" value="5"/><interval name="5" value="7"/><interval name="b6" value="8"/><interval name="7" value="11"/></intervals></interval_container></interval_containers>

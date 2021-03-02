@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Skalen-Ergebnisse Sicht</title>
+<link type="text/css" rel="stylesheet" href="../../book.css" />
+</head>
+
+<body>
+
+<h1><img src="../../../icons/scale_results.gif" width="16" height="16" alt="Scale Results Icon"/>Skalen-Ergebnisse Sicht</h1>
+
+<p>
+Die Sicht <em>Skalen-Ergebnisse</em> dient zum Anzeigen von Skalen,
+welche bei der Berechnung zum Finden von Skalen zu einem bestimmten Griff- oder Notenbild ermittelt wurden.
+</p>
+
+<p>
+    <enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+	<img src="../../../images/workbench/views/scale_results_view.png" width="811" height="221" alt="Skalen-Ergebnisse Sicht"/>
+</p>
+<p>
+    <enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+	<img src="../../../images/workbench/views/macosx/scale_results_view.png" width="930" height="247" alt="Skalen-Ergebnisse Sicht"/>
+</p>
+
+<p>
+Die Skalen-Ergebnismenge wird dabei in einer Tabelle in textueller Form pr&#228;sentiert.
+Die gefundenen Skalen lassen sich anhand der Spalten sortieren. Die Spalten selbst sind in ihrer Gr&#246;&#223;e verstellbar.
+Es lassen sich zudem die nicht ben&#246;tigte Spalten ausblenden (siehe <a href="../preferences/views/scale_results.html">Benutzervorgaben</a> dieser Sicht).
+</p>
+
+<p>
+Da die Ergebnismenge bei manchen Berechnungen sehr gro&#223; werden kann, ist die Sicht zur besseren &#220;bersicht in Seiten aufgeteilt.
+Es kann dann zwischen den Seiten hin- und hergebl&#228;ttert werden. Sofern mehrere Seiten vorhanden sind,
+wird die aktuelle Seite in der Symbolleiste links neben den Funktionen zum Bl&#228;ttern angezeigt.
+Die spaltenweise Sortierung beschr&#228;nkt sich nat&#252;rlich nicht nur auf die aktuelle Seite -
+bei der Sortierung wird die ganze Ergebnismenge ber&#252;cksichtigt.
+</p>
+
+
+
+<h2><a id="ScaleResults_view_TableColumns">Tabellenspalten</a></h2>
+
+<h3><a id="ScaleResults_view_TableColumns_Scale">Skala</a></h3>
+<p>Hier wird der vollst&#228;ndige Name der Skala angezeigt.</p>
+
+<h3><a id="ScaleResults_view_TableColumns_Intervals">Intervalle</a></h3>
+<p>In dieser Spalte werden die einzelnen Intervalle der Skala aufgelistet.</p>
+
+<h3><a id="ScaleResults_view_TableColumns_Notes">Noten</a></h3>
+<p>In dieser Spalte werden die einzelnen Noten der Skala aufgelistet.</p>
+
+<h3><a id="ScaleResults_view_TableColumns_ReferenceIntervals">Referenzintervalle</a></h3>
+<p>
+Hier werden die Intervalle aufgelistet, die den Noten entsprechen, welche bei der Berechnung zum Finden der Skalen verwendet wurden.
+Die hier aufgelisteten Intervalle stellen oft nur eine Teilmenge der eigentlichen Intervalle dieser Skala dar.
+</p>
+
+<h3><a id="ScaleResults_view_TableColumns_ReferenceNotes">Referenznoten</a></h3>
+<p>
+Hier werden die Noten aufgelistet, welche bei der Berechnung zum Finden der Skalen verwendet wurden.
+</p>
+
+<h3><a id="ScaleResults_view_TableColumns_FT">GT (Grundton)</a></h3>
+<p>Hier wird angezeigt, ob der Grundton der Skala in den Referenznoten enthalten ist oder nicht.</p>
+
+<h3><a id="ScaleResults_view_TableColumns_Coverage">Abdeckung</a></h3>
+<p>
+In dieser Spalte wird angegeben, wieviel Prozent der Noten der Skala mit den Referenznoten -
+also den Noten, welche der Berechnung zugrunde lagen - abgedeckt werden.
+</p>
+
+<h2><a id="ScaleResults_view_Toolbar">Symbolleiste</a></h2>
+<p>Die Symbolleiste der <em>Skalen-Ergebnisse-Sicht</em> enth&#228;lt die folgenden Funktionen:</p>
+
+<h3><a id="ScaleResults_view_Toolbar_FirstPage"><img src="../../../icons/shift_l_edit.gif" width="16" height="16" alt="First Page Icon"/>Erste Seite</a></h3>
+<p>Springt zur ersten Ergebnis-Seite dieser Sicht.</p>
+
+<h3><a id="ScaleResults_view_Toolbar_PreviousPage"><img src="../../../icons/backward_nav.gif" width="16" height="16" alt="Previous Page Icon"/>Vorherige Seite</a></h3>
+<p>Bl&#228;ttert zur vorherigen Ergebnis-Seite.</p>
+
+<h3><a id="ScaleResults_view_Toolbar_NextPage"><img src="../../../icons/forward_nav.gif" width="16" height="16" alt="Next Page Icon"/>N&#228;chste Seite</a></h3>
+<p>Bl&#228;ttert zur n&#228;chsten Ergebnis-Seite.</p>
+
+<h3><a id="ScaleResults_view_Toolbar_LastPage"><img src="../../../icons/shift_r_edit.gif" width="16" height="16" alt="Last Page Icon"/>Letzte Seite</a></h3>
+<p>Springt zur letzten Ergebnis-Seite dieser Sicht.</p>
+
+
+
+<h2><a id="ScaleResults_view_Menu">Men&#252;</a></h2>
+<p>Das Men&#252; der <em>Skalen-Ergebnisse-Sicht</em> enth&#228;lt die folgenden Funktionen:</p>
+
+<h3><a id="ScaleResults_view_Menu_Preferences">Benutzervorgaben...</a></h3>
+<p>
+&#214;ffnet den Dialog zum Definieren der <a href="../preferences/views/scale_results.html">Benutzervorgaben</a>.
+Die Seite zum Definieren der Einstellm&#246;glichkeiten f&#252;r diese Sicht ist dabei schon vorselektiert.
+</p>
+
+
+
+<h2><a id="ScaleResults_view_Pop-up-Menu">Kontextmen&#252;</a></h2>
+<p>Das Kontextmen&#252; dieser Sicht enth&#228;lt die folgenden Funktionen:</p>
+
+<h3><a id="ScaleResults_view_Pop-up-Menu_OpenInEditor">&#214;ffne im Editor</a></h3>
+<p>&#214;ffnet die ausgew&#228;hlte Skala in einem entsprechenden <a href="../editors/scale.html">Skalen-Editor</a>.</p>
+
+<h3><a id="ScaleResults_view_Menu_CopyToClipboard"><img src="../../../icons/copy_edit.gif" width="16" height="16" alt="Copy to Clipboard Icon"/>Kopiere Skalenbl&#246;cke in die Zwischenablage</a></h3>
+<p>
+Kopiert die Bilddaten aller Skalenbl&#246;cke einer selektierten Skala in die Zwischenablage.
+Welche Skalenbl&#246;cke einer selektierten Skala exportiert werden, h&#228;ngt dabei von dem festgelegten Skalenblockmodus ab
+(siehe <a href="../preferences/blocks.html">Benutzervorgaben: Bl&#246;cke</a>).
+Die Bilddaten k&#246;nnen dann beispielsweise in Office-Anwendungen eingef&#252;gt werden.
+Welche Bilddaten hierbei in die Zwischenablage kopiert werden,
+kannst du in den <a href="../preferences/export.html">Benutzervorgaben zum Export</a> spezifizieren.<br/>
+Beachte: Bei der Gr&#246;&#223;e der exportierten Bilddaten werden die in den <a href="../preferences/export.html">Benutzervorgaben</a>.
+definierten festen Gr&#246;&#223;en verwendet. Die aktuelle Gr&#246;&#223;e von Sichten kann hier nicht verwendet werden,
+da eine Sicht in mehreren Perspektiven mit unterschiedlicher Gr&#246;&#223;e ge&#246;ffnet sein kann.
+</p>
+
+<h3><a id="ScaleResults_view_Pop-up-Menu_PlayScale"><img src="../../../icons/play_sound.gif" width="16" height="16" alt="Play Scale Icon"/>Spiele Skala</a></h3>
+<p>
+Spielt die ausgew&#228;hlte Skala an. Wie eine angespielte Skala dabei erklingt, kannst du in den
+<a href="../preferences/sound.html">Benutzervorgaben zum Sound</a> definieren.
+</p>
+
+<h2><a id="ScaleResults_view_related_topics">Verwandte Themen</a></h2>
+<p>
+<a href="../preferences/views/scale_results.html">Arbeitsfl&#228;che &#8594; Benutzervorgaben &#8594; Sichten &#8594; Skalen-Ergebnisse</a><br/>
+<a href="../preferences/export.html">Arbeitsfl&#228;che &#8594; Benutzervorgaben &#8594; Export</a><br/>
+<a href="../preferences/blocks.html">Arbeitsfl&#228;che &#8594; Benutzervorgaben &#8594; Bl&#246;cke</a><br/>
+<a href="../preferences/sound.html">Arbeitsfl&#228;che &#8594; Benutzervorgaben &#8594; Sound</a><br/>
+<a href="../views/box.html">Arbeitsfl&#228;che &#8594; Sichten &#8594; Box</a><br/>
+<a href="../views/tab.html">Arbeitsfl&#228;che &#8594; Sichten &#8594; Tab</a><br/>
+<a href="../views/notes.html">Arbeitsfl&#228;che &#8594; Sichten &#8594; Noten</a><br/>
+<a href="../editors/scale.html">Arbeitsfl&#228;che &#8594; Editoren &#8594; Skalen-Editor</a><br/>
+</p>
+
+<h2><a id="ScaleResults_view_related_tasks">Verwandte Aufgaben</a></h2>
+<p>
+<a href="../../tasks/find_scales.html">Aufgaben &#8594; Skalen finden</a><br/>
+<a href="../../tasks/sound.html">Aufgaben &#8594; Soundunterst&#252;tzung</a><br/>
+</p>
+
+</body>
+</html>

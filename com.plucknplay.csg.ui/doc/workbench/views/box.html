@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Box View</title>
+<link type="text/css" rel="stylesheet" href="../../book.css" />
+</head>
+
+<body>
+
+<h1><img src="../../../icons/box_view.gif" width="16" height="16" alt="Box View Icon"/>Box View</h1>
+<p>
+The <em>Box View</em> shows chords and scale blocks in a small section of the fretboard. 
+This leads to a very compact representation of chords and scale blocks. 
+Therefore, the box representation is the most common representation for chords and is preferred in chord and song books.
+</p>
+
+<p>
+    <enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+	<img src="../../../images/workbench/views/box_view.png" width="361" height="288" alt="Box View"/>
+</p>
+<p>
+    <enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+	<img src="../../../images/workbench/views/macosx/box_view.png" width="359" height="339" alt="Box View"/>
+</p>
+
+<p>
+This view does not only show chords and scale blocks - 
+you can also switch into a edit/search mode. 
+In the edit/search mode you can arrange own fingering patterns 
+and start a reverse calculation to find chords and scales. 
+In order to arrange your fingering just double click on the finger position you want to add or remove.
+</p>
+
+
+
+<h2><a id="box_view_toolbar">Toolbar</a></h2>	
+<p>The toolbar of the <em>Box View</em> contains the following actions:</p>
+
+<h3><a id="box_view_toolbar_SearchMode"><img src="../../../icons/search.gif" width="16" height="16" alt="Edit/Search Mode Icon"/>Edit/Search Mode</a></h3>
+<p>
+Here you can switch to the edit/search mode. 
+In the edit/search mode you can arrange own fingering patterns and start a reverse calculation to find chords and scales. <br/>
+Note: As long as the view is in the edit/search mode, it is blocked and newly selected chords or scale blocks will not be shown.
+</p>
+
+<h3><a id="box_view_toolbar_FindChord"><img src="../../../icons/find_chord.gif" width="16" height="16" alt="Find Chord Icon"/>Find Chord</a></h3>
+<p>
+This action starts the calculation to determine the corresponding chords of a fingering pattern you have arranged before. 
+This action is only available if it is actually possible that the fingering pattern corresponds to a chord. 
+Therefore, the fingering must contain at least two notes and only one finger position on each string can be defined.
+</p>
+
+<h3><a id="box_view_toolbar_FindScale"><img src="../../../icons/find_scale.gif" width="16" height="16" alt="Find Scale Icon"/>Find Scale</a></h3>
+<p>
+This action starts the calculation to determine the corresponding scales of a fingering pattern you have arranged in the edit/search mode. 
+This action is only available if the fingering pattern contains at least two notes. 
+When you want to find scales it is, of course, possible to define more than one finger position on each string.
+</p>
+
+<h3><a id="box_view_toolbar_RemoveFret"><img src="../../../icons/edit_remove.gif" width="16" height="16" alt="Remove Fret Icon"/>Remove Fret</a></h3>
+<p>Removes a fret from the box. The minumum number of frets is limited to three.</p>
+
+<h3><a id="box_view_toolbar_AddFret"><img src="../../../icons/edit_add.gif" width="16" height="16" alt="Add Fret Icon"/>Add Fret</a></h3>
+<p>Adds an additional fret to the box. The maximum number of frets is limited to six.</p>
+
+<h3><a id="box_view_toolbar_ShowFingering"><img src="../../../icons/fingering.gif" width="16" height="16" alt="Show Fingering Icon"/>Show Fingering</a></h3>
+<p>
+Shows the fingering of the current chord or scale block. 
+Settings regarding the graphical appearance of the fingerings can be specified in the corresponding preferences
+(see <a href="../preferences/views/box.html#BoxView_preferences_FingeringTab">Preferences &#8594; Views &#8594; Box &#8594; Fingering</a>).  
+The alternative representation shows black circles instead of the finger positions.
+</p>
+<p><img src="../../../images/workbench/views/box_view_fingering_mode.png" width="267" height="173" alt="Fingering Mode"/></p>
+
+<h3><a id="box_view_toolbar_ShowNotes"><img src="../../../icons/notes.gif" width="16" height="16" alt="Show Notes Icon"/>Show Notes</a></h3>
+<p>
+Shows in an additional info bar the notes of the current chord. 
+Settings regarding the graphical appearance of the notes can be specified in the corresponding preferences
+(see <a href="../preferences/views/box.html#BoxView_preferences_IntervalsNotesTab">Preferences &#8594; Views &#8594; Box &#8594; Notes/Intervals</a>).  
+</p>
+
+<h3><a id="box_view_toolbar_ShowIntervals"><img src="../../../icons/intervals.gif" width="16" height="16" alt="Show Intervals Icon"/>Show Intervals</a></h3>
+<p>
+Shows in an additional info bar the intervals of the current chord. 
+Settings regarding the graphical appearance of the intervals can be specified in the corresponding preferences
+(see <a href="../preferences/views/box.html#BoxView_preferences_IntervalsNotesTab">Preferences &#8594; Views &#8594; Box &#8594; Notes/Intervals</a>).  
+</p>
+
+
+<h3><a id="box_view_toolbar_ClearInput"><img src="../../../icons/clear.gif" width="16" height="16" alt="Clear Input Icon"/>Clear Input</a></h3>
+<p>Clears the currently shown input (chord or scale) from this view.</p>
+
+
+
+<h2><a id="box_view_menu">Menu</a></h2>	
+<p>The menu of the <em>Box View</em> contains the following actions:</p>
+
+<p>
+<img src="../../../icons/search.gif" width="16" height="16" alt="Edit/Search Mode Icon"/>
+<a href="box.html#box_view_toolbar_SearchMode">Edit/Search Mode</a><br/>
+
+<img src="../../../icons/find_chord.gif" width="16" height="16" alt="Find Chord Icon"/>
+<a href="box.html#box_view_toolbar_FindChord">Find Chord</a><br/>
+
+<img src="../../../icons/find_scale.gif" width="16" height="16" alt="Find Scale Icon"/>
+<a href="box.html#box_view_toolbar_FindScale">Find Scale</a><br/>
+
+<img src="../../../icons/edit_remove.gif" width="16" height="16" alt="Remove Fret Icon"/>
+<a href="box.html#box_view_toolbar_RemoveFret">Remove Fret</a><br/>
+
+<img src="../../../icons/edit_add.gif" width="16" height="16" alt="Add Fret Icon"/>
+<a href="box.html#box_view_toolbar_AddFret">Add Fret</a><br/>
+
+<img src="../../../icons/fingering.gif" width="16" height="16" alt="Show Fingering Icon"/>
+<a href="box.html#box_view_toolbar_ShowFingering">Show Fingering</a><br/>
+
+<img src="../../../icons/clear.gif" width="16" height="16" alt="Clear Input Icon"/>
+<a href="box.html#box_view_toolbar_ClearInput">Clear Input</a><br/>
+</p>
+
+<h3><a id="box_view_menu_Preferences">Preferences...</a></h3>
+<p>Opens the preferences dialog. The page with the <a href="../preferences/views/box.html">preferences</a> for this view is already pre-selected.</p>
+
+
+
+<h2><a id="box_view_popup_menu">Pop-up Menu</a></h2>	
+<p>The pop-up menu of this view contains the following actions:</p>
+
+
+<h3><a id="box_view_popup_menu_ExportAsImageFile"><img src="../../../icons/export.gif" width="16" height="16" alt="Export as Image File Icon"/>Export as Image File...</a></h3>
+<p>
+Exports the current representation of the box as an image file. 
+You can specifiy the file name and type (.bmp, .jpg or .png) in a corresponding dialog box. 
+The size of the export image can be defined in the <a href="../preferences/export.html">export preferences</a>.
+</p>
+
+<h3><a id="box_view_popup_menu_CopyToClipboard"><img src="../../../icons/copy_edit.gif" width="16" height="16" alt="Copy to Clipboard Icon"/>Copy to Clipboard</a></h3>
+<p>
+Copies the current representation of the box into the clipboard. 
+The stored image data in the clipboard may be pasted, for instance, into Office applications later on. 
+The size of the image can be defined in the <a href="../preferences/export.html">export preferences</a> as well.
+</p>
+
+
+
+<h2><a id="box_view_related_topics">Related topics</a></h2>	
+
+<p>
+<a href="../preferences/views/box.html">Workbench &#8594; Preferences &#8594; Views &#8594; Box</a><br/>
+<a href="../preferences/export.html">Workbench &#8594; Preferences &#8594; Export</a><br/>
+</p>
+
+<h2><a id="box_view_related_tasks">Related Tasks</a></h2>	
+<p>
+<a href="../../tasks/chord_generation.html">Tasks &#8594; Generate and Show Chords</a><br/>
+<a href="../../tasks/find_chords.html">Tasks &#8594; Find Chords</a><br/>
+<a href="../../tasks/show_scales.html">Tasks &#8594; Show Scales</a><br/>
+<a href="../../tasks/find_scales.html">Tasks &#8594; Find Scales</a><br/>
+</p>
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Akkorde generieren und anzeigen</title>
+<link type="text/css" rel="stylesheet" href="../book.css" />
+</head>
+
+<body>
+
+<h1>Akkorde generieren und anzeigen</h1>
+<p>
+So nun wollen wir aber nach all den einleitenden Kapiteln endlich mal zu ein paar interessanten Berechnungen kommen - 
+genau daf&#252;r ist der  <em>Chord Scale Generator</em> ja gedacht. Die Berechnung, welche du wohl am h&#228;ufigsten verwenden wirst, 
+ist das Generieren von Grifftabellen zu einem bestimmten Akkord. 
+Also die Antwort auf Fragen wie: "Wo kann ich eigentlich einen Gsus4 greifen?"
+</p>
+
+<p>
+Hierf&#252;r wechselst du zun&#228;chst in die Perspektive <em>Akkorde</em>. Auf der linken Seite siehst du die Sicht 
+<a href="../workbench/views/chord_generation.html">Akkordgenerierung</a>. 
+In dieser Sicht kannst du die von dir gew&#252;nschte Berechnung spezifizieren. Neben dem Akkord, 
+zu welchem du Grifftabellen generiert haben m&#246;chtest, kannst du hier noch eine Vielzahl von Einschr&#228;nkungen treffen, 
+um die Ergebnismenge zu beschr&#228;nken. M&#246;gliche Einschr&#228;nkungen sind dabei beispielsweise der Schwierigkeitsgrad, 
+die Griffbreite oder aber auch fortgeschrittenere Einstellm&#246;glichkeiten wie dem Basston oder Tonanzahlbeschr&#228;nkungen. 
+Nachdem du die Berechnung definiert hast, reicht ein einfacher Klick auf <em>Berechne</em>-Button, um die Berechnung zu starten.
+</p>
+
+<p>
+    <enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+	<img src="../../images/tasks/chord_generation_01.png" width="720" height="554" alt="Akkorde generieren"/>
+</p>
+<p>
+    <enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+	<img src="../../images/tasks/macosx/chord_generation_01.png" width="865" height="630" alt="Akkorde generieren"/>
+</p>
+
+<p>
+Die Ergebnisse der Berechnung werden in der <a href="../workbench/views/chord_results.html">Akkord-Ergebnisse-Sicht</a> 
+in textueller Form angezeigt. Hier ist es zudem m&#246;glich, die Ergebnismenge anhand der jeweiligen Werte in den Spalten zu sortieren. 
+Ein einfacher Klick auf die Spalten&#252;berschrift reicht, um die Sortierung auszuf&#252;hren.
+</p>
+
+<p>
+Hinweis: Sollte die Berechnung eine sehr gro&#223;e Anzahl von Ergebnissen liefern, 
+werden diese in der <a href="../workbench/views/chord_results.html">Akkord-Ergebnisse-Sicht</a> auf mehreren Seiten aufgeteilt. 
+Zwischen den einzelnen Ergebnis-Seiten kann dann &#252;ber die Pfeil-Funktionen dieser Sicht gebl&#228;ttert werden. 
+Die Sortierung beschr&#228;nkt sich dabei jedoch nicht auf die dargestellte Seite, sondern bezieht die gesamte Ergebnismenge mit ein.
+</p>
+
+<p>
+Die <a href="../workbench/views/chord_results.html">Akkord-Ergebnisse-Sicht</a> 
+ist mit ihrer textuellen Pr&#228;sentation der Ergebnisse nat&#252;rlich eine recht ung&#252;nstige Variante, 
+um sich generierte Grifftabellen anzeigen zu lassen. Diese Sicht stellt in unserer Anwendung somit lediglich eine Art "Schaltzentrale" dar, 
+in welcher Ergebnissmengen sortiert und Akkorde, welche in anderen Sichten dargestellt werden sollen, ausgew&#228;hlt werden k&#246;nnen.
+</p>
+
+<p>
+Ist ein Akkord in der <a href="../workbench/views/chord_results.html">Akkord-Ergebnisse-Sicht</a> ausgew&#228;hlt 
+(Selektion der entsprechenden Zeile der Tabelle), wird dieser in den grafischen Sichten angezeigt. 
+Es stehen beim <em>Chord Scale Generator</em> die folgenden f&#252;nf grafischen Sichten zur Verf&#252;gung, um den selektierten Akkord darzustellen:
+</p>
+
+<p>
+In der <a href="../workbench/views/fretboard.html">Griffbrett-Sicht</a> 
+wird der ausgew&#228;hlte Akkord im Kontext des gesamten Griffbretts dargestellt. 
+Hierbei kannst du zudem ausw&#228;hlen, ob der Fingersatz, die Noten oder die Intervalle des dargestellten Akkords angezeigt werden sollen.
+</p>
+
+<p>
+In der <a href="../workbench/views/keyboard.html">Klaviatur-Sicht</a> siehst du, 
+wo die T&#246;ne des ausgew&#228;hlten Akkords auf einem Klavier bzw. Fl&#252;gel liegen w&#252;rden. 
+Auch hier kannst du in der Darstellungsart w&#228;hlen, ob die Noten oder Intervalle des Akkords dargestellt werden sollen.
+</p>
+
+<p>
+In der <a href="../workbench/views/box.html">Box-Sicht</a> siehst du den ausgew&#228;hlten Griff als Grifftabelle bzw. Akkord-Box dargestellt. 
+Diese Darstellung, in welcher lediglich ein Ausschnitt des Griffbretts angezeigt wird, 
+ist wohl die gebr&#228;uchlichste Darstellung f&#252;r Akkorde. Solch eine Darstellung findest du normalerweise auch in Akkordb&#252;chern vor.
+</p>
+
+<p>
+In der <a href="../workbench/views/tab.html">Tab-Sicht</a> wird wiederum der Akkord in Form einer Tabulatur dargestellt - 
+hier wird jeder Saite der gegriffene Bund (sofern vorhanden) zugeordnet.
+</p>
+
+<p>
+In der <a href="../workbench/views/notes.html">Noten-Sicht</a> kannst du dir anschauen, 
+wie der Akkord in Noten-Schreibweise (abh&#228;ngig vom ausgew&#228;hlten Notenschl&#252;ssel) dargestellt wird.
+</p>
+
+<p>
+    <enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+	<img src="../../images/tasks/chord_generation_02.png" width="781" height="881" alt="Akkorde anzeigen"/>
+</p>
+<p>
+    <enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+	<img src="../../images/tasks/macosx/chord_generation_02.png" width="806" height="884" alt="Akkorde anzeigen"/>
+</p>
+
+<p>
+Welche Sichten du dabei als hilfreich erachtest und in deiner Fensteranordnung zu jedem Akkord angezeigt haben m&#246;chtest, 
+kannst du, wie bereits im Kapitel Arbeitsfl&#228;che vorgestellt,  mittels einer entsprechenden Perspektive definieren.
+</p>
+
+<h2>N&#228;chster Schritt</h2>
+<p><a href="find_chords.html">Akkorde finden</a></p>
+
+<h2><a id="GenerateAndShowChords_related_topics">Verwandte Themen</a></h2>
+<p>
+<a href="../workbench/views/chord_generation.html">Arbeitsfl&#228;che &#8594; Sichten &#8594; Akkordgenerierung</a><br/>
+<a href="../workbench/views/chord_results.html">Arbeitsfl&#228;che &#8594; Sichten &#8594; Akkord-Ergebnisse</a><br/>
+<a href="../workbench/views/fretboard.html">Arbeitsfl&#228;che &#8594; Sichten &#8594; Griffbrett</a><br/>
+<a href="../workbench/views/keyboard.html">Arbeitsfl&#228;che &#8594; Sichten &#8594; Klaviatur</a><br/>
+<a href="../workbench/views/box.html">Arbeitsfl&#228;che &#8594; Sichten &#8594; Box</a><br/>
+<a href="../workbench/views/tab.html">Arbeitsfl&#228;che &#8594; Sichten &#8594; Tab</a><br/>
+<a href="../workbench/views/notes.html">Arbeitsfl&#228;che &#8594; Sichten &#8594; Noten</a><br/>
+<a href="../workbench/preferences/views/chord_generation.html">Arbeitsfl&#228;che &#8594; Benutzervorgaben &#8594; Sichten &#8594; Akkordgenerierung</a><br/>	
+<a href="../workbench/preferences/calculations.html">Arbeitsfl&#228;che &#8594; Benutzervorgaben &#8594; Berechnungen</a><br/>
+</p>		
+
+</body>
+</html>

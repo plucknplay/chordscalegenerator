@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<interval_containers type="scales"><interval_container type="scales"><name>Aeolian 3</name><akaName>M.M. V</akaName><akaName>Aeolian Dominant</akaName><akaName>Mixolydian b13</akaName><akaName>Mixolydian b6</akaName><description>order: 5th degree of melodic minor (M.M.) = M.M. V&#xd;
+&#xd;
+comments: &#xd;
+- aelolian with 3 instead of b3&#xd;
+- sometimes used as mixolydian with b6 instead of 6 = mixolydian b6&#xd;
+- rarely used as mixolydian b13</description><intervals><interval name="1" value="0"/><interval name="2" value="2"/><interval name="3" value="4"/><interval name="4" value="5"/><interval name="5" value="7"/><interval name="b6" value="8"/><interval name="b7" value="10"/></intervals></interval_container></interval_containers>

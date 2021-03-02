@@ -1,0 +1,285 @@
+<project name="build" default="main" basedir=".">
+
+	<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+   		Properties
+ 	- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+
+	<condition property="build.dir" value="C:/Users/Andi/Eclipse/Build">
+		<os family="windows" />
+	</condition>
+
+	<condition property="build.dir" value="/Users/andimei/Build">
+		<os family="mac" />
+	</condition>
+
+	<property file="build.properties" />
+
+	<condition property="obfuscate.plugin.dir" value="${win.plugin.dir}">
+		<os family="windows" />
+	</condition>
+
+	<condition property="obfuscate.plugin.dir" value="${macos_64.plugin.dir}">
+		<os family="mac" />
+	</condition>
+
+	<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+   		Task definitions
+ 	- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+
+	<!--
+		define Zelix obfuscation task
+	-->
+	<taskdef name="obfuscate" classname="ZKMTask">
+		<classpath path="${obfuscate.dir}/ZKM.jar" />
+	</taskdef>
+
+
+	<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+   		Targets
+ 	- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+
+	<!--
+		main target
+	-->
+
+	<target name="main">
+
+		<condition property="win32">
+			<contains string="${param}" substring="win32"/>
+		</condition>
+		<condition property="win64">
+			<contains string="${param}" substring="win64"/>
+		</condition>
+		<condition property="macosx64">
+			<contains string="${param}" substring="macosx64"/>
+		</condition>
+		<condition property="linux32">
+			<contains string="${param}" substring="linux32"/>
+		</condition>
+		<condition property="linux64">
+			<contains string="${param}" substring="linux64"/>
+		</condition>
+
+		<!-- start build -->
+		<antcall target="modify-mac-app" />
+
+	</target>
+
+	<!--
+		obfuscate the code
+	-->
+	<target name="obfuscate">
+
+		<!--
+			Path identifying jars that are part of the classpath but that should
+			NOT be obfuscated.
+		-->
+		<path id="non.obfuscated.jars">
+			<fileset dir="${obfuscate.plugin.dir}">
+				<include name="**/org.*.jar"/>
+				<include name="**/com.ibm.*.jar"/>
+	            <include name="**/javax.*.jar"/>
+			</fileset>
+		</path>
+
+		<!--
+			Path indentifying jars that should be obfuscated.
+		-->
+		<path id="obfuscated.jars">
+			<fileset dir="${obfuscate.plugin.dir}">
+	            <include name="**/com.plucknplay.csg*.jar"/>
+			</fileset>
+			<pathelement path="${obfuscate.plugin.dir}/com.plucknplay.csg.data_${data.version}/*"/>
+		</path>
+
+		<!--
+			Compile path for all jars that should not be obfuscated, but that
+			should be on the classpath. Zelix requires each jar to be on a separate
+			line and delimited by quotes.
+		-->
+		<pathconvert pathsep="&quot;${line.separator}&quot;" property="non.obfuscated.class.path.noqoutes">
+			<path refid="non.obfuscated.jars" />
+		</pathconvert>
+		<property name="non.obfuscated.class.path" value="&quot;${non.obfuscated.class.path.noqoutes}&quot;" />
+
+		<!--
+			Compile path for all jars that should be obfuscated. Zelix requires
+			each jar to be on a separate line and delimited by quotes. The
+			following code produces this list.
+		-->
+		<pathconvert pathsep="&quot;${line.separator}&quot;" property="obfuscated.class.path.noqoutes">
+			<path refid="obfuscated.jars" />
+		</pathconvert>
+		<property name="obfuscated.class.path" value="&quot;${obfuscated.class.path.noqoutes}&quot;" />
+
+        <!--
+            Ofuscate code using the zelix script.
+        -->
+        <echo message="Start obfuscation}"/>
+		<obfuscate scriptFileName="${zelix.script}" logFileName="${log.dir}/obfuscate.log" trimLogFileName="${log.dir}/trimlog.txt" defaultExcludeFileName="defaultExclude.txt" defaultTrimExcludeFileName="defaultTrimExclude.txt" defaultDirectoryName="${build.dir}" isParseOnly="false" isVerbose="true" />
+        <echo message="End obfuscation}"/>
+
+	</target>
+
+    <!--
+        sign the jars
+    -->
+	<target name="sign-jars" depends="obfuscate">
+	    <echo message="Sign jars"/>
+		<mkdir dir="${signed.dir}"/>
+	    <signjar
+	    	    destDir="${signed.dir}"
+	    	    alias="pluck-n-play-alias"
+                keystore="${jarsign.dir}/pluck-n-play-alias.ks"
+	    	    storepass="RiSEkoKePUwUGaM7"
+	    	    verbose="true">
+
+	        <fileset dir="${out.dir}">
+	            <include name="**/*.jar"/>
+	        </fileset>
+	    </signjar>
+	</target>
+
+    <!--
+        copy signed jars back to the plugin folder
+    -->
+    <target name="merge-linux-32" if="linux32" depends="sign-jars">
+        <echo message="Copy signed jars from ${signed.dir} to ${linux.plugin.dir}" />
+        <copy todir="${linux.plugin.dir}" overwrite="true" verbose="true">
+           <fileset dir="${signed.dir}">
+                <include name="**/*.jar"/>
+           </fileset>
+        </copy>
+    </target>
+
+    <target name="merge-linux-64" if="linux64" depends="merge-linux-32">
+        <echo message="Copy signed jars from ${signed.dir} to ${linux_64.plugin.dir}" />
+        <copy todir="${linux_64.plugin.dir}" overwrite="true" verbose="true">
+           <fileset dir="${signed.dir}">
+                <include name="**/*.jar"/>
+           </fileset>
+        </copy>
+	</target>
+
+    <target name="merge-macosx-64" if="macosx64" depends="merge-linux-64">
+        <echo message="Copy signed jars from ${signed.dir} to ${macos_64.plugin.dir}" />
+        <copy todir="${macos_64.plugin.dir}" overwrite="true" verbose="true">
+           <fileset dir="${signed.dir}">
+                <include name="**/*.jar"/>
+           </fileset>
+        </copy>
+	</target>
+
+    <target name="merge-win-32" if="win32" depends="merge-macosx-64">
+        <echo message="Copy signed jars from ${signed.dir} to ${win.plugin.dir}" />
+        <copy todir="${win.plugin.dir}" overwrite="true" verbose="true">
+           <fileset dir="${signed.dir}">
+                <include name="**/*.jar"/>
+           </fileset>
+        </copy>
+	</target>
+
+    <target name="merge-win-64" if="win64" depends="merge-win-32">
+        <echo message="Copy signed jars from ${signed.dir} to ${win_64.plugin.dir}" />
+        <copy todir="${win_64.plugin.dir}" overwrite="true" verbose="true">
+           <fileset dir="${signed.dir}">
+                <include name="**/*.jar"/>
+           </fileset>
+        </copy>
+   	</target>
+
+	<!--
+		clean up
+    -->
+	<target name="clean" depends="merge-win-64">
+        <echo message="Clean up" />
+		<delete dir="${out.dir}" verbose="true"/>
+        <delete dir="${signed.dir}" verbose="true"/>
+	</target>
+
+    <!--
+        create nsis installer
+    -->
+    <target name="nsis-32" if="win32" depends="clean">
+        <exec executable="${nsis.install.dir}/makensis" >
+            <arg line="'${nsis.dir}/setup_win32.nsi'"/>
+        </exec>
+    </target>
+
+    <target name="nsis-64" if="win32" depends="nsis-32">
+    	<exec executable="${nsis.install.dir}/makensis" >
+            <arg line="'${nsis.dir}/setup_win32_64.nsi'"/>
+        </exec>
+    </target>
+
+    <!--
+        create linux directory from "Chord Scale Generator" to "ChordScaleGenerator"
+    -->
+    <target name="rename-linux-32" if="linux32" depends="nsis-64">
+	    <move todir="${linux.new.product.dir}" verbose="true">
+	        <fileset dir="${linux.product.dir}"/>
+	    </move>
+    </target>
+
+    <target name="rename-linux-64" if="linux64" depends="rename-linux-32">
+    	<move todir="${linux_64.new.product.dir}" verbose="true">
+            <fileset dir="${linux_64.product.dir}"/>
+        </move>
+    </target>
+
+    <!--
+        set executable bit and tar linux product
+    -->
+    <target name="tar-linux-32" if="linux32" depends="rename-linux-64">
+    	<echo message="Linux 32bit: Set Executable Bit and Gzip product"/>
+    	<chmod file="${linux.new.product.dir}/ChordScaleGenerator" perm="u+x" verbose="true"/>
+    	<tar destfile="${build.dir}/CSG-linux-gtk.tar.gz" basedir="${linux.dir}" compression="gzip" />
+    </target>
+
+    <target name="tar-linux-64" if="linux64" depends="tar-linux-32">
+    	<echo message="Linux 64bit: Set Executable Bit and Gzip product"/>
+        <chmod file="${linux_64.new.product.dir}/ChordScaleGenerator" perm="u+x" verbose="true"/>
+        <tar destfile="${build.dir}/CSG-linux-gtk_64.tar.gz" basedir="${linux_64.dir}" compression="gzip" />
+    </target>
+
+    <!--
+        modify app for Mac OS X
+    -->
+    <target name="modify-mac-app" if="macosx64" depends="tar-linux-64">
+
+        <copy file="${basedir}/macosx/app/Info.plist-64bit" tofile="${macos_64.product.dir}/ChordScaleGenerator.app/Contents/Info.plist" overwrite="true" verbose="true"/>
+        <mkdir dir="${macos_64.java.dir}"/>
+        <mkdir dir="${macos_64.java.dir}/configuration"/>
+        <mkdir dir="${macos_64.java.dir}/features"/>
+        <mkdir dir="${macos_64.java.dir}/plugins"/>
+        <move todir="${macos_64.java.dir}/configuration" verbose="true">
+            <fileset dir="${macos_64.product.dir}/configuration"/>
+        </move>
+        <move todir="${macos_64.java.dir}/features" verbose="true">
+            <fileset dir="${macos_64.product.dir}/features"/>
+        </move>
+        <move todir="${macos_64.java.dir}/plugins" verbose="true">
+            <fileset dir="${macos_64.product.dir}/plugins"/>
+        </move>
+        <delete file="${macos_64.product.dir}/.eclipseproduct" verbose="true"/>
+        <move todir="${build.dir}/Chord Scale Generator.app" verbose="true">
+            <fileset dir="${macos_64.product.dir}/ChordScaleGenerator.app"/>
+        </move>
+        <delete dir="${macos_64.dir}" verbose="true"/>
+
+    </target>
+
+    <!--
+    <target name="final-clean-up" depends="modify-mac-app">
+
+    	<echo message="Delete Linux Directories"/>
+        <delete dir="${linux.dir}" verbose="true"/>
+        <delete dir="${linux_64.dir}" verbose="true"/>
+
+        <echo message="Delete Windows Directories"/>
+        <delete dir="${win.dir}" verbose="true"/>
+        <delete dir="${win_64.dir}" verbose="true"/>
+    </target>
+    -->
+
+</project>

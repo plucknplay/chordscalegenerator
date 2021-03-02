@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Instrumente Sicht</title>
+<link type="text/css" rel="stylesheet" href="../../book.css" />
+</head>
+
+<body>
+
+<h1><img src="../../../icons/instrument.gif" width="16" height="16" alt="Instrument Icon"/>Instrumente Sicht</h1>
+
+<p>
+Die <em>Instrumente Sicht</em> dient zum Verwalten all deiner Instrumente. 
+Ausgehend von dieser Sicht kannst du neue Instrumente anlegen, bestehende Instrumente editieren oder auch l&#246;schen. 
+Au&#223;erdem ist es hier m&#246;glich, deine Instrumente in Kategorien und Unterkategorien zu organisieren.
+</p>
+
+<p>
+Doppelklick auf einem Instrument &#246;ffnet dieses in einem <a href="../editors/instrument.html">Instrumenten-Editor</a>. 
+Doppelklick auf einer Kategorie klappt die Kategorie wiederum auf oder zusammen.
+</p>
+
+<p>
+    <enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+	<img src="../../../images/workbench/views/instruments_view.png" width="305" height="306" alt="Instrumente Sicht"/>
+</p>
+<p>
+    <enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+	<img src="../../../images/workbench/views/macosx/instruments_view.png" width="321" height="277" alt="Instrumente Sicht"/>
+</p>
+
+<h2><a id="instruments_view_toolbar">Symbolleiste</a></h2>	
+
+<p>
+Die Symbolleiste der <em>Instrumente-Sicht</em> enth&#228;lt die folgenden Funktionen:
+</p>
+
+<h3><a id="instruments_view_toolbar_add_instrument"><img src="../../../icons/new_instrument.gif" width="16" height="16" alt="Add Instrument Icon"/>F&#252;ge Instrument hinzu</a></h3>
+
+<p>
+&#214;ffnet einen leeren <a href="../editors/instrument.html">Instrumenten-Editor</a>, 
+in welchem du ein neues Instrument definieren kannst. Nachdem du das neu definierte Instrument abgespeichert hast 
+(siehe <a href="../menu/file.html#FileMenu_Save">Datei &#8594; Speichern</a>), 
+wird das Instrument in die Kategorie der Instrumenteliste eingef&#252;gt, 
+welche beim Erstellen des neuen Instruments aktuell ausgew&#228;hlt war. 
+War zu diesem Zeitpunkt keine Kategorie ausgew&#228;hlt, wird das neue Instrument in die Hauptkategorie eingef&#252;gt.
+</p>
+
+<h3><a id="instruments_view_toolbar_add_category"><img src="../../../icons/new_category.gif" width="16" height="16" alt="Add Category Icon"/>F&#252;ge Kategorie hinzu</a></h3>
+
+<p>
+F&#252;gt eine neue Unterkategorie zu der aktuell ausgew&#228;hlten Kategorie hinzu. 
+Du kannst den Namen der neuen Kategorie dabei direkt editieren.
+</p>
+
+<h3><a id="instruments_view_toolbar_expand_all"><img src="../../../icons/expandall.gif" width="16" height="16" alt="Expand All Icon"/>Alles aufklappen</a></h3>
+
+<p>
+Klappt die gesamte Baumstruktur dieser Sicht auf, sodass s&#228;mtliche definierten Instrumente sichtbar werden.
+</p>
+
+<h3><a id="instruments_view_toolbar_collapse_all"><img src="../../../icons/collapseall.gif" width="16" height="16" alt="Collapse All Icon"/>Alles zusammenklappen</a></h3>
+
+<p>
+Klappt die gesamte Baumstruktur dieser Sicht zusammen.
+</p>
+
+<h3><a id="instruments_view_toolbar_link_with_editor"><img src="../../../icons/synced.gif" width="16" height="16" alt="Link with Editor Icon"/>Verkn&#252;pfe mit Editor</a></h3>
+
+<p>
+Hier kannst du einstellen, ob die <em>Instrumente-Sicht</em> mit dem aktuellen Editor verkn&#252;pft sein soll. 
+Ist diese Option eingestellt, wird mit dem Wechsel zu einem aktuellen <a href="../editors/instrument.html">Instrumenten-Editor</a> 
+automatisch das dazugeh&#246;rige Instrument in der <em>Instrumente-Sicht</em> selektiert.
+<br/>
+Hinweis: Vor allem bei einer Vielzahl definierter Instrumente ist eine Verkn&#252;pfung der
+<em>Instrumente-Sicht</em> mit dem Editor sinnvoll, um den &#220;berblick zu behalten.
+</p>
+
+<h2><a id="instruments_view_menu">Men&#252;</a></h2>	
+
+<p>
+Das Men&#252; der <em>Instrumente-Sicht</em> enth&#228;lt die folgenden Funktionen:
+</p>
+
+<p>
+<img src="../../../icons/new_instrument.gif" width="16" height="16" alt="Add Instrument Icon"/><a href="instruments.html#instruments_view_toolbar_add_instrument">F&#252;ge Instrument hinzu</a><br/>
+<img src="../../../icons/new_category.gif" width="16" height="16" alt="Add Category Icon"/><a href="instruments.html#instruments_view_toolbar_add_category">F&#252;ge Kategorie hinzu</a><br/>
+<img src="../../../icons/expandall.gif" width="16" height="16" alt="Expand All Icon"/><a href="instruments.html#instruments_view_toolbar_expand_all">Alles aufklappen</a><br/>
+<img src="../../../icons/collapseall.gif" width="16" height="16" alt="Collapse All Icon"/><a href="instruments.html#instruments_view_toolbar_collapse_all">Alles zusammenklappen</a><br/>
+<img src="../../../icons/synced.gif" width="16" height="16" alt="Link with Editor Icon"/><a href="instruments.html#instruments_view_toolbar_link_with_editor">Verkn&#252;pfe mit Editor </a><br/>
+</p>
+
+<h2><a id="instruments_view_popup_menu">Kontextmen&#252;</a></h2>	
+
+<p>
+Das Kontextmen&#252; dieser Sicht enth&#228;lt die folgenden Funktionen:
+</p>
+
+<p>
+<img src="../../../icons/new_instrument.gif" width="16" height="16" alt="Add Instrument Icon"/><a href="instruments.html#instruments_view_toolbar_add_instrument">Neu  &#8594; Instrument</a><br/>
+<img src="../../../icons/new_category.gif" width="16" height="16" alt="Add Category Icon"/><a href="instruments.html#instruments_view_toolbar_add_category">Neu  &#8594; Kategorie</a><br/>
+</p>
+
+<h3><a id="instruments_view_popup_menu_cut"><img src="../../../icons/cut_edit.gif" width="16" height="16" alt="Cut Icon"/>Ausschneiden</a></h3>
+
+<p>
+Schneidet die ausgew&#228;hlten Elemente (Instrumente und/oder Kategorien) aus und kopiert diese in die Zwischenablage.
+</p>
+
+<h3><a id="instruments_view_popup_menu_copy"><img src="../../../icons/copy_edit.gif" width="16" height="16" alt="Copy Icon"/>Kopieren</a></h3>
+
+<p>
+Kopiert die ausgew&#228;hlten Elemente in die Zwischenablage.
+</p>
+
+<h3><a id="instruments_view_popup_menu_paste"><img src="../../../icons/paste_edit.gif" width="16" height="16" alt="Paste Icon"/>Einf&#252;gen</a></h3>
+
+<p>
+F&#252;gt die in der Zwischenablage befindlichen Elemente in die aktuelle ausgew&#228;hlte Kategorie ein. 
+Existieren in dieser Kategorie bereits gleichnamige Elemente, 
+so werden die Namen der eingef&#252;gten Elemente um fortlaufende Nummern erg&#228;nzt.
+</p>
+
+<h3><a id="instruments_view_popup_menu_remove"><img src="../../../icons/remove.gif" width="16" height="16" alt="Remove Icon"/>L&#246;schen</a></h3>
+
+<p>
+L&#246;scht die ausgew&#228;hlten Elemente. L&#246;scht man eine Kategorie, so werden auch deren enthaltene Elemente gel&#246;scht. 
+Aber keine Angst, so schnell kann man nichts l&#246;schen - man muss vor jedem L&#246;schvorgang diesen &#252;ber einen entsprechenden Dialog best&#228;tigen.
+</p>
+
+<h3><a id="instruments_view_popup_menu_rename">Umbenennen</a></h3>
+
+<p>
+Erm&#246;glicht das direkte Umbenennen eines ausgew&#228;hlten Elements (Instrument oder Kategorie).
+</p>
+
+<h3><a id="instruments_view_popup_menu_import"><img src="../../../icons/import.gif" width="16" height="16" alt="Import Icon"/>Importieren...</a></h3>
+
+<p>
+Importiert die Elemente einer ausgew&#228;hlten XML-Datei und f&#252;gt diese in die aktuelle ausgew&#228;hlte Kategorie ein.
+</p>
+
+<h3><a id="instruments_view_popup_menu_export"><img src="../../../icons/export.gif" width="16" height="16" alt="Export Icon"/>Exportieren...</a></h3>
+
+<p>
+Exportiert die ausgew&#228;hlten Elemente in eine angegebene XML-Datei.
+</p>
+
+<h3><a id="instruments_view_popup_menu_set_active"><img src="../../../icons/current_instrument.gif" width="16" height="16" alt="Set Active Icon"/>Setze aktiv</a></h3>
+
+<p>
+Setzt das ausgew&#228;hlte Instrument aktiv. Das aktive Instrument gibt an, auf welchem Instrument alle folgenden Berechnungen 
+(<a href="../../tasks/chord_generation.html">Grifftabellen generieren</a>, <a href="../../tasks/find_chords.html">Akkorde finden</a>, ...) 
+aktuell durchgef&#252;hrt werden sollen.
+</p>
+
+<h2><a id="instruments_view_icons">Icons</a></h2>	
+
+<p>
+Die folgenden Icons k&#246;nnen in der <em>Instrumente-Sicht</em> vorkommen:
+</p>
+
+<table>
+   <tr>
+      <th>Icon</th>
+      <th>Beschreibung</th>
+   </tr>
+   <tr>
+      <td><img src="../../../icons/category.gif" alt="Category Icon"/></td>
+      <td>Kategorie</td>
+   </tr>
+   <tr>
+      <td><img src="../../../icons/instrument.gif" alt="Instrument Icon"/></td>
+      <td>Instrument</td>
+   </tr>
+   <tr>
+      <td><img src="../../../icons/current_instrument.gif" alt="Active Instrument Icon"/></td>
+      <td>Aktives Instrument</td>
+   </tr>
+</table>
+
+<h2><a id="instruments_view_related_topics">Verwandte Themen</a></h2>	
+<p>
+<a href="../editors/instrument.html">Arbeitsfl&#228;che &#8594; Editoren &#8594; Instrumenten-Editor</a><br/>
+</p>
+
+<h2><a id="instruments_view_related_tasks">Verwandte Aufgaben</a></h2>
+<p>
+<a href="../../tasks/instruments.html">Aufgaben &#8594; Instrumente verwalten</a><br/>
+</p>
+
+</body>
+</html>

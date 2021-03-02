@@ -1,0 +1,2 @@
+<?xml version="1.0"?>
+<interval_containers type="chords"><interval_container type="chords"><name>6/9</name><akaName>maj6/9</akaName><description></description><intervals><interval name="1" value="0"/><interval name="9" value="2"/><interval name="3" value="4"/><interval name="5" value="7"/><interval name="6" value="9"/></intervals></interval_container></interval_containers>

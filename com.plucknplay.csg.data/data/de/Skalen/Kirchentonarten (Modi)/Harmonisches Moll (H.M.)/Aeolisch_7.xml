@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<interval_containers type="scales"><interval_container type="scales"><name>Äolisch 7</name><akaName>H.M. I</akaName><akaName>Harmonisches Moll</akaName><akaName>Aeolian 7</akaName><akaName>Harmonic Minor</akaName><description>Reihenfolge: 1. Stufe von harmonisch Moll = H.M. I&#xd;
+Tonart: moll&#xd;
+&#xd;
+Bemerkungen: &#xd;
+- aus dem natürlichen Moll (N.M.) entwickelt: kleine Septime (b7) wird zur großen Septime (7), dadurch Leitton bzw. Schlusswendung&#xd;
+- dadurch entsteht aber zwischen der kleinen Sexte (b6) und der großen Septime (7) eine übermäßige Sekunde (#2), diese wird als "melodisches Loch" bezeichnet und ist verantwortlich für den orientalischer Charakter dieser Tonleiter&#xd;
+- Entwicklung: natürliches Moll (N.M.) ...b6-b7 --&gt; harmonisches Moll (H.M.) ...b6-7 --&gt; melodisches Moll (M.M.) ...6-7</description><intervals><interval name="1" value="0"/><interval name="2" value="2"/><interval name="b3" value="3"/><interval name="4" value="5"/><interval name="5" value="7"/><interval name="b6" value="8"/><interval name="7" value="11"/></intervals></interval_container></interval_containers>

@@ -1,0 +1,2 @@
+<?xml version="1.0"?>
+<interval_containers type="chords"><interval_container type="chords"><name>11(b9)</name><description></description><intervals><interval name="1" value="0"/><interval name="b9" value="1"/><interval name="3" value="4"/><interval name="11" value="5"/><interval name="5" value="7"/><interval name="b7" value="10"/></intervals></interval_container></interval_containers>

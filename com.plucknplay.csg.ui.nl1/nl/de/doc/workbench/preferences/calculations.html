@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Benutzervorgaben: Berechnungen</title>
+<link type="text/css" rel="stylesheet" href="../../book.css" />
+</head>
+
+<body>
+
+<h1>Benutzervorgaben: Berechnungen</h1>
+<p>Bez&#252;glich der Berechnungen lassen sich in den Benutzervorgaben folgende Einstellungen treffen:</p>
+
+<p>
+    <enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+	<img src="../../../images/workbench/preferences/calculations.png" width="509" height="338" alt="Benutzervorgaben: Berechnungen"/>
+</p>
+<p>
+    <enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+	<img src="../../../images/workbench/preferences/macosx/calculations.png" width="534" height="358" alt="Benutzervorgaben: Berechnungen"/>
+</p>
+
+<h3><a id="calculation_preferences_MaxNumberOfChordResults">Max. Anzahl der Akkord-Ergebnisse</a></h3>
+<p>
+Hier kannst du definieren, wie gro&#223; die Ergebnismenge beim 
+<a href="../../tasks/chord_generation.html">Generieren von Griffm&#246;glichkeiten von Akkorden</a> 
+maximal sein darf. Die Einschr&#228;nkung auf eine Obergrenze bzgl. der Ergebnismenge ist notwendig, 
+da es bei ung&#252;nstigen Konstellation (Instrumenten mit sehr vielen Saiten, gro&#223;e Bundbereiche, etc.) 
+zu riesig gro&#223;en Ergebnismengen mit mehreren Hunderttausend oder sogar Millionen Ergebnissen kommen kann. 
+Die Berechnung dauert in solchen F&#252;llen relativ lange. Au&#223;erdem ist solch eine riesige Ergebnismenge sowieso nicht mehr zu &#252;berschauen. 
+Stelle hier also am besten einen Wert f&#252;r die maximale Gr&#246;&#223;e der Ergebnismenge ein, welche du selbst noch bereit bist durchzuschauen. 
+</p>
+
+<h3><a id="calculation_preferences_PreferBarre">Bevorzuge Barres</a></h3>
+<p>
+Hier kannst du angeben, ob bei der Fingersatzberechnung bei Akkorden die Verwendung von Barres bevorzugt werden soll. 
+Es gibt Akkorde, bei welchen es m&#246;glich ist, diese mit oder ohne Barre zu greifen. 
+Welche Fingersatzvariante man dabei bevorzugt, h&#228;ngt klar von dir ab. 
+Wenn du mit Barres keine Probleme hast, bietet es sich sicherlich an das H&#228;kchen hier zu setzen, 
+da bei Fingers&#228;tzen mit Barres weniger Finger ben&#246;tigt werden. Wenn du jedoch Probleme hast, Barres zu greifen, 
+ist diese Option vielleicht nichts f&#252;r dich.
+</p>
+
+<h3><a id="calculation_preferences_FindChord">Finde Akkord</a></h3>
+<p>
+Hier kannst du einstellen, ob bei der Berechnung zum <a href="../../tasks/find_chords.html">Finden von Akkorden</a>
+zu angegebenen Griff- oder Notenbildern, auch Akkorde mit weggelassener Prime (Grundton), Terz und/oder Quinte 
+mitber&#252;cksichtigt werden sollen. Zudem kannst du angeben, wieviele Intervalle bei der Berechnung maximal 
+ausgeschlossen werden d&#252;rfen.
+</p>
+
+<h2><a id="calculation_preferences_related_topics">Verwandte Themen</a></h2>	
+<p>
+<a href="../views/chord_generation.html">Arbeitsfl&#228;che &#8594; Sichten &#8594; Akkordgenerierung</a><br/>
+<a href="../views/chord_results.html">Arbeitsfl&#228;che &#8594; Sichten &#8594; Akkord-Ergebnisse</a><br/>
+</p>
+
+<h2><a id="calculation_preferences_related_tasks">Verwandte Aufgaben</a></h2>	
+<p>
+<a href="../../tasks/chord_generation.html">Aufgaben &#8594; Grifftabellen generieren und anzeigen</a><br/>
+<a href="../../tasks/find_chords.html">Aufgaben &#8594; Finde Akkorde</a><br/>
+</p>
+
+</body>
+</html>

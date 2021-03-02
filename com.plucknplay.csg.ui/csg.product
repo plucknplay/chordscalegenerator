@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pde version="3.5"?>
+
+<product name="Chord Scale Generator" id="com.plucknplay.csg.ui.product" application="com.plucknplay.csg.ui.application" version="1.4.0" useFeatures="true" includeLaunchers="true">
+
+   <aboutInfo>
+      <image path="/com.plucknplay.csg.ui/icons/about.gif"/>
+      <text>
+         %aboutText
+      </text>
+   </aboutInfo>
+
+   <configIni use="default">
+      <linux>/com.plucknplay.csg.ui/config.ini</linux>
+      <macosx>/com.plucknplay.csg.ui/config.ini</macosx>
+      <win32>/com.plucknplay.csg.ui/config.ini</win32>
+   </configIni>
+
+   <launcherArgs>
+   </launcherArgs>
+
+   <windowImages i16="/com.plucknplay.csg.ui/logos/logo_16.png" i32="/com.plucknplay.csg.ui/logos/logo_32.png" i48="/com.plucknplay.csg.ui/logos/logo_48.png" i64="/com.plucknplay.csg.ui/logos/logo_64.png" i128="/com.plucknplay.csg.ui/logos/logo_128.png"/>
+
+   <splash
+      location="com.plucknplay.csg.ui"
+      startupProgressRect="0,276,490,16"
+      startupMessageRect="82,239,382,20"
+      startupForegroundColor="FFFFFF" />
+   <launcher name="ChordScaleGenerator">
+      <linux icon="/com.plucknplay.csg.ui/logos/logo.xpm"/>
+      <macosx icon="/com.plucknplay.csg.ui/logos/logo.icns"/>
+      <solaris/>
+      <win useIco="true">
+         <ico path="/com.plucknplay.csg.ui/logos/logo.ico"/>
+         <bmp/>
+      </win>
+   </launcher>
+
+   <intro introId="com.plucknplay.csg.ui.intro"/>
+
+   <vm>
+   </vm>
+
+
+   <plugins>
+   </plugins>
+
+   <features>
+      <feature id="com.plucknplay.csg" version="1.4.0"/>
+      <feature id="org.eclipse.gef" version="3.9.0"/>
+      <feature id="org.eclipse.help" version="3.8.2"/>
+      <feature id="org.eclipse.help.nls1" version="3.8.0"/>
+      <feature id="org.eclipse.rcp" version="3.8.2"/>
+      <feature id="org.eclipse.rcp.nls1" version="3.8.1"/>
+   </features>
+
+
+</product>

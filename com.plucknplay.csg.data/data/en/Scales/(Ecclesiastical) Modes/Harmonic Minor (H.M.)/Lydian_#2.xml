@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<interval_containers type="scales"><interval_container type="scales"><name>Lydian #2</name><akaName>H.M. VI</akaName><description>order: 6th degree of harmonic minor (H.M.) = H.M. VI&#xd;
+&#xd;
+comment: &#xd;
+- lydian with #2 instead of 2</description><intervals><interval name="1" value="0"/><interval name="#2" value="3"/><interval name="3" value="4"/><interval name="#4" value="6"/><interval name="5" value="7"/><interval name="6" value="9"/><interval name="7" value="11"/></intervals></interval_container></interval_containers>

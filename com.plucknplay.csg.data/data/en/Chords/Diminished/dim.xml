@@ -1,0 +1,2 @@
+<?xml version="1.0"?>
+<interval_containers type="chords"><interval_container type="chords"><name>°</name><akaName>dim</akaName><akaName>m(b5)</akaName><description></description><intervals><interval name="1" value="0"/><interval name="b3" value="3"/><interval name="b5" value="6"/></intervals></interval_container></interval_containers>

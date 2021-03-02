@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<interval_containers type="scales"><interval_container type="scales"><name>Phrygisch 3</name><akaName>H.M. V</akaName><akaName>Phrygisch Dominant</akaName><akaName>Spanisch</akaName><akaName>Phrygian 3</akaName><akaName>Phrygian Dominant</akaName><akaName>Phrygian Major</akaName><akaName>Spanish</akaName><akaName>Spanish Gypsy</akaName><description>Reihenfolge: 5. Stufe von harmonisch Moll = H.M. V&#xd;
+&#xd;
+Bemerkung: &#xd;
+- phrygisch mit 3 statt b3</description><intervals><interval name="1" value="0"/><interval name="b2" value="1"/><interval name="3" value="4"/><interval name="4" value="5"/><interval name="5" value="7"/><interval name="b6" value="8"/><interval name="b7" value="10"/></intervals></interval_container></interval_containers>

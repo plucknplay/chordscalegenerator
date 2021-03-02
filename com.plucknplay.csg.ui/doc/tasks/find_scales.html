@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Find Scales</title>
+<link type="text/css" rel="stylesheet" href="../book.css" />
+</head>
+
+<body>
+
+<h1>Find Scales</h1>
+<p>
+The <em>Chord Scale Generator</em> not only <a href="show_scales.html">displays scales</a>,
+there is also the possibility of a reverse calculation for scales.
+So if you want to find out which scales match to an any riff you just played,
+the <em>Chord Scale Generator</em> can help you.
+</p>
+
+<p>
+For this calculation you better remain in the <em>Scales</em> perspective.
+The procedure is the same like we've already seen it for chords.
+With the help of the <a href="../workbench/views/box.html">Box</a>,
+<a href="../workbench/views/tab.html">Tab</a> and <a href="../workbench/views/notes.html">Notes View</a>
+you can arrange your riff - just switch into the edit/search mode and arrange your riff by double-clicking.
+Finally you can start the calculation by performing the action <em>Find Scale</em>.
+The results of the calculation will be displayed in the <a href="../workbench/views/scale_results.html">Scale Results View</a>.
+</p>
+
+
+<p>
+    <enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+	<img src="../../images/tasks/find_scale.png" width="889" height="259" alt="Find Scales"/>
+</p>
+<p>
+    <enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+	<img src="../../images/tasks/macosx/find_scale.png" width="1046" height="316" alt="Find Scales"/>
+</p>
+
+<p>
+This view shows all scales which contain all notes of your previously arranged riff.
+Therefore, it is also possible that even scales which contain additional notes are listed.
+In the table column <em>Coverage</em> you can see which percentage the notes of your riff cover of a listed scale.
+A low percentage does not have to be considered a "bad sign".
+The additionally defined notes of such a scale can be used to extend your riff.
+</p>
+
+<p>
+A selected scale in the <a href="../workbench/views/scale_results.html">Scale Results View</a> will be shown
+in the graphical views as described before.
+</p>
+
+<h2>Next Step</h2>
+<p><a href="sound.html">Sound Support</a></p>
+
+<h2><a id="FindScales_related_topics">Related topics</a></h2>
+<p>
+<a href="../workbench/views/scale_results.html">Workbench &#8594; Views &#8594; Scale Results</a><br/>
+<a href="../workbench/views/scale_finder.html">Workbench &#8594; Views &#8594; Scale Finder</a><br/>
+<a href="../workbench/views/fretboard.html">Workbench &#8594; Views &#8594; Fretboard</a><br/>
+<a href="../workbench/views/keyboard.html">Workbench &#8594; Views &#8594; Keyboard</a><br/>
+<a href="../workbench/views/box.html">Workbench &#8594; Views &#8594; Box</a><br/>
+<a href="../workbench/views/tab.html">Workbench &#8594; Views &#8594; Tab</a><br/>
+<a href="../workbench/views/notes.html">Workbench &#8594; Views &#8594; Notes</a><br/>
+</p>
+
+</body>
+</html>

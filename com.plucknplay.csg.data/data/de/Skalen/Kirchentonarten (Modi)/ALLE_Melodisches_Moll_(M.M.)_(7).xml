@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<interval_containers type="scales"><folder name="Melodisches Moll (M.M.)"><interval_container type="scales"><name>Äolisch 3</name><akaName>M.M. V</akaName><akaName>Äolisch Dominant</akaName><akaName>Mixolydisch b13</akaName><akaName>Mixolydisch b6</akaName><akaName>Aeolian 3</akaName><akaName>Aeolian Dominant</akaName><akaName>Mixolydian b13</akaName><akaName>Mixolydian b6</akaName><description>Reihenfolge: 5. Stufe von melodisch Moll = M.M. V&#xd;
+&#xd;
+Bemerkungen: &#xd;
+- äolisch mit 3 statt b3&#xd;
+- manchmal auch mixolydisch b6 (mixolydisch mit b6 statt 6)&#xd;
+- selten auch mixolydisch b13</description><intervals><interval name="1" value="0"/><interval name="2" value="2"/><interval name="3" value="4"/><interval name="4" value="5"/><interval name="5" value="7"/><interval name="b6" value="8"/><interval name="b7" value="10"/></intervals></interval_container><interval_container type="scales"><name>Äolisch 6 7</name><akaName>M.M. I</akaName><akaName>Melodisches Moll</akaName><akaName>Aeolian 6 7</akaName><akaName>Melodic Minor</akaName><akaName>Jazz Minor</akaName><description>Reihenfolge: 1. Stufe von melodisch Moll = M.M. I&#xd;
+&#xd;
+Bemerkungen: &#xd;
+- aus dem harmonischen Moll (H.M.) entwickelt: kleine Sexte (b6) wird zur großen Sexte (6)&#xd;
+- erste Hälfte der Tonleiter bildet einen moll-Tetrachord&#xd;
+- zweite Hälfte der Tonleiter bildet einen Dur-Tetrachord&#xd;
+- Entwicklung: natürliches Moll (N.M.) ...b6-b7 --&gt; harmonisches Moll (H.M.) ...b6-7 --&gt; melodisches Moll (M.M.) ...6-7</description><intervals><interval name="1" value="0"/><interval name="2" value="2"/><interval name="b3" value="3"/><interval name="4" value="5"/><interval name="5" value="7"/><interval name="6" value="9"/><interval name="7" value="11"/></intervals></interval_container><interval_container type="scales"><name>Lokrisch 2</name><akaName>M.M. VI</akaName><akaName>Lokrisch #2</akaName><akaName>Locrian 2</akaName><akaName>Locrian #2</akaName><description>Reihenfolge: 6. Stufe von melodisch Moll = M.M. VI&#xd;
+&#xd;
+Bemerkungen: &#xd;
+- lokrisch mit 2 statt b2&#xd;
+- manchmal auch lokrisch #2</description><intervals><interval name="1" value="0"/><interval name="2" value="2"/><interval name="b3" value="3"/><interval name="4" value="5"/><interval name="b5" value="6"/><interval name="b6" value="8"/><interval name="b7" value="10"/></intervals></interval_container><interval_container type="scales"><name>Lokrisch b4</name><akaName>M.M. VII</akaName><akaName>Locrian b4</akaName><akaName>Altered</akaName><akaName>Altered Dominant</akaName><akaName>Diminished Whole-Tone</akaName><akaName>Dominant Whole-Tone</akaName><description>Reihenfolge: 7. Stufe von melodisch Moll = M.M. VII&#xd;
+&#xd;
+Bemerkung: &#xd;
+- lokrisch mit b4 statt 4</description><intervals><interval name="1" value="0"/><interval name="b2" value="1"/><interval name="b3" value="3"/><interval name="b4" value="4"/><interval name="b5" value="6"/><interval name="b6" value="8"/><interval name="b7" value="10"/></intervals></interval_container><interval_container type="scales"><name>Lydisch #5</name><akaName>M.M. III</akaName><akaName>Lydian #5</akaName><akaName>Lydian Augmented</akaName><description>Reihenfolge: 3. Stufe von melodisch Moll = M.M. III&#xd;
+&#xd;
+Bemerkung: &#xd;
+- lydisch mit #5 statt 5</description><intervals><interval name="1" value="0"/><interval name="2" value="2"/><interval name="3" value="4"/><interval name="#4" value="6"/><interval name="#5" value="8"/><interval name="6" value="9"/><interval name="7" value="11"/></intervals></interval_container><interval_container type="scales"><name>Lydisch b7</name><akaName>M.M. IV</akaName><akaName>Lydisch Dominant</akaName><akaName>Mixolydisch #11</akaName><akaName>Mixolydisch #4</akaName><akaName>Lydian b7</akaName><akaName>Lydian Dominant</akaName><akaName>Mixolydian #11</akaName><akaName>Mixolydian #4</akaName><akaName>Overtone</akaName><akaName>Acoustic</akaName><description>Reihenfolge: 4. Stufe von melodisch Moll = M.M. IV&#xd;
+&#xd;
+Bemerkungen: &#xd;
+- lydisch mit b7 statt 7&#xd;
+- manchmal auch mixolydisch #4 (mixolydisch mit #4 statt 4)&#xd;
+- selten auch mixolydisch #11</description><intervals><interval name="1" value="0"/><interval name="2" value="2"/><interval name="3" value="4"/><interval name="#4" value="6"/><interval name="5" value="7"/><interval name="6" value="9"/><interval name="b7" value="10"/></intervals></interval_container><interval_container type="scales"><name>Phrygisch 6</name><akaName>M.M. II</akaName><akaName>Dorisch b2</akaName><akaName>Phrygisch #6</akaName><akaName>Phrygian 6</akaName><akaName>Dorian b2</akaName><akaName>Phrygian #6</akaName><description>Reihenfolge: 2. Stufe von melodisch Moll = M.M. II&#xd;
+&#xd;
+Bemerkungen: &#xd;
+- phrygisch mit 6 statt b6&#xd;
+- manchmal auch phrygisch #6&#xd;
+- manchmal auch dorisch b2 (dorisch mit b2 statt 2)</description><intervals><interval name="1" value="0"/><interval name="b2" value="1"/><interval name="b3" value="3"/><interval name="4" value="5"/><interval name="5" value="7"/><interval name="6" value="9"/><interval name="b7" value="10"/></intervals></interval_container></folder></interval_containers>

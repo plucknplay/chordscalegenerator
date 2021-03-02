@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Griffbrett Sicht</title>
+<link type="text/css" rel="stylesheet" href="../../book.css" />
+</head>
+
+<body>
+
+<h1><img src="../../../icons/fretboard_view.gif" width="16" height="16" alt="Fretboard Icon"/>Griffbrett Sicht</h1>
+
+<p>
+Die <em>Griffbrett-Sicht</em> zeigt eine stilisierte Darstellung des Griffbretts des aktuell aktiven Instruments.
+Die Darstellung des Griffbretts wurde hierbei bewusst stilisiert, um die Darstellung auf die wesentlichen Informationen zu beschr&#228;nken.
+</p>
+
+<p>
+Die Darstellung des Griffbretts ist dabei in einigen Punkten stark von der Definition des aktiven Instruments abh&#228;ngig.
+Handelt es sich beispielsweise bei dem dargestellten Instrument um ein bundloses Instrument (also besitzt dieses Instrument keine Bundst&#228;be),
+werden die B&#252;nde gepunktet dargestellt. Au&#223;erdem werden Doppelsaiten entsprechend dargestellt,
+wobei ein kleines Sternchen Doppelsaiten mit Oktavsprung kennzeichnet.
+</p>
+
+<p>
+Haupteigenschaft dieser Sicht ist es, Akkorde und Skalen(bl&#246;cke) im Kontext des gesamten Griffbretts anzuzeigen.
+Hierbei kann man zudem zwischen Fingersatz-, Noten- und Intervalldarstellung wechseln.
+</p>
+
+<p>
+    <enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+	<img src="../../../images/workbench/views/fretboard_view_chord.png" width="835" height="287" alt="Griffbrett Sicht - Akkord"/>
+</p>
+<p>
+    <enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+	<img src="../../../images/workbench/views/macosx/fretboard_view_chord.png" width="916" height="312" alt="Griffbrett Sicht - Akkord"/>
+</p>
+
+<p>
+Bei der Anzeige von Skalen dient diese Sicht zudem zum Ausw&#228;hlen des aktuellen Skalenblocks (der blau-hinterlegten Ausschnitt einer Skala).
+Zum Ausw&#228;hlen des aktuellen Skalenblocks ben&#246;tigt die <em>Griffbrett-Sicht</em> den Focus.
+Dann kann auf einfache Weise mit den Cursor-Tasten zwischen den einzelnen Skalenbl&#246;cken navigiert werden.
+</p>
+
+<p>
+    <enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+	<img src="../../../images/workbench/views/fretboard_view_scale.png" width="835" height="287" alt="Griffbrett Sicht - Skala"/>
+</p>
+<p>
+    <enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+	<img src="../../../images/workbench/views/macosx/fretboard_view_scale.png" width="916" height="312" alt="Griffbrett Sicht - Skala"/>
+</p>
+
+<p>
+In der <em>Griffbrett-Sicht</em> werden zudem die T&#246;ne eines angespielten Akkords oder Skalenblocks grafisch hervorgehoben.
+Es wird dabei genau deutlich, welche T&#246;ne gerade angespielt werden und wie lange diese erklingen.
+</p>
+
+<p>
+Es ist auch m&#246;glich, frei auf dem Griffbrett zu spielen. Ein einfacher Mausklick auf eine Note spielt diese an.
+Du kannst also auf dem dargestellten Griffbrett ein wenig herumklimpern.
+Wie lang eine Note bei einem Mausklick ert&#246;nen soll, kannst du in den
+<a href="../preferences/sound.html">Benutzervorgaben zum Sound</a> definieren.
+</p>
+
+
+
+<h2><a id="Fretboard_view_toolbar">Symbolleiste</a></h2>
+
+<p>Die Symbolleiste der <em>Griffbrett-Sicht</em> enth&#228;lt die folgenden Funktionen:</p>
+
+<h3><a id="Fretboard_view_toolbar_ShowFingering"><img src="../../../icons/fingering.gif" width="16" height="16" alt="Show Fingering Icon"/>Zeige Fingersatz</a></h3>
+<p>Wechselt in den Fingersatz-Modus dieser Sicht. Es werden somit die Fingers&#228;tze von dargestellten Akkorden oder Skalenbl&#246;cken angezeigt.</p>
+<p><img src="../../../images/workbench/views/fretboard_chord_fingering_mode.png" width="214" height="153" alt="Fingersatz Modus"/></p>
+
+<h3><a id="Fretboard_view_toolbar_ShowNotes"><img src="../../../icons/notes.gif" width="16" height="16" alt="Show Notes Icon"/>Zeige Noten</a></h3>
+<p>Wechselt in den Noten-Modus dieser Sicht. Es werden somit die Noten der dargestellten Akkorde oder Skalen(bl&#246;cke) angezeigt.</p>
+<p><img src="../../../images/workbench/views/fretboard_chord_notes_mode.png" width="214" height="153" alt="Noten Modus"/></p>
+
+<h3><a id="Fretboard_view_toolbar_ShowIntervals"><img src="../../../icons/intervals.gif" width="16" height="16" alt="Show Intervals Icon"/>Zeige Intervalle</a></h3>
+<p>Wechselt in den Intervall-Modus dieser Sicht. Es werden somit die Intervalle der dargestellten Akkorde oder Skalen(bl&#246;cke) angezeigt.</p>
+<p><img src="../../../images/workbench/views/fretboard_chord_interval_mode.png" width="214" height="153" alt="Intervall Modus"/></p>
+
+<h3><a id="Fretboard_view_toolbar_ClearInput"><img src="../../../icons/clear.gif" width="16" height="16" alt="L&#246;sche Eingabe Icon"/>L&#246;sche Eingabe</a></h3>
+<p>L&#246;scht die aktuell angezeigte Eingabe (Akkord oder Skala) aus dieser Sicht.</p>
+
+
+
+<h2><a id="Fretboard_view_menu">Men&#252;</a></h2>
+<p>Das Men&#252; der <em>Griffbrett-Sicht</em> enth&#228;lt die folgenden Funktionen:</p>
+
+<p>
+<img src="../../../icons/fingering.gif" width="16" height="16" alt="Zeige Fingersatz Icon"/><a href="fretboard.html#Fretboard_view_toolbar_ShowFingering">Zeige Fingersatz</a><br/>
+<img src="../../../icons/notes.gif" width="16" height="16" alt="Zeige Noten Icon"/><a href="fretboard.html#Fretboard_view_toolbar_ShowNotes">Zeige Noten</a><br/>
+<img src="../../../icons/intervals.gif" width="16" height="16" alt="Zeige Intervalle Icon"/><a href="fretboard.html#Fretboard_view_toolbar_ShowIntervals">Zeige Intervalle</a><br/>
+<img src="../../../icons/clear.gif" width="16" height="16" alt="L&#246;sche Eingabe Icon"/><a href="fretboard.html#Fretboard_view_toolbar_ClearInput">L&#246;sche Eingabe</a><br/>
+</p>
+
+<h3><a id="Fretboard_view_menu_Preferences">Benutzervorgaben...</a></h3>
+<p>
+&#214;ffnet den Dialog zum Definieren der <a href="../preferences/views/fretboard.html">Benutzervorgaben</a>.
+Die Seite zum Definieren der Einstellm&#246;glichkeiten f&#252;r diese Sicht ist dabei schon vorselektiert.
+</p>
+
+<h2><a id="Fretboard_view_popup_menu">Kontextmen&#252;</a></h2>
+
+<p>
+Das Kontextmen&#252; dieser Sicht enth&#228;lt die folgenden Funktionen:
+</p>
+
+
+<h3><a id="Fretboard_view_popup_menu_ExportAsImageFile"><img src="../../../icons/export.gif" width="16" height="16" alt="Export as Image File Icon"/>Exportiere als Bilddatei...</a></h3>
+<p>
+Exportiert die aktuelle Griffbrettdarstellung als Bilddatei.
+In einem entsprechenden Dialog kannst du dabei den Dateinamen und Dateityp (.bmp, .jpg oder .png) festlegen.
+In welcher Gr&#246;&#223;e das Griffbrett exportiert werden soll, kannst du in den
+<a href="../preferences/export.html">Benutzervorgaben zum Export</a> spezifizieren.
+</p>
+
+<h3><a id="Fretboard_view_popup_menu_CopyToClipboard"><img src="../../../icons/copy_edit.gif" width="16" height="16" alt="Copy to Clipboard Icon"/>Kopiere in die Zwischenablage</a></h3>
+<p>
+Kopiert die aktuelle Griffbrettdarstellung in die Zwischenablage.
+Die in der Zwischenablage abgelegten Bilddaten k&#246;nnen dann beispielsweise in Office-Anwendungen eingef&#252;gt werden.
+Die Gr&#246;&#223;e des kopierten Griffbretts wird auch hier in den  <a href="../preferences/export.html">Benutzervorgaben zum Export</a> spezifiziert.
+</p>
+
+
+<h2><a id="Fretboard_view_related_topics">Verwandte Themen</a></h2>
+
+<p>
+<a href="../preferences/views/fretboard.html">Arbeitsfl&#228;che &#8594; Benutzervorgaben &#8594; Sichten &#8594; Fretboard</a><br/>
+<a href="../preferences/export.html">Arbeitsfl&#228;che &#8594; Benutzervorgaben &#8594; Export</a><br/>
+<a href="../preferences/blocks.html">Arbeitsfl&#228;che &#8594; Benutzervorgaben &#8594; Bl&#246;cke</a><br/>
+<a href="../preferences/sound.html">Arbeitsfl&#228;che &#8594; Benutzervorgaben &#8594; Sound</a><br/>
+</p>
+
+
+<h2><a id="Fretboard_view_related_tasks">Verwandte Aufgaben</a></h2>
+<p>
+<a href="../../tasks/chord_generation.html">Aufgaben &#8594; Grifftabellen generieren und anzeigen</a><br/>
+<a href="../../tasks/show_scales.html">Aufgaben &#8594; Skalen ansehen</a><br/>
+</p>
+
+</body>
+</html>

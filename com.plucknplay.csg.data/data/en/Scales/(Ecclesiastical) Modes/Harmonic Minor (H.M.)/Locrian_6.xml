@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<interval_containers type="scales"><interval_container type="scales"><name>Locrian 6</name><akaName>H.M. II</akaName><akaName>Locrian #6</akaName><description>order: 2nd degree of harmonic minor (H.M.) = H.M. II&#xd;
+&#xd;
+comments: &#xd;
+- locrian with 6 instead of b6&#xd;
+- sometimes used as locrian #6</description><intervals><interval name="1" value="0"/><interval name="b2" value="1"/><interval name="b3" value="3"/><interval name="4" value="5"/><interval name="b5" value="6"/><interval name="6" value="9"/><interval name="b7" value="10"/></intervals></interval_container></interval_containers>

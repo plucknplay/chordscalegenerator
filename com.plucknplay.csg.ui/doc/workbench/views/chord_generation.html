@@ -1,0 +1,220 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Chord Generation View</title>
+<link type="text/css" rel="stylesheet" href="../../book.css" />
+</head>
+
+<body>
+
+<h1><img src="../../../icons/chordGeneration.gif" width="16" height="16" alt="Chord Generation Icon"/>Chord Generation View</h1>
+
+<p>
+In the <em>Chord Generation View</em> you can specify and start the calculation to determine possible fingerings for a certain chord.
+Additionally, you can specify a wide range of restrictions to reduce the size of the result set.
+The results of the calculation will be displayed in the <a href="../views/chord_results.html">Chord Results View</a>.
+</p>
+
+<p>
+It is possible to place less important or complicated restrictions in a collapsable Advanced Section.
+You can define the restrictions you want to hide in this section in the views <a href="../preferences/views/chord_generation.html">preferences</a>.
+</p>
+
+<p>
+Note: When you change the settings (new active instrument, changed chord list, etc.)
+the content of some fields of this view may change automatically.
+</p>
+
+<p>
+    <enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+	<img src="../../../images/workbench/views/chord_generation_view.png" width="328" height="534" alt="Chord Generation View"/>
+</p>
+<p>
+    <enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+	<img src="../../../images/workbench/views/macosx/chord_generation_view.png" width="410" height="619" alt="Chord Generation View"/>
+</p>
+
+
+<h2><a id="ChordGeneration_view_toolbar">Settings</a></h2>
+
+<h3><a id="ChordGeneration_view_toolbar_add_scale">Chord</a></h3>
+
+<p>
+Here you can specify the chord for which you want to generate the fingerings.
+A chord consists of the root note (C, D, ...) and the chord name (maj, min, 7, ...).
+</p>
+
+<h3><a id="ChordGeneration_view_toolbar_Browse-Button">Browse-Button</a></h3>
+
+<p>
+If you could not find a chord name in the list it is also possible to use the search option.
+Click on the search button to open a dialog box which lists all defined chord names including the aka names (also known as).
+</p>
+
+<p>
+    <enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+	<img src="../../../images/workbench/views/chord_generation_view_browse.png" width="276" height="430" alt="Chord Generation View - Browse"/>
+</p>
+<p>
+    <enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+	<img src="../../../images/workbench/views/macosx/chord_generation_view_browse.png" width="340" height="484" alt="Chord Generation View - Browse"/>
+</p>
+
+<h3><a id="ChordGeneration_view_toolbar_BassTone">Bass Tone</a></h3>
+
+<p>
+Here you can specify the desired bass tone of the generated chords.
+The bass tone is the lowest tone of a chord.
+If you don't want to make any restrictions concerning the bass tone just select "I don't care".
+</p>
+
+
+<h3><a id="ChordGeneration_view_toolbar_LeadTone">Lead Tone</a></h3>
+
+<p>
+In addition to the bass tone you can also specify the desired lead tone of the generated chords.
+The lead tone is the highest tone of a chord. Select "I don't care" if you want to ignore this restriction.
+</p>
+
+
+<h3><a id="ChordGeneration_view_toolbar_Level">Level</a></h3>
+
+<p>
+Here you can define the minimum and maximum level of the generated chords.
+Possible levels are easy, medium, hard, very hard and hell. Of course,
+the division of chords into levels is subjective and depends on your capabilities.
+However, the division could be characterized, in principle, as follows:
+</p>
+
+<ul>
+<li><b>easy:</b> Easy fingerings - mostly just a few fingers are needed. No barre chords. Nice chords for beginners.</li>
+<li><b>medium:</b> Medium fingerings and easy fingerings with barre chords. Should not be a big problem for most of you.</li>
+<li><b>hard:</b> Hard fingerings - but should be playable for advanced instrumentalists. May cause problems in fluid play.</li>
+<li><b>very hard:</b> These chords are possible - but you will not have fun. Just for finger acrobats with huge hands.</li>
+<li><b>hell:</b> These are theoretically possible chords for which no fingering could be calculated. If a buddy of you has a free hand he could possibly help you (to play these chords).</li>
+</ul>
+
+
+<h3><a id="ChordGeneration_view_toolbar_FretRange">Fret Range</a></h3>
+<p>
+Here you can specify the fret range in which the chords should be calculated.
+</p>
+
+<h3><a id="ChordGeneration_view_toolbar_StringRange">String Range</a></h3>
+<p>
+Here you can specify the string range in which the chords should be calculated.
+</p>
+
+<h3><a id="ChordGeneration_view_toolbar_Width">Width</a></h3>
+<p>
+Here you can specify the maximum width of your calculated fingerings.
+The width can be defined in (number of) frets or even millimeters (or inches).
+With the measurement in inches or millimeters you can specify the maximum span of your hand.
+Since the fret distance decreases the higher the fret number gets, it is possible to have a larger fret span in the lower frets.
+</p>
+
+<h3><a id="ChordGeneration_view_toolbar_MaxSingleToneNumber">Max. Single Tone Number</a></h3>
+<p>
+Here you can specify how often each single tone is allowed to occur in your chords.
+With this setting, it is possible to create well-balanced chords.
+Okay, that sounds a little bit complicated - let�s explain it with an example.
+Imagine you are playing a 6-stringed instrument and you want to find possible fingerings for a C-major chord.
+A C-major chord consists of the tones C-E-G. So, one of the possible calculations for this chord could be 3xC, 1xE and 2xG.
+But that�s not really a well-balanced chord. It would definitely be better if each single tone would only occur twice -
+so simply set this field to "2". If that still is confusing you just ignore this restriction by selecting "I don�t care".
+</p>
+
+<h3><a id="ChordGeneration_view_toolbar_OpenStrings">Open Strings</a></h3>
+<p>
+Here you can specify whether or not your chords are allowed to contain open strings.
+An open string indicates a string which is played without being fretted.
+Especially for electrically amplified instruments which are played distorted it is better to avoid chords with open strings.
+</p>
+
+<h3><a id="ChordGeneration_view_toolbar_MutedStrings">Muted Strings</a></h3>
+<p>
+In addition to open strings you can also specify whether or not your chords are allowed to contain muted strings.
+A muted string indicates a string which is not played.
+A muted string can either be simply not played or you have to mute the string with a finger of your fretting hand.
+Therefore, the chords with muted strings do not use all strings of your instrument.
+</p>
+
+<h3><a id="ChordGeneration_view_toolbar_OnlyAdjoined">Only Adjoined</a></h3>
+<p>
+For chords with muted strings you can additionally specify that the played strings have to adjoin one another.
+Therefore the non-muted strings will not be interrupted by muted strings
+and it becomes possible to play the block of non-muted strings with one strike.
+</p>
+
+<h3><a id="ChordGeneration_view_toolbar_OnlySingleMutedStrings">Only Single Muted Strings</a></h3>
+<p>
+Here you can make further restrictions on chords with muted strings,
+for example allow only one single muted string in the chord.
+Thus, there will never be two or more muted strings in a row.
+This restriction takes into consideration that in most cases
+it is easy to mute a single string with a finger of your fretting hand,
+whereas it becomes more and more complicated to mute several strings in a row.
+Such chords can easily be filtered with this restriction.
+</p>
+
+<h3><a id="ChordGeneration_view_toolbar_DoubleTones">Double Tones</a></h3>
+<p>
+Here you can specify whether or not your generated chords are allowed to contain double tones.
+Double tones are identical tones (with the same tone height).
+Especially for electrically amplified instruments which are played distorted it is better to avoid chords with double tones.
+</p>
+
+<h3><a id="ChordGeneration_view_toolbar_OnlyAscendingDescendingTones">Only Ascending/Descending Tones</a></h3>
+<p>
+Here you can specify that your generated chords are only allowed to have ascending or descending tone sequences.
+This restriction makes sense if you want to play a chord arpeggiated (tone after tone).
+If you simply want to strike the chords this restriction is probably not really interesting for you.
+</p>
+
+<h3><a id="ChordGeneration_view_toolbar_ExcludedIntervals">Excluded Intervals</a></h3>
+<p>
+Here you can specify whether certain intervals of the chords (root, third, fifth) shall be left out of
+the calculation. With the exclusion of intervals some chords may become easier.
+Some instruments with only a few strings even require the exclusion of certain intervals to play chords
+with many tones.<br/>
+Note: With the exclusion of tones the character of chords may change more (root, third) or less (fifth).
+</p>
+
+<h2><a id="ChordGeneration_view_DropSupport">Drop Support</a></h2>
+
+<p>
+The <em>Chord Generation View</em> supports Drag&amp;Drop - the possibility to drag elements from one view to another.
+In this case it is possible to drag chords from the <a href="../views/chords.html">Chords View</a> and
+the <a href="../views/chord_results.html">Chord Results View</a> into this view.
+If you drop a chord into this view the chord will be automatically selected -
+you do not have to select this chord on your own (search for this chord in the list).
+</p>
+
+<h2><a id="ChordGeneration_view_Menu">Menu</a></h2>
+<p>
+The menu of this view contains just the following action:
+</p>
+
+<h3><a id="ChordGeneration_view_toolbar_Preferences">Preferences...</a></h3>
+<p>
+Opens the preferences dialog. The page with the <a href="../preferences/views/chord_generation.html">preferences</a> for this view is already pre-selected.
+</p>
+
+<h2><a id="ChordGeneration_view_related_topics">Related topics</a></h2>
+<p>
+<a href="../preferences/views/chord_generation.html">Workbench &#8594; Preferences &#8594; Views &#8594; Chord Generation</a><br/>
+<a href="../preferences/calculations.html">Workbench &#8594; Preferences &#8594; Calculations</a><br/>
+<a href="../views/chords.html">Workbench &#8594; Views &#8594; Chords</a><br/>
+<a href="../views/chord_results.html">Workbench &#8594; Views &#8594; Chord Results</a><br/>
+</p>
+
+<h2><a id="ChordGeneration_view_related_tasks">Related Tasks</a></h2>
+<p>
+<a href="../../tasks/chord_generation.html">Tasks &#8594; Generate and Show Chords</a><br/>
+</p>
+
+</body>
+</html>

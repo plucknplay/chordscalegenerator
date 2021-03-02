@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<instruments><instrument><name>Double Bass (4 Strings) - F#</name><description>aka: Contrabass&#xd;
+Scale length [mm]: 1/16=700, 1/10=750, 1/8=800, 1/4=900, 1/2=1000, 3/4=1050, 7/8=1060&#xd;
+&#xd;
+Note: standard tuning ,E-,A-D-G tuned a whole tone higher, usually used for classical solo play = solo tuning</description><stringCount>4</stringCount><scaleLength unit="mm" value="1070.0"/><lefty_righty>false</lefty_righty><fretless>true</fretless><doubled_strings>false</doubled_strings><pitch><note level="2" octaveJump="false" stringNumber="1" value="9"/><note level="2" octaveJump="false" stringNumber="2" value="4"/><note level="1" octaveJump="false" stringNumber="3" value="11"/><note level="1" octaveJump="false" stringNumber="4" value="6"/></pitch><midiInstrumentNumber>43</midiInstrumentNumber><clef>13</clef></instrument></instruments>

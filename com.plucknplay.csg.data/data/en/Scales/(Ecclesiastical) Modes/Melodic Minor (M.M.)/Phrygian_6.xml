@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<interval_containers type="scales"><interval_container type="scales"><name>Phrygian 6</name><akaName>M.M. II</akaName><akaName>Dorian b2</akaName><akaName>Phrygian #6</akaName><description>order: 2nd degree of melodic minor (M.M.) = M.M. II&#xd;
+&#xd;
+comments: &#xd;
+- phrygian with 6 instead of b6&#xd;
+- sometimes used as phrygian #6&#xd;
+- sometimes used as dorian b2 (dorian with b2 instead of 2)</description><intervals><interval name="1" value="0"/><interval name="b2" value="1"/><interval name="b3" value="3"/><interval name="4" value="5"/><interval name="5" value="7"/><interval name="6" value="9"/><interval name="b7" value="10"/></intervals></interval_container></interval_containers>

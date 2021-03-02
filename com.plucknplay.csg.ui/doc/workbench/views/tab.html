@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Tab View</title>
+<link type="text/css" rel="stylesheet" href="../../book.css" />
+</head>
+
+<body>
+
+<h1><img src="../../../icons/tab_view.gif" width="16" height="16" alt="Tab View Icon"/>Tab View</h1>
+<p>
+The <em>Tab View</em> shows chords and scales in the form of a tablature. 
+This representation is, just like the Box represenation, a very compact and simple one.
+</p>
+
+<p>
+    <enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+	<img src="../../../images/workbench/views/tab_view.png" width="173" height="230" alt="Tab View"/>
+</p>
+<p>
+    <enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+	<img src="../../../images/workbench/views/macosx/tab_view.png" width="168" height="233" alt="Tab View"/>
+</p>
+
+<p>
+This view not only shows chords and scale blocks - here you can also switch into a edit/search mode. 
+In the edit/search mode you can arrange own fingering patterns and perform a reverse calculation to find chords and scales. 
+In order to arrange your fingering patterns just double click to select, and afterwards edit, a finger position.
+</p>
+
+<p>
+    <enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+	<img src="../../../images/workbench/views/tab_view_search_mode.png" width="285" height="242" alt="Tab View"/>
+</p>
+<p>
+    <enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+	<img src="../../../images/workbench/views/macosx/tab_view_search_mode.png" width="282" height="238" alt="Tab View"/>
+</p>
+
+
+
+<h2><a id="tab_view_toolbar">Toolbar</a></h2>	
+<p>The toolbar of the <em>Tab View</em> contains the following actions:</p>
+
+<h3><a id="tab_view_toolbar_SearchMode"><img src="../../../icons/search.gif" width="16" height="16" alt="Edit/Search Mode Icon"/>Edit/Search Mode</a></h3>
+<p>
+Here you can switch to the edit/search mode. 
+In the edit/search mode you can arrange own fingering patterns and start a reverse calculation to find chords and scales. <br/>
+Note: As long as the view is in the edit/search mode, it is blocked and newly selected chords or scale blocks will not be shown.
+</p>
+
+<h3><a id="tab_view_toolbar_FindChord"><img src="../../../icons/find_chord.gif" width="16" height="16" alt="Find Chord Icon"/>Find Chord</a></h3>
+<p>
+This action starts the calculation to determine the corresponding chords of a fingering pattern you have arranged before. 
+This action is only available if it is actually possible that the fingering corresponds to a chord. 
+Thus, the fingering pattern must contain at least two notes and only one finger position on each string can be defined.
+</p>
+
+<h3><a id="tab_view_toolbar_FindScale"><img src="../../../icons/find_scale.gif" width="16" height="16" alt="Find Scale Icon"/>Find Scale</a></h3>
+<p>
+This action starts the calculation to determine the corresponding scales of a fingering pattern you have arranged in the edit/search mode. 
+This action is only available if the fingering pattern contains at least two notes. 
+When you want to find scales it is, of course, possible to define more than one  finger position on each string.
+</p>
+
+<h3><a id="tab_view_toolbar_RemoveColumn"><img src="../../../icons/edit_remove.gif" width="16" height="16" alt="Remove Column Icon"/>Remove Column</a></h3>
+<p>
+Removes a column from the tablature. The minumum number of columns is limited to one.
+</p>
+
+<h3><a id="tab_view_toolbar_AddColumn"><img src="../../../icons/edit_add.gif" width="16" height="16" alt="Add ColumnIcon"/>Add Column</a></h3>
+<p>
+Adds an additional column to the tablature. The maximum number of columns is limited to six.
+</p>
+
+<h3><a id="tab_view_toolbar_ClearInput"><img src="../../../icons/clear.gif" width="16" height="16" alt="Clear Input Icon"/>Clear Input</a></h3>
+<p>
+Clears the currently shown input (chord or scale) from this view.
+</p>
+
+
+
+<h2><a id="tab_view_menu">Menu</a></h2>	
+<p>The menu of the <em>Tab View</em> contains the following actions:</p>
+
+<p>
+<img src="../../../icons/search.gif" width="16" height="16" alt="Edit/Search Mode Icon"/>
+<a href="tab.html#tab_view_toolbar_SearchMode">Edit/Search Mode</a><br/>
+
+<img src="../../../icons/find_chord.gif" width="16" height="16" alt="Find Chord Icon"/>
+<a href="tab.html#tab_view_toolbar_FindChord">Find Chord</a><br/>
+
+<img src="../../../icons/find_scale.gif" width="16" height="16" alt="Find Scale Icon"/>
+<a href="tab.html#tab_view_toolbar_FindScale">Find Scale</a><br/>
+
+<img src="../../../icons/edit_remove.gif" width="16" height="16" alt="Remove Column Icon"/>
+<a href="tab.html#tab_view_toolbar_RemoveColumn">Remove Column</a><br/>
+
+<img src="../../../icons/edit_add.gif" width="16" height="16" alt="Add Column Icon"/>
+<a href="tab.html#tab_view_toolbar_AddColumn">Add Column</a><br/>
+
+<img src="../../../icons/clear.gif" width="16" height="16" alt="Clear Input Icon"/>
+<a href="tab.html#tab_view_toolbar_ClearInput">Clear Input</a><br/>
+</p>
+
+<h3><a id="tab_view_menu_Preferences">Preferences...</a></h3>
+<p>Opens the preferences dialog. The page with the <a href="../preferences/views/tab.html">preferences</a> for this view is already pre-selected.</p>
+
+
+
+<h2><a id="tab_view_popup_menu">Pop-up Menu</a></h2>	
+<p>The pop-up menu of this view contains the following actions:</p>
+
+<h3><a id="tab_view_popup_menu_ExportAsImageFile"><img src="../../../icons/export.gif" width="16" height="16" alt="Export as Image File Icon"/>Export as Image File...</a></h3>
+<p>
+Exports the current representation of the tablature as an image file. 
+You can specifiy the file name and type (.bmp, .jpg or .png) in a corresponding dialog box. 
+The size of the export image can be defined in the <a href="../preferences/export.html">export preferences</a>.
+</p>
+
+<h3><a id="tab_view_popup_menu_CopyToClipboard"><img src="../../../icons/copy_edit.gif" width="16" height="16" alt="Copy to Clipboard Icon"/>Copy to Clipboard</a></h3>
+<p>
+Copies the current representation of the tablature into the clipboard. 
+The stored image data in the clipboard may be pasted, for instance, into Office applications later on. 
+The size of the image can be defined in the <a href="../preferences/export.html">export preferences</a> as well.
+</p>
+
+
+
+<h2><a id="tab_view_related_topics">Related topics</a></h2>	
+<p>
+<a href="../preferences/views/tab.html">Workbench &#8594; Preferences &#8594; Views &#8594; Tab</a><br/>
+<a href="../preferences/export.html">Workbench &#8594; Preferences &#8594; Export</a><br/>
+</p>
+
+<h2><a id="tab_view_related_tasks">Related Tasks</a></h2>	
+<p>
+<a href="../../tasks/chord_generation.html">Tasks &#8594; Generate and Show Chords</a><br/>
+<a href="../../tasks/find_chords.html">Tasks &#8594; Find Chords</a><br/>
+<a href="../../tasks/show_scales.html">Tasks &#8594; Show Scales</a><br/>
+<a href="../../tasks/find_scales.html">Tasks &#8594; Find Scales</a><br/>
+</p>
+
+</body>
+</html>

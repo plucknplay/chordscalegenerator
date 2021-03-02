@@ -1,0 +1,289 @@
+<index>
+    <entry keyword="editor">
+        <topic href="doc/tasks/workbench.html#workbench_editors"/>
+        <entry keyword="chord">
+            <topic href="doc/workbench/editors/chord.html"/>
+        </entry>
+        <entry keyword="instrument">
+            <topic href="doc/workbench/editors/instrument.html"/>
+        </entry>
+        <entry keyword="scale">
+            <topic href="doc/workbench/editors/scale.html"/>
+        </entry>
+    </entry>
+    <entry keyword="view">
+        <topic href="doc/tasks/workbench.html#workbench_views"/>
+        <entry keyword="box">
+            <topic href="doc/workbench/views/box.html"/>
+            <entry keyword="preferences">
+                <topic href="doc/workbench/preferences/views/box.html"/>
+            </entry>
+        </entry>
+        <entry keyword="chord generation">
+            <topic href="doc/workbench/views/chord_generation.html"/>
+            <entry keyword="preferences">
+                <topic href="doc/workbench/preferences/views/chord_generation.html"/>
+            </entry>
+        </entry>
+        <entry keyword="chord results">
+            <topic href="doc/workbench/views/chord_results.html"/>
+            <entry keyword="preferences">
+                <topic href="doc/workbench/preferences/views/chord_results.html"/>
+            </entry>
+        </entry>
+        <entry keyword="chords">
+            <topic href="doc/workbench/views/chords.html"/>
+        </entry>
+        <entry keyword="fretboard">
+            <topic href="doc/workbench/views/fretboard.html"/>
+            <entry keyword="preferences">
+                <topic href="doc/workbench/preferences/views/fretboard.html"/>
+            </entry>
+        </entry>
+        <entry keyword="help">
+            <topic href="doc/workbench/views/help.html"/>
+        </entry>
+        <entry keyword="instruments">
+            <topic href="doc/workbench/views/instruments.html"/>
+        </entry>
+        <entry keyword="keyboard">
+            <topic href="doc/workbench/views/keyboard.html"/>
+            <entry keyword="preferences">
+                <topic href="doc/workbench/preferences/views/keyboard.html"/>
+            </entry>
+        </entry>
+        <entry keyword="notes">
+            <topic href="doc/workbench/views/notes.html"/>
+            <entry keyword="preferences">
+                <topic href="doc/workbench/preferences/views/notes.html"/>
+            </entry>
+        </entry>
+        <entry keyword="scale finder">
+            <topic href="doc/workbench/views/scale_finder.html"/>
+            <entry keyword="preferences">
+                <topic href="doc/workbench/preferences/views/scale_finder.html"/>
+            </entry>
+        </entry>
+        <entry keyword="scale results">
+            <topic href="doc/workbench/views/scale_results.html"/>
+            <entry keyword="preferences">
+                <topic href="doc/workbench/preferences/views/scale_results.html"/>
+            </entry>
+        </entry>
+        <entry keyword="scales">
+            <topic href="doc/workbench/views/scales.html"/>
+        </entry>
+        <entry keyword="tab">
+            <topic href="doc/workbench/views/tab.html"/>
+            <entry keyword="preferences">
+                <topic href="doc/workbench/preferences/views/tab.html"/>
+            </entry>
+        </entry>
+    </entry>
+    <entry keyword="managing">
+        <entry keyword="chords">
+            <topic href="doc/tasks/chords_scales.html"/>
+            <entry keyword="chords view">
+                <topic href="doc/workbench/views/chords.html"/>
+            </entry>
+            <entry keyword="chord editor">
+                <topic href="doc/workbench/editors/chord.html"/>
+            </entry>
+        </entry>
+        <entry keyword="instruments">
+            <topic href="doc/tasks/instruments.html"/>
+            <entry keyword="instruments view">
+                <topic href="doc/workbench/views/instruments.html"/>
+            </entry>
+            <entry keyword="intrument editor">
+                <topic href="doc/workbench/editors/instrument.html"/>
+            </entry>
+        </entry>
+        <entry keyword="scales">
+            <topic href="doc/tasks/chords_scales.html"/>
+            <entry keyword="scales view">
+                <topic href="doc/workbench/views/scales.html"/>
+            </entry>
+            <entry keyword="scale editor">
+                <topic href="doc/workbench/editors/scale.html"/>
+            </entry>
+        </entry>
+    </entry>
+    <entry keyword="sound">
+        <topic href="doc/tasks/sound.html"/>
+        <entry keyword="play">
+            <entry keyword="current selection">
+                <topic href="doc/workbench/menu/extras.html#ExtrasMenu_PlaySound"/>
+            </entry>
+            <entry keyword="selected chord">
+                <topic href="doc/workbench/views/chord_results.html#ChordResults_view_Pop-up-Menu_PlayChord"/>
+            </entry>
+            <entry keyword="selected scale">
+                <topic href="doc/workbench/views/scale_results.html#ScaleResults_view_Pop-up-Menu_PlayScale"/>
+            </entry>
+            <entry keyword="freely on fretboard">
+                <topic href="doc/workbench/views/fretboard.html"/>
+            </entry>
+            <entry keyword="freely on keyboard">
+                <topic href="doc/workbench/views/keyboard.html"/>
+            </entry>
+            <entry keyword="instrument tuning">
+                <topic href="doc/workbench/editors/instrument.html#instrument_editor_SoundsLike"/>
+            </entry>
+        </entry>
+        <entry keyword="preferences">
+            <topic href="doc/workbench/preferences/sound.html"/>
+        </entry>
+    </entry>
+    <entry keyword="update">
+        <topic href="doc/tasks/update.html"/>
+        <entry keyword="preferences">
+            <topic href="doc/workbench/preferences/update.html"/>
+        </entry>
+    </entry>
+    <entry keyword="perspective">
+        <topic href="doc/tasks/workbench.html#workbench_perspectives"/>
+        <entry keyword="preferences">
+            <topic href="doc/workbench/preferences/perspectives.html"/>
+        </entry>
+        <entry keyword="management">
+            <topic href="doc/workbench/menu/window.html#WindowMenu_SavePerspective"/>
+        </entry>
+    </entry>
+    <entry keyword="preferences">
+        <entry keyword="general">
+        	<topic href="doc/workbench/preferences/general/overview.html"/>
+            <entry keyword="graphics">
+                <topic href="doc/workbench/preferences/general/graphics.html"/>
+            </entry>
+            <entry keyword="workbench">
+                <topic href="doc/workbench/preferences/general/workbench.html"/>
+            </entry>
+        </entry>
+        <entry keyword="names">
+            <entry keyword="chord names">
+                <topic href="doc/workbench/preferences/names/chord_names.html"/>
+            </entry>
+            <entry keyword="fingering notation">
+                <topic href="doc/workbench/preferences/names/fingering_notation.html"/>
+            </entry>
+            <entry keyword="interval names">
+                <topic href="doc/workbench/preferences/names/interval_names.html"/>
+            </entry>
+            <entry keyword="note names">
+                <topic href="doc/workbench/preferences/names/note_names.html"/>
+            </entry>
+            <entry keyword="scale names">
+                <topic href="doc/workbench/preferences/names/scale_names.html"/>
+            </entry>
+        </entry>
+        <entry keyword="views">
+	        <topic href="doc/workbench/preferences/views/overview.html"/>
+            <entry keyword="box">
+                <topic href="doc/workbench/preferences/views/box.html"/>
+            </entry>
+            <entry keyword="chord generation">
+                <topic href="doc/workbench/preferences/views/chord_generation.html"/>
+            </entry>
+            <entry keyword="chord results">
+                <topic href="doc/workbench/preferences/views/chord_results.html"/>
+            </entry>
+            <entry keyword="fretboard">
+                <topic href="doc/workbench/preferences/views/fretboard.html"/>
+            </entry>
+            <entry keyword="keyboard">
+                <topic href="doc/workbench/preferences/views/keyboard.html"/>
+            </entry>
+            <entry keyword="notes">
+                <topic href="doc/workbench/preferences/views/notes.html"/>
+            </entry>
+            <entry keyword="scale finder">
+                <topic href="doc/workbench/preferences/views/scale_finder.html"/>
+            </entry>
+            <entry keyword="scale results">
+                <topic href="doc/workbench/preferences/views/scale_results.html"/>
+            </entry>
+            <entry keyword="tab">
+                <topic href="doc/workbench/preferences/views/tab.html"/>
+            </entry>
+        </entry>
+        <entry keyword="calculations">
+            <topic href="doc/workbench/preferences/calculations.html"/>
+        </entry>
+        <entry keyword="export">
+            <topic href="doc/workbench/preferences/export.html"/>
+            <entry keyword="filenames">
+                <topic href="doc/workbench/preferences/export_filename.html"/>
+            </entry>
+        </entry>
+        <entry keyword="help">
+            <topic href="doc/workbench/preferences/help.html"/>
+        </entry>
+        <entry keyword="perspectives">
+            <topic href="doc/workbench/preferences/perspectives.html"/>
+        </entry>
+        <entry keyword="blocks">
+            <topic href="doc/workbench/preferences/blocks.html"/>
+        </entry>
+        <entry keyword="sound">
+            <topic href="doc/workbench/preferences/sound.html"/>
+        </entry>
+        <entry keyword="update">
+            <topic href="doc/workbench/preferences/update.html"/>
+        </entry>
+        <entry keyword="warnings">
+            <topic href="doc/workbench/preferences/warnings.html"/>
+        </entry>
+    </entry>
+    <entry keyword="menu">
+        <entry keyword="file">
+            <topic href="doc/workbench/menu/file.html"/>
+        </entry>
+        <entry keyword="view">
+            <topic href="doc/workbench/menu/view.html"/>
+        </entry>
+        <entry keyword="extras">
+            <topic href="doc/workbench/menu/extras.html"/>
+        </entry>
+        <entry keyword="window">
+            <topic href="doc/workbench/menu/window.html"/>
+        </entry>
+        <entry keyword="help">
+            <topic href="doc/workbench/menu/help.html"/>
+        </entry>
+    </entry>
+    <entry keyword="calculations">
+        <entry keyword="preferences">
+            <topic href="doc/workbench/preferences/calculations.html"/>
+        </entry>
+        <entry keyword="find chords">
+            <topic href="doc/tasks/find_chords.html"/>
+        </entry>
+        <entry keyword="find scales">
+            <topic href="doc/tasks/find_scales.html"/>
+        </entry>
+    </entry>
+    <entry keyword="export">
+        <topic href="doc/tasks/export.html"/>
+        <entry keyword="preferences">
+            <topic href="doc/workbench/preferences/export.html"/>
+            <entry keyword="filenames">
+                <topic href="doc/workbench/preferences/export_filename.html"/>
+            </entry>
+        </entry>
+    </entry>
+    <entry keyword="help">
+        <entry keyword="preferences">
+            <topic href="doc/workbench/preferences/help.html"/>
+        </entry>
+        <entry keyword="view">
+            <topic href="doc/workbench/views/help.html"/>
+        </entry>
+        <entry keyword="menu">
+            <topic href="doc/workbench/menu/help.html"/>
+        </entry>
+    </entry>
+    <entry keyword="status bar">
+        <topic href="doc/workbench/status_bar.html"/>
+    </entry>
+</index>

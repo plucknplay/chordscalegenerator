@@ -1,0 +1,223 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Chord Results View</title>
+<link type="text/css" rel="stylesheet" href="../../book.css" />
+</head>
+
+<body>
+
+<h1><img src="../../../icons/chord_results.gif" width="16" height="16" alt="Chord Results Icon"/>Chord Results View</h1>
+
+<p>
+The <em>Chord Results View</em> shows the results of the calculation to determine possible fingerings for a certain chord. 
+Besides, this view shows the results of the reverse calculation - 
+(which can be used to find) the suitable chords to a corresponding fingering or musical notation.
+</p>
+
+<p>
+    <enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+	<img src="../../../images/workbench/views/chord_results_view.png" width="1427" height="234" alt="Chord Results View"/>
+</p>
+<p>
+    <enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+	<img src="../../../images/workbench/views/macosx/chord_results_view.png" width="1505" height="243" alt="Chord Results View"/>
+</p>
+
+<p>
+The chord result set will be presented in a tabular form. 
+The generated chords can be arranged in columns. The columns itself can be resized. 
+Besides, unnecessary columns can be set invisible (see the <a href="../preferences/views/chord_results.html">preferences</a> of this view). 
+</p>
+
+<p>
+In the first column you can mark interesting chords. 
+The image data of the marked chords can easily be exported later on.
+</p>
+
+<p>
+Since the result set may be very large, this view is divided into pages for the sake of clarity. 
+If many pages exist the current page will be shown in the toolbar on the left side of the actions to turn the pages. <br/>
+Note: The arrangement in columns is not restricted to the current page - but takes into consideration the whole result set.
+</p>
+
+
+<h2><a id="ChordResults_view_TableColumns">Table columns</a></h2>	
+
+<h3><a id="ChordResults_view_TableColumns_Chord">Chord</a></h3>
+<p>This column shows the complete name of the chord.</p>
+
+<h3><a id="ChordResults_view_TableColumns_withoutRoot">w/o 1</a></h3>
+<p>This column indicates whether or not the root was left out of a chord.</p>
+
+<h3><a id="ChordResults_view_TableColumns_without3">w/o 3</a></h3>
+<p>This column indicates whether or not an originally included third was left out of a chord.</p>
+
+<h3><a id="ChordResults_view_TableColumns_without5">w/o 5</a></h3>
+<p>This column indicates whether or not an originally included fifth was left out of a chord.</p>
+
+<h3><a id="ChordResults_view_TableColumns_Level">Level</a></h3>
+<p>
+This column shows the respective level of difficulty of the chords. 
+How the levels are classified is described in detail in the description of the 
+<a href="../views/chord_generation.html#ChordGeneration_view_toolbar_Level">Chord Generation View</a>.
+</p>
+
+<h3><a id="ChordResults_view_TableColumns_Relative_Bass">Rel. Bass (Relative Bass Tone)</a></h3>
+<p>This column shows the relative bass tone of a chord.</p>
+
+<h3><a id="ChordResults_view_TableColumns_Absolute Bass">Abs. Bass (Absolute Bass Tone)</a></h3>
+<p>This column shows the absolute bass tone of a chord.</p>
+
+<h3><a id="ChordResults_view_TableColumns_Bass_Interval">Bass Int (Bass Tone Interval)</a></h3>
+<p>This column shows the bass tone interval of a chord.</p>
+
+<h3><a id="ChordResults_view_TableColumns_Relative_Lead">Rel. Lead (Relative Lead Tone)</a></h3>
+<p>This column shows the relative lead tone of a chord.</p>
+
+<h3><a id="ChordResults_view_TableColumns_Absolute_Lead">Abs. Lead (Absolute Lead Tone)</a></h3>
+<p>This column shows the absolute lead tone of a chord.</p>
+
+<h3><a id="ChordResults_view_TableColumns_Lead_Interval">Lead Int (Lead Tone Interval)</a></h3>
+<p>This column shows the lead tone interval of a chord.</p>
+
+<h3><a id="ChordResults_view_TableColumns_Notes">Notes</a></h3>
+<p>
+This column lists the individual notes of the chords beginning with the topmost string. 
+A muted string will be marked with an X.
+</p>
+
+<h3><a id="ChordResults_view_TableColumns_Intervals">Intervals</a></h3>
+<p>
+This column lists the individual intervals of the chords beginning with the topmost string. 
+A muted string will be marked with an X.
+</p>
+
+<h3><a id="ChordResults_view_TableColumns_Frets">Frets</a></h3>
+<p>
+This column shows the fret positions (of the chords) beginning with the topmost string.  
+Muted strings will be marked with an X.
+</p>
+
+<h3><a id="ChordResults_view_TableColumns_MinimalString">Min S (Minimal String)</a></h3>
+<p>This column indicates the minimum string of the chord (that is usually the highest string).</p>
+
+<h3><a id="ChordResults_view_TableColumns_MaximumFret">Max S (Maximum String)</a></h3>
+<p>This column indicates the maximum string of the chord (that is usually the deepest string) .</p>
+
+<h3><a id="ChordResults_view_TableColumns_StringSpan">SSp (String Span)</a></h3>
+<p>This column shows the string span of the chords.</p>
+
+<h3><a id="ChordResults_view_TableColumns_MinimalFret">Min F (Minimal Fret)</a></h3>
+<p>This column indicates the minimum fret of the chord.</p>
+
+<h3><a id="ChordResults_view_TableColumns_MaximumFret">Max F (Maximum Fret)</a></h3>
+<p>This column indicates the maximum fret of the chord.</p>
+
+<h3><a id="ChordResults_view_TableColumns_FretSpan">FSp (Fret Span)</a></h3>
+<p>This column shows the fret span of the chords.</p>
+
+<h3><a id="ChordResults_view_TableColumns_Width">Width - (mm/inch)</a></h3>
+<p>
+This column shows the span of a fingering in millimeters or inches. 
+Which measuring unit is used depends either on the settings for the active instrument 
+(which measuring unit is used for the scale length) or on which measuring units were used for the calculation. 
+If you have specified a measuring unit in the 
+<a href="../views/chord_generation.html#ChordGeneration_view_toolbar_Width">Chord Generation View</a> it will also show up in this column.
+</p>
+
+<h3><a id="ChordResults_view_TableColumns_NumberOS">#OS (Number of Open Strings)</a></h3>
+<p>This column indicates the number of open strings.</p>
+
+<h3><a id="ChordResults_view_TableColumns_NumberMS">#MS (Number of Muted Strings)</a></h3>
+<p>This column indicates the number of muted strings.</p>
+
+<h3><a id="ChordResults_view_TableColumns_DT">DT (Double Tones)</a></h3>
+<p>This column indicates whether or not a chord contains double tones (tones with identical tone height).</p>
+
+
+
+
+<h2><a id="ChordResults_view_Toolbar">Toolbar</a></h2>	
+<p>The toolbar of the <em>Chord Results View</em> contains the following actions:</p>
+
+<h3><a id="ChordResults_view_Toolbar_FirstPage"><img src="../../../icons/shift_l_edit.gif" width="16" height="16" alt="First Page Icon"/>First Page</a></h3>
+<p>Jumps to the first result page of this view.</p>
+
+<h3><a id="ChordResults_view_Toolbar_PreviousPage"><img src="../../../icons/backward_nav.gif" width="16" height="16" alt="Previous Page Icon"/>Previous Page</a></h3>
+<p>Jumps to the previous result page.</p>
+
+<h3><a id="ChordResults_view_Toolbar_NextPage"><img src="../../../icons/forward_nav.gif" width="16" height="16" alt="Next Page Icon"/>Next Page</a></h3>
+<p>Jumps to the next result page.</p>
+
+<h3><a id="ChordResults_view_Toolbar_LastPage"><img src="../../../icons/shift_r_edit.gif" width="16" height="16" alt="Last Page Icon"/>Last Page</a></h3>
+<p>Jumps to the last result page of this view.</p>
+
+<h3><a id="ChordResults_view_Toolbar_CheckAll"><img src="../../../icons/check_all.gif" width="16" height="16" alt="Check All Icon"/>Check All</a></h3>
+<p>Checks all chords of the first column. The image data of such marked chords can easily be exported later on. 
+(see <a href="chord_results.html#ChordResults_view_Menu_CopyToClipboard">Copy to Clipboard</a>) </p>
+
+<h3><a id="ChordResults_view_Toolbar_UncheckAll"><img src="../../../icons/uncheck_all.gif" width="16" height="16" alt="Uncheck All Icon"/>Uncheck All</a></h3>
+<p>Unchecks all chords.</p>
+
+
+
+<h2><a id="ChordResults_view_Menu">Menu</a></h2>
+<p>The menu of the <em>Chord Results View</em> contains the following actions:</p>
+
+<p>
+<img src="../../../icons/check_all.gif" width="16" height="16" alt="Check All Icon"/><a href="chord_results.html#ChordResults_view_Toolbar_CheckAll">Check All</a><br/>
+<img src="../../../icons/uncheck_all.gif" width="16" height="16" alt="Uncheck All Icon"/><a href="chord_results.html#ChordResults_view_Toolbar_UncheckAll">Uncheck All</a><br/>
+</p>
+
+<h3><a id="ChordResults_view_Menu_CopyToClipboard"><img src="../../../icons/copy_edit.gif" width="16" height="16" alt="Copy to Clipboard Icon"/>Copy to Clipboard</a></h3>
+<p>
+Copies the image data of the marked chords of this view into the clipboard. 
+The stored image data may be pasted, for instance, into Office applications later on. 
+You can define in the <a href="../preferences/export.html">export preferences</a> which image data shall be copied. <br/>
+Note: The image data will be copied with the fixed sizes as defined in the <a href="../preferences/export.html">export preferences</a>. 
+The current sizes can not be used here since a view might appear in several perspectives with different sizes.
+</p>
+
+<h3><a id="ChordResults_view_Menu_Preferences">Preferences...</a></h3>
+<p>Opens the preferences dialog. The page with the <a href="../preferences/views/chord_results.html">preferences</a> for this view is already pre-selected.</p>
+
+
+<h2><a id="ChordResults_view_Pop-up-Menu">Pop-up menu</a></h2>
+<p>The pop-up menu of this view contains the following actions:</p>
+
+<h3><a id="ChordResults_view_Pop-up-Menu_OpenInEditor">Open in Editor</a></h3>
+<p>Opens the selected chord in a corresponding <a href="../editors/chord.html">Chord Editor</a>.</p>
+
+<p>
+<img src="../../../icons/copy_edit.gif" width="16" height="16" alt="Copy to Clipboard Icon"/><a href="chord_results.html#ChordResults_view_Menu_CopyToClipboard">Copy to Clipboard</a><br/>
+</p>
+
+<h3><a id="ChordResults_view_Pop-up-Menu_PlayChord"><img src="../../../icons/play_sound.gif" width="16" height="16" alt="Play Chord Icon"/>Play Chord</a></h3>
+<p>Plays the selected chord. You can define in the <a href="../preferences/sound.html">sound preferences</a> how a played chord shall sound.</p>
+
+<h2><a id="ChordResults_view_related_topics">Related topics</a></h2>	
+<p>
+<a href="../preferences/views/chord_results.html">Workbench &#8594; Preferences &#8594; Views &#8594; Chord Results</a><br/>
+<a href="../preferences/export.html">Workbench &#8594; Preferences &#8594; Export</a><br/>
+<a href="../preferences/sound.html">Workbench &#8594; Preferences &#8594; Sound</a><br/>
+<a href="../views/chord_generation.html">Workbench &#8594; Views &#8594; Chord Generation</a><br/>
+<a href="../views/box.html">Workbench &#8594; Views &#8594; Box</a><br/>
+<a href="../views/tab.html">Workbench &#8594; Views &#8594; Tab</a><br/>
+<a href="../views/notes.html">Workbench &#8594; Views &#8594; Notes</a><br/>
+<a href="../editors/chord.html">Workbench &#8594; Editors &#8594; Chord Editor</a><br/>
+</p>
+
+<h2><a id="ChordResults_view_related_tasks">Related Tasks</a></h2>	
+<p>
+<a href="../../tasks/chord_generation.html">Tasks &#8594; Generate and Show Chords</a><br/>
+<a href="../../tasks/find_chords.html">Tasks &#8594; Find Chords</a><br/>
+<a href="../../tasks/sound.html">Tasks &#8594; Sound Support</a><br/>
+<a href="../../tasks/export.html">Tasks &#8594; Export Actions</a><br/>
+</p>
+
+</body>
+</html>

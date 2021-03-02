@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<interval_containers type="scales"><folder name="Harmonic Minor (H.M.)"><interval_container type="scales"><name>Aeolian 7</name><akaName>H.M. I</akaName><akaName>Harmonic Minor</akaName><description>order: 1st degree of harmonic minor (H.M.) = H.M. I&#xd;
+key: minor&#xd;
+&#xd;
+comments: &#xd;
+- developed out of natural minor (N.M.) but in contrast to natural minor (N.M.) harmonic minor (H.M.) has an ending because of the seventh (7) at the end&#xd;
+- b6 to 7 = #2 --&gt; "melodic hole" = orientalic sound&#xd;
+- development: N.M. (...b6-b7) -&gt; H.M.(...b6-7) -&gt; M.M. (...6-7)</description><intervals><interval name="1" value="0"/><interval name="2" value="2"/><interval name="b3" value="3"/><interval name="4" value="5"/><interval name="5" value="7"/><interval name="b6" value="8"/><interval name="7" value="11"/></intervals></interval_container><interval_container type="scales"><name>Dorian #4</name><akaName>H.M. IV</akaName><description>order: 4th degree of harmonic minor (H.M.) = H.M. IV&#xd;
+&#xd;
+comment: &#xd;
+- dorian with #4 instead of 4</description><intervals><interval name="1" value="0"/><interval name="2" value="2"/><interval name="b3" value="3"/><interval name="#4" value="6"/><interval name="5" value="7"/><interval name="6" value="9"/><interval name="b7" value="10"/></intervals></interval_container><interval_container type="scales"><name>Ionian #5</name><akaName>H.M. III</akaName><akaName>Ionian Augmented</akaName><description>order: 3rd degree of harmonic minor (H.M.) = H.M. III&#xd;
+&#xd;
+comment: &#xd;
+- ionian with #5 instead of 5</description><intervals><interval name="1" value="0"/><interval name="2" value="2"/><interval name="3" value="4"/><interval name="4" value="5"/><interval name="#5" value="8"/><interval name="6" value="9"/><interval name="7" value="11"/></intervals></interval_container><interval_container type="scales"><name>Locrian 6</name><akaName>H.M. II</akaName><akaName>Locrian #6</akaName><description>order: 2nd degree of harmonic minor (H.M.) = H.M. II&#xd;
+&#xd;
+comments: &#xd;
+- locrian with 6 instead of b6&#xd;
+- sometimes used as locrian #6</description><intervals><interval name="1" value="0"/><interval name="b2" value="1"/><interval name="b3" value="3"/><interval name="4" value="5"/><interval name="b5" value="6"/><interval name="6" value="9"/><interval name="b7" value="10"/></intervals></interval_container><interval_container type="scales"><name>Locrian b4 bb7</name><akaName>H.M. VII</akaName><description>order: 7th degree of harmonic minor (H.M.) = H.M. VII&#xd;
+&#xd;
+comment: &#xd;
+- locrian with b4 instead of 4 and bb7 instead of b7</description><intervals><interval name="1" value="0"/><interval name="b2" value="1"/><interval name="b3" value="3"/><interval name="b4" value="4"/><interval name="b5" value="6"/><interval name="b6" value="8"/><interval name="bb7" value="9"/></intervals></interval_container><interval_container type="scales"><name>Lydian #2</name><akaName>H.M. VI</akaName><description>order: 6th degree of harmonic minor (H.M.) = H.M. VI&#xd;
+&#xd;
+comment: &#xd;
+- lydian with #2 instead of 2</description><intervals><interval name="1" value="0"/><interval name="#2" value="3"/><interval name="3" value="4"/><interval name="#4" value="6"/><interval name="5" value="7"/><interval name="6" value="9"/><interval name="7" value="11"/></intervals></interval_container><interval_container type="scales"><name>Phrygian 3</name><akaName>H.M. V</akaName><akaName>Phrygian Dominant</akaName><akaName>Phrygian Major</akaName><akaName>Spanish</akaName><akaName>Spanish Gypsy</akaName><description>order: 5th degree of harmonic minor (H.M.) = H.M. V&#xd;
+&#xd;
+comment: &#xd;
+- phrygian with 3 instead of b3</description><intervals><interval name="1" value="0"/><interval name="b2" value="1"/><interval name="3" value="4"/><interval name="4" value="5"/><interval name="5" value="7"/><interval name="b6" value="8"/><interval name="b7" value="10"/></intervals></interval_container></folder></interval_containers>

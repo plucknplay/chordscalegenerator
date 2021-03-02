@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<fragment>
+   <extension
+         id="com.plucknplay.csg.util.actionSet"
+         name="Chord Scale Generator Utility Action Set"
+         point="org.eclipse.ui.actionSets">
+      <actionSet
+            description="Utility"
+            id="com.plucknplay.csg.util.actionSet"
+            label="Utility"
+            visible="true">
+         <menu
+               id="com.plucknplay.csg.util.menu"
+               label="Utility"
+               path="additions">
+            <groupMarker
+                  name="export">
+            </groupMarker>
+         </menu>
+         <action
+               class="com.plucknplay.csg.ui.actions.util.ExportAllScalesAsHtmlAction"
+               definitionId="com.plucknplay.csg.util.exportAllScalesAsHtml"
+               icon="icons/export.gif"
+               id="com.plucknplay.csg.util.exportAllScalesAsHtml"
+               label="Export All Scales as HTML"
+               menubarPath="com.plucknplay.csg.util.menu/export"
+               style="push"
+               tooltip="Export All Scales as HTML">
+         </action>
+         <action
+               class="com.plucknplay.csg.ui.actions.util.ExportAllChordsAsHtmlAction"
+               definitionId="com.plucknplay.csg.util.exportAllChordsAsHtml"
+               icon="icons/export.gif"
+               id="com.plucknplay.csg.util.exportAllChordsAsHtml"
+               label="Export All Chords as HTML"
+               menubarPath="com.plucknplay.csg.util.menu/export"
+               style="push"
+               tooltip="Export All Chords as HTML">
+         </action>
+         <action
+               class="com.plucknplay.csg.ui.actions.util.ExportAllInstrumentsAsHtmlAction"
+               definitionId="com.plucknplay.csg.util.exportAllInstrumentsAsHtml"
+               icon="icons/export.gif"
+               id="com.plucknplay.csg.util.exportAllInstrumentsAsHtml"
+               label="Export All Instruments as HTML"
+               menubarPath="com.plucknplay.csg.util.menu/export"
+               style="push"
+               tooltip="Export All Instruments as HTML">
+         </action>
+         <action
+               class="com.plucknplay.csg.ui.actions.util.ShowLocationsAction"
+               definitionId="com.plucknplay.csg.util.showLocations"
+               id="com.plucknplay.csg.util.showLocations"
+               label="Show Locations"
+               menubarPath="com.plucknplay.csg.util.menu/additions"
+               style="push"
+               tooltip="Show Locations">
+         </action>
+         <action
+               class="com.plucknplay.csg.ui.actions.util.ShowActivationInfoAction"
+               definitionId="com.plucknplay.csg.util.showActivationInfo"
+               id="com.plucknplay.csg.util.showActivationInfo"
+               label="Show Activation Info"
+               menubarPath="com.plucknplay.csg.util.menu/additions"
+               style="push"
+               tooltip="Show Activation Info">
+         </action>
+         <action
+               class="com.plucknplay.csg.ui.actions.util.CreateHtmlChordsTable"
+               definitionId="com.plucknplay.csg.util.createChordsTable"
+               id="com.plucknplay.csg.util.createChordsTable"
+               label="Create Chords HTML Table"
+               menubarPath="com.plucknplay.csg.util.menu/additions"
+               style="push"
+               tooltip="Create Chords Table">
+         </action>
+      </actionSet>
+   </extension>
+   <extension
+         id="com.plucknplay.csg.util.popupMenus"
+         name="Chord Scale Generator Utility Popup Menus"
+         point="org.eclipse.ui.popupMenus">
+      <objectContribution
+            adaptable="false"
+            id="com.plucknplay.csg.util.objectContribution.category"
+            objectClass="com.plucknplay.csg.core.model.sets.Category">
+         <action
+               class="com.plucknplay.csg.ui.actions.util.ExportCategoriesAsHtmlAction"
+               definitionId="com.plucknplay.csg.util.exportCategoriesAsHtml"
+               enablesFor="+"
+               icon="icons/export.gif"
+               id="com.plucknplay.csg.util.exportCategoriesAsHtml"
+               label="Export Categories as HTML"
+               menubarPath="additions"
+               style="push"
+               tooltip="Export Categories as HTML">
+         </action>
+         <action
+               class="com.plucknplay.csg.ui.actions.util.ExportCategoriesAsXmlAction"
+               definitionId="com.plucknplay.csg.util.exportCategoriesAsXml"
+               enablesFor="+"
+               icon="icons/export.gif"
+               id="com.plucknplay.csg.util.exportCategoriesAsXml"
+               label="Export Categories as XML"
+               menubarPath="additions"
+               style="push"
+               tooltip="Export Categories as XML">
+         </action>
+      </objectContribution>>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+      <category
+            description="Utility"
+            id="com.plucknplay.csg.util.category"
+            name="Utility">
+      </category>
+      <command
+            categoryId="com.plucknplay.csg.util.category"
+            description="Export All Instruments as HTML"
+            id="com.plucknplay.csg.util.exportAllInstrumentsAsHtml"
+            name="Export All Instruments as HTML">
+      </command>
+      <command
+            categoryId="com.plucknplay.csg.util.category"
+            description="Export All Chords as HTML"
+            id="com.plucknplay.csg.util.exportAllChordsAsHtml"
+            name="Export All Chords as HTML">
+      </command>
+      <command
+            categoryId="com.plucknplay.csg.util.category"
+            description="Export All Scales as HTML"
+            id="com.plucknplay.csg.util.exportAllScalesAsHtml"
+            name="Export All Scales as HTML">
+      </command>
+      <command
+            categoryId="com.plucknplay.csg.util.category"
+            description="Export Categories as HTML"
+            id="com.plucknplay.csg.util.exportCategoriesAsHtml"
+            name="Export Categories as HTML">
+      </command>
+      <command
+            categoryId="com.plucknplay.csg.util.category"
+            description="Export Categories as XML"
+            id="com.plucknplay.csg.util.exportCategoriesAsXml"
+            name="Export Categories as XML">
+      </command>
+      <command
+            categoryId="com.plucknplay.csg.util.category"
+            description="Show Locations"
+            id="com.plucknplay.csg.util.showLocations"
+            name="Show Locations">
+      </command>
+      <command
+            categoryId="com.plucknplay.csg.util.category"
+            description="Show Activation Info"
+            id="com.plucknplay.csg.util.showActivationInfo"
+            name="Show Locations">
+      </command>
+      <command
+            categoryId="com.plucknplay.csg.util.category"
+            description="Create Chords Table"
+            id="com.plucknplay.csg.util.createChordsTable"
+            name="Create Chords Table">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commandImages">
+      <image
+            commandId="com.plucknplay.csg.util.exportAllInstrumentsAsHtml"
+            icon="icons/export.gif">
+      </image>
+      <image
+            commandId="com.plucknplay.csg.util.exportAllChordsAsHtml"
+            icon="icons/export.gif">
+      </image>
+      <image
+            commandId="com.plucknplay.csg.util.exportAllScalesAsHtml"
+            icon="icons/export.gif">
+      </image>
+      <image
+            commandId="com.plucknplay.csg.util.exportCategoriesAsHtml"
+            icon="icons/export.gif">
+      </image>
+      <image
+            commandId="com.plucknplay.csg.util.exportCategoriesAsXml"
+            icon="icons/export.gif">
+      </image>
+   </extension>
+
+</fragment>

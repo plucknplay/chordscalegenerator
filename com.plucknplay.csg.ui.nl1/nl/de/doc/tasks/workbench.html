@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Die Arbeitsfl&#228;che </title>
+<link type="text/css" rel="stylesheet" href="../book.css" />
+</head>
+
+<body>
+
+<h1>Die Arbeitsfl&#228;che</h1>
+<p>
+Bevor dir im Weiteren der Funktionsumfang des <em>Chord Scale Generators</em> pr&#228;sentiert werden soll, 
+lass uns zun&#228;chst einen Blick auf die Arbeitsfl&#228;che, also auf den groben Aufbau dieser Anwendung, werfen. 
+Jetzt denkst du sicherlich "Das kenn ich doch alles schon, schlie&#223;lich hat jedes Programm eine Men&#252;leiste und ein paar Fenster. 
+Das brauch ich mir jetzt nicht unbedingt durchzulesen." - Damit hast du auch fast Recht, aber leider nur fast. 
+Da der <em>Chord Scale Generator</em> auf einem neuartigen Framework aufbaut, gibt es hier doch noch einige Programmelemente, 
+welche du vielleicht so noch nicht gesehen hast und es sich lohnt, hier weiterzulesen.
+</p>
+
+<p>
+	<enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+	<img src="../../images/tasks/workbench.png" width="792" height="605" alt="Die Arbeitsfl&#228;che"/>
+</p>
+<p>
+	<enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+	<img src="../../images/tasks/macosx/workbench.png" width="911" height="763" alt="Die Arbeitsfl&#228;che"/>
+</p>
+
+<p>
+Was du sicherlich schon von anderen Anwendungen kennst, sind Men&#252;leisten, Symbolleisten und die Statusleiste. 
+Diese Elemente gibt es nat&#252;rlich auch in unserem Programm. 
+</p>
+
+<p>
+Die <b>Men&#252;leiste</b> enth&#228;lt dabei s&#228;mtliche globale Funktionen, also die Funktionen, welche von &#252;berall aus zug&#228;nglich sein sollen.
+</p>
+
+<p>
+Die <b>Symbolleiste</b> wiederum enth&#228;lt nur die wichtigsten dieser globalen Funktionen und macht diese noch schneller zug&#228;nglich. 
+Du musst dich also bei diesen Funktionen nicht erst durch die Men&#252;struktur hangeln - es reicht hier ein Klick auf das entsprechende Symbol.
+</p>
+
+<p>
+In der <b>Statusleiste</b> am unteren Rand der Anwendung werden wichtige "Statusinformationen" des Programms angezeigt. 
+In unserem Fall siehst du hier, welches Instrument aktuell aktiv ist, sowie in manchen F&#228;llen n&#252;tzliche Warnhinweise. 
+Welche Warnhinweise dies sein k&#246;nnen, wird in den speziellen F&#252;llen nochmals genauer angesprochen. Du kannst dir aber merken, 
+wenn im Programm irgendetwas nicht funktionieren m&#246;chte (z.B. du nicht speichern kannst oder eine Berechnung nicht starten darfst), 
+wirf am besten mal einen Blick in die Statusleiste, vielleicht wird dir hier in roter Schrift das Problem schon angezeigt.
+Au&#223;erdem kannst du in der Statusleiste noch ausw&#228;hlen, ob du dein Instrument als Rechts- oder Linksh&#228;nder spielst. 
+Abh&#228;ngig davon werden einige Darstellungen in der Anwendung angepasst. 
+Ein einfacher Doppelklick auf das Handsymbol schaltet dabei die "Hand-Art" um.
+
+</p>
+
+<p>
+So nun wollen wir aber mal zu den wirklich interessanten Programmelementen kommen, die du vielleicht so noch nicht gesehen hast. 
+Der <em>Chord Scale Generator</em> setzt sich haupts&#228;chlich aus Sichten, Editoren und Perspektiven zusammen.
+</p>
+
+<p>
+<a id="workbench_views"><b>Sichten</b></a> stellen Fenster dar, in welchen Informationen jeglicher Art angezeigt werden k&#246;nnen. 
+Es gibt beim <em>Chord Scale Generator</em>, eine Vielzahl verschiedener Sichten, von einfachen tabellarischen Sichten, 
+in denen Ergebnismengen textuell angezeigt werden, bis hin zu aufwendigen grafischen Sichten. 
+Welche Sichten es gibt und wie diese funktionieren, wird im sp&#228;teren Verlauf dieser Rundtour gezeigt.
+In diesem Kapitel soll es aber erst einmal um den prinzipiellen Aufbau der Arbeitsfl&#228;che gehen - 
+also was gibt es interessantes zu Sichten zu erz&#228;hlen? Sichten verf&#252;gen jeweils &#252;ber ein eigenes Men&#252; sowie &#252;ber eine eigene Symbolleiste. 
+Hier sind dann nat&#252;rlich nur Funktionen aufgef&#252;hrt, welche mit der Sicht als solche oder mit deren angezeigten Daten zusammenh&#228;ngen. 
+Au&#223;erdem verf&#252;gen einige Sichten noch &#252;ber ein Kontextmen&#252;, in welchem weitere Funktionen zur Verf&#252;gung gestellt werden. 
+Sichten k&#246;nnen, wie du das von Fenstern gewohnt bist, minimiert, maximiert und geschlossen werden. 
+Ist eine Sicht geschlossen, kannst du diese &#252;ber den Men&#252;punkt 
+<a href="../workbench/menu/window.html#WindowMenu_ShowView">Fenster &#8594; Sicht anzeigen</a> wieder &#246;ffnen. 
+Ansonsten bietet das Untermen&#252; <a href="../workbench/menu/window.html#WindowMenu_NavigationSubmenu">Fenster &#8594; Navigieren</a>
+noch diverse Funktionen zum Navigieren zwischen Sichten an.
+</p>
+
+<p>
+Eine besondere Art der Sichten sind die <a id="workbench_fast_views"><b>Schnellsichten</b></a>. Willst du, dass eine Sicht nicht immer sichtbar ist, 
+aber trotzdem einfach zug&#228;nglich ist, so kannst du diese in der linken unteren Ecke der Anwendung als Schnellsicht "verankern". 
+Es ist somit nur noch das Symbol dieser Anwendung zu sehen - ein Klick auf dieses Symbol &#246;ffnet die Sicht, 
+wobei diese &#252;ber den normalen Sichten dargestellt wird. Verliert die Schnellsicht den Focus (also klickt man in eine andere Sicht) 
+so verschwindet die Schnellsicht und man sieht wieder lediglich deren Symbol in der linken unteren Ecke.
+</p>
+
+<p>
+<a id="workbench_editors"><b>Editoren</b></a> sind wiederum Programmelemente, in welchen bestehende Daten ver&#228;ndert werden k&#246;nnen. 
+F&#252;r jedes zu editierende Objekt (sei es nun Instrument, Akkord oder Skale) wird dabei ein neuer Editor in der Editorfl&#228;che erzeugt. 
+Dabei k&#246;nnen mehrere Editoren gleichzeitig ge&#246;ffnet sein. Um einen bestimmten Editor auszuw&#228;hlen, 
+muss nur dessen sichtbarer Reiter angeklickt werden. Es ist jedoch auch m&#246;glich, mehrere Editoren gleichzeitig sichtbar zu haben - 
+hierf&#252;r k&#246;nnen diese neben- oder untereinander durch Verschieben arrangiert werden.
+Hat man Daten eines zu editierenden Objekts ver&#228;ndert, wird dies &#252;ber ein kleines Sternchen im Editorkopf angezeigt. 
+Erst mit dem Abspeichern werden diese Ver&#228;nderungen wirksam und die restliche Anwendung passt sich gegebenenfalls darauf an.
+Im Untermen&#252; <a href="../workbench/menu/window.html#WindowMenu_NavigationSubmenu">Fenster &#8594; Navigieren</a> 
+finden sich auch noch n&#252;tzliche Funktionen f&#252;r die Handhabung von Editoren.
+</p>
+
+<p>
+Das wohl sicherlich neueste Programmkonzept stellen die <a id="workbench_perspectives"><b>Perspektiven</b></a> dar. 
+Eine Perspektive beschreibt die Anordnung der einzelnen Fenster (also der Sichten und der Editorfl&#228;che). 
+Okay, das man Fenster frei anordnen kann, ist jetzt nicht unbedingt neu. 
+Das neue hier aber ist, dass man mehrere solcher Anordnungen abspeichern (Men&#252;punkt 
+<a href="../workbench/menu/window.html#WindowMenu_SavePerspectiveAs">Fenster &#8594; Perspektive speichern als...</a>) 
+und zwischen diesen nach Belieben wechseln kann. Warum also nicht z.B. f&#252;r jeden Verwendungszweck eine eigene Perspektive anlegen, 
+wo die ben&#246;tigten Sichten passend positioniert und dimensioniert sind. 
+In der Grundeinstellung der Anwendung haben wir uns f&#252;r drei Perspektiven entschieden:  <em>Setup, Akkorde</em> and <em>Skalen</em>. 
+Du darfst diese Perspektiven nat&#252;rlich gerne noch nachtr&#228;glich ver&#228;ndern 
+(Men&#252;punkt <a href="../workbench/menu/window.html#WindowMenu_SavePerspective">Fenster &#8594; Perspektive speichern</a>) -  
+diese voreingestellten Perspektiven stellen lediglich einen ersten Vorschlag dar. Um die Sichten in deiner Perspektive zu positionieren, 
+musst du den Kopf der Sicht mit der Maus selektieren und bei gedr&#252;ckt gehaltener linker Maustaste diese verschieben. 
+Zum Platzieren der Sicht auf einer gew&#252;nschten Position musst du die Maustaste dann nur noch loslassen. 
+Das Dimensionieren der Sichten funktioniert analog, indem du die Begrenzungen der Sicht mit der Maus auf die gew&#252;nschte Gr&#246;&#223;e ziehst.
+Die aktuelle Perspektive kannst du in dem Reiter in der rechten oberen Ecke der Anwendung ausw&#228;hlen. 
+Ist eine von dir gew&#252;nschte Perspektive nicht ge&#246;ffnet, also taucht diese nicht in dem besagten Reiter auf, 
+kannst du die Perspektive &#252;ber den Men&#252;punkt 
+<a href="../workbench/menu/window.html#WindowMenu_OpenPerspective">Fenster &#8594; Perspektive &#246;ffnen</a> &#246;ffnen.
+In dem Men&#252; <em>Fenster</em> sowie dem Untermen&#252; 
+<a href="../workbench/menu/window.html#WindowMenu_NavigationSubmenu">Fenster &#8594; Navigieren</a> 
+befinden sich noch einige n&#252;tzliche Funktionen rund um die Handhabung und die Verwaltung von Perspektiven. 
+Auf diese soll hier nicht n&#228;her eingegangen werden. 
+Du kannst aber bei Unklarheiten in den Hilfe-Seiten n&#228;heres &#252;ber diese Funktionen sp&#228;ter nachlesen.
+Kurz erw&#228;hnt werden soll noch, dass es bzgl. des Verhaltens der Perspektiven in der Anwendung noch diverse Einstellm&#246;glichkeiten gibt. 
+Diese Einstellungen lassen sich unter dem Men&#252;punkt 
+<a href="../workbench/preferences/perspectives.html">Datei &#8594; Benutzervorgaben...</a> treffen.
+</p>
+
+<h2>N&#228;chster Schritt</h2>
+<p><a href="instruments.html">Instrumente verwalten</a></p>
+
+<h2><a id="StatusBar_related_topics">Verwandte Themen</a></h2>
+<p>
+<a href="../workbench/menu/window.html">Arbeitsfl&#228;che &#8594; Men&#252; &#8594; Fenster</a><br/>
+<a href="../workbench/status_bar.html">Arbeitsfl&#228;che &#8594; Statusleiste</a><br/>
+<a href="../workbench/preferences/general/workbench.html">Arbeitsfl&#228;che &#8594; Benutzervorgaben &#8594; Allgemein &#8594; Arbeitsfl&#228;che</a><br/>   
+<a href="../workbench/preferences/perspectives.html">Arbeitsfl&#228;che &#8594; Benutzervorgaben &#8594; Perspektiven</a><br/>	
+</p>
+
+</body>
+</html>

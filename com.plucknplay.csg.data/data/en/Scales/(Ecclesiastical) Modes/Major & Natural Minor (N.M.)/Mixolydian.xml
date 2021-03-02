@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<interval_containers type="scales"><interval_container type="scales"><name>Mixolydian</name><akaName>V</akaName><akaName>N.M. VII</akaName><description>order: 5th degree of major = V / 7th degree of natural minor (N.M.) = N.M. VII&#xd;
+key: major&#xd;
+typical: b7</description><intervals><interval name="1" value="0"/><interval name="2" value="2"/><interval name="3" value="4"/><interval name="4" value="5"/><interval name="5" value="7"/><interval name="6" value="9"/><interval name="b7" value="10"/></intervals></interval_container></interval_containers>

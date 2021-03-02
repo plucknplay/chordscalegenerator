@@ -1,0 +1,219 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Chords View</title>
+<link type="text/css" rel="stylesheet" href="../../book.css" />
+</head>
+
+<body>
+
+<h1><img src="../../../icons/chord.gif" width="16" height="16" alt="Chords Icon"/>Chords View</h1>
+
+<p>
+In the <em>Chords View</em> you can manage all the chords. 
+You can create new chords, edit existing chords or even delete existing chords. 
+Besides, it is possible to organize the chords in categories and sub-categories.
+</p>
+
+<p>
+Double-click on a chord opens the chord in the <a href="../editors/chord.html">Chord Editor</a>. 
+Double-click on a category expands or collapses the category.
+</p>
+
+<p>
+    <enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+	<img src="../../../images/workbench/views/chords_view.png" width="306" height="437" alt="Chords View"/>
+</p>
+<p>
+    <enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+	<img src="../../../images/workbench/views/macosx/chords_view.png" width="303" height="580" alt="Chords View"/>
+</p>
+
+<h2><a id="Chords_view_toolbar">Toolbar</a></h2>	
+
+<p>
+The toolbar of the <em>Chords View</em> contains the following actions:
+</p>
+
+<h3><a id="chords_view_toolbar_add_chord"><img src="../../../icons/new_chord.gif" width="16" height="16" alt="Add Chord Icon"/>Add Chord</a></h3>
+
+<p>
+Opens a blank <a href="../editors/chord.html">Chord Editor</a> where you can define a new chord. 
+After you have saved the new chord (see <a href="../menu/file.html#FileMenu_Save">File &#8594; Save</a>), 
+it will be inserted into the category which was selected during the creation of the new chord. 
+If you have not selected a category the new chord will be added into the main category.
+</p>
+
+<h3><a id="chords_view_toolbar_add_category"><img src="../../../icons/new_category.gif" width="16" height="16" alt="Add Category Icon"/>Add Category</a></h3>
+
+<p>
+Adds a new sub-category into the currently selected category. 
+The name of the category can be edited directly.
+</p>
+
+<h3><a id="chords_view_toolbar_expand_all"><img src="../../../icons/expandall.gif" width="16" height="16" alt="Expand All Icon"/>Expand All</a></h3>
+
+<p>
+Expands the whole tree structure of this view. All defined chords become visible.
+</p>
+
+<h3><a id="chords_view_toolbar_collapse_all"><img src="../../../icons/collapseall.gif" width="16" height="16" alt="Collapse All Icon"/>Collapse All</a></h3>
+
+<p>
+Collapses the whole tree structure of this view.
+</p>
+
+<h3><a id="chords_view_toolbar_link_with_editor"><img src="../../../icons/synced.gif" width="16" height="16" alt="Link with Editor Icon"/>Link with Editor</a></h3>
+
+<p>
+Toggles whether or not the <em>Chords View</em> selection is linked to the active editor. 
+When this option is selected, changing to an active <a href="../editors/chord.html">Chord Editor</a> 
+will automatically update the chord being edited in the <em>Chords View</em> selection.
+Note: Especially with a multitude of defined chords it may be useful 
+to link the <em>Chords View</em> with the editor for the sake of clarity.
+</p>
+
+<h3><a id="chords_view_toolbar_show_intervals"><img src="../../../icons/interval.gif" width="16" height="16" alt="Show Intervals Icon"/>Show Intervals</a></h3>
+
+<p>
+Makes the inner <em>Interval View</em> visible or invisible. 
+The <em>Interval View</em> shows the defined intervals of a currently selected chord.
+</p>
+
+<h2><a id="chords_view_menu">Menu</a></h2>	
+
+<p>
+The menu of the <em>Chords View</em> contains the following actions:
+</p>
+
+<h3><a id="chords_view_toolbar_CleanUpChords"><img src="../../../icons/cleanUpChords.gif" width="16" height="16" alt="Clean Up Chords Icon"/>Clean Up...</a></h3>
+
+<p>
+Opens the wizard for the chord clean-up. 
+(see: <a href="../menu/extras.html#ExtrasMenu_CleanUpChords">Menu &#8594; Extras &#8594; Clean Up Chords...</a>).
+</p>
+
+<p>
+<img src="../../../icons/new_chord.gif" width="16" height="16" alt="Add Chord Icon"/><a href="chords.html#chords_view_toolbar_add_chord">Add Chord</a><br/>
+<img src="../../../icons/new_category.gif" width="16" height="16" alt="Add Category Icon"/><a href="chords.html#chords_view_toolbar_add_category">Add Category</a><br/>
+<img src="../../../icons/expandall.gif" width="16" height="16" alt="Expand All Icon"/><a href="chords.html#chords_view_toolbar_expand_all">Expand All</a><br/>
+<img src="../../../icons/collapseall.gif" width="16" height="16" alt="Collapse All Icon"/><a href="chords.html#chords_view_toolbar_collapse_all">Collapse All</a><br/>
+<img src="../../../icons/synced.gif" width="16" height="16" alt="Link with Editor Icon"/><a href="chords.html#chords_view_toolbar_link_with_editor">Link with Editor</a><br/>
+<img src="../../../icons/interval.gif" width="16" height="16" alt="Show Intervals Icon"/><a href="chords.html#chords_view_toolbar_show_intervals">Show Intervals</a><br/>
+</p>
+
+<h3><a id="chords_view_toolbar_VerticalViewOrientation"><img src="../../../icons/th_vertical.gif" width="16" height="16" alt="Vertical View Orientation Icon"/>Vertical View Orientation</a></h3>
+
+<p>
+Sets the inner <em>Interval View</em> in a vertical alignment within the <em>Chords View</em>.
+</p>
+
+<h3><a id="chords_view_toolbar_HorizontalViewOrientation"><img src="../../../icons/th_horizontal.gif" width="16" height="16" alt="Horizontal View Orientation Icon"/>Horizontal View Orientation</a></h3>
+
+<p>
+Sets the inner <em>Interval View</em> in a horizontal alignment within the <em>Chords View</em>.
+</p>
+
+<h3><a id="chords_view_toolbar_AutomaticViewOrientation"><img src="../../../icons/th_automatic.gif" width="16" height="16" alt="Automatic View Orientation Icon"/>Automatic View Orientation</a></h3>
+
+<p>
+Sets the alignment of the inner <em>Interval View</em> depending on the dimension of the <em>Chords View</em>. 
+If the length of the view is higher than its width the inner <em>Interval View</em> is set in a vertical 
+alignment within the <em>Chords View</em>. In the reverse case, the horizontal alignment will be used.
+</p>
+
+<h2><a id="chords_view_popup_menu">Pop-up Menu</a></h2>	
+
+<p>
+The pop-up menu of this view contains the following actions:
+</p>
+
+<p>
+<img src="../../../icons/open_chord.gif" width="16" height="16" alt="Add Chord Icon"/><a href="chords.html#chords_view_toolbar_add_chord">New &#8594; Chord</a><br/>
+<img src="../../../icons/new_category.gif" width="16" height="16" alt="Add Category Icon"/><a href="chords.html#chords_view_toolbar_add_category">New &#8594; Category</a><br/>
+</p>
+
+<h3><a id="chords_view_popup_menu_cut"><img src="../../../icons/cut_edit.gif" width="16" height="16" alt="Cut Icon"/>Cut</a></h3>
+
+<p>
+Cuts out the selecteded elements (chords and/or categories) and copies them into the clipboard.
+</p>
+
+<h3><a id="chords_view_popup_menu_copy"><img src="../../../icons/copy_edit.gif" width="16" height="16" alt="Copy Icon"/>Duplicate</a></h3>
+
+<p>
+Duplicates the selected elements. New elements will be extended with a consecutive numbering.
+</p>
+
+<h3><a id="chords_view_popup_menu_paste"><img src="../../../icons/paste_edit.gif" width="16" height="16" alt="Paste Icon"/>Paste</a></h3>
+
+<p>
+Pastes the elements of the clipboard into the currently selected category. 
+If the selected category contains elements with the same name a consecutive number will be added to the element name.
+</p>
+
+<h3><a id="chords_view_popup_menu_remove"><img src="../../../icons/remove.gif" width="16" height="16" alt="Remove Icon"/>Remove</a></h3>
+
+<p>
+Removes the selected elements. 
+If you remove a category all contained elements of the category will be removed as well. 
+Each removal has to be confirmed through a dialog box.
+</p>
+
+<h3><a id="chords_view_popup_menu_rename">Rename</a></h3>
+
+<p>
+Enables the direct renaming of a selected element (chord or category).
+</p>
+
+<h3><a id="chords_view_popup_menu_import"><img src="../../../icons/import.gif" width="16" height="16" alt="Import Icon"/>Import...</a></h3>
+
+<p>
+Imports the elements of a chosen XML-file. 
+The elements will be added into the currently selected category.
+</p>
+
+<h3><a id="chords_view_popup_menu_export"><img src="../../../icons/export.gif" width="16" height="16" alt="Export Icon"/>Export...</a></h3>
+
+<p>
+Exports the selected elements into a specified XML-file.
+</p>
+
+<h2><a id="chords_view_icons">Icons</a></h2>	
+
+<p>
+The following icons can appear in the <em>Chords View</em>:
+</p>
+
+<table>
+   <tr>
+      <th>Icon</th>
+      <th>Description</th>
+   </tr>
+   <tr>
+      <td><img src="../../../icons/category.gif" alt="Category Icon"/></td>
+      <td>Category</td>
+   </tr>
+   <tr>
+      <td><img src="../../../icons/chord.gif" alt="Chord Icon"/></td>
+      <td>Chord</td>
+   </tr>
+</table>
+
+<h2><a id="chords_view_related_topics">Related topics</a></h2>	
+
+<p>
+<a href="../editors/chord.html">Workbench &#8594; Editors &#8594; Chord Editor</a><br/>
+<a href="../menu/extras.html#ExtrasMenu_CleanUpChords">Workbench &#8594; Menu &#8594; Extras &#8594; Clean Up Chords</a><br/>
+</p>
+
+<h2><a id="chords_view_related_tasks">Related Tasks</a></h2>	
+<p>
+<a href="../../tasks/chords_scales.html">Tasks &#8594; Manage your Chords and Scales</a><br/>
+</p>
+
+</body>
+</html>

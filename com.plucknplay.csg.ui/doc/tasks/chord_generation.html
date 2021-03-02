@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Generate and Show Chords</title>
+<link type="text/css" rel="stylesheet" href="../book.css" />
+</head>
+
+<body>
+
+<h1>Generate and Show Chords</h1>
+<p>
+After all these introductory chapters let us finally come to some interesting calculations - 
+which is what the <em>Chord Scale Generator</em> is intended for. 
+The most frequent and useful calculation will probably  be the generation of fingerings for a certain chord. 
+This function gives the answer to questions like. "Where can I fret a Gsus4?"
+</p>
+
+<p>
+First you need to switch to the <em>Chords</em> perspective. On the left side, you see the 
+<a href="../workbench/views/chord_generation.html">Chord Generation View</a>. 
+In this view you can specify the settings for your desired calculation. Beside the chord of interest, 
+you can specify a wide range of restrictions to reduce the size of the result set. 
+Possible restrictions are for example the level, the grip range or other advanced restrictions like the bass or lead tone. 
+Click <em>Calculate</em> in order to start the calculation.
+</p>
+
+<p>
+    <enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+	<img src="../../images/tasks/chord_generation_01.png" width="646" height="534" alt="Generate Chords"/>
+</p>
+<p>
+    <enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+	<img src="../../images/tasks/macosx/chord_generation_01.png" width="796" height="619" alt="Generate Chords"/>
+</p>
+
+<p>
+The results of the calculation will be displayed in the <a href="../workbench/views/chord_results.html">Chord Results View</a>. 
+The generated chords can be arranged in columns. A simple click on the column header starts the rearrangement.
+</p>
+
+<p>
+Note: Since the result set may be very large, this view is divided into pages for the sake of clarity. 
+If many pages exist the current page will be shown in the toolbar on the left side of the actions to turn the pages. 
+The arrangement in columns is not restricted to the current page - but takes into consideration the whole result set.
+</p>
+
+<p>
+The <a href="../workbench/views/chord_results.html">Chord Results View</a> with its textual presentation is a 
+somewhat inconvenient representation of generated chords. However, this view simply operates like a "distributing centre" 
+where chords can be arranged and selected for further representations in other views.
+</p>
+
+<p>
+A chord you have selected in the <a href="../workbench/views/chord_results.html">Chord Results View</a> (by selecting 
+the corresponding row of the table) will be graphically displayed in other views. 
+The <em>Chord Scale Generator</em> provides the following five graphical views to display the selected chord:
+</p>
+
+<p>
+The <a href="../workbench/views/fretboard.html">Fretboard View</a> shows the selected chord in the context of a whole fretboard. 
+Besides, you can choose whether or not the fingering, the notes or the intervals of the selected chord shall be shown.
+</p>
+
+<p>
+The <a href="../workbench/views/keyboard.html">Keyboard View</a> shows the selected chord on the keyboard of a grand piano. 
+Here it is furthermore possible to switch between a notes and an interval mode.
+</p>
+
+<p>
+The <a href="../workbench/views/box.html">Box View</a> shows the selected chord as a fingering chart or a chord box. 
+his is a very common representation, which displays only a small section of the fretboard. 
+You can usually find this kind of representation in chord and song books.
+</p>
+
+<p>
+The <a href="../workbench/views/tab.html">Tab View</a> shows the selected chord in the form of a tablature where each string is assigned to a fret position (if available).
+</p>
+
+<p>
+The <a href="../workbench/views/notes.html">Notes View</a> shows the selected chord in musical notation (dependent on the chosen clef).
+</p>
+
+<p>
+    <enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+	<img src="../../images/tasks/chord_generation_02.png" width="781" height="881" alt="Show Chords"/>
+</p>
+<p>
+    <enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+	<img src="../../images/tasks/macosx/chord_generation_02.png" width="806" height="884" alt="Show Chords"/>
+</p>
+
+<p>
+Of course it is up to you which views you consider most helpful and want to use in your arrangement for a corresponding perspective. 
+</p>
+
+<h2>Next Step</h2>
+<p><a href="find_chords.html">Find Chords</a></p>
+
+<h2><a id="GenerateAndShowChords_related_topics">Related topics</a></h2>
+<p>
+<a href="../workbench/views/chord_generation.html">Workbench &#8594; Views &#8594; Chord Generation</a><br/>
+<a href="../workbench/views/chord_results.html">Workbench &#8594; Views &#8594; Chord Results</a><br/>
+<a href="../workbench/views/fretboard.html">Workbench &#8594; Views &#8594; Fretboard</a><br/>
+<a href="../workbench/views/keyboard.html">Workbench &#8594; Views &#8594; Keyboard</a><br/>
+<a href="../workbench/views/box.html">Workbench &#8594; Views &#8594; Box</a><br/>
+<a href="../workbench/views/tab.html">Workbench &#8594; Views &#8594; Tab</a><br/>
+<a href="../workbench/views/notes.html">Workbench &#8594; Views &#8594; Notes</a><br/>
+<a href="../workbench/preferences/views/chord_generation.html">Workbench &#8594; Preferences &#8594; Views &#8594; Chord Generation</a><br/>	
+<a href="../workbench/preferences/calculations.html">Workbench &#8594; Preferences &#8594; Calculations</a><br/>
+</p>		
+
+</body>
+</html>

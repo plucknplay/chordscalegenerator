@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Keyboard View</title>
+<link type="text/css" rel="stylesheet" href="../../book.css" />
+</head>
+
+<body>
+
+<h1><img src="../../../icons/keyboard.gif" width="16" height="16" alt="Keyboard Icon"/>Keyboard View</h1>
+
+<p>
+The <em>Keyboard View</em> shows chords and scales on the keyboard of a grand piano.
+You can choose between a notes and a interval mode.
+</p>
+
+<p>
+    <enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+	<img src="../../../images/workbench/views/keyboard_view_chord.png" width="594" height="187" alt="Keyboard View - Chord"/>
+</p>
+<p>
+    <enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+	<img src="../../../images/workbench/views/macosx/keyboard_view_chord.png" width="714" height="219" alt="Keyboard View - Chord"/>
+</p>
+
+<p>A currently selected scale block (if available) can be highlighted with blue keys.</p>
+
+<p>
+    <enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+	<img src="../../../images/workbench/views/keyboard_view_scale.png" width="594" height="187" alt="Keyboard View - Scale"/>
+</p>
+<p>
+    <enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+	<img src="../../../images/workbench/views/macosx/keyboard_view_scale.png" width="714" height="219" alt="Keyboard View - Scale"/>
+</p>
+
+<p>
+In the <em>Keyoard View</em> the tones of a currently played chord or scale block are highlighted.
+Thus, you can see exactly which tone is currently played and for how long.
+</p>
+
+<p>
+Besides, it is possible to play freely on the keyboard.
+A simple mouse click plays the selected key.
+You can define in the <a href="../preferences/sound.html">sound preferences</a> how long a played tone shall sound.
+</p>
+
+
+
+<h2><a id="keyboard_view_toolbar">Toolbar</a></h2>
+<p>The toolbar of the <em>Keyboard View</em> contains the following actions:</p>
+
+<h3><a id="keyboard_view_toolbar_ShowNotes"><img src="../../../icons/notes.gif" width="16" height="16" alt="Show Notes Icon"/>Show Notes</a></h3>
+<p>Switches to the notes mode of this view. The notes of the currently selected chord or scale block will be shown.</p>
+<p><img src="../../../images/workbench/views/keyboard_chord_notes_mode.png" width="158" height="151" alt="Notes Mode"/></p>
+
+<h3><a id="keyboard_view_toolbar_ShowIntervals"><img src="../../../icons/intervals.gif" width="16" height="16" alt="Show Intervals Icon"/>Show Intervals</a></h3>
+<p>Switches to the interval mode of this view. The intervals of the currently selected chord or scale block will be shown.</p>
+<p><img src="../../../images/workbench/views/keyboard_chord_interval_mode.png" width="158" height="151" alt="Interval Mode"/></p>
+
+<h3><a id="keyboard_view_toolbar_ClearInput"><img src="../../../icons/clear.gif" width="16" height="16" alt="Clear Input Icon"/>Clear Input</a></h3>
+<p>Clears the currently shown input (chord or scale) from this view.</p>
+
+
+
+<h2><a id="keyboard_view_menu">Menu</a></h2>
+<p>The menu of the <em>Keyboard View</em> contains the following actions:</p>
+
+<p>
+<img src="../../../icons/notes.gif" width="16" height="16" alt="Show Notes Icon"/><a href="keyboard.html#keyboard_view_toolbar_ShowNotes">Show Notes</a><br/>
+<img src="../../../icons/intervals.gif" width="16" height="16" alt="Show Intervals Icon"/><a href="keyboard.html#keyboard_view_toolbar_ShowIntervals">Show Intervals</a><br/>
+<img src="../../../icons/clear.gif" width="16" height="16" alt="Clear Input Icon"/><a href="keyboard.html#keyboard_view_toolbar_ClearInput">Clear Input</a><br/>
+</p>
+
+<h3><a id="keyboard_view_menu_Preferences">Preferences...</a></h3>
+<p>Opens the preferences dialog. The page with the <a href="../preferences/views/keyboard.html">preferences</a> for this view is already pre-selected.</p>
+
+
+
+<h2><a id="Keyboard_view_popup_menu">Pop-up Menu</a></h2>
+<p>The pop-up menu of this view contains the following actions:</p>
+
+
+<h3><a id="Keyboard_view_popup_menu_ExportAsImageFile"><img src="../../../icons/export.gif" width="16" height="16" alt="Export as Image File Icon"/>Export as Image File...</a></h3>
+<p>
+Exports the current visual representation of the keyboard as an image file.
+You can specifiy the file name and type (.bmp, .jpg or .png) in a corresponding dialog box.
+The size of the export image can be defined in the <a href="../preferences/export.html">export preferences</a>.
+</p>
+
+<h3><a id="Keyboard_view_popup_menu_CopyToClipboard"><img src="../../../icons/copy_edit.gif" width="16" height="16" alt="Copy to Clipboard Icon"/>Copy to Clipboard</a></h3>
+<p>
+Copies the current visual representation of the keyboard into the clipboard.
+The stored image data in the clipboard may be pasted, for instance, into Office applications later on.
+The size of the image can be defined in the <a href="../preferences/export.html">export preferences</a> as well.
+</p>
+
+
+
+<h2><a id="Keyboard_view_related_topics">Related topics</a></h2>
+
+<p>
+<a href="../preferences/views/keyboard.html">Workbench &#8594; Preferences &#8594; Views &#8594; Keyboard</a><br/>
+<a href="../preferences/export.html">Workbench &#8594; Preferences &#8594; Export</a><br/>
+<a href="../preferences/sound.html">Workbench &#8594; Preferences &#8594; Sound</a><br/>
+</p>
+
+<h2><a id="Keyboard_view_related_tasks">Related Tasks</a></h2>
+<p>
+<a href="../../tasks/chord_generation.html">Tasks &#8594; Generate and Show Chords</a><br/>
+<a href="../../tasks/show_scales.html">Tasks &#8594; Show Scales</a><br/>
+</p>
+
+</body>
+</html>

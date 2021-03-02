@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Sound Support</title>
+<link type="text/css" rel="stylesheet" href="../book.css" />
+</head>
+
+<body>
+
+<div id="all">
+
+    <div id="close">
+        <p id="close_img">
+            <a href="http://org.eclipse.ui.intro/close"><img src="../images/close.png" width="214" height="25" alt="Close"/></a>
+        </p>
+    </div>
+
+	<div id="top">
+        <p>
+            <a href="http://org.eclipse.ui.intro/showPage?id=root"><img src="../../logos/logo_64.png" width="64" height="64" alt="Welcome"/></a>
+        </p>
+	</div>
+
+	<div id="header">
+	
+		<ul id="steps">
+			<li><a id="overview" href="http://org.eclipse.ui.intro/showPage?id=overview"><img src="../images/overview.gif" width="15" height="15" alt="Overview"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=workbench"><img src="../images/step.gif" width="15" height="15" alt="The Workbench"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=instruments"><img src="../images/step.gif" width="15" height="15" alt="Manage your Instruments"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=chords_scales"><img src="../images/step.gif" width="15" height="15" alt="Manage your Chords and Scales"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=chord_generation"><img src="../images/step.gif" width="15" height="15" alt="Generate and Show Chords"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=find_chords"><img src="../images/step.gif" width="15" height="15" alt="Find Chords"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=show_scales"><img src="../images/step.gif" width="15" height="15" alt="Show Scales"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=find_scales"><img src="../images/step.gif" width="15" height="15" alt="Find Scales"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=sound"><img src="../images/step_active.gif" width="15" height="15" alt="Sound Support"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=export"><img src="../images/step.gif" width="15" height="15" alt="Export Actions"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=update"><img src="../images/step.gif" width="15" height="15" alt="Update Support"/></a></li>
+			<li><a id="back" href="http://org.eclipse.ui.intro/showPage?id=find_scales"><img src="../images/back.gif" width="8" height="15" alt="Previous Step"/></a></li>
+			<li><a id="forward" href="http://org.eclipse.ui.intro/showPage?id=export"><img src="../images/forward.gif" width="8" height="15" alt="Next Step"/></a></li>
+		</ul>
+	
+		<h1>Sound Support</h1>
+	</div>
+
+	<div id="main">
+
+		<p>
+		The <em>Chord Scale Generator</em> does not only show chords and scales in different graphical representations. 
+		It is also possible to play selected chords or scale blocks so that you can hear how they actually sound.
+		</p>
+		
+		<p>
+		You have different possibilities to play a selected chord or scale block. 
+		Either you can double-click on a selected chord or scale in the respective results view 
+		(see <em>Chord</em> and <em>Scale Results View</em>) or perform the corresponding popup menu entry. 
+		Besides, the global action <em>Extras &#8594; Play Sound</em> plays the previously selected chord or scale block.
+		</p>
+		
+		<p>
+    		<enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+			<img src="../../images/tasks/sound.png" width="632" height="196" alt="Sound Support"/>
+		</p>
+		<p>
+    		<enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+			<img src="../../images/tasks/macosx/sound.png" width="512" height="216" alt="Sound Support"/>
+		</p>
+		
+		<p>
+		The currently played tones will be graphically highlighted in the <em>Fretboard</em> and <em>Keyboard View</em>. 
+		Thus, you can see exactly which tone is currently being played and for how long.
+		</p>
+		
+		<p>
+		How the played chord or scale block will sound depends on the currently active instrument. 
+		The definition of your instrument specifies, among other things, how the instrument sounds 
+		(<em>Sounds like</em> in the <em>Instrument Editor</em>). 
+		Besides, there are several preferences (<em>File &#8594; Preferences... &#8594; Sound</em>) 
+		to define the tone length, the tone distance and the play pattern for chords and scales.
+		</p>
+		
+		<p>
+    		<enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+			<img src="../../images/workbench/preferences/sound.png" width="576" height="554" alt="Sound Preferences"/>
+		</p>
+		<p>
+    		<enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+			<img src="../../images/workbench/preferences/macosx/sound.png" width="693" height="603" alt="Sound Preferences"/>
+		</p>
+		
+		<p>
+		Finally we want to point out a last little feature concerning the sound. 
+		It is possible to play freely in the <em>Fretboard</em> and <em>Keyboard View</em> by clicking on single tones. 
+		How long the played tones shall sound you can define in the sound preferences as well.
+		</p>
+		
+    	<div class="link">
+    		<p><a href="http://org.eclipse.ui.intro/showPage?id=export">Export Actions</a></p>
+    	</div>
+
+	</div>
+
+</div>
+
+</body>
+</html>

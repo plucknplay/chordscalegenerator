@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Manage your Instruments</title>
+<link type="text/css" rel="stylesheet" href="../book.css" />
+</head>
+
+<body>
+
+<div id="all">
+
+    <div id="close">
+        <p id="close_img">
+            <a href="http://org.eclipse.ui.intro/close"><img src="../images/close.png" width="214" height="25" alt="Close"/></a>
+        </p>
+    </div>
+
+	<div id="top">
+        <p>
+            <a href="http://org.eclipse.ui.intro/showPage?id=root"><img src="../../logos/logo_64.png" width="64" height="64" alt="Welcome"/></a>
+        </p>
+	</div>
+
+	<div id="header">
+	
+		<ul id="steps">
+			<li><a id="overview" href="http://org.eclipse.ui.intro/showPage?id=overview"><img src="../images/overview.gif" width="15" height="15" alt="Overview"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=workbench"><img src="../images/step.gif" width="15" height="15" alt="The Workbench"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=instruments"><img src="../images/step_active.gif" width="15" height="15" alt="Manage your Instruments"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=chords_scales"><img src="../images/step.gif" width="15" height="15" alt="Manage your Chords and Scales"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=chord_generation"><img src="../images/step.gif" width="15" height="15" alt="Generate and Show Chords"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=find_chords"><img src="../images/step.gif" width="15" height="15" alt="Find Chords"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=show_scales"><img src="../images/step.gif" width="15" height="15" alt="Show Scales"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=find_scales"><img src="../images/step.gif" width="15" height="15" alt="Find Scales"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=sound"><img src="../images/step.gif" width="15" height="15" alt="Sound Support"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=export"><img src="../images/step.gif" width="15" height="15" alt="Export Actions"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=update"><img src="../images/step.gif" width="15" height="15" alt="Update Support"/></a></li>
+			<li><a id="back" href="http://org.eclipse.ui.intro/showPage?id=workbench"><img src="../images/back.gif" width="8" height="15" alt="Previous Step"/></a></li>
+			<li><a id="forward" href="http://org.eclipse.ui.intro/showPage?id=chords_scales"><img src="../images/forward.gif" width="8" height="15" alt="Next Step"/></a></li>
+		</ul>
+	
+		<h1>Manage your Instruments</h1>
+	</div>
+
+	<div id="main">
+
+		<p>
+		After you have learned about the main concepts of the <em>Chord Scale Generator</em>, 
+		we now want to introduce you to some concrete functions of this program. 
+		Let us start with the management of your instruments since, first of all, 
+		the <em>Chord Scale Generator</em> has to know on which instrument the calculations shall be performed.
+		</p>
+		
+		<p>
+		In order to manage your instruments, first switch to the <em>Setup</em> perspective. On the left side, 
+		you see the <em>Instruments View</em> where you can manage your instruments. The <em>Instruments View</em> 
+		operates similar to a file explorer - you can organize existing instruments in categories, as well as copy, 
+		delete or rename selected elements. Besides, it is possible to create new instruments or edit existing ones. 
+		By double-clicking on them, the corresponding editor opens where you can define your instrument in detail.
+		</p>
+		
+		<p>
+		    <enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+			<img src="../../images/tasks/manage_your_instruments.png" width="742" height="740" alt="Manage your Instruments"/>
+		</p>
+		<p>
+		    <enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+			<img src="../../images/tasks/macosx/manage_your_instruments.png" width="850" height="789" alt="Manage your Instruments"/>
+		</p>
+		
+		<p>
+		The <em>Chord Scale Generator</em> enables you to define all stringed instruments (we know of) - 
+		from guitars, basses or ukuleles up to more exotic instruments like balalaikas, bouzoukis, domras or charangos. 
+		As long as your instrument has between two and twelve strings the <em>Chord Scale Generator</em> will support it. 
+		You can specify the name, the dimensions (string and fret number) and the tuning of the instrument, 
+		as well as more advanced settings like the sound, the scale length or even the positions of the capo (tasto). 
+		The significance of each available setting is explained in the corresponding help contents of this editor.
+		</p>
+		
+		<p>
+		But don't worry! You probably won't have to define all your instruments manually. 
+		Many instruments are already pre-defined in the <em>Chord Scale Generator</em>. 
+		Besides, there are several files enclosed where all instruments we know and their most common tunings are defined. 
+		You can easily import these files and extend your instruments list.
+		</p>
+		
+		<p>
+		Since the <em>Chord Scale Generator</em> needs to know on which instrument the calculations shall be performed 
+		you have to set one of the defined instruments active. In order to activate an instrument you simply have 
+		to select the desired instrument in the <em>Instruments View</em> and perform the popup menu entry <em>Set Active</em>. 
+		The active instrument will get a special icon in the <em>Instruments View</em> 
+		and will also be displayed in the bottom-right corner in the status bar.
+		</p>
+		
+    	<div class="link">
+    		<p><a href="http://org.eclipse.ui.intro/showPage?id=chords_scales">Manage your Chords and Scales</a></p>
+    	</div>
+
+	</div>
+
+</div>
+
+</body>
+</html>

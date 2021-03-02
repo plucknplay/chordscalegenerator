@@ -1,0 +1,2 @@
+<?xml version="1.0"?>
+<interval_containers type="scales"><interval_container type="scales"><name>Ganzton</name><akaName>Whole</akaName><akaName>Auxiliary Augmented</akaName><description></description><intervals><interval name="1" value="0"/><interval name="2" value="2"/><interval name="3" value="4"/><interval name="#4" value="6"/><interval name="#5" value="8"/><interval name="#6" value="10"/></intervals></interval_container></interval_containers>

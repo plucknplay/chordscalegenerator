@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Chord Scale Generator Sound
+Bundle-SymbolicName: com.plucknplay.csg.sound;singleton:=true
+Bundle-Version: 1.4.0
+Bundle-Activator: com.plucknplay.csg.sound.Activator
+Bundle-Vendor: pluck-n-play
+Require-Bundle: org.eclipse.core.runtime,
+ com.plucknplay.csg.core;bundle-version="1.4.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-ActivationPolicy: lazy
+Export-Package: com.plucknplay.csg.sound

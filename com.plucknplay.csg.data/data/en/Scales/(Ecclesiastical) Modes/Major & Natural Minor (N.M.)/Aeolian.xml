@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<interval_containers type="scales"><interval_container type="scales"><name>Aeolian</name><akaName>VI</akaName><akaName>N.M. I</akaName><akaName>Minor</akaName><akaName>Natural Minor</akaName><akaName>Pure Minor</akaName><description>order: 6th degree of major = VI / 1st degree of natural minor (N.M.) = N.M. I&#xd;
+key: minor&#xd;
+typical: b6, b7&#xd;
+&#xd;
+comments: &#xd;
+- missing 7 as leading note&#xd;
+- development: N.M. (...b6-b7) -&gt; H.M.(...b6-7) -&gt; M.M. (...6-7)</description><intervals><interval name="1" value="0"/><interval name="2" value="2"/><interval name="b3" value="3"/><interval name="4" value="5"/><interval name="5" value="7"/><interval name="b6" value="8"/><interval name="b7" value="10"/></intervals></interval_container></interval_containers>

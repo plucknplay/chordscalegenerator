@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.plucknplay.csg"
+      label="%featureName"
+      version="1.4.0"
+      provider-name="%providerName"
+      plugin="com.plucknplay.csg.ui"
+      image="csg_update_120.gif">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <url>
+      <update label="%updateSiteName" url="http://update.pluck-n-play.com"/>
+   </url>
+
+   <requires>
+      <import feature="org.eclipse.draw2d" version="3.8.2"/>
+      <import feature="org.eclipse.gef" version="3.8.2"/>
+      <import feature="org.eclipse.rcp" version="3.8.2"/>
+      <import feature="org.eclipse.help" version="3.8.2"/>
+   </requires>
+
+   <plugin
+         id="com.plucknplay.csg.core"
+         download-size="109"
+         install-size="109"
+         version="1.4.0"
+         unpack="false"/>
+
+   <plugin
+         id="com.plucknplay.csg.core.nl1"
+         download-size="4"
+         install-size="4"
+         version="1.4.0"
+         fragment="true"
+         unpack="false"/>
+
+   <plugin
+         id="com.plucknplay.csg.ui"
+         download-size="6492"
+         install-size="6492"
+         version="1.4.0"
+         unpack="false"/>
+
+   <plugin
+         id="com.plucknplay.csg.ui.nl1"
+         download-size="3330"
+         install-size="3330"
+         version="1.4.0"
+         fragment="true"
+         unpack="false"/>
+
+   <plugin
+         id="com.plucknplay.csg.data"
+         download-size="1968"
+         install-size="1968"
+         version="1.4.0"/>
+
+   <plugin
+         id="com.plucknplay.csg.sound"
+         download-size="4816"
+         install-size="4816"
+         version="1.4.0"
+         unpack="false"/>
+
+   <plugin
+         id="com.plucknplay.csg.sound.nl1"
+         download-size="3"
+         install-size="3"
+         version="1.4.0"
+         fragment="true"
+         unpack="false"/>
+
+</feature>

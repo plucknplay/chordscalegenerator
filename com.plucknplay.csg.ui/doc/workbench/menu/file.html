@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>File Menu</title>
+<link type="text/css" rel="stylesheet" href="../../book.css" />
+</head>
+
+<body>
+
+<h1>File Menu</h1>
+<p>The <em>File Menu</em> of the main menu contains the following actions:</p>
+
+<p>
+    <enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+	<img src="../../../images/workbench/menu/file.png" width="292" height="146" alt="File Menu"/>
+</p>
+<p>
+    <enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+	<img src="../../../images/workbench/menu/macosx/file.png" width="305" height="104" alt="File Menu"/>
+</p>
+
+<h3><a id="FileMenu_NewInstrument"><img src="../../../icons/new_instrument.gif" width="16" height="16" alt="New Instrument Icon"/>New &#8594; Instrument</a></h3>
+<p>
+Opens a blank <a href="../editors/instrument.html">Instrument Editor</a> where you can define a new instrument. 
+After you have saved the new instrument (see <a href="../menu/file.html#FileMenu_Save">File &#8594; Save</a>), 
+it will be inserted into the main category of the <a href="../views/instruments.html">Instruments View</a>.
+</p>
+
+<h3><a id="FileMenu_NewChord"><img src="../../../icons/new_chord.gif" width="16" height="16" alt="New Chord Icon"/>New &#8594; Chord</a></h3>
+<p>
+Opens a blank <a href="../editors/chord.html">Chord Editor</a> where you can define a new chord. 
+After you have saved the new chord (see <a href="../menu/file.html#FileMenu_Save">File &#8594; Save</a>), 
+it will be inserted into the main category of the <a href="../views/chords.html">Chords View</a>.
+</p>
+
+<h3><a id="FileMenu_NewScale"><img src="../../../icons/new_scale.gif" width="16" height="16" alt="New Scale Icon"/>New &#8594; Scale</a></h3>
+<p>
+Opens a blank <a href="../editors/scale.html">Scale Editor</a> where you can define a new scale. 
+After you have saved the new scale (see <a href="../menu/file.html#FileMenu_Save">File &#8594; Save</a>), 
+it will be inserted into the main category of the <a href="../views/scales.html">Scales View</a>.
+</p>
+
+<h3><a id="FileMenu_Save"><img src="../../../icons/save_edit.gif" width="16" height="16" alt="Save Icon"/>Save</a></h3>
+<p>Saves the element (instrument, chord or scale) in the currently active editor.</p>
+
+<h3><a id="FileMenu_SaveAll"><img src="../../../icons/saveall_edit.gif" width="16" height="16" alt="Save All Icon"/>Save All</a></h3>
+<p>Saves all elements in currently opened editors.</p>
+
+<div>
+	<enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+	
+	<h3><a id="FileMenu_Preferences">Preferences ...</a></h3>
+	<p>Opens the preferences dialog. The most recently selected page will be pre-selected.</p>
+	
+	<h3><a id="FileMenu_Exit">Exit</a></h3>
+	<p>Closes the application.</p>
+</div>
+
+<h2><a id="FileMenu_related_topics">Related topics</a></h2>
+
+<p>
+<a href="../views/instruments.html">Workbench &#8594; Views &#8594; Instruments</a><br/>
+<a href="../views/chords.html">Workbench &#8594; Views &#8594; Chords</a><br/>
+<a href="../views/scales.html">Workbench &#8594; Views &#8594; Scales</a><br/>	
+<a href="../editors/instrument.html">Workbench &#8594; Editors &#8594; Instrument Editor</a><br/>
+<a href="../editors/chord.html">Workbench &#8594; Editors &#8594; Chord Editor</a><br/>
+<a href="../editors/scale.html">Workbench &#8594; Editors &#8594; Scale Editor</a><br/>
+</p>
+
+<h2><a id="FileMenu_related_tasks">Related tasks</a></h2>	
+<p>
+<a href="../../tasks/instruments.html">Tasks &#8594; Manage your Instruments</a><br/>
+<a href="../../tasks/chords_scales.html">Tasks &#8594; Manage your Chords and Scales</a><br/>
+</p>
+
+</body>
+</html>

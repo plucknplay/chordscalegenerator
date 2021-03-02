@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Akkord-Ergebnisse Sicht</title>
+<link type="text/css" rel="stylesheet" href="../../book.css" />
+</head>
+
+<body>
+
+<h1><img src="../../../icons/chord_results.gif" width="16" height="16" alt="Chord Results Icon"/>Akkord-Ergebnisse Sicht</h1>
+
+<p>
+Die Sicht <em>Akkord-Ergebnisse</em> dient zum Anzeigen von Akkorden, 
+welche bei der Berechnung von Griffm&#246;glichkeiten zu einem bestimmten Akkord ermittelt wurden. 
+Es werden hier aber auch die Ergebnisse der umgekehrten Berechnung - 
+also dem Finden von Akkorden zu einem bestimmten Griff- oder Notenbild - dargestellt.
+</p>
+
+<p>
+    <enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+	<img src="../../../images/workbench/views/chord_results_view.png" width="1473" height="234" alt="Akkord-Ergebnisse Sicht"/>
+</p>
+<p>
+    <enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+	<img src="../../../images/workbench/views/macosx/chord_results_view.png" width="1524" height="226" alt="Akkord-Ergebnisse Sicht"/>
+</p>
+
+<p>
+Die Akkord-Ergebnismenge wird dabei in einer Tabelle in textueller Form pr&#228;sentiert. 
+Die gefundenen Akkorde lassen sich anhand der Spalten sortieren. 
+Die Spalten selbst sind in ihrer Gr&#246;&#223;e verstellbar. Es lassen sich zudem die nicht ben&#246;tigte Spalten ausblenden 
+(siehe the <a href="../preferences/views/chord_results.html">Benutzervorgaben</a> dieser Sicht).
+</p>
+
+<p>
+In der vordersten Tabellenspalte kannst du noch H&#228;kchen setzen, um f&#252;r dich interessante Akkorde zu markieren. 
+Die Bilddaten solch markierter Akkorde lassen sich dann auf einfache Weise exportieren.
+</p>
+
+<p>
+Da die Ergebnismenge bei manchen Berechnungen sehr gro&#223; werden kann, ist die Sicht zur besseren &#220;bersicht in Seiten aufgeteilt. 
+Es kann dann zwischen den Seiten hin- und hergebl&#228;ttert werden. 
+Sofern mehrere Seiten vorhanden sind, wird die aktuelle Seite in der Symbolleiste links neben den Funktionen zum Bl&#228;ttern angezeigt. 
+Die spaltenweise Sortierung beschr&#228;nkt sich nat&#252;rlich nicht nur auf die aktuelle Seite - 
+bei der Sortierung wird die ganze Ergebnismenge ber&#252;cksichtigt.
+</p>
+
+
+<h2><a id="ChordResults_view_TableColumns">Tabellenspalten</a></h2>	
+
+<h3><a id="ChordResults_view_TableColumns_Chord">Akkord</a></h3>
+<p>Hier wird der vollst&#228;ndige Name der Akkorde angezeigt.</p>
+
+<h3><a id="ChordResults_view_TableColumns_withoutRoot">o1 (Ohne 1)</a></h3>
+<p>Hier wird angezeigt, ob der Grundton bei einem Akkord weggelassen wurde oder nicht.</p>
+
+<h3><a id="ChordResults_view_TableColumns_without3">o3 (Ohne 3)</a></h3>
+<p>Hier wird angezeigt, ob eine in der urspr&#252;nglichen Akkorddefinition enthaltene Terz bei einem Akkord weggelassen wurde oder nicht.</p>
+
+<h3><a id="ChordResults_view_TableColumns_without5">o5 (Ohne 5)</a></h3>
+<p>
+Hier wird wiederum angezeigt, ob eine in der urspr&#252;nglichen Akkorddefinition enthaltene (reine) Quinte 
+bei einem Akkord weggelassen wurde oder nicht.
+</p>
+
+<h3><a id="ChordResults_view_TableColumns_Level">Level</a></h3>
+<p>
+Diese Spalte gibt den jeweiligen Schwierigkeitsgrad der Akkorde an. 
+Wie die Schwierigkeitsgrade charakterisiert sind, ist in der Beschreibung zur  
+<a href="../views/chord_generation.html#ChordGeneration_view_toolbar_Level">Akkordgenerierung-Sicht</a>
+nochmals genauer beschrieben.
+</p>
+
+<h3><a id="ChordResults_view_TableColumns_Relative_Bass">Rel. Bass (Relativer Basston)</a></h3>
+<p>In dieser Spalte wird der relative Basston angezeigt.</p>
+
+<h3><a id="ChordResults_view_TableColumns_Absolute_Bass">Abs. Bass (Absoluter Basston)</a></h3>
+<p>In dieser Spalte wird der absolute Basston angezeigt.</p>
+
+<h3><a id="ChordResults_view_TableColumns_Relative_Bass">Bass Int (Basston Intervall)</a></h3>
+<p>In dieser Spalte wird das zum Basston dazugeh&#246;rige Intervall angezeigt.</p>
+
+<h3><a id="ChordResults_view_TableColumns_Relative_Lead">Rel. Melodie (Relativer Melodieton)</a></h3>
+<p>Hier wird der relative Melodieton angezeigt.</p>
+
+<h3><a id="ChordResults_view_TableColumns_Absolute_Lead">Abs. Melodie (Absoluter Melodieton)</a></h3>
+<p>Hier wird der absolute Melodieton angezeigt.</p>
+
+<h3><a id="ChordResults_view_TableColumns_Relative_Lead">Melodie Int (Melodieton Intervall)</a></h3>
+<p>Hier wird das zum Melodieton dazugeh&#246;rige Intervall angezeigt.</p>
+
+<h3><a id="ChordResults_view_TableColumns_Notes">Noten</a></h3>
+<p>
+In dieser Spalte werden die einzelnen Noten der Akkorde beginnend mit der obersten Saite aufgelistet. 
+Ist eine Saite abged&#228;mpft, also wird diese nicht genutzt, ist dies durch ein X gekennzeichnet.
+</p>
+
+<h3><a id="ChordResults_view_TableColumns_Intervals">Intervalle</a></h3>
+<p>
+In dieser Spalte werden die einzelnen Intervalle der Akkorde beginnend mit der obersten Saite aufgelistet. 
+Ist eine Saite abged&#228;mpft, so wird dies durch ein X gekennzeichnet.
+</p>
+
+<h3><a id="ChordResults_view_TableColumns_Frets">B&#252;nde</a></h3>
+<p>
+In dieser Spalte wird die Bundbelegung beginnend mit der obersten Seite angegeben. 
+Abged&#228;mpfte Saiten werden hier wieder durch ein X gekennzeichnet.
+</p>
+
+<h3><a id="ChordResults_view_TableColumns_MinimalString">Min S (Minimale Saite)</a></h3>
+<p>Diese Spalte gibt die minimale Saite (also die normalerweise h&#246;chste Saite) der Akkorde an.</p>
+
+<h3><a id="ChordResults_view_TableColumns_MaximumString">Max S (Maximale Saite)</a></h3>
+<p>Diese Spalte gibt die maximale Saite (also die normalerweise tiefste Saite) der Akkorde an.</p>
+
+<h3><a id="ChordResults_view_TableColumns_StringSpan">SSp (Saitenspanne)</a></h3>
+<p>Hier wird die Saitenspanne der Akkorde angegeben, also &#252;ber wieviele Saiten sich ein Akkord erstreckt.</p>
+
+<h3><a id="ChordResults_view_TableColumns_MinimalFret">Min B (Minimaler Bund)</a></h3>
+<p>Diese Spalte gibt den minimalen Bund (also den Startbund) der Akkorde an.</p>
+
+<h3><a id="ChordResults_view_TableColumns_MaximumFret">Max B (Maximaler Bund)</a></h3>
+<p>Diese Spalte gibt den maximalen Bund (also den Endbund) der Akkorde an.</p>
+
+<h3><a id="ChordResults_view_TableColumns_FretSpan">BSp (Bundspanne)</a></h3>
+<p>Hier wird die Bundspanne der Akkorde angegeben - also &#252;ber wieviele B&#252;nde sich ein Akkord erstreckt.</p>
+
+<h3><a id="ChordResults_view_TableColumns_Width">GB (Griffbreite)</a></h3>
+<p>
+Hier wird die Griffbreite der Akkorde in Millimetern oder in Inch angegeben. 
+In welcher Einheit die Griffbreite angegeben wird, h&#228;ngt dabei entweder von der Definition des aktiven Instruments ab 
+(in welcher Einheit die Mensur des Instruments festgelegt ist) oder aber von der Art der Berechnung, 
+welche die dargestellte Ergebnismenge erzeugt hat. Wurden beispielsweise Akkorde &#252;ber die 
+<a href="../views/chord_generation.html#ChordGeneration_view_toolbar_Width">Akkordgenerierung-Sicht</a>
+berechnet und dort die maximale Griffbreite explizit in einer Einheit angegeben, so wird diese Einheit auch in dieser Spalte verwandt.
+</p>
+
+<h3><a id="ChordResults_view_TableColumns_NumberOS">#LS (Anzahl der leeren Saiten)</a></h3>
+<p>Diese Spalte gibt die Anzahl der leeren Saiten an.</p>
+
+<h3><a id="ChordResults_view_TableColumns_NumberMS">#AS (Anzahl der abged&#228;mpften Saiten)</a></h3>
+<p>Diese Spalte gibt die Anzahl der abged&#228;mpften (also unbenutzten) Saiten an.</p>
+
+<h3><a id="ChordResults_view_TableColumns_DT">DT (Doppelte T&#246;ne)</a></h3>
+<p>Hier wird angezeigt, ob ein Akkord doppelte T&#246;ne (also mehrere T&#246;ne mit identischer Tonh&#246;he) enth&#228;lt oder nicht.</p>
+
+
+
+
+<h2><a id="ChordResults_view_Toolbar">Symbolleiste</a></h2>	
+<p>Die Symbolleiste der <em>Akkord-Ergebnisse-Sicht</em> enth&#228;lt die folgenden Funktionen:</p>
+
+<h3><a id="ChordResults_view_Toolbar_FirstPage"><img src="../../../icons/shift_l_edit.gif" width="16" height="16" alt="First Page Icon"/>Erste Seite</a></h3>
+<p>Springt zur ersten Ergebnis-Seite dieser Sicht.</p>
+
+<h3><a id="ChordResults_view_Toolbar_PreviousPage"><img src="../../../icons/backward_nav.gif" width="16" height="16" alt="Previous Page Icon"/>Vorherige Seite</a></h3>
+<p>Bl&#228;ttert zur vorherigen Ergebnis-Seite.</p>
+
+<h3><a id="ChordResults_view_Toolbar_NextPage"><img src="../../../icons/forward_nav.gif" width="16" height="16" alt="Next Page Icon"/>N&#228;chste Seite</a></h3>
+<p>Bl&#228;ttert zur n&#228;chsten Ergebnis-Seite.</p>
+
+<h3><a id="ChordResults_view_Toolbar_LastPage"><img src="../../../icons/shift_r_edit.gif" width="16" height="16" alt="Last Page Icon"/>Letzte Seite </a></h3>
+<p>Springt zur letzten Ergebnis-Seite dieser Sicht.</p>
+
+<h3><a id="ChordResults_view_Toolbar_CheckAll"><img src="../../../icons/check_all.gif" width="16" height="16" alt="Check All Icon"/>Alle Akkorde selektieren</a></h3>
+<p>
+Setzt s&#228;mtliche H&#228;kchen der ersten Tabellenspalte - es werden somit alle Akkorde dieser Sicht selektiert/markiert. 
+So ausgew&#228;hlte Akkorde k&#246;nnen anschlie&#223;end exportiert werden  
+(siehe <a href="chord_results.html#ChordResults_view_Menu_CopyToClipboard">Kopiere in die Zwischenablage</a>)
+</p>
+
+<h3><a id="ChordResults_view_Toolbar_UncheckAll"><img src="../../../icons/uncheck_all.gif" width="16" height="16" alt="Uncheck All Icon"/>Alle Akkorde deselektieren</a></h3>
+<p>Deselektiert s&#228;mtliche Akkorde dieser Sicht.</p>
+
+
+
+<h2><a id="ChordResults_view_Menu">Men&#252;</a></h2>
+<p>Das Men&#252; der <em>Akkord-Ergebnisse-Sicht</em> enth&#228;lt die folgenden Funktionen:</p>
+
+<p>
+<img src="../../../icons/check_all.gif" width="16" height="16" alt="Check All Icon"/><a href="chord_results.html#ChordResults_view_Toolbar_CheckAll">Alle Akkorde selektieren</a><br/>
+<img src="../../../icons/uncheck_all.gif" width="16" height="16" alt="Uncheck All Icon"/><a href="chord_results.html#ChordResults_view_Toolbar_UncheckAll">Alle Akkorde deselektieren</a><br/>
+</p>
+
+<h3><a id="ChordResults_view_Menu_CopyToClipboard"><img src="../../../icons/copy_edit.gif" width="16" height="16" alt="Copy to Clipboard Icon"/>Kopiere in die Zwischenablage</a></h3>
+<p>
+Kopiert die Bilddaten der selektierten Akkorde dieser Sicht in die Zwischenablage. 
+Die Bilddaten k&#246;nnen dann beispielsweise in Office-Anwendungen eingef&#252;gt werden. 
+Welche Bilddaten hierbei in die Zwischenablage kopiert werden, kannst du in den  
+<a href="../preferences/export.html">Benutzervorgaben zum Export</a> spezifizieren. <br/>
+Beachte: Bei der Gr&#246;&#223;e der exportierten Bilddaten werden die in den <a href="../preferences/export.html">Benutzervorgaben</a>. 
+definierten festen Gr&#246;&#223;en verwendet. Die aktuelle Gr&#246;&#223;e von Sichten kann hier nicht verwendet werden, 
+da eine Sicht in mehreren Perspektiven mit unterschiedlicher Gr&#246;&#223;e ge&#246;ffnet sein kann.
+</p>
+
+<h3><a id="ChordResults_view_Menu_Preferences">Benutzervorgaben...</a></h3>
+<p>
+&#214;ffnet den Dialog zum Definieren der <a href="../preferences/views/chord_results.html">Benutzervorgaben</a>. 
+Die Seite zum Definieren der Einstellm&#246;glichkeiten f&#252;r diese Sicht ist dabei schon vorselektiert.
+</p>
+
+
+<h2><a id="ChordResults_view_Pop-up-Menu">Kontextmen&#252;</a></h2>
+<p>Das Kontextmen&#252; dieser Sicht enth&#228;lt die folgenden Funktionen:</p>
+
+<h3><a id="ChordResults_view_Pop-up-Menu_OpenInEditor">&#214;ffne im Editor</a></h3>
+<p>&#214;ffnet den ausgew&#228;hlten Akkord in einem entsprechenden <a href="../editors/chord.html">Akkord-Editor</a>.</p>
+
+<p>
+<img src="../../../icons/copy_edit.gif" width="16" height="16" alt="Copy to Clipboard Icon"/><a href="chord_results.html#ChordResults_view_Menu_CopyToClipboard">Kopiere in die Zwischenablage</a><br/>
+</p>
+
+<h3><a id="ChordResults_view_Pop-up-Menu_PlayChord"><img src="../../../icons/play_sound.gif" width="16" height="16" alt="Play Chord Icon"/>Spiele Akkord</a></h3>
+<p>
+Spielt den ausgew&#228;hlten Akkord an. Wie ein angespielter Akkord dabei erklingt, 
+kannst du in den  <a href="../preferences/sound.html">Benutzervorgaben zum Sound</a> definieren.
+</p>
+
+<h2><a id="ChordResults_view_related_topics">Verwandte Themen</a></h2>	
+<p>
+<a href="../preferences/views/chord_results.html">Arbeitsfl&#228;che &#8594; Benutzervorgaben &#8594; Sichten &#8594; Akkord-Ergebnisse</a><br/>
+<a href="../preferences/export.html">Arbeitsfl&#228;che &#8594; Benutzervorgaben &#8594; Export</a><br/>
+<a href="../preferences/sound.html">Arbeitsfl&#228;che &#8594; Benutzervorgaben &#8594; Sound</a><br/>
+<a href="../views/chord_generation.html">Arbeitsfl&#228;che &#8594; Sichten &#8594; Akkordgenerierung</a><br/>
+<a href="../views/box.html">Arbeitsfl&#228;che &#8594; Sichten &#8594; Box</a><br/>
+<a href="../views/tab.html">Arbeitsfl&#228;che &#8594; Sichten &#8594; Tab</a><br/>
+<a href="../views/notes.html">Arbeitsfl&#228;che &#8594; Sichten &#8594; Noten</a><br/>
+<a href="../editors/chord.html">Arbeitsfl&#228;che &#8594; Editoren &#8594; Akkord-Editor</a><br/>
+</p>
+
+<h2><a id="ChordResults_view_related_tasks">Verwandte Aufgaben </a></h2>	
+<p>
+<a href="../../tasks/chord_generation.html">Aufgaben &#8594; Grifftabellen generieren und anzeigen</a><br/>
+<a href="../../tasks/find_chords.html">Aufgaben &#8594; Akkorde finden</a><br/>
+<a href="../../tasks/sound.html">Aufgaben &#8594; Sound-Unterst&#252;tzung</a><br/>
+<a href="../../tasks/export.html">Aufgaben &#8594; Export-Funktionen</a><br/>
+</p>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Find Chords</title>
+<link type="text/css" rel="stylesheet" href="../book.css" />
+</head>
+
+<body>
+
+<h1>Find Chords</h1>
+<p>
+The <em>Chord Scale Generator</em> can do more than generating fingerings for defined chords. 
+It is also possible to perform reverse calculations. If you, for example, wonder what chord you have just stumbled on, 
+with the <em>Chord Scale Generator</em> you can easily find out.
+</p>
+
+<p>
+Like you have done for the <a href="chord_generation.html">chord generation</a>, you should use the <em>Chords</em> 
+perspective for this calculation. You can arrange the fingering pattern of interest, for instance, in 
+the <a href="../workbench/views/box.html">Box View</a>. Unlike the <a href="../workbench/views/fretboard.html">Fretboard</a> 
+or <a href="../workbench/views/keyboard.html">Keyboard View</a>, this view is not statical and only displays the results, 
+but here you can also switch into a edit/search mode. In the edit/search mode you can arrange own fingering patterns 
+and start a reverse calculation to find chords and scales. 
+In order to arrange your fingering just double click on the finger position you want to add or remove. 
+The results of the reverse calculation will be displayed in the <a href="../workbench/views/chord_results.html">Chord Results View</a> 
+as well. You can see in the first table column, which chord or which chords (yes even that is possible) corresponds to 
+a fingering pattern.
+</p>
+
+<p>
+    <enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+	<img src="../../images/tasks/find_chord_01.png" width="1009" height="259" alt="Find Chords"/>
+</p>
+<p>
+    <enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+	<img src="../../images/tasks/macosx/find_chord_01.png" width="1015" height="314" alt="Find Chords"/>
+</p>
+
+<p>
+It is also possible to start this reverse calculation in the <a href="../workbench/views/tab.html">Tab View</a>. 
+Here you can arrange (also in the edit/search mode) your fingering pattern in a more simple graphical representation.
+</p>
+
+<p>
+For all of you who are well familiar with musical notations there is one more special feature. 
+In the <a href="../workbench/views/notes.html">Notes View</a> it is possible to find chords based on musical notation. 
+Thus, you can find all possible fingerings for a musical notation of a chord.
+You can also see in the first table column of the <a href="../workbench/views/chord_results.html">Chord Results View</a> 
+to which chord a single fingering corresponds.
+</p>
+
+<p>
+    <enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+	<img src="../../images/tasks/find_chord_02.png" width="1017" height="259" alt="Find Chords"/>
+</p>
+<p>
+    <enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+	<img src="../../images/tasks/macosx/find_chord_02.png" width="1046" height="315" alt="Find Chords"/>
+</p>
+
+<p>
+Note: If it was not possible to determine a chord for a fingering or musical notation it does not necessarily mean 
+that there is no chord available or that the fingering is invalid. The chord, which corresponds to your fingering, 
+is just not contained in your defined chord list.<br/>
+Note: The <em>Chord Scale Generator</em> performs all calculations only on the basis of the defined data (chord and scale definitions).
+</p>
+
+<p>
+Note: As long as the view is in the edit/search mode, it is blocked and newly selected chord will not be displayed.
+</p>
+
+<h2>Next Step</h2>
+<p><a href="show_scales.html">Show Scales</a></p>
+
+<h2><a id="FindChords_related_topics">Related topics</a></h2>
+<p>
+<a href="../workbench/views/chord_results.html">Workbench &#8594; Views &#8594; Chord Results</a><br/>
+<a href="../workbench/views/box.html">Workbench &#8594; Views &#8594; Box</a><br/>
+<a href="../workbench/views/tab.html">Workbench &#8594; Views &#8594; Tab</a><br/>
+<a href="../workbench/views/notes.html">Workbench &#8594; Views &#8594; Notes</a><br/>
+</p>		
+
+</body>
+</html>

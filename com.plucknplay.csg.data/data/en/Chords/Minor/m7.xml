@@ -1,0 +1,2 @@
+<?xml version="1.0"?>
+<interval_containers type="chords"><interval_container type="chords"><name>m7</name><akaName>-7</akaName><akaName>mi7</akaName><akaName>min7</akaName><description></description><intervals><interval name="1" value="0"/><interval name="b3" value="3"/><interval name="5" value="7"/><interval name="b7" value="10"/></intervals></interval_container></interval_containers>

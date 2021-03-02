@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Manage your Chords and Scales</title>
+<link type="text/css" rel="stylesheet" href="../book.css" />
+</head>
+
+<body>
+
+<h1>Manage your Chords and Scales</h1>
+<p>
+Before we finally start with some calculations let us first have a look at the data which is needed for the 
+calculation. The <em>Chord Scale Generator</em> is all about chords and scales - therefore it's essential to 
+define them in some place. You can see in the corresponding views <a href="../workbench/views/chords.html">Chords</a> 
+and <a href="../workbench/views/scales.html">Scales</a> which chords and scales are defined in your application. 
+These two views are structured analogously to the <a href="../workbench/views/instruments.html">Instruments View</a> 
+and are used to manage your chords and scales.
+</p>
+
+<p>
+The most common chords and scales are pre-defined. 
+Of course, you can define new chords and scales, as well as change existing ones or even delete them.
+</p>
+
+<p>
+Note: Especially for reverse calculations (<a href="find_chords.html">Find Chords</a>/ <a href="find_scales.html">Find Scales</a>) 
+it is recommendable to provide a certain amount of chords and scales. 
+If you only define the chords and scales you usually use (e.g. your standard song chords and two pentatonic scales) 
+the reverse calculations will probably fail in many cases.
+</p>
+
+<p>
+    <enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+	<img src="../../images/tasks/manage_your_chords.png" width="684" height="543" alt="Manage your Chords"/>
+</p>
+<p>
+    <enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+	<img src="../../images/tasks/macosx/manage_your_chords.png" width="814" height="629" alt="Manage your Chords"/>
+</p>
+
+<p>
+The corresponding editors (see <a href="../workbench/editors/chord.html">Chord</a> and <a href="../workbench/editors/scale.html">Scale Editor</a>) 
+are very similar in their structure. You can use them to specify the name and the defining intervals, 
+as well as comments and "aka"-names. Aka means "also known as". This option takes into consideration that most of the chords 
+(and even some scales) have several different synonyms and different notations respectively. 
+With the help of the aka names you do not have to define a separate chord (or scale) for each of the synonyms. 
+</p>
+
+<p>
+These additionally defined names can also help if you want to find a chord or a scale. 
+The global action <a href="../workbench/menu/extras.html#ExtrasMenu_OpenChord">Extras &#8594; Open Chord...</a><a href="../workbench/menu/extras.html#ExtrasMenu_OpenScale">/Scale...</a> 
+considers all defined names (including the aka names) of your chords and scales. So, before you want to add a 
+supposingly missing chord, first make sure whether or not this chord already exists under a different main name 
+and the name you know is defined as "aka"-name.
+</p>
+
+<p>
+    <enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+	<img src="../../images/workbench/menu/open_chord.png" width="276" height="430" alt="Open Chord"/>
+</p>
+<p>
+    <enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+	<img src="../../images/workbench/menu/macosx/open_chord.png" width="341" height="502" alt="Open Chord"/>
+</p>
+
+<h2>Next Step</h2>
+<p><a href="chord_generation.html">Generate and Show Chords</a></p>
+
+<h2><a id="ManageYourChordsAndScales_related_topics">Related topics</a></h2>
+<p>
+<a href="../workbench/views/chords.html">Workbench &#8594; Views &#8594; Chords</a><br/>
+<a href="../workbench/views/scales.html">Workbench &#8594; Views &#8594; Scales</a><br/>
+<a href="../workbench/editors/chord.html">Workbench &#8594; Editors &#8594; Chord Editor</a><br/>
+<a href="../workbench/editors/scale.html">Workbench &#8594; Editors &#8594; Scale Editor</a><br/>
+<a href="../workbench/menu/extras.html#ExtrasMenu_OpenChord">Workbench &#8594; Menu &#8594; Extras &#8594; Open Chord...</a><br/>
+<a href="../workbench/menu/extras.html#ExtrasMenu_OpenScale">Workbench &#8594; Menu &#8594; Extras &#8594; Open Scale...</a><br/>
+</p>		
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Skalen anzeigen</title>
+<link type="text/css" rel="stylesheet" href="../book.css" />
+</head>
+
+<body>
+
+<div id="all">
+
+    <div id="close">
+        <p id="close_img_de">
+            <a href="http://org.eclipse.ui.intro/close"><img src="../images/close_de.png" width="262" height="25" alt="Schlie&#223;en"/></a>
+        </p>
+    </div>
+
+	<div id="top">
+        <p>
+            <a href="http://org.eclipse.ui.intro/showPage?id=root"><img src="../../logos/logo_64.png" width="64" height="64" alt="Willkommen"/></a>
+        </p>
+	</div>
+
+	<div id="header">
+	
+		<ul id="steps">
+			<li><a id="overview" href="http://org.eclipse.ui.intro/showPage?id=overview"><img src="../images/overview.gif" width="15" height="15" alt="&#220;berblick"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=workbench"><img src="../images/step.gif" width="15" height="15" alt="Die Arbeitsfl&#228;che"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=instruments"><img src="../images/step.gif" width="15" height="15" alt="Instrumente verwalten"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=chords_scales"><img src="../images/step.gif" width="15" height="15" alt="Akkorde und Skalen verwalten"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=chord_generation"><img src="../images/step.gif" width="15" height="15" alt="Akkorde generieren und anzeigen"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=find_chords"><img src="../images/step.gif" width="15" height="15" alt="Akkorde finden"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=show_scales"><img src="../images/step_active.gif" width="15" height="15" alt="Skalen ansehen"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=find_scales"><img src="../images/step.gif" width="15" height="15" alt="Skalen finden"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=sound"><img src="../images/step.gif" width="15" height="15" alt="Sound-Unterst&#252;tzung"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=export"><img src="../images/step.gif" width="15" height="15" alt="Export-Funktionen"/></a></li>
+			<li><a class="step" href="http://org.eclipse.ui.intro/showPage?id=update"><img src="../images/step.gif" width="15" height="15" alt="Update-Funktionalit&#228;t"/></a></li>
+			<li><a id="back" href="http://org.eclipse.ui.intro/showPage?id=find_chords"><img src="../images/back.gif" width="8" height="15" alt="Voriger Schritt"/></a></li>
+			<li><a id="forward" href="http://org.eclipse.ui.intro/showPage?id=find_scales"><img src="../images/forward.gif" width="8" height="15" alt="N&#228;chster Schritt"/></a></li>
+		</ul>
+	
+		<h1>Skalen anzeigen</h1>
+	</div>
+
+	<div id="main">
+
+		<p>
+		Wie der Name dieses Programms schon vermuten l&#228;sst, kannst du dir mit dem <em>Chord Scale Generator</em> nicht 
+		nur Akkorden generieren oder finden lassen. Es werden auch einige hilfreiche Funktionen und Berechnungen angeboten, 
+		welche sich rund um Skalen drehen.
+		</p>
+		
+		<p>
+		Zun&#228;chst einmal soll in diesem Kapitel erkl&#228;rt werden, wie du dir ganz einfach Skalen im <em>Chord Scale Generator</em> 
+		anzeigen lassen kannst. Hierf&#252;r wechselst du am besten in die Perspektive <em>Skalen</em>. Auf der linken Seite 
+		befindet sich die gleichnamige Sicht <em>Skalen</em>, in welcher s&#228;mtliche Skalen deiner Anwendung definiert sind. 
+		W&#228;hlst du eine Skale in dieser Sicht aus (Selektieren der Skale), so wird diese abh&#228;ngig vom eingestellten Grundton 
+		in der Symbolleiste der Sicht in den grafischen Sichten dargestellt. Willst du dir also beispielsweise die 
+		Blues-Skale in D (bzw. mit Grundton D) anzeigen lassen, musst du lediglich den Grundton in der Symbolleiste 
+		auf D stellen und die Blues-Skale selektieren.
+		</p>
+		
+		<p>
+		Eine ausgew&#228;hlte Skale wird, wie schon ein ausgew&#228;hlter Akkord zuvor, in s&#228;mtlichen grafischen Sichten angezeigt. 
+		Einen Unterschied gibt es hierbei jedoch. Da eine Skale anders als ein Griff das gesamte Griffbrett eines 
+		Instrumentes in Anspruch nimmt, kann in den Sichten <em>Tab</em> und <em>Box</em> nur ein Ausschnitt der 
+		ausgew&#228;hlten Skale angezeigt werden. Welcher Ausschnitt hier angezeigt werden soll, kannst du in der 
+		<em>Griffbrett</em>-Sicht einstellen. Hat diese Sicht den Focus, kannst du mit den Cursortasten den blau 
+		umrahmten Skalenblock (so nennen wir den besagten Ausschnitt) ausw&#228;hlen.
+		</p>
+		
+		<p>
+		    <enablement><not><systemTest property="osgi.os" value="macosx"/></not></enablement>
+			<img src="../../images/tasks/show_scale.png" width="884" height="262" alt="Skalen anzeigen"/>
+		</p>
+		<p>
+		    <enablement><systemTest property="osgi.os" value="macosx"/></enablement>
+			<img src="../../images/tasks/macosx/show_scale.png" width="981" height="285" alt="Skalen anzeigen"/>
+		</p>
+		
+		<p>
+		Unter <em>Datei &#8594; Benutzervorgaben... &#8594; Skalenbl&#246;cke</em> kannst du noch definieren, welche Art von 
+		Skalenbl&#246;cken du bevorzugst. Du kannst hier zwischen Bundbl&#246;cken, welche den Ausschnitt auf einen Bundabschnitt 
+		beschr&#228;nken, und Oktavbl&#246;cken, der Beschr&#228;nkung auf eine Oktave vom ausgehenden Startton, w&#228;hlen. Wenn dich das 
+		jetzt aber auch nur alles verwirrt, kannst du die Skalenbl&#246;cke auch einfach in der <em>Griffbrett</em>-Sicht 
+		ausblenden. Es wird dann in den entsprechenden Sichten <em>Box</em> und <em>Tab</em> ein Default-Ausschnitt angezeigt.
+		</p>
+		
+    	<div class="link">
+    		<p><a href="http://org.eclipse.ui.intro/showPage?id=find_scales">Skalen finden</a></p>
+    	</div>
+
+	</div>
+
+</div>
+
+</body>
+</html>

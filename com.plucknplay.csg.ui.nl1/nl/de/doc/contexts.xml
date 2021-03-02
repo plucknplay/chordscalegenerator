@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.contexts"?>
+
+<contexts>
+
+	<!-- view contexts -->
+
+	<context id="instruments_view_context">
+		<description>Die Sicht Instrumente dient zum Verwalten all deiner Instrumente.</description>
+		<topic href="doc/workbench/views/instruments.html" label="Instrumente-Sicht" />
+	</context>
+
+	<context id="chords_view_context">
+		<description>Die Sicht Akkorde dient zum Verwalten all deiner Akkorde.</description>
+		<topic href="doc/workbench/views/chords.html" label="Akkorde-Sicht" />
+	</context>
+
+	<context id="scales_view_context">
+		<description>Die Sicht Skalen dient zum Verwalten all deiner Skalen.</description>
+		<topic href="doc/workbench/views/scales.html" label="Skalen-Sicht" />
+	</context>
+
+	<context id="chord_generation_view_context">
+		<description>Die Sicht Akkordgenerierung dient zum Spezifizieren und Starten der Berechnung zur Ermittlung von Griffmöglichkeiten eines Akkords.</description>
+		<topic href="doc/workbench/views/chord_generation.html" label="Akkordgenerierung-Sicht" />
+		<topic href="doc/workbench/preferences/views/chord_generation.html" label="Benutzervorgaben: Akkordgenerierung-Sicht" />
+	</context>
+
+	<context id="scale_finder_view_context">
+		<description>Die Sicht Skalensuche dient zum Spezifizieren und Starten von Berechnungen zum Finden von passenden Skalen zu einer Akkord- bzw. Notenfolge.</description>
+		<topic href="doc/workbench/views/scale_finder.html" label="Skalensuche-Sicht" />
+		<topic href="doc/workbench/preferences/views/scale_finder.html" label="Benutzervorgaben: Skalensuche-Sicht" />
+	</context>
+
+	<context id="chord_results_view_context">
+		<description>Die Sicht Akkord-Ergebnisse dient zum Anzeigen von Akkorden, welche bei der Berechnung von Griffmöglichkeiten zu einem bestimmten Akkord ermittelt wurden. Es werden hier aber auch die Ergebnisse der umgekehrten Berechnung – also dem Finden von Akkorden zu einem bestimmten Griff- oder Notenbild – dargestellt.</description>
+		<topic href="doc/workbench/views/chord_results.html" label="Akkord-Ergebnisse-Sicht" />
+		<topic href="doc/workbench/preferences/views/chord_results.html" label="Benutzervorgaben: Akkord-Ergebnisse-Sicht" />
+	</context>
+
+	<context id="scale_results_view_context">
+		<description>Die Sicht Skalen-Ergebnisse dient zum Anzeigen von Skalen, welche bei der Berechnung zum Finden von Skalen zu einem bestimmten Griff- oder Notenbild ermittelt wurden.</description>
+		<topic href="doc/workbench/views/scale_results.html" label="Skalen-Ergebnisse-Sicht" />
+		<topic href="doc/workbench/preferences/views/scale_results.html" label="Benutzervorgaben: Skalen-Ergebnisse-Sicht" />
+	</context>
+
+	<context id="fretboard_view_context">
+		<description>Die Griffbrett-Sicht zeigt eine stilisierte Darstellung des Griffbretts des aktuell aktiven Instruments.</description>
+		<topic href="doc/workbench/views/fretboard.html" label="Griffbrett-Sicht" />
+		<topic href="doc/workbench/preferences/views/fretboard.html" label="Benutzervorgaben: Griffbrett-Sicht" />
+	</context>
+
+	<context id="keyboard_view_context">
+		<description>In der Klaviatur-Sicht kannst du dir anschauen, wo ausgewählte Akkorde und Skalen(blöcke) auf der Tastatur eines Klaviers bzw. Flügels liegen würden.</description>
+		<topic href="doc/workbench/views/keyboard.html" label="Klaviatur-Sicht" />
+		<topic href="doc/workbench/preferences/views/keyboard.html" label="Benutzervorgaben: Klaviatur-Sicht" />
+	</context>
+
+	<context id="box_view_context">
+		<description>Die Box-Sicht dient zur Anzeige von Akkorden und Skalenblöcken in einem Ausschnitt des Griffbretts.</description>
+		<topic href="doc/workbench/views/box.html" label="Box-Sicht" />
+		<topic href="doc/workbench/preferences/views/box.html" label="Benutzervorgaben: Box-Sicht" />
+	</context>
+
+	<context id="tab_view_context">
+		<description>In der Tab-Sicht kannst du dir Akkorde und Skalenblöcke in Form einer Tabulatur anzeigen lassen.</description>
+		<topic href="doc/workbench/views/tab.html" label="Tab-Sicht" />
+		<topic href="doc/workbench/preferences/views/tab.html" label="Benutzervorgaben: Tab-Sicht" />
+	</context>
+
+	<context id="notes_view_context">
+		<description>In der Noten-Sicht kannst du dir Akkorde und Skalen(blöcke) in Notenschreibweise anzeigen lassen.</description>
+		<topic href="doc/workbench/views/notes.html" label="Noten-Sicht" />
+		<topic href="doc/workbench/preferences/views/notes.html" label="Benutzervorgaben: Noten-Sicht" />
+	</context>
+
+	<!-- editor contexts -->
+
+	<context id="instrument_editor_context">
+		<description>Im Instrumenten-Editor kannst du neue Instrumente definieren sowie bereits bestehende Instrumente editieren.</description>
+		<topic href="doc/workbench/editors/instrument.html" label="Instrumenten-Editor" />
+	</context>
+
+	<context id="chord_editor_context">
+		<description>Im Akkord-Editor kannst du neue Akkorde definieren sowie bereits bestehende Akkorde editieren.</description>
+		<topic href="doc/workbench/editors/chord.html" label="Akkord-Editor" />
+	</context>
+
+	<context id="scale_editor_context">
+		<description>Im Skalen-Editor kannst du neue Skalen definieren sowie bereits bestehende Skalen editieren.</description>
+		<topic href="doc/workbench/editors/scale.html" label="Skalen-Editor" />
+	</context>
+
+	<!-- preference page contexts -->
+
+	<context id="views_preference_page_context">
+		<description>In diesem Dialog kannst du allgemeine Benutzervorgaben definieren, welche für diverse Sichten gültig sind.</description>
+		<topic href="doc/workbench/preferences/views/overview.html" label="Benutzervorgaben: Sichten" />
+	</context>
+
+	<context id="calculations_preference_page_context">
+		<description>In diesem Dialog kannst du die Benutzervorgaben für diverse Berechnungen definieren.</description>
+		<topic href="doc/workbench/preferences/calculations.html" label="Benutzervorgaben: Berechnungen" />
+	</context>
+
+	<context id="export_preference_page_context">
+		<description>In diesem Dialog kannst du die Benutzervorgaben für den Export definieren.</description>
+		<topic href="doc/workbench/preferences/export.html" label="Benutzervorgaben: Export" />
+	</context>
+
+	<context id="export_filename_preference_page_context">
+		<description>In diesem Dialog kannst du die Benutzervorgaben für vorgeschlagene Dateinamen beim Export definieren.</description>
+		<topic href="doc/workbench/preferences/export_filename.html" label="Benutzervorgaben: Export-Dateinamen" />
+	</context>
+
+	<context id="help_preference_page_context">
+		<description>In diesem Dialog kannst du die Benutzervorgaben für das Hilfesystem definieren.</description>
+		<topic href="doc/workbench/preferences/help.html" label="Benutzervorgaben: Hilfe" />
+	</context>
+
+	<context id="perspectives_preference_page_context">
+		<description>In diesem Dialog kannst du die Benutzervorgaben für Perspektiven definieren.</description>
+		<topic href="doc/workbench/preferences/perspectives.html" label="Benutzervorgaben: Perspektiven" />
+	</context>
+
+	<context id="blocks_preference_page_context">
+		<description>In diesem Dialog kannst du die Benutzervorgaben für Blöcke definieren.</description>
+		<topic href="doc/workbench/preferences/blocks.html" label="Benutzervorgaben: Blöcke" />
+	</context>
+
+	<context id="sound_preference_page_context">
+		<description>In diesem Dialog kannst du die Benutzervorgaben für den Sound definieren.</description>
+		<topic href="doc/workbench/preferences/sound.html" label="Benutzervorgaben: Sound" />
+	</context>
+
+	<context id="update_preference_page_context">
+		<description>In diesem Dialog kannst du die Benutzervorgaben für den Update definieren.</description>
+		<topic href="doc/workbench/preferences/update.html" label="Benutzervorgaben: Update" />
+	</context>
+
+	<context id="warnings_preference_page_context">
+		<description>In diesem Dialog kannst du diverse Warnungen unterdrücken.</description>
+		<topic href="doc/workbench/preferences/warnings.html" label="Benutzervorgaben: Warnungen" />
+	</context>
+
+	<context id="box_view_preference_page_context">
+		<description>In diesem Dialog kannst du die Benutzervorgaben für die Box-Sicht definieren.</description>
+		<topic href="doc/workbench/preferences/views/box.html" label="Benutzervorgaben: Box-Sicht" />
+	</context>
+
+	<context id="chord_generation_view_preference_page_context">
+		<description>In diesem Dialog kannst du die Benutzervorgaben für die Akkordgenerierung-Sicht definieren.</description>
+		<topic href="doc/workbench/preferences/views/chord_generation.html" label="Benutzervorgaben: Akkordgenerierung-Sicht" />
+	</context>
+
+	<context id="chord_results_view_preference_page_context">
+		<description>In diesem Dialog kannst du die Benutzervorgaben für die Akkord-Ergebnisse-Sicht definieren.</description>
+		<topic href="doc/workbench/preferences/views/chord_results.html" label="Benutzervorgaben: Akkord-Ergebnisse-Sicht" />
+	</context>
+
+	<context id="fretboard_view_preference_page_context">
+		<description>In diesem Dialog kannst du die Benutzervorgaben für die Griffbrett-Sicht definieren.</description>
+		<topic href="doc/workbench/preferences/views/fretboard.html" label="Benutzervorgaben: Griffbrett-Sicht" />
+	</context>
+
+	<context id="keyboard_view_preference_page_context">
+		<description>In diesem Dialog kannst du die Benutzervorgaben für die Klaviatur-Sicht definieren.</description>
+		<topic href="doc/workbench/preferences/views/keyboard.html" label="Benutzervorgaben: Klaviatur-Sicht" />
+	</context>
+
+	<context id="notes_view_preference_page_context">
+		<description>In diesem Dialog kannst du die Benutzervorgaben für die Noten-Sicht definieren.</description>
+		<topic href="doc/workbench/preferences/views/notes.html" label="Benutzervorgaben: Noten-Sicht" />
+	</context>
+
+	<context id="scale_finder_view_preference_page_context">
+		<description>In diesem Dialog kannst du die Benutzervorgaben für die Skalensuche-Sicht definieren.</description>
+		<topic href="doc/workbench/preferences/views/scale_finder.html" label="Benutzervorgaben: Skalensuche-Sicht" />
+	</context>
+
+	<context id="scale_results_view_preference_page_context">
+		<description>In diesem Dialog kannst du die Benutzervorgaben für die Skalen-Ergebnisse-Sicht definieren.</description>
+		<topic href="doc/workbench/preferences/views/scale_results.html" label="Benutzervorgaben: Skalen-Ergebnisse-Sicht" />
+	</context>
+
+	<context id="tab_view_preference_page_context">
+		<description>In diesem Dialog kannst du die Benutzervorgaben für die Tab-Sicht definieren.</description>
+		<topic href="doc/workbench/preferences/views/tab.html" label="Benutzervorgaben: Tab-Sicht" />
+	</context>
+
+    <context id="interval_names_preference_page_context">
+        <description>In diesem Dialog kannst du allgemeine Benutzervorgaben zu Intervallnamen definieren.</description>
+        <topic href="doc/workbench/preferences/names/interval_names.html" label="Benutzervorgaben: Intervallnamen" />
+    </context>
+
+    <context id="note_names_preference_page_context">
+        <description>In diesem Dialog kannst du allgemeine Benutzervorgaben zu Notennamen definieren.</description>
+        <topic href="doc/workbench/preferences/names/note_names.html" label="Benutzervorgaben: Notennamen" />
+    </context>
+
+    <context id="general_preference_page_context">
+        <description>In diesem Dialog kannst du allgemeine Einstellung zum Start und zur Beendigung des Chord Scale Generators definieren.</description>
+        <topic href="doc/workbench/preferences/general/overview.html" label="Benutzervorgaben: Allgemein" />
+    </context>
+
+    <context id="graphics_preference_page_context">
+        <description>In diesem Dialog kannst du allgemeine Einstellungen zur Grafik definieren.</description>
+        <topic href="doc/workbench/preferences/general/graphics.html" label="Benutzervorgaben: Grafik" />
+    </context>
+
+    <context id="workbench_preference_page_context">
+        <description>In diesem Dialog kannst du allgemeine Einstellungen zur Darstellung der Arbeitsfläche definieren.</description>
+        <topic href="doc/workbench/preferences/general/workbench.html" label="Benutzervorgaben: Arbeitsfläche" />
+    </context>
+
+    <context id="keys_preference_page_context">
+        <description>In diesem Dialog kannst du Tastenfolgen für sämtliche Befehle definieren.</description>
+        <topic href="doc/workbench/preferences/keys.html" label="Benutzervorgaben: Tasten" />
+    </context>
+
+    <context id="fingering_notation_preference_page_context">
+        <description>In diesem Dialog kannst du allgemeine Einstellungen zur Fingersatznotation definieren.</description>
+        <topic href="doc/workbench/preferences/names/fingering_notation.html" label="Benutzervorgaben: Fingersatznotation" />
+    </context>
+
+    <context id="chord_names_preference_page_context">
+        <description>In diesem Dialog kannst du allgemeine Einstellungen zu Akkordnamen definieren.</description>
+        <topic href="doc/workbench/preferences/names/chord_names.html" label="Benutzervorgaben: Akkordnamen" />
+    </context>
+
+    <context id="scale_names_preference_page_context">
+        <description>In diesem Dialog kannst du allgemeine Einstellungen zu Skalennamen definieren.</description>
+        <topic href="doc/workbench/preferences/names/scale_names.html" label="Benutzervorgaben: Skalennamen" />
+    </context>
+
+    <context id="cleanup_chords_context">
+        <description>In diesem Dialog kannst du Akkorde verschmelzen, welche durch dieselben Intervalle definiert sind.</description>
+        <topic href="doc/workbench/menu/extras.html#ExtrasMenu_CleanUpChords" label="Extras Menü: Bereinige Akkorde..." />
+    </context>
+
+    <context id="cleanup_scales_context">
+        <description>In diesem Dialog kannst du Skalen verschmelzen, welche durch dieselben Intervalle definiert sind.</description>
+        <topic href="doc/workbench/menu/extras.html#ExtrasMenu_CleanUpScales" label="Extras Menü: Bereinige Skalen..." />
+    </context>
+
+</contexts>
